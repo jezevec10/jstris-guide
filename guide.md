@@ -254,6 +254,10 @@ A: Finesse is defined as the most efficient way to move a block. Good finesse is
 
 A: Yes. Click *Lobby*, then *Create Room*, then check the box that says *Private*. Copy and give the room link to anyone you want to join your private room. Here’s a tip: grab the link of any room, public or private, by using the command `/link`.
 
+### Q: I don't always have access to the internet. Can I play Jstris offline?
+
+A: Yes. In order to play offline, you have to first download Jstris while you are online. To do this, right click on the home page, press "Save as", and download the html file. Note that only single player modes can be played offline, and the scores will not be saved.
+
 - - -
 
 ## Additional Information
