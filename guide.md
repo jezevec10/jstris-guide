@@ -35,6 +35,7 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is spurred by 
   - [Q: What is ARR?](#q-what-is-arr)
   - [Q: What is finesse?](#q-what-is-finesse)
   - [Q: Can I create a private room?](#q-can-i-create-a-private-room)
+  - [Q: I don't always have access to the internet. Can I play Jstris offline?](#q-i-dont-always-have-access-to-the-internet-can-i-play-jstris-offline)
 - [Additional Information](#additional-information)
 
 - - -
