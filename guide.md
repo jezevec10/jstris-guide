@@ -35,7 +35,7 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is spurred by 
   - [Q: What is ARR?](#q-what-is-arr)
   - [Q: What is finesse?](#q-what-is-finesse)
   - [Q: Can I create a private room?](#q-can-i-create-a-private-room)
-  - [Q: I don't always have access to the internet. Can I play Jstris offline?](#q-i-dont-always-have-access-to-the-internet-can-i-play-jstris-offline)
+  - [Q: Can I play Jstris offline?](#q-can-i-play-jstris-offline)
 - [Additional Information](#additional-information)
 
 - - -
@@ -185,7 +185,7 @@ In the **Instant** blocking system, there is no red bar at all. The moment an op
 | Full    |       Yes       |    Yes    |
 | Limited |       Yes       |    Yes    |
 | None    |       Yes       |    No     |
-| Instant |       Yes       |    No     |
+| Instant |       No        |    No     |
 
 ### Randomizer
 
@@ -255,7 +255,7 @@ A: Finesse is defined as the most efficient way to move a block. Good finesse is
 
 A: Yes. Click *Lobby*, then *Create Room*, then check the box that says *Private*. Copy and give the room link to anyone you want to join your private room. Here’s a tip: grab the link of any room, public or private, by using the command `/link`.
 
-### Q: I don't always have access to the internet. Can I play Jstris offline?
+### Q: Can I play Jstris offline?
 
 A: Yes. In order to play offline, you have to first download Jstris while you are online. To do this, right click on the home page, press "Save as", and download the html file. Note that only single player modes can be played offline, and the scores will not be saved.
 
