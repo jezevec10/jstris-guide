@@ -263,7 +263,7 @@ A: Yes. In order to play offline, you have to first download Jstris while you ar
 
 ## Additional Information
 
-Jstris runs entirely on donations. There are no advertisements whatsoever. Due to the considerable amount of stored replays and game data, a powerful server is required to run Jstris. All donations are much appreciated and will help keep Jstris running - see the About section on the website to learn more.
+Jstris runs entirely on donations. There are no advertisements whatsoever. Due to the considerable amount of stored replays and game data, a powerful server is required to run Jstris. All donations are much appreciated and will help keep Jstris running - see the [About](/about) section on the website to learn more.
 
 [image2]: ./images/guide-intro.png "introduction"
 [image4]: ./images/image4.png "MisaMino bot in opponents view"
