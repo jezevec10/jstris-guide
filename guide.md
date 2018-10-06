@@ -136,7 +136,7 @@ The default attack and combo table in Jstris (which can be customized in private
 | 1 lines (single)   |      **0** |   |       1 |      **0** |
 | 2 lines (double)   |      **1** |   |       2 |      **1** |
 | 3 lines (triple)   |      **2** |   |       3 |      **1** |
-| 4 lines (tetris)   |      **4** |   |       4 |      **1** |
+| 4 lines            |      **4** |   |       4 |      **1** |
 | T-spin Double      |      **4** |   |       5 |      **2** |
 | T-spin Triple      |      **6** |   |       6 |      **2** |
 | T-spin Single      |      **2** |   |       7 |      **3** |
@@ -245,7 +245,7 @@ A: DAS is a form of horizontal piece sensitivity. DAS stands for delayed auto sh
 
 ### Q: What is ARR?
 
-A: ARR is another form of horizontal piece sensitivity. ARR stands for auto repeat rate. It controls for how fast the block moves left or right. This is a little easier to understand than DAS. Quite simply, with a very low ARR, blocks will zoom almost immediately to the direction you want when holding down the left or right keys. With a very high ARR, tetrominoes will move very slowly in the direction you want when holding down the left or right keys. The default ARR on Jstris is 0, meaning it is very fast, almost instantaneous (remember Jstris is one of the fastest clients on average). If it feels too fast for you, raise the number until you feel comfortable.
+A: ARR is another form of horizontal piece sensitivity. ARR stands for auto repeat rate. It controls for how fast the block moves left or right. This is a little easier to understand than DAS. Quite simply, with a very low ARR, blocks will zoom almost immediately to the direction you want when holding down the left or right keys. With a very high ARR, blocks will move very slowly in the direction you want when holding down the left or right keys. The default ARR on Jstris is 0, meaning it is very fast, almost instantaneous (remember Jstris is one of the fastest clients on average). If it feels too fast for you, raise the number until you feel comfortable.
 
 ### Q: What is finesse?
 
