@@ -6,8 +6,8 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is spurred by 
 ## 写在最前：
 这篇文章不会完全翻译自Eddie的英文Guide，会以尽量适合中文玩家的说法以及信息进行说明。（意译和重写）
 为了让各位和玩家进行英语交流间减少障碍，保留了部分常用英语。
-~~~目前版本是茶管子在考研前几天闹心复习不下去的时候瞎写的~~~
-~~~哪里有问题[请点这里](https://jq.qq.com/?_wv=1027&k=58mxfPJ)告诉我以后会改的~~~
+~~目前版本是茶管子在考研前几天闹心复习不下去的时候瞎写的~~
+~~哪里有问题[请点这里](https://jq.qq.com/?_wv=1027&k=58mxfPJ)告诉我以后会改的~~
 
 - - -
 
@@ -91,7 +91,7 @@ Misamino is by far the strongest bot, perhaps the strongest block placing bot ev
 
 The speed of the bot can be changed. To do this, type in `/bot ?` only replace the ? with any number between .3 and 5. For example, if I wanted the bot to play at 2 PPS, I would type in `/bot 2`. If I wanted the bot to play at 1.73 PPS, I would type in `/bot 1.73`.
 
-Misamino是目前已知的最强bot之一 ~~~zzz尚未嵌入到js当中，等一个奏大爷适配~~~ ，当bot使用5PPS（块/秒）的速度时，可以在单挑房内，轻松暴打最强人类选手。然而bot在多人房间时表现并不佳，经常很快就会死掉。
+Misamino是目前已知的最强bot之一 ~~zzz尚未嵌入到js当中，等一个奏大爷适配~~ ，当bot使用5PPS（块/秒）的速度时，可以在单挑房内，轻松暴打最强人类选手。然而bot在多人房间时表现并不佳，经常很快就会死掉。
 
 所以你可以使用/bot [PPS] 的命令来控制bot的摆块速度。[PPS]的取值区间为 0.3~5。
 如/bot 2 即将bot的摆块速度改为2块/秒，/bot 1.73 改为1.73块/秒等。
@@ -114,7 +114,7 @@ The Bot Room isn’t the only room there is. To view the full room list, click o
 
 Garbage, also known as cheese, is the primary way to knock out opponents in multiplayer modes. It is an important skill to downstack through cheese. Practice just how fast you can downstack in the **Cheese Room**, a room that starts games with 10 lines of garbage. First to reach the bottom wins. 10 lines too easy for you? Adjust the amount of starting lines with the command `/set height ?` , with the question mark representing a number from 1 to 20. 
 
-发送垃圾行，是多人游戏中KO对手的主要方式。而挖掘垃圾行就成为了一个重要的能力。定行挖掘模式，也称作~~~瑞士~~~奶酪模式~~~（出自C2）~~~，是练习挖掘能力的好去处。最快速度完成10行挖掘以获胜。10行太简单了？使用`/set height [lines]`来更换起始行数（1~20）。
+发送垃圾行，是多人游戏中KO对手的主要方式。而挖掘垃圾行就成为了一个重要的能力。定行挖掘模式，也称作~~瑞士~~奶酪模式~~（出自C2）~~，是练习挖掘能力的好去处。最快速度完成10行挖掘以获胜。10行太简单了？使用`/set height [lines]`来更换起始行数（1~20）。
 
 ### 限速房·Speed Limit Room
 
@@ -128,7 +128,7 @@ Want to play with a friend but the skill level between yourselves is too great? 
 ### 组队房·Team Room
 
 The final default room is the **Team Room**. Pick a side, red or blue, and battle and bring glory for your team.
-最后的默认房是 **组队房·Team Room**，选择蓝方或红方，然后为你的队伍赢得荣誉吧！~~~打群架~~~
+最后的默认房是 **组队房·Team Room**，选择蓝方或红方，然后为你的队伍赢得荣誉吧！~~打群架~~
 
 ![team game in progress][image11]
 
@@ -245,7 +245,7 @@ In the **To least** GDS, garbage you send is sent to the player who in that game
 
 ### 垃圾行抵消·Garbage Blocking
 
-~~~Blocking实际为阻挡，不过一般都称呼攻击抵消就...~~~
+~~Blocking实际为阻挡，不过一般都称呼攻击抵消就...~~
 
 There are 4 types of garbage blocking systems on Jstris. They are as follows:
 
@@ -293,7 +293,7 @@ Randomizers are basically the formula for what and what order blocks you get. Js
 **7-bag** is the standard and default randomizer. Imagine a small bag with 1 each of the 7 different blocks. Now you draw out, one by one, a piece until the bag is empty. Then you get a new bag with again 1 each of the 7 different blocks. Now you draw out one by one once more. Repeat. This is how the 7-bag randomizer works. 
 
 **7块包·7-bag**是基本默认的序列。顾名思义，一包7块，每种方块各一个。包内随机排序
-，但每7块都会固定出现7种各一次。~~~妈妈再也不用担心我等不到棍子啦~~~
+，但每7块都会固定出现7种各一次。~~妈妈再也不用担心我等不到棍子啦~~
 
 **14-bag** is much like 7-bag only the bag is doubled in size, with 2 of each of the 7 blocks. Once again, you draw out each piece from the bag, one by one, until the bag is empty. Rinse and repeat. 
 
