@@ -6,6 +6,8 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is spurred by 
 ## 写在最前：
 这篇文章不会完全翻译自Eddie的英文Guide，会以尽量适合中文玩家的说法以及信息进行说明。（意译和重写）
 为了让各位和玩家进行英语交流间减少障碍，保留了部分常用英语。
+~~~目前版本是茶管子在考研前几天闹心复习不下去的时候瞎写的~~~
+~~~哪里有问题[请点这里](https://jq.qq.com/?_wv=1027&k=58mxfPJ)告诉我以后会改的~~~
 
 - - -
 
