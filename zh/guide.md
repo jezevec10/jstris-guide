@@ -48,7 +48,6 @@
 - [附加信息-Additional Information](#附加信息-additional-information)
 
 - - -
-[\[回到目录\]](#目录-table-of-contents)
 
 ## 总览-Overview
 
@@ -59,6 +58,8 @@
 虽然点开即玩，无需注册，但仍然推荐在jstris上创建账号。点一下右上的注册，顺次写下 用户名、邮箱、两遍密码就可以了，很快的~ 在拥有账号后，你可以查看大量的数据，包括你的单人模式下的最佳时间、多人数据、进步数据、回放、等等。你还能在排行榜上看到你自己（未注册用户的分数也包含在内）。
 
 ![introduction][image2]
+
+[\[回到目录\]](#目录-table-of-contents)
 - - -
 
 ## 多人游戏-Multiplayer
@@ -108,6 +109,7 @@ Misamino是目前已知的最强bot之一 ~~zzz尚未嵌入到js当中，等一�
 
 ![team game in progress][image11]
 
+[\[回到目录\]](#目录-table-of-contents)
 - - -
 
 ## 单人游戏-Singleplayer
@@ -134,6 +136,7 @@ Misamino是目前已知的最强bot之一 ~~zzz尚未嵌入到js当中，等一�
 
 *\*注意：地图排行榜每小时的xx:30更新一次，所以新更改可能不会立即生效。*
 
+[\[回到目录\]](#目录-table-of-contents)
 - - -
 
 ## 系统设置-Configuration
@@ -246,6 +249,7 @@ Jstris默认有5个预览块。在自定义房间可以调整预览数从0到5�
 ![Unmessy (-100)][image10] 
 ![Messy (100)][image1]
 
+[\[回到目录\]](#目录-table-of-contents)
 - - -
 
 ## 常见问题解答 FAQ
@@ -292,6 +296,7 @@ A：可以！点击*大厅-Lobby*，然后点击*创建房间-Create Room*，然
 
 A：可以。进入单人模式，然后右键“页面另存为”（或Ctrl+S）为HTML。注意：离线只能玩单人模式，并且不会保存分数。
 
+[\[回到目录\]](#目录-table-of-contents)
 - - -
 
 ## 附加信息-Additional Information
