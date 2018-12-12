@@ -13,7 +13,8 @@
 
 - - -
 
-**目录-Table of Contents**
+
+## **目录-Table of Contents**
 
 - [总览-Overview](#总览-overview)
 - [多人游戏-Multiplayer](#多人游戏-multiplayer)
@@ -25,7 +26,7 @@
 - [单人游戏-Singleplayer](#单人游戏-singleplayer)
   - [竞速模式-Sprint](#竞速模式-sprint)
   - [挖掘竞速-Cheese Race](#挖掘竞速-cheese-race)
-  - [限时极限-Ultra](#限时极限ultra)
+  - [限时极限-Ultra](#限时极限-ultra)
   - [生存模式-Survival](#生存模式-survival)
   - [地图-Maps](#地图-maps)
 - [系统设置-Configuration](#系统设置-configuration)
@@ -47,6 +48,7 @@
 - [附加信息-Additional Information](#附加信息-additional-information)
 
 - - -
+[\[回到目录\]](#目录-table-of-contents)
 
 ## 总览-Overview
 
@@ -278,7 +280,7 @@ DAS，全称Delay Auto Shift。即自动加速延迟。是在方块持续移动�
 
 ARR，全称Auto Repeat Rate，自动重复比率。但**Jstris当中**这个数值是指**自动重复间隔长短**。如果这个数值调低，则会移动非常快，如果这个数值调高，自动重复的移动会非常的慢，过大甚至慢于连点移动键。Jstris的默认ARR值为0，即会在DAS结束后几乎立即移动到墙。如果感觉不适应可以尝试增大数值到合适为止。
 
-### Q:  操作最优化？多余操作？finesse？
+### Q: 操作最优化？多余操作？finesse？
 
 A：在目前的10列方块游戏当中，最佳的移动方式可以使得**不超过两次移动**和**不超过两次旋转**就可以把方块硬降到任何可以硬降的位置。由于Jstris支持180°转所以甚至只需要**两次移动一次旋转**。finesse vt.巧妙处理 但finesse数值指操作缺欠（finesse fault），即指不必要的**多余操作**数。**减少多余操作数对提升速度和效率非常非常重要**。0 finesse代表无多余操作。需要特别学习和使用。网络上有很多关于操作最优化相关的教程，可以参考这个：[Tutorial: How to Play Fast!](https://youtu.be/_QBs703nOnk?t=502).
 
