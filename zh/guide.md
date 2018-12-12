@@ -298,12 +298,12 @@ A：可以。进入单人模式，然后右键“页面另存为”（或Ctrl+S�
 
 Jstris的运营完全建立与各位的捐献和打赏之上，没有广告也不会有广告。由于存储了大量的录像回放和游戏数据，因此需要强大的服务器来运行Jstris。感谢你们所有的捐赠和打赏，这些资金都会用于Jstris的服务器的运行————更多详情请参阅[关于](/about)。
 
-[image2]: ./images/guide-intro.png "introduction"
-[image4]: ./images/image4.png "MisaMino bot in opponents view"
-[image8]: ./images/image8.png "speedometer icon for Speed Limit Rooms"
-[image5]: ./images/image5.png "the lobby, where you can join and create rooms"
-[image11]: ./images/image11.png "team game in progress"
-[image7]: ./images/image7.png "Solid Garbage"
-[image10]: ./images/image10.png "Unmessy (-100)"
-[image1]: ./images/image1.png "Messy (100)"
-[image9]: ./images/image9.png "game results table"
+[image2]: ../images/guide-intro.png "introduction"
+[image4]: ../images/image4.png "MisaMino bot in opponents view"
+[image8]: ../images/image8.png "speedometer icon for Speed Limit Rooms"
+[image5]: ../images/image5.png "the lobby, where you can join and create rooms"
+[image11]: ../images/image11.png "team game in progress"
+[image7]: ../images/image7.png "Solid Garbage"
+[image10]: ../images/image10.png "Unmessy (-100)"
+[image1]: ../images/image1.png "Messy (100)"
+[image9]: ../images/image9.png "game results table"
