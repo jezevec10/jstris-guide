@@ -87,14 +87,20 @@ Misamino是目前已知的最强bot之一 ~~zzz尚未嵌入到js当中，等一�
  
 在默认房Bot Room里面可能会吃瘪！Jstris的一大特点就是可以让新手和世界大触混合在一起，互相进行大混战。如果你玩累了只想观战，可以使用指令`/spectate` 或 `/spec` 进行旁观。想再次加入游戏时，使用指令`/play`。
 
+[\[回到目录\]](#目录-table-of-contents)
+
 ### 单挑房-1v1 Room
 
 当然房间不止有Bot Room一个，点击游戏区域底部左侧的 *大厅-Lobby* 按钮查看完整房间列表。Jstris中第二受欢迎的通常就是**单挑房-1v1 Room**了。这个房间最大只能 2 人同时游玩，不过其他人可以进房旁观。用1v1 Room来和你的朋友，或者旗鼓相当的对手一决高下吧！
 如果你在记录分数，想重新计分的话，使用指令`/resetCounter`就可以分数清零。
 
+[\[回到目录\]](#目录-table-of-contents)
+
 ### 挖掘房-Cheese Room
 
 发送垃圾行，是多人游戏中KO对手的主要方式。而挖掘垃圾行就成为了一个重要的能力。定行挖掘模式，也称作~~瑞士~~奶酪模式~~（出自C2）~~，是练习挖掘能力的好去处。最快速度完成10行挖掘以获胜。10行太简单了？使用`/set height [lines]`来更换起始行数（1~20）。
+
+[\[回到目录\]](#目录-table-of-contents)
 
 ### 限速房-Speed Limit Room
 
@@ -102,6 +108,8 @@ Misamino是目前已知的最强bot之一 ~~zzz尚未嵌入到js当中，等一�
 任何限速房都有一个限速标志[SPEEDOMETER_ICON]。自定义房间可以设定0.1~20块/秒PPS（0为不限速）。
 
 ![the lobby, where you can join and create rooms][image5]
+
+[\[回到目录\]](#目录-table-of-contents)
 
 ### 组队房-Team Room
 
@@ -118,17 +126,25 @@ Misamino是目前已知的最强bot之一 ~~zzz尚未嵌入到js当中，等一�
 
 基础而又最简单的**竞速模式-Sprint**是Jstris最受欢迎的单人模式，以最快的速度消除指定行数。Jstris支持20、40（默认）、100和1000行模式。
 
+[\[回到目录\]](#目录-table-of-contents)
+
 ### 挖掘竞速-Cheese Race
 
 比单纯的竞速更需要思考和计算，**挖掘竞速-Cheese Race**要求你在挖掘过程中寻找最有效的方式。Jstris支持10、18、100和无限行挖掘模式。
+
+[\[回到目录\]](#目录-table-of-contents)
 
 ### 限时极限-Ultra
 
 **限时极限-Ultra**注重使用高级技巧如T-spin和Back to back等及其奖励分数，是提升你在多人游戏中高超技巧的使用的好方法。
 
+[\[回到目录\]](#目录-table-of-contents)
+
 ### 生存模式-Survival
 
 可能是单人游戏中最具有挑战性的模式，**生存模式-Survival**类似于以1行/秒的固定速度涨垃圾行的挖掘模式。面对不断涨起的行尽可能生存更久吧！
+
+[\[回到目录\]](#目录-table-of-contents)
 
 ### 地图-Maps
 
@@ -163,6 +179,8 @@ Misamino是目前已知的最强bot之一 ~~zzz尚未嵌入到js当中，等一�
 |                    |            |   |      11 |      **4** |
 |                    |            |   |     12+ |      **5** |
 
+[\[回到目录\]](#目录-table-of-contents)
+
 ### 垃圾行分配方式-Garbage Distribution
 
 在多人游戏中，有4种垃圾行分配的方式如下：（后为使用指令）
@@ -179,6 +197,8 @@ Misamino是目前已知的最强bot之一 ~~zzz尚未嵌入到js当中，等一�
 在**全部送出-To All**中，如同PPT的对战模式，你发送的垃圾行会全部送给每个对手，比如对手有4人，你发送了PC（全清）（10行），每个人都会收到10行攻击。由示例可以推测，开启To All选项的时候垃圾行的周转数目会比Divide更多更快，游戏也会更短。
 
 在**送给最少-To least**当中，垃圾行会送给当前接受总垃圾行最少的人。比如对手有3人，你发送了4行。在你发送攻击的时候，对手A总计接受50行，对手B接受53，对手C接受58。因为对手A当前总计接受行数最少，你消除的4行会送给他。
+
+[\[回到目录\]](#目录-table-of-contents)
 
 ### 垃圾行抵消-Garbage Blocking
 
@@ -206,6 +226,8 @@ Misamino是目前已知的最强bot之一 ~~zzz尚未嵌入到js当中，等一�
 | 无抵消-None      |      √     |     ×     |       ×      |
 | 即时送入-Instant |      ×     |     ×     |       ×      |
 
+[\[回到目录\]](#目录-table-of-contents)
+
 ### 序列生成器-Randomizer
 
 序列的随机数生成器决定着你获得的方块序列。Jstris拥有4种序列生成如下：
@@ -224,9 +246,13 @@ Misamino是目前已知的最强bot之一 ~~zzz尚未嵌入到js当中，等一�
 
 **单类块-One Block**是最奇怪的序列。开局随机抽1种方块，在整个游戏当中都会只出现这一种。
 
+[\[回到目录\]](#目录-table-of-contents)
+
 ### 预览数-Previews
 
 Jstris默认有5个预览块。在自定义房间可以调整预览数从0到5。
+
+[\[回到目录\]](#目录-table-of-contents)
 
 ### 实心垃圾行-Solid Garbage
 
@@ -234,13 +260,19 @@ Jstris默认有5个预览块。在自定义房间可以调整预览数从0到5�
 
 ![Solid Garbage][image7]
 
+[\[回到目录\]](#目录-table-of-contents)
+
 ### 消行延迟-Clear Delay
 
 消行延迟即消行时不能做任何动作的时间。很多旧方块、PPT拥有消行延迟，Jstris默认关闭，而且一般也不使用。需要时可以自定义为0-6000毫秒。
 
+[\[回到目录\]](#目录-table-of-contents)
+
 ### 垃圾行生效延迟-Garbage Delay
 
 垃圾行生效延迟是指接受垃圾行时，红条出现到垃圾行生效时间。默认设置为500ms。可以自定义为0~1000ms。生效延迟越长，在垃圾行生效前可摆放的块就越多，对手就可以更加有效率的进行阻挡和抵消。
+
+[\[回到目录\]](#目录-table-of-contents)
 
 ### 垃圾行混乱度-Messiness
 
@@ -269,6 +301,8 @@ Rep：Replay，回放录像。
 
 ![game results table][image9]
 
+[\[回到目录\]](#目录-table-of-contents)
+
 ### Q: 加速（器）怎么弄？自动加速延迟(DAS)？自动重复间隔(ARR)？
 
 A：先设想你在文本框按住键盘一个字母输入（比如a），刚刚按下时会只出现一个a，在**一小段时间(DAS)**后才会**以极短的时间间隔(ARR)**连续输出a。
@@ -284,13 +318,19 @@ DAS，全称Delay Auto Shift。即自动加速延迟。是在方块持续移动�
 
 ARR，全称Auto Repeat Rate，自动重复比率。但**Jstris当中**这个数值是指**自动重复间隔长短**。如果这个数值调低，则会移动非常快，如果这个数值调高，自动重复的移动会非常的慢，过大甚至慢于连点移动键。Jstris的默认ARR值为0，即会在DAS结束后几乎立即移动到墙。如果感觉不适应可以尝试增大数值到合适为止。
 
+[\[回到目录\]](#目录-table-of-contents)
+
 ### Q: 操作最优化？多余操作？finesse？
 
 A：在目前的10列方块游戏当中，最佳的移动方式可以使得**不超过两次移动**和**不超过两次旋转**就可以把方块硬降到任何可以硬降的位置。由于Jstris支持180°转所以甚至只需要**两次移动一次旋转**。finesse vt.巧妙处理 但finesse数值指操作缺欠（finesse fault），即指不必要的**多余操作**数。**减少多余操作数对提升速度和效率非常非常重要**。0 finesse代表无多余操作。需要特别学习和使用。网络上有很多关于操作最优化相关的教程，可以参考这个：[Tutorial: How to Play Fast!](https://youtu.be/_QBs703nOnk?t=502).
 
+[\[回到目录\]](#目录-table-of-contents)
+
 ### Q: 我能建立私房 (private room) 吗？
 
 A：可以！点击*大厅-Lobby*，然后点击*创建房间-Create Room*，然后查看*私人-Private*板块，复制并分享房间链接给你想让他们加入的人。小提示：使用指令`/link`可以获取任何房间的地址，无论是公共房间还是私人。
+
+[\[回到目录\]](#目录-table-of-contents)
 
 ### Q: 我可以离线玩Jstris吗？
 
@@ -302,6 +342,8 @@ A：可以。进入单人模式，然后右键“页面另存为”（或Ctrl+S�
 ## 附加信息-Additional Information
 
 Jstris的运营完全建立与各位的捐献和打赏之上，没有广告也不会有广告。由于存储了大量的录像回放和游戏数据，因此需要强大的服务器来运行Jstris。感谢你们所有的捐赠和打赏，这些资金都会用于Jstris的服务器的运行————更多详情请参阅[关于](/about)。
+
+[\[回到目录\]](#目录-table-of-contents)
 
 [image2]: ../images/guide-intro.png "introduction"
 [image4]: ../images/image4.png "MisaMino bot in opponents view"
