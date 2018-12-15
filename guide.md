@@ -30,6 +30,7 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is spurred by 
   - [Garbage Delay](#garbage-delay)
   - [Messiness](#messiness)
 - [Frequently Asked Questions](#faq)
+  - [Q: Can I add a bot to my private or custom room?](#q-can-i-add-a-bot-to-my-private-or-custom-room)
   - [Q: What do those abbreviations in the Game Results table mean?](#q-what-do-those-abbreviations-in-the-game-results-table-mean)
   - [Q: What is DAS?](#q-what-is-das)
   - [Q: What is ARR?](#q-what-is-arr)
@@ -232,6 +233,10 @@ Garbage messiness refers to the difficulty level to clear certain types of garba
 - - -
 
 ## FAQ
+
+### Q: Can I add a bot to my private or custom room?
+
+A: No. Currently, we only have one bot on Jstris, which permanently resides in the Bot Room. However, private bots may be a reality in the future.
 
 ### Q: What do those abbreviations in the Game Results table mean?
 
