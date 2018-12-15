@@ -14,6 +14,6 @@ If you want to translate the Guide, submit a pull request of translated `guide.m
 
 If you want to update an existing translation to sync up with the updates in the English version, this is the suggested way:
 
-1) Check the metadata file [contributors.php](https://github.com/jezevec10/jstris-guide/blob/master/contributors.php) and find out the current version of the translated guide.
+1) Check the metadata file [contributors.php](https://github.com/jezevec10/jstris-guide/blob/master/contributors.php) and find out the current version of the localization of the guide you are going to update.
 2) Check the [CHANGELOG.md](https://github.com/jezevec10/jstris-guide/blob/master/CHANGELOG.md) to see what has changed to the Guide since that version. You can display the difference in the file by clicking on version names in the change log.
 3) Update the translation to the newest version release (ignore the *Unreleased* section in the changelog) and submit a pull request.
