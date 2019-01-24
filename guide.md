@@ -54,9 +54,15 @@ It is recommended to create an account on Jstris. To do so, click on *Register* 
 
 ## Multiplayer
 
+### Default Room
+
+Upon entering the site, all players are immediately thrown into the **Default Room**, a free-for-all where you'll find players of all skill levels.   
+
+Playing in the Default Room can be tough! What’s unique about Jstris is that it throws humble beginners and world-class opponents together into the mix, along with everyone else between. If you get tired from playing and simply want to watch, then use the command `/spectate` or `/spec`. To play again, use the command `/play`. 
+
 ### Bot Room
 
-Upon entering the site, all players are immediately thrown into the **Bot Room**, a default room that is so named because of the one Bot that is always present. It is always located in the top left corner of all your opponents, easily distinguishable by its uniform red color.
+The Default Room isn’t the only room there is. To view the full room list, click on *Lobby* in the bottom left of your playfield. The 2nd most popular room on Jstris is usually the **Bot Room**, so named because of the one Bot that is always present. It is always located in the top left corner of all your opponents, easily distinguishable by its uniform red color.
 
 ![MisaMino bot in opponents view][image4]
 
@@ -73,11 +79,9 @@ Misamino is by far the strongest bot, perhaps the strongest block placing bot ev
 
 The speed of the bot can be changed. To do this, type in `/bot ?` only replace the ? with any number between .3 and 5. For example, if I wanted the bot to play at 2 PPS, I would type in `/bot 2`. If I wanted the bot to play at 1.73 PPS, I would type in `/bot 1.73`. 
 
-Playing in the Bot Room can be tough! What’s unique about Jstris is that it throws humble beginners and world-class opponents together into the mix, along with everyone else between. If you get tired from playing and simply want to watch, then use the command `/spectate` or `/spec`. To play again, use the command `/play`. 
-
 ### 1v1 Room
 
-The Bot Room isn’t the only room there is. To view the full room list, click on *Lobby* in the bottom left of your playfield. The 2nd most popular room on Jstris is usually the **1v1 Room**. This room has a maximum of 2 playing users, although anyone is free to come and watch even if it’s full. Use this room to settle differences with your friends or to battle it out with a worthy player. If you’re keeping score, and you want to reset it, type in `/resetCounter` and all scores will be reset to 0.
+The **1v1 Room** room has a maximum of 2 playing users, although anyone is free to come and watch even if it’s full. Use this room to settle differences with your friends or to battle it out with a worthy player. If you’re keeping score, and you want to reset it, type in `/resetCounter` and all scores will be reset to 0.
 
 ### Cheese Room
 
