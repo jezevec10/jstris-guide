@@ -8,6 +8,7 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is spurred by 
 
 - [Overview](#overview)
 - [Multiplayer](#multiplayer)
+  - [Default Room](#default-room)
   - [Bot Room](#bot-room)
   - [1v1 Room](#1v1-room)
   - [Cheese Room](#cheese-room)
