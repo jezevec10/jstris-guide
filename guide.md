@@ -7,6 +7,7 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is spurred by 
 **Table of Contents**
 
 - [Overview](#overview)
+- [Controls](#controls)
 - [Multiplayer](#multiplayer)
   - [Default Room](#default-room)
   - [Bot Room](#bot-room)
@@ -52,6 +53,21 @@ It is recommended to create an account on Jstris. To do so, click on *Register* 
 
 ![introduction][image2]
 - - -
+
+## Controls
+
+Jstris allows for players to customize their controls at any time in the **Settings** menu that is located underneath the main play area. Default controls are as follows:
+
+|   Command    | Default Key |
+| ------------ | ----------- |
+| Move Left    | left        |
+| Move Right   | right       |
+| Soft Drop    | down        |
+| Hard Drop    | space       |
+| Rotate Left  | z           |
+| Rotate right | up          |
+| Rotate 180   | a           |
+| Hold         | c           |
 
 ## Multiplayer
 
