@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 -  None
 
+## [1.3.0] - 2019-03-04
+### Added
+-  *Controls* section
+-  *Configuration presets* section
+
 ## [1.2.0] - 2019-01-25
 ### Added
 -  The room with a bot is no longer the default room (correction after game update)
@@ -19,7 +24,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - The initial version of the Guide.
 
-[Unreleased]: https://github.com/jezevec10/jstris-guide/compare/v1.1.0...HEAD#diff-8c27d0d0b409c1de1867fdc9a128c72c
+[Unreleased]: https://github.com/jezevec10/jstris-guide/compare/v1.3.0...HEAD#diff-8c27d0d0b409c1de1867fdc9a128c72c
+[1.3.0]: https://github.com/jezevec10/jstris-guide/compare/v1.2.0...v1.3.0#diff-8c27d0d0b409c1de1867fdc9a128c72c
 [1.2.0]: https://github.com/jezevec10/jstris-guide/compare/v1.1.0...v1.2.0#diff-8c27d0d0b409c1de1867fdc9a128c72c
 [1.1.0]: https://github.com/jezevec10/jstris-guide/compare/v1.0.0...v1.1.0#diff-8c27d0d0b409c1de1867fdc9a128c72c
 [1.0.0]: https://github.com/jezevec10/jstris-guide/blob/v1.0.0/guide.md
