@@ -31,7 +31,7 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is spurred by 
   - [Clear Delay](#clear-delay)
   - [Garbage Delay](#garbage-delay)
   - [Messiness](#messiness)
-  - [Configuration presets](#presets)
+  - [Configuration presets](#configuration-presets)
 - [Frequently Asked Questions](#faq)
   - [Q: Can I add a bot to my private or custom room?](#q-can-i-add-a-bot-to-my-private-or-custom-room)
   - [Q: What do those abbreviations in the Game Results table mean?](#q-what-do-those-abbreviations-in-the-game-results-table-mean)
@@ -48,9 +48,9 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is spurred by 
 
 Jstris uses the same basic mechanics as most other block games. It follows guideline rules. One notable feature is its extensive use of replays. In every single game mode you play in and complete, a replay will be generated for you. Watching and analyzing yourself is an integral part to self-improvement, and Jstris’s replays makes doing that all too easy.
 
-Unlike other sites, you can be sure Jstris’s Leaderboards are completely clean and hack-free. Moderators work around the clock to remove suspicious records to ensure you a trusworthy list of global achievements. 
+Unlike other sites, you can be sure Jstris’s Leaderboards are completely clean and cheater-free. Moderators will remove suspicious records to ensure you a trusworthy list of global achievements. 
 
-It is recommended to create an account on Jstris. To do so, click on *Register* at the top right corner. Only an email, username, and password is required. With an account, you can see a multitude of statistics including your Best Times in singleplayer modes, multiplayer stats, improvement stats, replays, and much more. You can now also see yourself on the Leaderboard (unregistered users’ scores are excluded). 
+It is possible to play without registering, but in order to use all features of the website, it is recommended to create an account. To do so, click on *Register* at the top right corner. Only an email, username, and password is required. With an account, you can see a multitude of statistics including your Best Times in singleplayer modes, multiplayer stats, improvement stats, replays, and much more. You can now also see yourself on the Leaderboard (unregistered users’ scores are excluded). 
 
 ![introduction][image2]
 - - -
