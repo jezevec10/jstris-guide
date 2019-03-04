@@ -258,9 +258,9 @@ Garbage messiness refers to the difficulty level to clear certain types of garba
 
 If there is a room settings configuration you particularly like and want to easily refer back to, you can save the settings as a preset. 
 
-To do this, go to Lobby, then Create Room, then either the Simple or All tab. Once you have customized the settings to your liking, hit the Save button at the bottom right corner to generate your preset data. Copy it, then paste it in the box next to Preset data on this page: [https://jstris.jezevec10.com/presets/submit](https://jstris.jezevec10.com/presets/submit)
+To do this, go to *Lobby*, then *Create Room*, then either the *Simple* or *All* tab. Once you have customized the settings to your liking, hit the *Save* button at the bottom right corner to generate your preset data. Copy it, then paste it in the box next to Preset data on this page: [https://jstris.jezevec10.com/presets/submit](https://jstris.jezevec10.com/presets/submit)
 
-Once you’ve submitted the preset, you can view it, along with all other user-submitted presets, here: [https://jstris.jezevec10.com/presets](https://jstris.jezevec10.com/presets) Now you can easily recreate the same room without customizing all the settings again. Just go to Create Room, then Use Custom Preset (shown below), and enter either the title or ID number of your preset. 
+Once you’ve submitted the preset, you can view it, along with all other user-submitted presets, here: [https://jstris.jezevec10.com/presets](https://jstris.jezevec10.com/presets) Now you can easily recreate the same room without customizing all the settings again. Just go to *Create Room*, then *Use Custom Preset* (shown below), and enter either the title or ID number of your preset. 
 
 ## FAQ
 
