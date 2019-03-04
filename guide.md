@@ -31,6 +31,7 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is spurred by 
   - [Clear Delay](#clear-delay)
   - [Garbage Delay](#garbage-delay)
   - [Messiness](#messiness)
+- [Presets](#presets)
 - [Frequently Asked Questions](#faq)
   - [Q: Can I add a bot to my private or custom room?](#q-can-i-add-a-bot-to-my-private-or-custom-room)
   - [Q: What do those abbreviations in the Game Results table mean?](#q-what-do-those-abbreviations-in-the-game-results-table-mean)
@@ -140,7 +141,7 @@ Quite possibly the most challenging of the singleplayer modes, **Survival** is m
 
 Recently, the **Maps** mode was introduced to Jstris. Maps brings an element of creativity while also preparing players to downstack effectively in difficult and unusual positions. Create your own map in the *Map Designer*. Once published, anyone in the world can play it and compete for the fastest time. There is a limit of 5 published maps per day and 10 unpublished maps in queue. Maps also has a leaderboard. On every map, three medals are given, Gold for 1st place, Silver for 2nd place, and Bronze for 3rd place. Score in the top three of any map to win some medals and secure your place on the leaderboard! 
 
-*\*Note that the Maps leaderboards updates once every hour at the 30 minute mark, so new changes are not immediate.*
+*\*Note that the Maps leaderboards updates only a few times each day, so new changes are not immediate.*
 
 - - -
 
@@ -252,6 +253,14 @@ Garbage messiness refers to the difficulty level to clear certain types of garba
 ![Messy (100)][image1]
 
 - - -
+
+## Presets
+
+If there is a room settings configuration you particularly like and want to easily refer back to, you can save the settings as a preset. 
+
+To do this, go to Lobby, then Create Room, then either the Simple or All tab. Once you have customized the settings to your liking, hit the Save button at the bottom right corner to generate your preset data. Copy it, then paste it in the box next to Preset data on this page: [https://jstris.jezevec10.com/presets/submit](https://jstris.jezevec10.com/presets/submit)
+
+Once you’ve submitted the preset, you can view it, along with all other user-submitted presets, here: [https://jstris.jezevec10.com/presets](https://jstris.jezevec10.com/presets) Now you can easily recreate the same room without customizing all the settings again. Just go to Create Room, then Use Custom Preset (shown below), and enter either the title or ID number of your preset. 
 
 ## FAQ
 
