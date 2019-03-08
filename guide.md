@@ -23,6 +23,7 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is spurred by 
   - [Maps](#maps)
 - [Configuration](#configuration)
   - [Attack and Combo table](#attack-and-combo-table)
+  - [Drop Speed](#drop-speed)
   - [Garbage Distribution](#garbage-distribution)
   - [Garbage Blocking](#garbage-blocking)
   - [Randomizer](#randomizer)
@@ -168,6 +169,18 @@ The default attack and combo table in Jstris (which can be customized in private
 | Back-to-Back       |     **+1** |   |      10 |      **4** |
 |                    |            |   |      11 |      **4** |
 |                    |            |   |     12+ |      **5** |
+
+### Drop Speed
+The speed at which pieces normally fall without player input. In a multiplayer match, the speed is usually at a fixed rate, but in certain presets depending on the settings can increase.
+- Acceleration
+- Speed
+- Ground Time (I don't know, find a better term for me pls)
+
+**Acceleration** is how fast the drop speed increases depending on how many lines are cleared or time spent in a match. This is usually turned off in default rooms and most presets. The acceleration can increase for each individual opponent or for the whole room.
+
+**Speed** is how fast the block drops. (?)
+
+**Ground Time** how long a block can be touching the place directly beneath it before it is placed. This can be adjusted by either duration from initial touch, total duration of touch, and amount of block rotations.
 
 ### Garbage Distribution
 
