@@ -57,7 +57,7 @@ It is possible to play without registering, but in order to use all features of 
 
 ## Controls
 
-Jstris allows for players to customize their controls at any time in the *Settings* menu that is located underneath the main play area. Default controls are as follows:
+Jstris allows for players to customize their controls at any time in the **Settings** menu that is located underneath the main play area. Default controls are as follows:
 
 |   Command    | Default Key |
 | ------------ | ----------- |
