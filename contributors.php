@@ -9,7 +9,7 @@ return [
         "translators" => null
     ],
     "ko" => [
-        "version" => '1.0.0',
+        "version" => '1.3.0',
         "translators" => 'Dinir'
     ],
     "fr" => [
