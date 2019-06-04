@@ -5,7 +5,7 @@
 
 return [
     "en" => [
-        "version" => '1.4.0',
+        "version" => '1.4.1',
         "translators" => null
     ],
     "ko" => [
