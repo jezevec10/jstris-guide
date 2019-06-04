@@ -105,7 +105,7 @@ The **1v1 Room** room has a maximum of 2 playing users, although anyone is free 
 
 ### Bot 1v1 Room
 
-A room to 1v1 the Bot. 
+A room to 1v1 the Bot. All bot commands are the same as in the Bot Room.
 
 ### Slow Room
 
@@ -177,12 +177,16 @@ The default attack and combo table in Jstris (which can be customized in private
 
 ### Garbage Distribution
 
-There are 4 different systems in how garbage is sent around during multiplayer matches. They are as follows:
+There are 8 different systems in how garbage is sent around during multiplayer matches. They are as follows:
 
 - Targets `/set garbage targets`
 - Divide `/set garbage divide`
 - To all `/set garbage toAll`
 - To least `/set garbage toLeast`
+- To most `/set garbage toMost`
+- To self `/set garbage toSelf`
+- Random `/set garbage random`
+- Roulette `/set garbage roulette`
 
 **Targets** is always the default (except in the Team Room) and by far the most popular. In Targets, a target is rotated around every opponent in the room, in equal and fixed increments, and whoever the target was landed on at the moment you send garbage is the one who gets that garbage you sent. 
 
