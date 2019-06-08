@@ -17,7 +17,7 @@ return [
         "translators" => 'noelnadal'
     ],
     "zh" => [
-        "version" => '1.1.0',
+        "version" => '1.4.1',
         "translators" => 'teatube'
     ],
 ];
