@@ -1,4 +1,4 @@
-?# Jstris 导航-游戏指南-Jstris Guide
+# Jstris 导航-游戏指南-Jstris Guide
 
 欢迎来到Jstris，一个简单的在线多人方块游戏。Jstris向来以低延迟的游戏著称，并且吸引着世界上的各路神仙玩家前来。该指南将向你介绍本游戏的基本事项。
 
