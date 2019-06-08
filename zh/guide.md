@@ -27,7 +27,7 @@
   - [挖掘竞速-Cheese Race](#挖掘竞速-cheese-race)
   - [限时极限-Ultra](#限时极限-ultra)
   - [生存模式-Survival](#生存模式-survival)
-  - [地图-Maps](#地图-maps)
+  - [地图挖掘-Map Downstack](#地图挖掘-map-downstack)
 - [系统设置-Configuration](#系统设置-configuration)
   - [攻击连击表-Attack and Combo table](#攻击连击表-attack-and-combo-table)
   - [垃圾行分配方式-Garbage Distribution](#垃圾行分配方式-garbage-distribution)
@@ -194,9 +194,9 @@ Misamino是目前已知的最强bot之一 ~~zzz尚未嵌入到js当中，等一�
 
 [\[回到目录\]](#目录-table-of-contents)
 
-### 地图-Map Downstack
+### 地图挖掘-Map Downstack
 
-在2018下半年，Jstris引入了**地图-Map Downstack**模式。在该模式中，你可以在 *地图设计器-Map Designer* 中创建你自己的地图。一旦公开发布 (publish) 你的地图后，世界上的任何人都可以玩你的地图，并且互相竞争完成地图的最快时间。地图每日发表限制5幅、待发表队列限制10幅。每个地图都有排行榜，并且还有金、银、铜三个奖章分别对应第一、第二、第三名。在任何地图中获取前三名来赢得奖章并不断刷新自己的记录以保住你在排行榜上的位置吧！
+在2018下半年，Jstris引入了**地图挖掘-Map Downstack**模式。在该模式中，你可以在 *地图设计器-Map Designer* 中创建你自己的地图。一旦公开发布 (publish) 你的地图后，世界上的任何人都可以玩你的地图，并且互相竞争完成地图的最快时间。地图每日发表限制5幅、待发表队列限制10幅。每个地图都有排行榜，并且还有金、银、铜三个奖章分别对应第一、第二、第三名。在任何地图中获取前三名来赢得奖章并不断刷新自己的记录以保住你在排行榜上的位置吧！
 
 *\*注意：地图排行榜每小时的半点处更新一次，所以新更改可能不会立即生效。*
 
