@@ -5,11 +5,11 @@
 
 return [
     "en" => [
-        "version" => '1.1.0',
+        "version" => '1.4.1',
         "translators" => null
     ],
     "ko" => [
-        "version" => '1.0.0',
+        "version" => '1.3.0',
         "translators" => 'Dinir'
     ],
     "fr" => [
