@@ -12,7 +12,6 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is known for i
   - [Default Room](#default-room)
   - [Bot Room](#bot-room)
   - [1v1 Room](#1v1-room)
-  - [Bot 1v1 Room](#bot-1v1-room)
   - [Slow Room](#slow-room)
   - [Map Room](#map-room)
   - [Team Room](#team-room)
@@ -26,6 +25,7 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is known for i
   - [Attack and Combo table](#attack-and-combo-table)
   - [Garbage Distribution](#garbage-distribution)
   - [Garbage Blocking](#garbage-blocking)
+  - [Blocks](#blocks)
   - [Randomizer](#randomizer)
   - [Previews](#previews)
   - [Solid Garbage](#solid-garbage)
@@ -102,10 +102,6 @@ The speed of the bot can be changed. To do this, type in `/bot ?` only replace t
 ### 1v1 Room
 
 The **1v1 Room** room has a maximum of 2 playing users, although anyone is free to come and watch even if it’s full. Use this room to settle differences with your friends or to battle it out with a worthy player. If you’re keeping score, and you want to reset it, type in `/resetCounter` and all scores will be reset to 0.
-
-### Bot 1v1 Room
-
-A room to 1v1 the Bot. All bot commands are the same as in the Bot Room.
 
 ### Slow Room
 
@@ -228,14 +224,50 @@ In the **Instant** blocking system, there is no red bar at all. The moment an op
 | None    |       Yes       |    No     |
 | Instant |       No        |    No     |
 
+### Blocks
+
+There are 8 different types of blocks. 
+
+- Standard
+- Big
+- ARS
+- Penta
+- M123
+- All-28
+- C2RS
+- O-spin
+
+**Standard** These are the most widely used and basic tetrominoes you are probably most familiar with. These are the default blocks.
+
+**Big** Four times bigger than your standard blocks, these blocks will deal out massive damage when played with.
+
+**ARS** Standard blocks with ARS (Arika rotation system), including CC-check. Implementation by NueSB
+
+**Penta** These blocks are pentominoes. There are 18 unique pentominoes. 
+
+**M123** Minos of sizes 1,2,3. There are 4 unique M123 blocks.
+
+**All-28** All minos of sizes 1,2,3,4,5. A combination of Standard, M123, and Penta blocks. 
+
+**C2RS** Standard blocks with the Cultris 2 rotation system
+
+**O-spin** A meme rotation system where O-spin triple (2xCW) and O-spin quadruple (1xCCW) are possible. Also, other unconventional spins are allowed (due to the kick table which has 15 kick levels as opposed to SRS which has 4).
+
 ### Randomizer
 
-Randomizers are basically the formula for what and what order blocks you get. Jstris has 4 different randomizers. They are:
+Randomizers are basically the formula for what and what order blocks you get. Jstris has 11 different randomizers. They are:
 
 - 7-bag
 - 14-bag
 - Classic
-- One Block
+- C2Sim
+- One block
+- Two block
+- One 7-bag
+- One 14-bag
+- Repeat+7b
+- BSblock+7b
+- BigBlock+7b
 
 **7-bag** is the standard and default randomizer. Imagine a small bag with 1 each of the 7 different blocks. Now you draw out, one by one, a piece until the bag is empty. Then you get a new bag with again 1 each of the 7 different blocks. Now you draw out one by one once more. Repeat. This is how the 7-bag randomizer works. 
 
@@ -243,7 +275,21 @@ Randomizers are basically the formula for what and what order blocks you get. Js
 
 **Classic** randomizer gives you completely random pieces. This randomizer makes stacking very challenging.
 
-**One Block** is perhaps the oddest randomizer of them all. A randomly selected block is chosen for you at the start and you will get only that specific block for the whole game. 
+**C2Sim** A simulation of the Cultris 2 randomizer, described in this [post by Integration](http://harddrop.com/forums/index.php?showtopic=5080&st=0&p=71443&#entry71443)
+
+**One block** This randomizer gives you a randomly selected block is chosen for you at the start and you will get only that specific block for the whole game. 
+
+**Two block** This randomizer is like the One Block one, only it alternates between two specific blocks instead. 
+
+**One 7-bag** The same bag of 7 pieces is repeated indefinitely. Using this randomizer, you will get the same sequence of 7 pieces over and over. 
+
+**One 14-bag** The same bag of 14 pieces is repeated indefinitely. Using this randomizer, you will get the same sequence of 14 pieces over and over. 
+
+**Repeat+7b** Works like 7-bag, only any piece in the bag has a chance of being repeated anywhere from 1-7 times.
+
+**BSblock+7b** Normal 7-bag, with the exception that pieces from different Block Sets (hence the BS in the name), like pentominoes or Big Blocks, may appear.
+
+**BigBlock+7b** Normal 7-bag, with the exception that Big Blocks may appear. 
 
 ### Previews
 
@@ -261,7 +307,7 @@ Clear delay is a fixed amount of time that passes after you clear any line(s). D
 
 ### Garbage Delay
 
-Garbage delay is a fixed amount of time between the incoming garbage indicated by the red bar and the insertion of that garbage into the playfield. By default, it is set at 500 milliseconds. It is customizable from a range of 0 milliseconds to 1000 milliseconds. A higher garbage delay allows for more pieces to be played before garbage is inserted, while a lower garbage delay allows for less pieces to be played before garbage insertion. Or in other words, the higher the garbage delay, the more opportunity it gives to block more effectively. Another way to define garbage delay is “the minimumum amount of time an incoming attack has to be visible in the red bar before a placed block can trigger the insertion of that garbage to the playfield.”
+Garbage delay is a fixed amount of time between the incoming garbage indicated by the red bar and the insertion of that garbage into the playfield. By default, it is set at 500 milliseconds. It is customizable from a range of 0 milliseconds to 60000 milliseconds. A higher garbage delay allows for more pieces to be played before garbage is inserted, while a lower garbage delay allows for less pieces to be played before garbage insertion. Or in other words, the higher the garbage delay, the more opportunity it gives to block more effectively. Another way to define garbage delay is “the minimumum amount of time an incoming attack has to be visible in the red bar before a placed block can trigger the insertion of that garbage to the playfield.”
 
 ### Messiness
 
