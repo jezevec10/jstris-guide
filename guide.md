@@ -14,7 +14,6 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is known for i
   - [1v1 Room](#1v1-room)
   - [Slow Room](#slow-room)
   - [Map Room](#map-room)
-  - [Team Room](#team-room)
 - [Singleplayer](#singleplayer)
   - [Sprint](#sprint)
   - [Cheese Race](#cheese-race)
@@ -114,12 +113,6 @@ Want to play with a friend but the skill level between yourselves is too great? 
 ### Map Room
 
 The **Map Room** is a place to downstack the fastest through randomly-chosen, user-created maps. The (D=?%) displayed next to each map is the difficulty percentile of the map, with 0% being the easiest and 100% being the hardest. Maps with Perfect Clear Finish requirement are not included among the Maps. 
-
-### Team Room
-
-The final default room is the **Team Room**. Pick a side, red or blue, and battle and bring glory for your team. 
-
-![team game in progress][image11]
 
 - - -
 
@@ -348,7 +341,9 @@ There are currently 7 different modes to choose from when creating a new room. T
 
 **Standard** mode is normal multiplayer free-for-all. 
 
-**Team** mode creates a custom Team Room. To set your own team name, use the command `/set teamName ?` where the ? is replaced with your team name. 
+**Team** mode creates a custom Team Room. Pick a side, red or blue, and battle and bring glory for your team. To set your own team name, use the command `/set teamName ?` where the ? is replaced with your team name. 
+
+![team game in progress][image11]
 
 **Cheese** mode creates a Cheese Room. Cheese, also known as garbage, is the primary way to knock out opponents in multiplayer modes. It is an important skill to downstack through cheese. Practice how fast you can downstack in this mode that starts games with 10 lines of garbage. First to reach the bottom wins. 10 lines too easy for you? Adjust the amount of starting lines with the command `/set height ?` , with the question mark representing a number from 1 to 20.
 
