@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 -  None
 
+## [1.5] - 2019-10-06
+### Added
+-  Lock Delay section
+-  Gravity section
+
+### Changed
+-  Randomizer section
+-  Blocks section
+
+### Removed
+-  Bot 1v1 Room section
+
 ## [1.4.1] - 2019-06-04
 ### Added
 -  Updated guide to current Rooms
