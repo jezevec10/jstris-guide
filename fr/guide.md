@@ -259,12 +259,12 @@ R : Oui. Pour jouer hors ligne, vous devez d'abord télécharger Jstris pendant 
 
 Jstris fonctionne uniquement grâce aux dons. Il n'y a aucune publicité sur le site. En raison du nombre considérable d'enregistrements et de données de jeu stockées, un serveur puissant est nécessaire pour exécuter Jstris. Tous les dons sont très appréciés et permettront à Jstris de continuer à fonctionner - voir la section [À propos](/about) pour en savoir plus.
 
-[image2]: ./images/guide-intro.png "introduction"
-[image4]: ./images/image4.png "le robot MisaMino vus par les adversaires"
-[image8]: ./images/image8.png "l'icône de compteur de vitesse pour les parties "Speed Limit""
-[image5]: ./images/image5.png "la liste des parties, où vous pouvez rejoindre et créer des parties"
-[image11]: ./images/image11.png "partie en cours dans la "Team Room""
-[image7]: ./images/image7.png "Handicap Solide"
-[image10]: ./images/image10.png "pas désordonné (-100)"
-[image1]: ./images/image1.png "désordonné (100)"
-[image9]: ./images/image9.png "tableau des résultats d'une partie"
+[image2]: ../images/guide-intro.png "introduction"
+[image4]: ../images/image4.png "le robot MisaMino vus par les adversaires"
+[image8]: ../images/image8.png "l'icône de compteur de vitesse pour les parties "Speed Limit""
+[image5]: ../images/image5.png "la liste des parties, où vous pouvez rejoindre et créer des parties"
+[image11]: ../images/image11.png "partie en cours dans la "Team Room""
+[image7]: ../images/image7.png "Handicap Solide"
+[image10]: ../images/image10.png "pas désordonné (-100)"
+[image1]: ../images/image1.png "désordonné (100)"
+[image9]: ../images/image9.png "tableau des résultats d'une partie"
