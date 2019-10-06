@@ -27,22 +27,22 @@ Bem-vindo ao Jstris, um jogo de blocos multijogador simples. Jstris é conhecido
   - [Bloqueio de Garbage](#bloqueio-de-garbage)
   - [Blocos](#blocos)
   - [Aleatorizador](#aleatorizador)
-  - [Previews](#previews)
-  - [Solid Garbage](#solid-garbage)
-  - [Clear Delay](#clear-delay)
-  - [Garbage Delay](#garbage-delay)
+  - [Pré-visualizações](#pré-vizualizações)
+  - [Garbage Sólido](#garbage-sólido)
+  - [Atraso de Limpeza](#atraso-de-limpeza)
+  - [Atraso de Garbage](#atraso-de-garbage)
   - [Messiness](#messiness)
-  - [Configuration presets](#configuration-presets)
-  - [Mode](#mode)
-- [Frequently Asked Questions](#faq)
-  - [Q: Can I add a bot to my private or custom room?](#q-can-i-add-a-bot-to-my-private-or-custom-room)
-  - [Q: What do those abbreviations in the Game Results table mean?](#q-what-do-those-abbreviations-in-the-game-results-table-mean)
-  - [Q: What is DAS?](#q-what-is-das)
-  - [Q: What is ARR?](#q-what-is-arr)
-  - [Q: What is finesse?](#q-what-is-finesse)
-  - [Q: Can I create a private room?](#q-can-i-create-a-private-room)
-  - [Q: Can I play Jstris offline?](#q-can-i-play-jstris-offline)
-- [Additional Information](#additional-information)
+  - [Configurações predefinidas](#configurações-predefinidas)
+  - [Modo](#modo)
+- [Perguntas Frequentes](#perguntas-frequentes)
+  - [Posso adicionar um bot à minha sala privada ou customizada?](#q-can-i-add-a-bot-to-my-private-or-custom-room)
+  - [O que aquelas abreviações nos resultados do jogo significam?](#q-what-do-those-abbreviations-in-the-game-results-table-mean)
+  - [O que é DAS?](#q-what-is-das)
+  - [O que é ARR?](#q-what-is-arr)
+  - [O que é finesse?](#q-what-is-finesse)
+  - [Posso criar uma sala privada?](#q-can-i-create-a-private-room)
+  - [Posso jogar Jstris offiline?](#q-can-i-play-jstris-offline)
+- [Informação Adicional](#informação-adicional)
 
 - - -
 
@@ -294,120 +294,122 @@ Aleatorizadores são basicamente a formula para a ordem de blocos você recebe. 
 
 **BigBlock+7b** Um 7-bag normal, com exceção de que Big Blocks podem aparecer.
 
-### Previews
+### Pré-visualizações
 
 Jstris possui um padrão de 5 pré-visualizações. Em salas customizadas, você pode escolher de 0 a 5 pré-visualizações.
 
-### Solid Garbage
+### Garbage Sólido
 
-Solid garbage are unclearable lines that rise up from the bottom to “hurry up” the game so it doesn’t extend indefinitely. They are slightly darker than normal garbage lines. In the Bot Room, solid garbage by default starts to come after 2 minutes. Solid garbage is also customizable in custom rooms.
+Garbage sólido são linhas não limpáveis que sobem para apressar o jogo para que ele não se estenda infinitamente. Eles são ligeiramente mais escuro que as linhas de garbage normais. Na Bot Room, o garbage sólido, por padrão, começam a surgir depois de 2 minutos. O garbage sólido é customizável nas Custom Rooms.
 
 ![Solid Garbage][image7]
 
-### Clear Delay
+### Atraso de Limpeza
 
-Clear delay is a fixed amount of time that passes after you clear any line(s). During this time, you can’t do anything. Many classic block games and PPT use clear delay, but Jstris by default has 0 delay, and for the most part it is never used here. However, it is customizable if you want to turn it on. Its range is 0 milliseconds to 6000 milliseconds.
+O atraso de limpeza é um valor fixo de tempo que passa depois que você limpa qualquer linha. Durante este tempo, você não pode fazer nada. Muitos jogos clásicos de bloqueio e PPT usam o Atraso de Limpeza, mas o Jstris, por padrão, não possuí atraso, e na maioria das vezes nunca é usado aqui. De qualquer forma, o Atraso de Limpeza é customizável se você quiser liga-lo. Seu tempo vai de 0 à 6000 milisegundos.
 
-### Garbage Delay
+### Atraso de Garbage
 
-Garbage delay is a fixed amount of time between the incoming garbage indicated by the red bar and the insertion of that garbage into the playfield. By default, it is set at 500 milliseconds. It is customizable from a range of 0 milliseconds to 60000 milliseconds. A higher garbage delay allows for more pieces to be played before garbage is inserted, while a lower garbage delay allows for less pieces to be played before garbage insertion. Or in other words, the higher the garbage delay, the more opportunity it gives to block more effectively. Another way to define garbage delay is “the minimumum amount of time an incoming attack has to be visible in the red bar before a placed block can trigger the insertion of that garbage to the playfield.”
+Atraso de Garbage é um valor fixo de tempo entre o garbage que está para vir, indicado pela barra vermelha, e a inserção deste garbage no campo de jogo. Por padrão, este atraso é de 500 milisegundos. Isto é customizável, podendo ser configurado de 0 à 6000 milisegundos. Um grande Atraso de Garbage permite o posicionamento de uma maior quantidade de peças antes do garbage ser inserido. Ou, em outras palavras, quanto maior o Atraso de Garbage, maior a oportunidade para bloquear de forma mais efetiva. Outra maneira de definir o Atraso de Garbage é "a quantidade mínima de tempo que um ataque deve ser visível na barra vermelha antes que um bloco posicionado ative a inserção daquele garbage ao campo de jogo". 
 
 ### Messiness
 
-Garbage messiness refers to the difficulty level to clear certain types of garbage. To change the messiness of garbage in a room, use the command `/set messiness ?`, where the ? is replaced with any number from -100 to 100. -100 is the least messy garbage configuration, and the garbage hole will only appear in one column throughout the entirety of the game (left picture). 100 is the most messy garbage configuration and the garbage hole will appear in any of the 10 columns, making it much more difficult to downstack (right picture).
+Messines de garbage é o nível de dificuldade para limpar certos tipos de garbage. Para alterar a Messines de garbage em uma sala, use o comando `/set messiness ?`, onde  ? deve ser substituido por qualquer número de -100 a 100. -100 é a configuração de garbage menos bagunçada, e o buraco do garbage aparecerá somente em uma coluna ao longo de todo jogo (imagem à esquerda). 100 é o garbage mais bagunçado, e o buraco do garbage aparecerá em qualquer uma das 10 colunas, tornando o downstack mais difícil (imagem à direita).
 
 ![Unmessy (-100)][image10] 
 ![Messy (100)][image1]
 
-### Configuration presets
+### Configurações predefinidas
 
-If there is a room settings configuration you particularly like and want to easily refer back to, you can save the settings as a preset.
+Se há configurações que você particularmente gosta e quer salva-las, você pode guarda-las como predefinidas. 
 
-To do this, go to *Lobby*, then *Create Room*, then either the *Simple* or *All* tab. Once you have customized the settings to your liking, hit the *Save* button at the bottom right corner to generate your preset data. Copy it, then paste it in the box next to Preset data on the [Submit a preset](/presets/submit) page.
+Para isto, vá até *Lobby*, então *Criar Sala*, então selecione *Simples* ou *Todos*. Uma vez que você tenha customizado as configurações ao seu gosto, clique no botão *Salvar* no canto inferior direito para gerar os seus dados predefinidos. Copie isto e então cole na caixa de texto próxima ao Preset data na página [Submit a preset](/presets/submit).
 
-Once you’ve submitted the preset, you can view it, along with all other user-submitted presets on the [List of presets](/presets). Now you can easily recreate the same room without customizing all the settings again. Just go to *Create Room*, then *Use Custom Preset*, and enter either the title or ID number of your preset. 
+Uma vez que você tenha enviado a configuração, você pode vê-la, assim como todas as outras configurações predefinadas pelos usuários na [List of presets](/presets). Agora você pode facilmente recriar a mesma sala sem precisar alterar as configurações novamente. Só vá até *Criar Sala*, então *Usar predefinição*, e então insira o título ou número de ID da sua predefinição. 
 
 ### Mode
 
-There are currently 7 different modes to choose from when creating a new room. They are:
+Existem 7 diferentes maneiras de criar uma nova sala:
 
-- Standard
-- Team
-- Cheese
+- Padrão
+- Time
+- Queijo
 - Live Sprint
 - Live Cheese
 - Live Sobrevivência
 - Live Maps v0.1
 
-**Standard** mode is normal multiplayer free-for-all. 
+**Padrão** é um multijogador todos-contra-todos normal. 
 
-**Team** mode creates a custom Salas de Time. To set your own team name, use the command `/set teamName ?` where the ? is replaced with your team name. 
+**Time** cria uma Sala de Time customizada. Para configurar o nomde o seu time, use o comando `/set teamName ?`, onde o ? é substituido pelo nome do seu time.
 
-**Cheese** mode creates a Cheese Room. Cheese, also known as garbage, is the primary way to knock out opponents in multiplayer modes. It is an important skill to downstack through cheese. Practice how fast you can downstack in this mode that starts games with 10 lines of garbage. First to reach the bottom wins. 10 lines too easy for you? Adjust the amount of starting lines with the command `/set height ?` , with the question mark representing a number from 1 to 20.
+**Queijo** cria uma Cheese Room. Cheese (queijo), também conhecido por garbage, é o jeito mais simples de nocautear os inimigos no modo multijogador. É uma habilidade importante para fazer o downstack no queijo. Pratique o quão rápido você consegue fazer o downstack neste modo que inicia o jogo com 10 linhas de garbage. O primeiro a chegar embaixo ganha. 10 linhas é fácil demais para você? Ajuste a quantidade de linhas iniciais com o comando `/set height ?`, com o ponto de interrogação representando um número de 1 a 20.
 
-**Live Sprint** mode allows you to play Sprint against an opponent(s). The fastest one to finish the Sprint wins. The room defaults to a 40L Sprint, but you can change to any other type of Sprint with these commands:
+**Live Sprint** permite você jogar Maratona contra um oponente. O mais rápido à terminar a Maratona, ganha. A sala, por padrão, é maratona 40L, mas você pode mudar para qualquer tipo de Maratona com estes comandos:
 
 - 20L:     `/set gamemode sprint20`
 - 40L:     `/set gamemode sprint40`
 - 100L:    `/set gamemode sprint100`
 - 1000L:   `/set gamemode sprint1000`
 
-If you break your Sprint record in Live Sprint, unfortunately you cannot add it to your account because the Sprint will be contained in a Live Replay, not a standard Replay. But you can still save the replay to your favorites if you want to preserve it.
+Se você bater seu recorde de Maratona em uma Live Sprint, infelizmente, você não pode adicionar à sua conta, porque a Maratona será contida em pré-visualização live, não em uma pré-visualização normal. Mas você ainda pode salvar o replay ao seus favoritos se você quiser guarda-lo.
 
-**Live Cheese** mode allows you to play Cheese against an opponent(s). Live Cheese mode is virtually identical to Cheese mode except that you can't customize starting lines beyond the 10L, 18L, and 100L. The room defaults to a 10L Cheese, but you can change to any other type of Cheese with these commands:
+**Live Cheese** permite você jogar Queijo contra um oponente. O modo Live Cheese é virtualmente idêntico ao Queijo, porém, você não pode customizar as linhas iniciais além de 10L, 18L e 100L. A sala, por padrão, é 10L, mas você pode mudar para qualquer um desses outros tipos com estes comandos:
 
 - 10L:     `/set gamemode cheese10`
 - 18L:     `/set gamemode cheese18`
 - 100L:    `/set gamemode cheese100`
 
-**Live Survial** mode allows you to play Sobrevivência against an opponent(s). Whoever survives the longest wins.
+**Live Survival** permite você jogar Sobrevivência contra um oponente. Quem sobreviver por mais tempo ganha.
 
-**Live Maps v0.1** mode creates a custom Map Room. Everything in this room works the same as the Map Room. 
 
-## FAQ
+**Live Mapas v0.1** cria um Map Room customizado. Tudo nesta sala funciona igual ao Map Room.
 
-### Q: Can I add a bot to my private or custom room?
+## Perguntas Frequentes
 
-A: No. Currently, we only have one bot on Jstris, which permanently resides in the Bot Room. However, private bots may be a reality in the future.
+### P: Posso adicionar um bot à minha sala privada ou customizada? 
 
-### Q: What do those abbreviations in the Game Results table mean?
+R: Não. Atualmente, nós temos somente um bot no Jstris, que reside permanentemente na Bot Room. De qualquer forma, bots privados podem virar realidade no futuro.
 
-A: B2B = back-to-back. B2Bpm = back-to-back per minute. APM = attack per minute. SPM = sent per minute. PPS = pieces per second. Rep = replay.
+### P: O que aquelas abreviações nos resultados do jogo significam?
+
+R: B2B = back-to-back. B2Bpm = back-to-back per minute. APM = attack per minute. SPM = sent per minute. PPS = pieces per second. Rep = replay.
 
 ![game results table][image9]
 
-### Q: What is DAS?
+### P: O que é DAS?
 
-A: DAS is a form of horizontal piece sensitivity. DAS stands for delayed auto shift. It controls for how long you have to hold down the left or right keys before the block moves to the direction you want. With a very low DAS, even the lightest touch on a key will immediately send the block moving. With a very high DAS, you will have to hold down the key for longer before the block starts moving. Professionals on average tend to use a lower DAS because the increased sensitivity allows them to play faster. The default DAS on Jstris is 133. If it still feels too sensitive, raise that number until you feel comfortable. If it feels too slow, lower the number. Adjust and find what suits you.
+R: DAS é uma forma de sensibilidade horizontal de peça. DAS significa Delayeed Auto Shift. Ele controla o tempo que você tem que segurar as teclas da esquerda ou direita antes do bloco mover para adireção que você quer. Com um DAS muito baixo, mesmo o toque mais leve em uma tecla irá colocar o bloco em movimento. Com um DAS muito alto, você terá de pressionar a tecla durante mais tempo para que o bloco se mova. Profissionais, em geral, tendem a usar um DAS lento, porque o aumento de sensibilidade os permite jogar mais rápido. O DAS padrão no Jstris é 133. Se você sente que está muito sensível, aumente o número até que fique confortável. Se sentir que está muito lento, diminua o número. Ajuste e descubra o que se encaixa melhor em você.
 
-### Q: What is ARR?
+### P: O que é ARR?
 
-A: ARR is another form of horizontal piece sensitivity. ARR stands for auto repeat rate. It controls for how fast the block moves left or right. This is a little easier to understand than DAS. Quite simply, with a very low ARR, blocks will zoom almost immediately to the direction you want when holding down the left or right keys. With a very high ARR, blocks will move very slowly in the direction you want when holding down the left or right keys. The default ARR on Jstris is 10. 
+R: ARR é outra forma de sensibilidade horizontal de peça. ARR significa Auto Repeat Rate. Ela controla o quão rápido um bloco move para esqueda ou direita. Isto é um pouco mais facil de entender do que o DAS. Ligeiramente simples: com uma ARR baixa, os blocos se moverão quase que imediatamente para a direção que você quer quando pressionar uma tecla; com uma ARR alta, os blocos se moverão mais devagar na direção que você quer quando pressionar uma tecla. A ARR padrão no Jstris é 10.
 
-### Q: What is finesse?
+### P: O que é finesse?
 
-A: Finesse is defined as the most efficient way to move a block. Good finesse is important for playing smoother and faster. The number next to finesse denotes how many finesse errors were committed. So a 0 finesse score means you made no finesse errors.  Ideally, the closer you get to 0, the better. Finesse is something that needs to be learned in order to know how to do. There are many resources online explaining it. This video is a good starting point: [Tutorial: How to Play Fast!](https://youtu.be/_QBs703nOnk?t=502).
+R: Finesse é definida como a maneira mais eficiente de mover um bloco. Boa finesse é importante para jogar mais suave a rapidamente. O número próximo à finesse denota quantos erros de finesse foram cometidos. Então, 0 de pontuação em finesse significa que você não comete erros de finesse. Idealmente, quanto mais perto você chega do 0, melhor. Finesse é algo que precisa ser aprendido ao invés de saber como fazer. Existem diversos recursos online explicando isso.  Este vídeo é um bom começo: [Tutorial: How to Play Fast!](https://youtu.be/_QBs703nOnk?t=502)
 
-### Q: Can I create a private room?
+### P: Posso criar uma sala privada?
 
-A: Yes. Click *Lobby*, then *Create Room*, then check the box that says *Private*. Copy and give the room link to anyone you want to join your private room. Here’s a tip: grab the link of any room, public or private, by using the command `/link`.
+R: Sim. Clique em *Lobby*, então *Criar sala*, então na caixa de seleção que diz *Privado*. Copie e dê o link da sala à qualquer um que vocẽ quer que entre. Aqui vai uma dica: arraste o link de qualquer sala, publica ou privada, usando o  comando `/link`.
 
-### Q: Can I play Jstris offline?
+### P: Posso jogar Jstris offline?
 
-A: Yes. In order to play offline, you have to first download Jstris while you are online. To do this, right click on the home page, press "Save as", and download the html file. Note that only single player modes can be played offline, and the scores will not be saved.
+R: Sim. Para jogar offline, você tem que baixar o Jstris enquanto estiver online. Para isto, clique com o botão direito na página inicial, clique em "Salvar como", e baixe o arquivo html. Note que somente modos singleplayer podem ser jogados offiline, e as pontuações não serão salvas.
 
 - - -
 
-## Additional Information
+## Informação adicional
 
-Jstris runs entirely on donations. There are no advertisements whatsoever. Due to the considerable amount of stored replays and game data, a powerful server is required to run Jstris. All donations are much appreciated and will help keep Jstris running - see the [About](/about) section on the website to learn more.
 
-[image2]: ../images/guide-intro.png "introduction"
-[image4]: ../images/image4.png "MisaMino bot in opponents view"
-[image8]: ../images/image8.png "speedometer icon for Speed Limit Rooms"
-[image5]: ../images/image5.png "the lobby, where you can join and create rooms"
-[image11]: ../images/image11.png "team game in progress"
-[image7]: ../images/image7.png "Solid Garbage"
-[image10]: ../images/image10.png "Unmessy (-100)"
-[image1]: ../images/image1.png "Messy (100)"
-[image9]: ../images/image9.png "game results table"
+Jstris sobrivive inteiramente através de doações. Não há nenhum tipo de propagandas no site. Devido a considerável quantidade de replays e dados de jogos, é necessário um poderoso servidor para rodar o Jstris. Todas as doações são bem-vindas e irão ajudar a manter o Jstris vivo. veja a sessão [Sobre](/sobre) nos site e saiba mais. 
+
+[image2]: ./images/guide-intro.png "introduction"
+[image4]: ./images/image4.png "MisaMino bot in opponents view"
+[image8]: ./images/image8.png "speedometer icon for Speed Limit Rooms"
+[image5]: ./images/image5.png "the lobby, where you can join and create rooms"
+[image11]: ./images/image11.png "team game in progress"
+[image7]: ./images/image7.png "Solid Garbage"
+[image10]: ./images/image10.png "Unmessy (-100)"
+[image1]: ./images/image1.png "Messy (100)"
+[image9]: ./images/image9.png "game results table"
