@@ -90,8 +90,8 @@ Há 4 bots diferentes no Jstris. Aqui eles estão listados por força, e o coman
 
 - MisaMino: `/changeBot misamino`
 - Real_Block: `/changeBot real`
-- ~~jez_Block: `/changeBot jez`~~ (removed on 2018.09.21)
-- ~~Fool bot: `/changeBot fool`~~ (removed on 2018.09.21)
+- ~~jez_Block: `/changeBot jez`~~ (Removido em 21.09.2018)
+- ~~Fool bot: `/changeBot fool`~~ (Removido em 21.09.2018)
 
 *\*Note que todos os comandos devem ser digitados entre as partidas. Qualquer comando digitado durante a partida será anulado.*
 
