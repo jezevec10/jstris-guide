@@ -25,8 +25,8 @@ Bem-vindo ao Jstris, um jogo de blocos multijogador simples. Jstris é conhecido
   - [Tabela de Ataque e Combo](#tabela-de-ataque-e-combo)
   - [Distrubuição de Garbage](#distribuição-de-garbage)
   - [Bloqueio de Garbage](#bloqueio-de-garbage)
-  - [Blocos](#blocks)
-  - [Randomizer](#randomizer)
+  - [Blocos](#blocos)
+  - [Aleatorizador](#aleatorizador)
   - [Previews](#previews)
   - [Solid Garbage](#solid-garbage)
   - [Clear Delay](#clear-delay)
@@ -212,24 +212,24 @@ Existem 4 tipos de sistema de Bloqueio de Garbage no Jstris. Eles são:
 - None
 - Instant
 
-**Full** is the default blocking system on Jstris. Other clients that use Full are *TF* (e+ rooms) and *TOP*. Under the Full Bloqueio de Garbage system, incoming garbage appears as a red bar to your right. It doesn’t rise up on your playfield, however, until you place a piece down. The incoming garbage can be reduced with sent lines (such as a 4 lines) and, if you have already started a combo, will pause completely until you finish the combo.
+**Full** é o sistema de bloqueio padrão no Jstris. Outros usuários que usam Ful são *TF* (salas e+) e *TOP*. No sistema de bloqueio de garbage Full, o garbage que chega aparece como uma barra vermelha à sua direita. Ele não sobe no seu campo de jogo até que você posicione uma peça. O garbage que chega pode ser reduzido com as linhas enviadas e, se você já iniciou um combo, ele ficará completamente parado até que você finalize o combo.
 
-**Limited** blocking system is very similar to Full but with one difference. Incoming garbage is inserted as soon as you drop a piece, regardless of whether a combo was started already or not. In other words, incoming garbage does not pause during combos the way Full does. Like in Full, incoming garbage can be reduced with sent lines. Clients that use Limited include *PPT* and *TB* and *TF* (non e+ rooms).
+Sistema de bloqueio **Limited** é muito similar ao Full, mas com uma diferença. O garbage que chega é inserido assim que você posiciona uma peça, independente se um combo foi ou não iniciado. Em outras palavras, o garbage que chega não pausa durante os combos da maneira que o Full faz. Como o Full, o garbage que chega pode ser reduzido com as linhas enviadas. Usuários que usam Limiteed incluem *PPT*, e *TB*, e *TF* (salas não e+).
 
-In the **None** blocking system, garbage can never be reduced or cancelled. Incoming garbage will first appear as a red bar (like in Full and Limited) and then be inserted into your playfield as soon as you drop a piece. If an opponent sends you 10 lines, even if you clear 4 lines as your next piece, the garbage will not reduce to 6. Instead, you will still recieve 10 lines while sending 4 to your opponent. 
+No sistema de bloqueio **None**, um garbage não pode ser reduzido ou cancelado. O garbage que chega a você irá primeiro aparecer com uma barra vermelha (assim como no Full e no Limited) e então ser inserido no campo de jogo assim que você posicionar uma peça. Se um oponente envia 10 linhas para você, mesmo se você limpar 4 linhas com sua próxima peça, o garbage não irá reduzir à 6. Ao invés disso, você ainda receberá 10 linhas enquanto envia 4 ao oponente.
 
-In the **Instant** blocking system, there is no red bar at all. The moment an opponent sends an attack, its garbage will rise up on your field. There is no blocking it. 
+No sistema de bloqueio **Instant**, a barra vermelha não é mostrada. No momento que o oponente envia um ataque, o garbega irá subir em seu campo. Não há nenhum bloqueio.
 
-|         | Red bar (queue) | Blocking? |
-| ------- | :-------------: | :-------: |
-| Full    |       Yes       |    Yes    |
-| Limited |       Yes       |    Yes    |
-| None    |       Yes       |    No     |
-| Instant |       No        |    No     |
+|         | Barra vermelha (queue) | Bloqueio? |
+| ------- | :--------------------: | :-------: |
+| Full    |          Sim           |    Sim    |
+| Limited |          Sim           |    Sim    |
+| None    |          Sim           |    Não    |
+| Instant |          Não           |    Não    |
 
-### Blocks
+### Blocos
 
-There are 8 different types of blocks. 
+Há 8 tipos diferentes de blocos
 
 - Standard
 - Big
@@ -240,25 +240,25 @@ There are 8 different types of blocks.
 - C2RS
 - O-spin
 
-**Standard** These are the most widely used and basic tetrominoes you are probably most familiar with. These are the default blocks.
+**Standard** Estes são os mais usados e básicos tetrominos que você provavelmente conhece. Estes são os blocos padrões
 
-**Big** Four times bigger than your standard blocks, these blocks will deal out massive damage when played with.
+**Big** Quatro vezes maior que os blocos padrões, estes causarão um dano massivo utilizados.
 
-**ARS** Standard blocks with ARS (Arika rotation system), including CC-check. Implementation by NueSB
+**ARS** Blocos padrões com ARS (Arika rotation system), incluindo CC-check. Implementado por NueSB.
 
-**Penta** These blocks are pentominoes. There are 18 unique pentominoes. 
+**Penta** Estes blocos são pentominós. Existem 18 pentominós únicos. 
 
-**M123** Minos of sizes 1,2,3. There are 4 unique M123 blocks.
+**M123** Minos de tamanho 1, 2 e 3. Há 4 blocos M123 únicos.
 
-**All-28** All minos of sizes 1,2,3,4,5. A combination of Standard, M123, and Penta blocks. 
+**All-28** Todos os minos de tamanho 1, 2, 3, 4 e 5. Uma combinação de padrão, M123 e Penta.
 
-**C2RS** Standard blocks with the Cultris 2 rotation system
+**C2RS** Blocos padrões com o sistema de rotação Cultris 2
 
-**O-spin** A meme rotation system where O-spin triple (2xCW) and O-spin quadruple (1xCCW) are possible. Also, other unconventional spins are allowed (due to the kick table which has 15 kick levels as opposed to SRS which has 4).
+**O-spin** Um sistema de rotação meme onde 0-spin triplo (2xCW) e 0-spin quadruplo (1xCC2) são possíveis. Também, outros giros não convencionais são permitidos (devido à kick table que possui 15 kick levels em oposição ao SRS que tem 4).
 
-### Randomizer
+### Aleatorizador
 
-Randomizers are basically the formula for what and what order blocks you get. Jstris has 11 different randomizers. They are:
+Aleatorizadores são basicamente a formula para a ordem de blocos você recebe. Jstris possui 11 aleatorizadores diferentes. Eles são:
 
 - 7-bag
 - 14-bag
@@ -272,31 +272,31 @@ Randomizers are basically the formula for what and what order blocks you get. Js
 - BSblock+7b
 - BigBlock+7b
 
-**7-bag** is the standard and default randomizer. Imagine a small bag with 1 each of the 7 different blocks. Now you draw out, one by one, a piece until the bag is empty. Then you get a new bag with again 1 each of the 7 different blocks. Now you draw out one by one once more. Repeat. This is how the 7-bag randomizer works. 
+**7-bag** É o aleatorizaodor padrão. Imagine uma pequena bolsa com 1 bloco de cada um dos 7. Agora você desenha a peça, um por um, até que a bolsa esteja vazia. Agora você desnha on por um mais uma vez. Repita. E é assim que o aleatorizador 7-bag funciona.
 
-**14-bag** is much like 7-bag only the bag is doubled in size, with 2 of each of the 7 blocks. Once again, you draw out each piece from the bag, one by one, until the bag is empty. Rinse and repeat. 
+**14-bag** É parecido com o 7-bag, mas com o dobro de tamanho, com 2 de cada um dos 7 blocos. Mais uma vez, você desenha cada peça da bolsa, um por um, até que a bolsa esteja vazia. Repita.
 
-**Classic** randomizer gives you completely random pieces. This randomizer makes stacking very challenging.
+**Classic** Te dá peças complentamente aleatórias. Este aleatorizador faz o empilhamento ser muito difícil.
 
-**C2Sim** A simulation of the Cultris 2 randomizer, described in this [post by Integration](http://harddrop.com/forums/index.php?showtopic=5080&st=0&p=71443&#entry71443)
+**C2Sim** Uma simulação do aleatorizador Cultris 2, descrito neste [post](http://harddrop.com/forums/index.php?showtopic=5080&st=0&p=71443&#entry71443) feito pelo Integration.
 
-**One block** This randomizer gives you a randomly selected block is chosen for you at the start and you will get only that specific block for the whole game. 
+**One block** Este aleatorizador te dá um bloco aleatório no começo do jogo e você só receberá este bloco no jogo inteiro.
 
-**Two block** This randomizer is like the One Block one, only it alternates between two specific blocks instead. 
+**Two Block** Este aleatorizador é parecido com o One Block, mas ele alterna entre dois blocos específicos.
 
-**One 7-bag** The same bag of 7 pieces is repeated indefinitely. Using this randomizer, you will get the same sequence of 7 pieces over and over. 
+**One 7-bag** A mesma bolsa de 7 peças é repetida indefinidamente. Usando este aleatorizador, você receberá sempre a mesma sequência de 7 peças.
 
-**One 14-bag** The same bag of 14 pieces is repeated indefinitely. Using this randomizer, you will get the same sequence of 14 pieces over and over. 
+**One 14-bag** A mesma bolsa de 14 peças é repetida indefinidamente. Usando este aleatorizador, você recebe sempre a mesma sequência de 14 peças.
 
-**Repeat+7b** Works like 7-bag, only any piece in the bag has a chance of being repeated anywhere from 1-7 times.
+**Repeat+7b** Funciona como o 7-bag, mas cada peça da bolsa pode ser repetida em qualquer momento de 1 a 7 vezes.
 
-**BSblock+7b** Normal 7-bag, with the exception that pieces from different Block Sets (hence the BS in the name), like pentominoes or Big Blocks, may appear.
+**BSblock+7b** Um 7-bag normal, com exceção de que peças de diferentes Block Sets (por isso o BS no nome), como pentominós ou Big Blocks, podem aparecer.
 
-**BigBlock+7b** Normal 7-bag, with the exception that Big Blocks may appear. 
+**BigBlock+7b** Um 7-bag normal, com exceção de que Big Blocks podem aparecer.
 
 ### Previews
 
-Jstris has a default of 5 previews. In custom rooms, you can set anywhere from 0 to 5 previews. 
+Jstris possui um padrão de 5 pré-visualizações. Em salas customizadas, você pode escolher de 0 a 5 pré-visualizações.
 
 ### Solid Garbage
 
