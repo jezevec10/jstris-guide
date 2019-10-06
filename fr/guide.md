@@ -22,7 +22,7 @@ Bienvenue sur Jstris, un jeu de bloc multijoueur en ligne simple. Jstris est sti
 - [Paramètres](#parametres)
   - [Attaques et combos](#attaques-et-combos)
   - [Distribution du handicap](#distribution-du-handicap)
-  - [Bloquage du handicap](#bloquage du handicap)
+  - [Bloquage du handicap](#bloquage-du-handicap)
   - [Randomiseur](#randomiseur)
   - [Prochains blocs](#prochains-blocs)
   - [Handicap solide](#handicap-solide)
@@ -207,6 +207,7 @@ Jstris affiche par défaut les 5 prochains blocs. Dans les parties personnalisé
 ### Handicap solide
 
 Le handicap solide consiste en des lignes qui s'élèvent du bas vers le haut pour "forcer le destin" d'une partie afin qu'elle ne dure pas indéfiniment. Elles sont un peu plus foncées que les lignes de handicap normales. Dans la Bot Room, le handicap solide commence à apparaître au bout de 2 minutes. Le handicap solide est également personnalisable dans les parties privées.
+
 ![Solid Garbage][image7]
 
 ### Délai d'effacement
