@@ -5,7 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
--  None
+### Removed
+-  Section about the default Team room
 
 ## [1.5.0] - 2019-10-06
 ### Added
@@ -45,7 +46,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The initial version of the Guide.
 
 [Unreleased]: https://github.com/jezevec10/jstris-guide/compare/v1.5.0...HEAD#diff-8c27d0d0b409c1de1867fdc9a128c72c
-[1.4.1]: https://github.com/jezevec10/jstris-guide/compare/v1.4.1...v1.5.0#diff-8c27d0d0b409c1de1867fdc9a128c72c
+[1.5.0]: https://github.com/jezevec10/jstris-guide/compare/v1.4.1...v1.5.0#diff-8c27d0d0b409c1de1867fdc9a128c72c
 [1.4.1]: https://github.com/jezevec10/jstris-guide/compare/v1.3.0...v1.4.1#diff-8c27d0d0b409c1de1867fdc9a128c72c
 [1.3.0]: https://github.com/jezevec10/jstris-guide/compare/v1.2.0...v1.3.0#diff-8c27d0d0b409c1de1867fdc9a128c72c
 [1.2.0]: https://github.com/jezevec10/jstris-guide/compare/v1.1.0...v1.2.0#diff-8c27d0d0b409c1de1867fdc9a128c72c
