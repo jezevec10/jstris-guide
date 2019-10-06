@@ -205,7 +205,6 @@ No GDS **Roulette**, o garbage que você envia vai para um jogador aleatório, *
 
 ### Bloqueio de Garbage
 
-There are 4 types of Bloqueio de Garbage systems on Jstris. They are:
 Existem 4 tipos de sistema de Bloqueio de Garbage no Jstris. Eles são:
 
 - Full
@@ -403,12 +402,12 @@ A: Yes. In order to play offline, you have to first download Jstris while you ar
 
 Jstris runs entirely on donations. There are no advertisements whatsoever. Due to the considerable amount of stored replays and game data, a powerful server is required to run Jstris. All donations are much appreciated and will help keep Jstris running - see the [About](/about) section on the website to learn more.
 
-[image2]: ./images/guide-intro.png "introduction"
-[image4]: ./images/image4.png "MisaMino bot in opponents view"
-[image8]: ./images/image8.png "speedometer icon for Speed Limit Rooms"
-[image5]: ./images/image5.png "the lobby, where you can join and create rooms"
-[image11]: ./images/image11.png "team game in progress"
-[image7]: ./images/image7.png "Solid Garbage"
-[image10]: ./images/image10.png "Unmessy (-100)"
-[image1]: ./images/image1.png "Messy (100)"
-[image9]: ./images/image9.png "game results table"
+[image2]: ../images/guide-intro.png "introduction"
+[image4]: ../images/image4.png "MisaMino bot in opponents view"
+[image8]: ../images/image8.png "speedometer icon for Speed Limit Rooms"
+[image5]: ../images/image5.png "the lobby, where you can join and create rooms"
+[image11]: ../images/image11.png "team game in progress"
+[image7]: ../images/image7.png "Solid Garbage"
+[image10]: ../images/image10.png "Unmessy (-100)"
+[image1]: ../images/image1.png "Messy (100)"
+[image9]: ../images/image9.png "game results table"
