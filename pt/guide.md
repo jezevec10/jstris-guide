@@ -404,12 +404,12 @@ R: Sim. Para jogar offline, você tem que baixar o Jstris enquanto estiver onlin
 
 Jstris sobrivive inteiramente através de doações. Não há nenhum tipo de propagandas no site. Devido a considerável quantidade de replays e dados de jogos, é necessário um poderoso servidor para rodar o Jstris. Todas as doações são bem-vindas e irão ajudar a manter o Jstris vivo. veja a sessão [Sobre](/sobre) nos site e saiba mais. 
 
-[image2]: ./images/guide-intro.png "introduction"
-[image4]: ./images/image4.png "MisaMino bot in opponents view"
-[image8]: ./images/image8.png "speedometer icon for Speed Limit Rooms"
-[image5]: ./images/image5.png "the lobby, where you can join and create rooms"
-[image11]: ./images/image11.png "team game in progress"
-[image7]: ./images/image7.png "Solid Garbage"
-[image10]: ./images/image10.png "Unmessy (-100)"
-[image1]: ./images/image1.png "Messy (100)"
-[image9]: ./images/image9.png "game results table"
+[image2]: ../images/guide-intro.png "introduction"
+[image4]: ../images/image4.png "MisaMino bot in opponents view"
+[image8]: ../images/image8.png "speedometer icon for Speed Limit Rooms"
+[image5]: ../images/image5.png "the lobby, where you can join and create rooms"
+[image11]: ../images/image11.png "team game in progress"
+[image7]: ../images/image7.png "Solid Garbage"
+[image10]: ../images/image10.png "Unmessy (-100)"
+[image1]: ../images/image1.png "Messy (100)"
+[image9]: ../images/image9.png "game results table"
