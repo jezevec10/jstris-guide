@@ -16,8 +16,8 @@ Bem-vindo ao Jstris, um jogo de blocos multijogador simples. Jstris é conhecido
   - [Map Room](#map-room)
   - [Salas de Time](#salas-de-time)
 - [Singleplayer](#singleplayer)
-  - [Maratona](#sprint)
-  - [Queijo](#cheese-race)
+  - [Maratona](#maratona)
+  - [Queijo](#queijo)
   - [Ultra](#ultra)
   - [Sobrevivência](#sobrevivência)
   - [Mapas](#mapas)
@@ -35,13 +35,13 @@ Bem-vindo ao Jstris, um jogo de blocos multijogador simples. Jstris é conhecido
   - [Configurações predefinidas](#configurações-predefinidas)
   - [Modo](#modo)
 - [Perguntas Frequentes](#perguntas-frequentes)
-  - [Posso adicionar um bot à minha sala privada ou customizada?](#p:-posso-adicionar-um-bot-à-minha-sala-privada-ou-customizada?)
-  - [O que aquelas abreviações nos resultados do jogo significam?](#p:-o-que-aquelas-abreviações-nos-resultados-do-jogo-significam?)
-  - [O que é DAS?](#p:-o-que-é-DAS?)
-  - [O que é ARR?](#p:-o-que-é-ARR?)
-  - [O que é finesse?](#p:-o-que-é-finesse?)
-  - [Posso criar uma sala privada?](#p:-posso-criar-uma-sala-privada?)
-  - [Posso jogar Jstris offline?](#p:-posso-jogar-jstris-offline?)
+  - [Posso adicionar um bot à minha sala privada ou customizada?](#p-posso-adicionar-um-bot-à-minha-sala-privada-ou-customizada)
+  - [O que aquelas abreviações nos resultados do jogo significam?](#p-o-que-aquelas-abreviações-nos-resultados-do-jogo-significam)
+  - [O que é DAS?](#P-o-que-é-DAS)
+  - [O que é ARR?](#p-o-que-é-ARR)
+  - [O que é finesse?](#p-o-que-é-finesse)
+  - [Posso criar uma sala privada?](#p-posso-criar-uma-sala-privada)
+  - [Posso jogar Jstris offline?](#p-posso-jogar-jstris-offline)
 - [Informação Adicional](#informação-adicional)
 
 - - -
@@ -329,7 +329,7 @@ Para isto, vá até *Lobby*, então *Criar Sala*, então selecione *Simples* ou 
 
 Uma vez que você tenha enviado a configuração, você pode vê-la, assim como todas as outras configurações predefinadas pelos usuários na [List of presets](/presets). Agora você pode facilmente recriar a mesma sala sem precisar alterar as configurações novamente. Só vá até *Criar Sala*, então *Usar predefinição*, e então insira o título ou número de ID da sua predefinição. 
 
-### Mode
+### Modo
 
 Existem 7 diferentes maneiras de criar uma nova sala:
 
@@ -406,7 +406,6 @@ R: Sim. Para jogar offline, você tem que baixar o Jstris enquanto estiver onlin
 
 Jstris sobrivive inteiramente através de doações. Não há nenhum tipo de propagandas no site. Devido a considerável quantidade de replays e dados de jogos, é necessário um poderoso servidor para rodar o Jstris. Todas as doações são bem-vindas e irão ajudar a manter o Jstris vivo. veja a sessão [Sobre](/sobre) no site e saiba mais. 
 
-[image2]: ../images/guide-intro.png "introduction"
 [image4]: ../images/image4.png "MisaMino bot in opponents view"
 [image8]: ../images/image8.png "speedometer icon for Speed Limit Rooms"
 [image5]: ../images/image5.png "the lobby, where you can join and create rooms"
