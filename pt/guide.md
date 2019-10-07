@@ -404,7 +404,7 @@ R: Sim. Para jogar offline, você tem que baixar o Jstris enquanto estiver onlin
 ## Informação adicional
 
 
-Jstris sobrivive inteiramente através de doações. Não há nenhum tipo de propagandas no site. Devido a considerável quantidade de replays e dados de jogos, é necessário um poderoso servidor para rodar o Jstris. Todas as doações são bem-vindas e irão ajudar a manter o Jstris vivo. veja a sessão [Sobre](/sobre) no site e saiba mais. 
+Jstris sobrivive inteiramente através de doações. Não há nenhum tipo de propagandas no site. Devido a considerável quantidade de replays e dados de jogos, é necessário um poderoso servidor para rodar o Jstris. Todas as doações são bem-vindas e irão ajudar a manter o Jstris vivo. veja a sessão [Sobre](/about) no site e saiba mais. 
 
 [image2]: ../images/guide-intro.png "introduction"
 [image4]: ../images/image4.png "MisaMino bot in opponents view"
