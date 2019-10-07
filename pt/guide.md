@@ -16,8 +16,8 @@ Bem-vindo ao Jstris, um jogo de blocos multijogador simples. Jstris é conhecido
   - [Map Room](#map-room)
   - [Salas de Time](#salas-de-time)
 - [Singleplayer](#singleplayer)
-  - [Maratona](#sprint)
-  - [Queijo](#cheese-race)
+  - [Maratona](#maratona)
+  - [Queijo](#queijo)
   - [Ultra](#ultra)
   - [Sobrevivência](#sobrevivência)
   - [Mapas](#mapas)
@@ -31,17 +31,17 @@ Bem-vindo ao Jstris, um jogo de blocos multijogador simples. Jstris é conhecido
   - [Garbage Sólido](#garbage-sólido)
   - [Atraso de Limpeza](#atraso-de-limpeza)
   - [Atraso de Garbage](#atraso-de-garbage)
-  - [Messiness](#messiness)
+  - [Bagunça](#bagunça)
   - [Configurações predefinidas](#configurações-predefinidas)
   - [Modo](#modo)
 - [Perguntas Frequentes](#perguntas-frequentes)
-  - [Posso adicionar um bot à minha sala privada ou customizada?](#q-can-i-add-a-bot-to-my-private-or-custom-room)
-  - [O que aquelas abreviações nos resultados do jogo significam?](#q-what-do-those-abbreviations-in-the-game-results-table-mean)
-  - [O que é DAS?](#q-what-is-das)
-  - [O que é ARR?](#q-what-is-arr)
-  - [O que é finesse?](#q-what-is-finesse)
-  - [Posso criar uma sala privada?](#q-can-i-create-a-private-room)
-  - [Posso jogar Jstris offiline?](#q-can-i-play-jstris-offline)
+  - [Posso adicionar um bot à minha sala privada ou customizada?](#p-posso-adicionar-um-bot-à-minha-sala-privada-ou-customizada)
+  - [O que aquelas abreviações nos resultados do jogo significam?](#p-o-que-aquelas-abreviações-nos-resultados-do-jogo-significam)
+  - [O que é DAS?](#P-o-que-é-DAS)
+  - [O que é ARR?](#p-o-que-é-ARR)
+  - [O que é finesse?](#p-o-que-é-finesse)
+  - [Posso criar uma sala privada?](#p-posso-criar-uma-sala-privada)
+  - [Posso jogar Jstris offline?](#p-posso-jogar-jstris-offline)
 - [Informação Adicional](#informação-adicional)
 
 - - -
@@ -52,14 +52,14 @@ Jstris usa os mesmos conceitos básicos da maioria dos jogos de bloco. Ele segue
 
 Diferente de outros sites, você pode ter certeza que as classificações do Jstris são livres de trapaças. Moderadores vão remover as jogadas suspeitas para garantir uma lista de conquistas globais justa. 
 
-Não é necessário se registrar para jogar mas, para usar todas as funcionalidades do site, é recomendado criar uma conta. Para isto, clique em *Registrar* no canto superior direito. Só um email, nome de usuário e senha são necessários. Com uma conta, você têm acesso à diversas estatísticas das suas melhores jogadas no modo singleplayer e multiplayer, estatísticas de melhoria, replays, e muito mais. Você pode também se ver na nas tabelas de classificações (usuários não registrados são excluidos das tabelas).
+Não é necessário se registrar para jogar mas, para desfrutar de todas as funcionalidades do site, é recomendado criar uma conta. Para isto, clique em *Registrar* no canto superior direito. Só um email, nome de usuário e senha são necessários. Com uma conta, você têm acesso à diversas estatísticas das suas melhores jogadas no modo singleplayer e multiplayer, estatísticas de melhoria, replays, e muito mais. Você pode também se ver na nas tabelas de classificações (usuários não registrados são excluidos das tabelas).
 
 ![introduction][image2]
 - - -
 
 ## Controles
 
-Jstris permite os jogadores customizarem seus controles a qualquer momento nas **Configurações** localizadas abaixo da área principal de jogo. Os controles padrões são:
+Jstris permite os jogadores customizarem seus controles a qualquer momento nas **Configurações**, localizadas abaixo da área principal de jogo. Os controles padrões são:
 
 |   Comando           | Tecla       |
 | ------------------- | ----------- |
@@ -69,7 +69,7 @@ Jstris permite os jogadores customizarem seus controles a qualquer momento nas *
 | Queda rápida        | espaço      |
 | Girar à esquerda    | z           |
 | Girar à direita     | cima        |
-| Girar 180º          | a           |
+| Girar 180°          | a           |
 | Segurar             | c           |
 
 ## Multijogador
@@ -82,20 +82,20 @@ Jogar na Default Room pode ser complicado! O que é único no Jstris é que ele 
 
 ### Bot Room
 
-A Default Room não é a única sala do Jstris. Para ver a lista completa de salas, clique em *Lobby* no canto inferior esquerdo da sua área de jogo. A segunda sala mais popular no Jstris é, normalmente, a **Bot Room**, que recebeu este nome por causa de um bot que está sempre por lá. Está sempre localizado no canto superior esquerdo de todos os seus oponentes, facilmente distinguível por sua cor uniformemente vermelha. 
+A Default Room não é a única sala do Jstris (para ver a lista completa de salas, clique em *Lobby* no canto inferior esquerdo da sua área de jogo). A segunda sala mais popular no Jstris é, normalmente, a **Bot Room**, que recebeu este nome por causa de um bot que está sempre por lá. Ele está sempre localizado no canto superior esquerdo de todos os seus oponentes, facilmente distinguível por sua cor uniformemente vermelha. 
 
 ![MisaMino bot in opponents view][image4]
 
-Há 4 bots diferentes no Jstris. Aqui eles estão listados por força, e o comandos para mudar para um bot especifico, na caixa de texto.
+Há 4 bots diferentes no Jstris. Aqui eles estão listados por força, e o comandos para mudar para um bot especifico ao lado.
 
 - MisaMino: `/changeBot misamino`
 - Real_Block: `/changeBot real`
 - ~~jez_Block: `/changeBot jez`~~ (Removido em 21.09.2018)
 - ~~Fool bot: `/changeBot fool`~~ (Removido em 21.09.2018)
 
-*\*Note que todos os comandos devem ser digitados entre as partidas. Qualquer comando digitado durante a partida será anulado.*
+*\* Note que todos os comandos devem ser digitados entre as partidas. Qualquer comando digitado durante a partida será anulado.*
 
-Misamino é de longe o bot mais forte, talvez o melhor em block placing já criado. Quando emparelhado com o máximo 5 PPS (peças por segundo), ele vira um oponente formidável que pode facilmente destruir os jogadores humanos mais habilidosos em um 1v1. De qualquer forma, a performance do bot sofre quando há mais que 5 humanos em uma Bot Room. Isto nos leva ao nosso próximo comando: `/botPPS`
+Misamino é de longe o bot mais forte, talvez o melhor em block placing já criado. Quando emparelhado com o máximo de 5 PPS (peças por segundo), ele vira um oponente formidável que pode facilmente destruir os jogadores humanos mais habilidosos em um 1v1. De qualquer forma, a performance do bot sofre quando há mais que 5 humanos em uma Bot Room. Isto nos leva ao nosso próximo comando: `/botPPS`
 
 A velocidade do bot pode ser alterada. Para isto, digite `/bot ?`, mudando apenas o ? para qualquer número entre .3 e 5. Por exemplo, se eu quiser um bot para jogar à 2PPS, eu digito `/bot 2`. Se eu quiser
 um bot para jogar à 1.73 PPS, eu digito `/bot 1.73`.
@@ -106,17 +106,17 @@ A **1v1 Room** tem no máximo 2 jogadores, porém, todos podem entrar para assis
 
 ### Slow Room
 
-Quer jogar com um amigo, mas o nível de habilidade entre vocês é muito grande? Ou está cansado de perder instantâneamente nas Bot Room? Ou quer melhorar a eficiência em jogo tirando o fator velocidade? Para estas ocasiões, existem a Slow Rooms. As Slow Rooms padrões tem o limite de velocidade de 2.0 PPS, o que significa que um jogador não pode passar de 2.0 PPS. Qualquer tentativa de ir mais rápido irá resultar no bloqueio temporário da tela do jogador. Junto ao limite de velocidade, a Slow Room possui uma atraso da limpeza linear de 700 milisegundos. O que significa que para cada linha que você limpar, há um tempo de 700 ms antes que você possa jogar novamente. Todas as Slow Rooms são indicadas pelo pequeno ícone de velocímetro - [SPEEDOMETER_ICON]. Slow Rooms customizadas podem ter qualquer limite de velocidade entre 0 20 PPS. 
+Quer jogar com um amigo, mas o nível de habilidade entre vocês é muito grande? Ou está cansado de perder toda hora nas Bot Rooms? Ou quer melhorar a eficiência em jogo tirando o fator velocidade? Para estas ocasiões, existem as Slow Rooms. As Slow Rooms padrões tem o limite de velocidade de 2.0 PPS, o que significa que um jogador não pode passar de 2.0 PPS. Qualquer tentativa de ir mais rápido irá resultar no bloqueio temporário da tela do jogador. Junto ao limite de velocidade, a Slow Room possui uma atraso da limpeza linear de 700 milisegundos. O que significa que para cada linha que você limpar, há um tempo de 700 ms antes que você possa jogar novamente. Todas as Slow Rooms são indicadas pelo pequeno ícone de velocímetro - [SPEEDOMETER_ICON]. Slow Rooms customizadas podem ter qualquer limite de velocidade entre 0 20 PPS. 
 
 ![the lobby, where you can join and create rooms][image5]
 
 ### Map Room
 
-A **Map Room** é o lugar disputar a melhor classificação em aleatóriamente escolhidos criados pelos usuários. O (D=?%) mostrado próximo a cada mapa é a porcentagem dificuldade do mapa, sendo 0% o mais fácil e 100% o mais difícil. Mapas que exigem Perfect Clear Finish não são incluidos.
+A **Map Room** é o lugar disputar a melhor classificação em mapas aleatórios escolhidos criados pelos usuários. O (D=?%) mostrado próximo a cada mapa é a porcentagem dificuldade do mapa, sendo 0% o mais fácil e 100% o mais difícil. Mapas que exigem Perfect Clear Finish não são incluidos.
 
 ### Salas de Time
 
-A última sala padrão é a **Salas de Time**. Escolha um lado, vermelho ou azul, e a batalha irá trazer a glória para o seu time.
+O último tipo de sala padrão é o **Salas de Time**. Escolha um lado, vermelho ou azul, e a batalha irá trazer a glória para o seu time.
 
 ![team game in progress][image11]
 
@@ -126,7 +126,7 @@ A última sala padrão é a **Salas de Time**. Escolha um lado, vermelho ou azul
 
 ### Maratona
 
-A base, e com o objetivo mais simples, **Maratona** é o modo um-jogador mais popular no Jstris. Limpe X quantidade de linhas o mais rápido que conseguir. Jstris oferece  modos **Maratona** de 20, 40, 100, e 1000 linhas.
+Com o objetivo mais simples, **Maratona** é o modo um-jogador mais popular no Jstris. Limpe X quantidade de linhas o mais rápido que conseguir. Jstris oferece  modos **Maratona** de 20, 40, 100, e 1000 linhas.
 
 ### Queijo
 
@@ -138,19 +138,19 @@ Focada em pontuação e recompensando técnicas avançadas como t-spins e back-t
 
 ### Sobrevivência
 
-Possivelmente o modo singleplayer mais desafiador, **Sobrevivência** é parecido com Queijo, porém, o garbage sobe a uma taxa constante de uma linha por segundo. Sobreviva contra as linhas que sobem pelo maior tempo que você conseguir. 
+Possivelmente o modo singleplayer mais desafiador, **Sobrevivência** é parecido com Queijo, porém, o garbage sobe a uma taxa constante de uma linha por segundo. Sobreviva contra as linhas que sobem pelo maior tempo que você conseguir.
+
+*\* Por "garbage" entende-se as linhas não completas (ou com buracos) sobrepostas por outras linhas*
 
 ### Mapas
 
-No final de 2018, o modo **Mapas** foi introduzido ao Jstris. Os mapas trazem um elemento de criatividade e também prepara os jogadores para limpar as linhas mais efetivamente em posições difíceis e incomuns. Crie seu próprio mapa em **Criador de Mapas**. Uma vez publicado, qualquer um no mundo pode jogar e competir pelo melhor tempo. Há um limite de 5 mapas publicados por dia e 10 não públicados na fila. Mapas também possuem uma classificação. Em todo mapa, três medalhas são dadas: Ouro para o 1º colocado, Prata para o 2º e Bronze para o terceiro. Pontue entre os três melhores em qualquer mapa para ganhar algumas medalhas e assegurar sua colocação.
+No final de 2018, o modo **Mapas** foi introduzido ao Jstris. Os mapas trazem um elemento de criatividade e também prepara os jogadores para limpar linhas mais efetivamente em posições difíceis e incomuns. Crie seu próprio mapa em **Criador de Mapas**. Uma vez publicado, qualquer um no mundo pode jogar e competir pelo melhor tempo. Há um limite de 5 mapas publicados por dia e 10 não públicados na fila. Mapas também possuem uma classificação. Em todo mapa, três medalhas são dadas: Ouro para o 1º colocado, Prata para o 2º e Bronze para o 3º. Pontue entre os três melhores em qualquer mapa para ganhar algumas medalhas e assegurar sua colocação.
 
 *\*Note que a classificação de Mapas atualiza somente algumas vezes por dia, logo, novas mudanças podem não ser instantâneas.*
 
 - - -
 
 ## Configurações
-
-To see the configuration of any room on Jstris, use the command `/config`. Now we will go over each of the settings. 
 
 Para ver as configurações de qualquer sala no Jstris, use o comando `/config`. Agora nos vamos passar por cada uma dos ajustes.
 
@@ -212,7 +212,7 @@ Existem 4 tipos de sistema de Bloqueio de Garbage no Jstris. Eles são:
 - None
 - Instant
 
-**Full** é o sistema de bloqueio padrão no Jstris. Outros usuários que usam Ful são *TF* (salas e+) e *TOP*. No sistema de bloqueio de garbage Full, o garbage que chega aparece como uma barra vermelha à sua direita. Ele não sobe no seu campo de jogo até que você posicione uma peça. O garbage que chega pode ser reduzido com as linhas enviadas e, se você já iniciou um combo, ele ficará completamente parado até que você finalize o combo.
+**Full** é o sistema de bloqueio padrão no Jstris. Outros usuários que usam Full são *TF* (salas e+) e *TOP*. No sistema de bloqueio de garbage Full, o garbage que chega aparece como uma barra vermelha à sua direita. Ele não sobe no seu campo de jogo até que você posicione uma peça. O garbage que chega pode ser reduzido com as linhas enviadas e, se você já iniciou um combo, ele ficará completamente parado até que você finalize o combo.
 
 Sistema de bloqueio **Limited** é muito similar ao Full, mas com uma diferença. O garbage que chega é inserido assim que você posiciona uma peça, independente se um combo foi ou não iniciado. Em outras palavras, o garbage que chega não pausa durante os combos da maneira que o Full faz. Como o Full, o garbage que chega pode ser reduzido com as linhas enviadas. Usuários que usam Limiteed incluem *PPT*, e *TB*, e *TF* (salas não e+).
 
@@ -312,22 +312,24 @@ O atraso de limpeza é um valor fixo de tempo que passa depois que você limpa q
 
 Atraso de Garbage é um valor fixo de tempo entre o garbage que está para vir, indicado pela barra vermelha, e a inserção deste garbage no campo de jogo. Por padrão, este atraso é de 500 milisegundos. Isto é customizável, podendo ser configurado de 0 à 6000 milisegundos. Um grande Atraso de Garbage permite o posicionamento de uma maior quantidade de peças antes do garbage ser inserido. Ou, em outras palavras, quanto maior o Atraso de Garbage, maior a oportunidade para bloquear de forma mais efetiva. Outra maneira de definir o Atraso de Garbage é "a quantidade mínima de tempo que um ataque deve ser visível na barra vermelha antes que um bloco posicionado ative a inserção daquele garbage ao campo de jogo". 
 
-### Messiness
+### Bagunça
 
-Messines de garbage é o nível de dificuldade para limpar certos tipos de garbage. Para alterar a Messines de garbage em uma sala, use o comando `/set messiness ?`, onde  ? deve ser substituido por qualquer número de -100 a 100. -100 é a configuração de garbage menos bagunçada, e o buraco do garbage aparecerá somente em uma coluna ao longo de todo jogo (imagem à esquerda). 100 é o garbage mais bagunçado, e o buraco do garbage aparecerá em qualquer uma das 10 colunas, tornando o downstack mais difícil (imagem à direita).
+Bagunça de garbage é referente ao nível de bagunça de um garbage. Quanto maior o nível, mais bagunçado é o garbage e, consequentemente, mais difícil será para limpar. Para alterar a Bagunça de garbage em uma sala, use o comando `/set messiness ?`, onde  ? deve ser substituido por qualquer número de -100 a 100. -100 é a configuração de garbage menos bagunçada, e o buraco do garbage aparecerá somente em uma coluna ao longo de todo jogo (imagem à esquerda). 100 é o garbage mais bagunçado, e o buraco do garbage aparecerá em qualquer uma das 10 colunas, tornando o downstack mais difícil (imagem à direita).
+
+|*\*Por "downstack" entende-se o ato de descer as linhas do campo de jogo*
 
 ![Unmessy (-100)][image10] 
 ![Messy (100)][image1]
 
 ### Configurações predefinidas
 
-Se há configurações que você particularmente gosta e quer salva-las, você pode guarda-las como predefinidas. 
+Se há configurações que você particularmente gosta e quer usa-las várias vezes, você pode guarda-las como predefinidas.
 
 Para isto, vá até *Lobby*, então *Criar Sala*, então selecione *Simples* ou *Todos*. Uma vez que você tenha customizado as configurações ao seu gosto, clique no botão *Salvar* no canto inferior direito para gerar os seus dados predefinidos. Copie isto e então cole na caixa de texto próxima ao Preset data na página [Submit a preset](/presets/submit).
 
 Uma vez que você tenha enviado a configuração, você pode vê-la, assim como todas as outras configurações predefinadas pelos usuários na [List of presets](/presets). Agora você pode facilmente recriar a mesma sala sem precisar alterar as configurações novamente. Só vá até *Criar Sala*, então *Usar predefinição*, e então insira o título ou número de ID da sua predefinição. 
 
-### Mode
+### Modo
 
 Existem 7 diferentes maneiras de criar uma nova sala:
 
@@ -402,7 +404,7 @@ R: Sim. Para jogar offline, você tem que baixar o Jstris enquanto estiver onlin
 ## Informação adicional
 
 
-Jstris sobrivive inteiramente através de doações. Não há nenhum tipo de propagandas no site. Devido a considerável quantidade de replays e dados de jogos, é necessário um poderoso servidor para rodar o Jstris. Todas as doações são bem-vindas e irão ajudar a manter o Jstris vivo. veja a sessão [Sobre](/sobre) nos site e saiba mais. 
+Jstris sobrivive inteiramente através de doações. Não há nenhum tipo de propagandas no site. Devido a considerável quantidade de replays e dados de jogos, é necessário um poderoso servidor para rodar o Jstris. Todas as doações são bem-vindas e irão ajudar a manter o Jstris vivo. veja a sessão [Sobre](/sobre) no site e saiba mais. 
 
 [image2]: ../images/guide-intro.png "introduction"
 [image4]: ../images/image4.png "MisaMino bot in opponents view"
