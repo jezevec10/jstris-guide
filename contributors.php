@@ -5,7 +5,7 @@
 
 return [
     "en" => [
-        "version" => '1.4.1',
+        "version" => '1.5.0',
         "translators" => null
     ],
     "ko" => [
@@ -15,6 +15,10 @@ return [
     "fr" => [
         "version" => '1.0.0',
         "translators" => 'noelnadal'
+    ],
+    "pt" => [
+        "version" => '1.5.0',
+        "translators" => '1allan'
     ],
     "zh" => [
         "version" => '1.4.1',

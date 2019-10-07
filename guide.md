@@ -14,7 +14,6 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is known for i
   - [1v1 Room](#1v1-room)
   - [Slow Room](#slow-room)
   - [Map Room](#map-room)
-  - [Team Room](#team-room)
 - [Singleplayer](#singleplayer)
   - [Sprint](#sprint)
   - [Cheese Race](#cheese-race)
@@ -29,7 +28,9 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is known for i
   - [Randomizer](#randomizer)
   - [Previews](#previews)
   - [Solid Garbage](#solid-garbage)
+  - [Lock Delay](#lock-delay)
   - [Clear Delay](#clear-delay)
+  - [Gravity lvl](#gravity-lvl)
   - [Garbage Delay](#garbage-delay)
   - [Messiness](#messiness)
   - [Configuration presets](#configuration-presets)
@@ -112,12 +113,6 @@ Want to play with a friend but the skill level between yourselves is too great? 
 ### Map Room
 
 The **Map Room** is a place to downstack the fastest through randomly-chosen, user-created maps. The (D=?%) displayed next to each map is the difficulty percentile of the map, with 0% being the easiest and 100% being the hardest. Maps with Perfect Clear Finish requirement are not included among the Maps. 
-
-### Team Room
-
-The final default room is the **Team Room**. Pick a side, red or blue, and battle and bring glory for your team. 
-
-![team game in progress][image11]
 
 - - -
 
@@ -233,7 +228,7 @@ There are 8 different types of blocks.
 - ARS
 - Penta
 - M123
-- All-28
+- All-29
 - C2RS
 - O-spin
 
@@ -247,7 +242,7 @@ There are 8 different types of blocks.
 
 **M123** Minos of sizes 1,2,3. There are 4 unique M123 blocks.
 
-**All-28** All minos of sizes 1,2,3,4,5. A combination of Standard, M123, and Penta blocks. 
+**All-29** All minos of sizes 1,2,3,4,5, totaling 29 unique minos. A combination of 7 Standard,  4 M123, and 18 Penta blocks. 
 
 **C2RS** Standard blocks with the Cultris 2 rotation system
 
@@ -301,9 +296,17 @@ Solid garbage are unclearable lines that rise up from the bottom to “hurry up�
 
 ![Solid Garbage][image7]
 
+### Lock Delay
+
+Lock delay refers to how much time a piece can wait on the ground before locking into place. In Jstris, there are three types of lock delays you can customize. The first one, L1, controls how many milliseconds after a piece is softdropped to the ground until it locks. The default L1 delay is 500 milliseconds. The second one, L2, controls how many milliseconds after a piece is softdropped to the ground and is kept in motion by moving left or right until it locks. The default L2 delay is 5000 milliseconds. Note that if a piece is rotated, the L2 is reset and the piece can stay on longer than 5000 milliseconds, which brings us to L3. The third one, L3, is the maximum amount of time a piece that enters the matrix can stay on before it autolocks, no matter what. The default L3 delay is 20000 milliseconds. 
+
 ### Clear Delay
 
 Clear delay is a fixed amount of time that passes after you clear any line(s). During this time, you can’t do anything. Many classic block games and PPT use clear delay, but Jstris by default has 0 delay, and for the most part it is never used here. However, it is customizable if you want to turn it on. Its range is 0 milliseconds to 6000 milliseconds.
+
+### Gravity lvl
+
+Gravity level refers to the rate at which the pieces fall down the matrix automatically. The Gravity can be adjusted from levels 0-28. The default Gravity is 1. If gravity is 0, the piece will not fall down at all until it is autolocked after the 20 second L3 lock delay (see section Lock Delay). A Gravity level of 28 is equal to 20G, which means pieces will instantly fall from the top to bottom. 
 
 ### Garbage Delay
 
@@ -338,7 +341,9 @@ There are currently 7 different modes to choose from when creating a new room. T
 
 **Standard** mode is normal multiplayer free-for-all. 
 
-**Team** mode creates a custom Team Room. To set your own team name, use the command `/set teamName ?` where the ? is replaced with your team name. 
+**Team** mode creates a custom Team Room. Pick a side, red or blue, and battle and bring glory for your team. To set your own team name, use the command `/set teamName ?` where the ? is replaced with your team name. 
+
+![team game in progress][image11]
 
 **Cheese** mode creates a Cheese Room. Cheese, also known as garbage, is the primary way to knock out opponents in multiplayer modes. It is an important skill to downstack through cheese. Practice how fast you can downstack in this mode that starts games with 10 lines of garbage. First to reach the bottom wins. 10 lines too easy for you? Adjust the amount of starting lines with the command `/set height ?` , with the question mark representing a number from 1 to 20.
 
