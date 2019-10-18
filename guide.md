@@ -20,6 +20,7 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is known for i
   - [Ultra](#ultra)
   - [Survival](#survival)
   - [Maps](#maps)
+  - [20TSD](#20tsd)
 - [Configuration](#configuration)
   - [Attack and Combo table](#attack-and-combo-table)
   - [Garbage Distribution](#garbage-distribution)
@@ -106,7 +107,7 @@ The **1v1 Room** room has a maximum of 2 playing users, although anyone is free 
 
 ### Slow Room
 
-Want to play with a friend but the skill level between yourselves is too great? Or you’re just getting started and tired of losing instantly in the pro-dominated Bot Room? Or you want to improve efficiency in your game by taking speed out of the equation? There’s a Slow Room in place for all those occasions. The default Slow Room's speed limit is set at 2.0 PPS, which means a player cannot go over 2.0 PPS. Any attempts to go faster will result in the player’s screen being temporarily locked. In addition to the speed limit, the Slow Room has a line clear delay of 700 milliseconds. That means for each line(s) you clear, you will have to wait 700 ms before you can play again. All Slow Rooms are indicated by the little speedometer icon - [SPEEDOMETER_ICON]. Custom Slow rooms can have any speed limit from 0 PPS to 20 PPS. 
+Want to play with a friend but the skill level between yourselves is too great? Or you’re just getting started and tired of losing instantly in the pro-dominated Bot Room? Or you want to improve efficiency in your game by taking speed out of the equation? There’s a Slow Room in place for all those occasions. The default Slow Room's speed limit is set at 2.0 PPS, which means a player cannot go over 2.0 PPS. Any attempts to go faster will result in the player’s screen being temporarily locked. In addition to the speed limit, the Slow Room has a line clear delay of 500 milliseconds. That means for each line(s) you clear, you will have to wait 500 ms before you can play again. All Slow Rooms are indicated by the little speedometer icon - [SPEEDOMETER_ICON]. Custom Slow rooms can have any speed limit from 0 PPS to 20 PPS. 
 
 ![the lobby, where you can join and create rooms][image5]
 
@@ -139,6 +140,10 @@ Quite possibly the most challenging of the singleplayer modes, **Survival** is m
 In late 2018, the **Maps** mode was introduced to Jstris. Maps brings an element of creativity while also preparing players to downstack effectively in difficult and unusual positions. Create your own map in the *Map Designer*. Once published, anyone in the world can play it and compete for the fastest time. There is a limit of 5 published maps per day and 10 unpublished maps in queue. Maps also has a leaderboard. On every map, three medals are given, Gold for 1st place, Silver for 2nd place, and Bronze for 3rd place. Score in the top three of any map to win some medals and secure your place on the leaderboard! 
 
 *\*Note that the Maps leaderboards updates only a few times each day, so new changes are not immediate.*
+
+### 20TSD
+
+The goal in this mode is to try to get as many consecutive TSDs (T-spin Double) as you can. If you clear any line that isn't a TSD, the game ends. It is named 20TSD because the original concept was to do a 40 line sprint using nothing but 20 TSDs (20 x 2 = 40). However, some people have gone beyond that and now regularly exceed 20.
 
 - - -
 
