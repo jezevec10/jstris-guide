@@ -29,7 +29,7 @@
   - [限时极限-Ultra](#限时极限-ultra)
   - [生存模式-Survival](#生存模式-survival)
   - [地图-Maps](#地图-maps)
-  - [20TSD/T2](#20TSD/T2)
+  - [20TSD/T2](#20TSDT2)
   - [全清模式-PC mode](#全清模式-PC-mode)
 - [系统设置-Configuration](#系统设置-configuration)
   - [攻击连击表-Attack and Combo table](#攻击连击表-attack-and-combo-table)
