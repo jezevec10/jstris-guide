@@ -19,10 +19,8 @@
   - [默认房-Default Room](#默认房-default-room)
   - [机器人房-Bot Room](#机器人房-bot-room)
   - [单挑房-1v1 Room](#单挑房-1v1-room)
-  - [挖掘房-Cheese Room](#挖掘房-cheese-room)
   - [慢速房-Slow Room](#慢速房-slow-room)
   - [地图房-Map Room](#地图房-map-room)
-  - [组队房-Team Room](#组队房-team-room)
 - [单人游戏-Singleplayer](#单人游戏-singleplayer)
   - [竞速模式-Sprint](#竞速模式-sprint)
   - [挖掘竞速-Cheese Race](#挖掘竞速-cheese-race)
@@ -132,14 +130,6 @@ Misamino是目前已知的最强bot之一 ~~zzz尚未嵌入到js当中，等一�
 **单挑房-1v1 Room**最多只能 2 人同时游玩，不过即使满人了其他人也可以进房旁观。来1v1 Room，和你的朋友，或者旗鼓相当的对手一决高下吧！
 
 如果你在记录分数，想要清空计分榜重新计分的话，使用指令`/resetCounter`就可以重置积分到0。
-
-[\[回到目录\]](#目录-table-of-contents)
-
-### 挖掘房-Cheese Room
-
-发送垃圾行，是多人游戏中KO对手的主要方式。而挖掘垃圾行进行防御就成为了一个重要的能力。**挖掘房-Cheese Room**，也称作~~瑞士~~奶酪房间 ~~出自C2~~ ，就是练习挖掘能力的好去处。在这个房间里，你不需要发送垃圾行打向对手，只需要用最快速度完成对现有垃圾行的10行挖掘以获胜。
-
-10行太简单了？使用`/set height [lines]`来更换起始行数（1~20）！
 
 [\[回到目录\]](#目录-table-of-contents)
 
