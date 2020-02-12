@@ -27,8 +27,8 @@
   - [限时极限-Ultra](#限时极限-ultra)
   - [生存模式-Survival](#生存模式-survival)
   - [地图-Maps](#地图-maps)
-  - [20TSD/T2](#20TSDT2)
-  - [全清模式-PC mode](#全清模式-PC-mode)
+  - [20TSD/T2](#20tsdt2)
+  - [全清模式-PC mode](#全清模式-pc-mode)
 - [系统设置-Configuration](#系统设置-configuration)
   - [攻击连击表-Attack and Combo table](#攻击连击表-attack-and-combo-table)
   - [垃圾行分配方式-Garbage Distribution](#垃圾行分配方式-garbage-distribution)
@@ -302,7 +302,7 @@ Misamino是目前已知的最强bot之一 ~~zzz尚未嵌入到js当中，等一�
 
 **大方块-Big** 比基本方块要大4倍（面积），这些方块可以在游戏过程中造成巨大的伤害。
 
-**Arika旋转系统-ARS** 即以方块大师系列的Arika旋转系统（Arika Rotation System），并附有CC检测。由NueSB实现
+**Arika旋转系统-ARS** 即方块大师系列的Arika旋转系统（Arika Rotation System），并附有CC检测。由NueSB实现。
 
 **五连方块-Penta** 即每个方块都是五连方块。一共有18种不同的五连方块。~~伤脑筋十八块~~ 
 
@@ -310,9 +310,9 @@ Misamino是目前已知的最强bot之一 ~~zzz尚未嵌入到js当中，等一�
 
 **29种全-All-29** 1,2,3,4,5连方块全部都有, 总计29种不同方块. 由基本方块（7）、123连方块（4）和五连方块（18）组合而成。
 
-**C2旋转系统-C2RS** 基本方块，使用C2的旋转系统。
+**C2旋转系统-C2RS** 在基本方块之上，使用C2的旋转系统。
 
-**O型回旋-O-spin** 玩梗性质的旋转系统。可以完成O转消三（2次顺时针）和O转消四（1次逆时针）。此外，还允许其他非常规旋转（踢墙级别为15，SRS只有4）。
+**O型回旋-O-spin** 玩梗性质的旋转系统。可以完成O转消三（2次顺时针）和O转消四（1次逆时针）。此外还允许其他非常规旋转（踢墙级别为15，相对的SRS只有4）。
 
 ### 序列生成器-Randomizer
 
