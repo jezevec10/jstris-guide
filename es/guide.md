@@ -29,10 +29,10 @@ Bienvenido a Jstris, un sencillo juego de bloques en linea. Jstris es conocido p
   - [Aleatorizador](#aleatorizador)
   - [Vistas Previas](#vistas-previas)
   - [Basura Solida](#basura-solida)
-  - [Retraso de Bloqueo](#retraso-de-bloqueo)
-  - [Retraso de Limpieza](#retraso-de-limpieza)
+  - [Demora de Bloqueo](#demora-de-bloqueo)
+  - [Demora de Limpieza](#demora-de-limpieza)
   - [Gravedad lvl](#gravedad-lvl)
-  - [Retraso de Basura](#retraso-de-basura)
+  - [Demora de Basura](#demora-de-basura)
   - [Desorden](#desorden)
   - [Configuración de Preajustes](#Configuración-de-preajustes)
   - [Modo](#modo)
@@ -106,75 +106,74 @@ La velocidad del bot puede ser cambiada. para hacer esto, escribe `/bot ?` y rem
 
 La sala **1v1 Room** tiene un máximo de 2 jugadores, aunque eres libre de venir a observar aunque la sala esté llena. Usa esta sala para arreglar diferencias con tus amigos o para jugar en contra de algun jugador digno. Si están contando el puntaje, y quieres restablecerlo, escribe `/resetCounter` y todos los puntos volverán a 0.
 
-### Slow Room
+### Sala Lenta
 
-Want to play with a friend but the skill level between yourselves is too great? Or you’re just getting started and tired of losing instantly in the pro-dominated Bot Room? Or you want to improve efficiency in your game by taking speed out of the equation? There’s a Slow Room in place for all those occasions. The default Slow Room's speed limit is set at 2.0 PPS, which means a player cannot go over 2.0 PPS. Any attempts to go faster will result in the player’s screen being temporarily locked. In addition to the speed limit, the Slow Room has a line clear delay of 500 milliseconds. That means for each line(s) you clear, you will have to wait 500 ms before you can play again. All Slow Rooms are indicated by the little speedometer icon - [SPEEDOMETER_ICON]. Custom Slow rooms can have any speed limit from 0 PPS to 20 PPS.
+Quiéres jugar con un amigo pero la diferencia de habilidades entre ustedes es muy grande? O solo vas empezando y te estás cansando de perder inmediatamente en la Sala del Bot llena de jugadores pro? O quieres mejorar tu eficiencia al quitar la velocidad de la ecuación? Hay una Sala Lenta para todas esas ocaciones. La velocidad predeterminada de la sala está puesta a 2.0 PPS, lo que significa que un jugador no puede ir a más de 2.0 PPS. Cualquier intentro de ir más rápido, resultará en el bloqueo temporal de la pantalla del jugador. Adicionalmente al limite de velocidad, la Sala Lenta tiene un retrazo de limpieza de linea de 500 milisegundos. Eso significa que por cada linea que limpies, tendrás que esperar 500ms antes de poder jugar otra vez. Todos las Salas Lentas están indicadas con un icono de un velocímetro. - [SPEEDOMETER_ICON]. Salas Lentas personalizadas pueden tener cualquier limite de velocidad, desde 0 PPS a 20PPS.
 
 ![the lobby, where you can join and create rooms][image5]
 
-### Map Room
+### Sala de Mapa
 
-The **Map Room** is a place to downstack the fastest through randomly-chosen, user-created Mapas. The (D=?%) displayed next to each map is the difficulty percentile of the map, with 0% being the easiest and 100% being the hardest. Mapas with Perfect Clear Finish requirement are not included among the Mapas.
+El **Map Room** es un lugar para hacer downstack lo más rápido posible en mapas elegidos aleatoreamente, creados por usuarios. El (D=?%) que aparece a un lado de cada mapa es la dificultad promedio del mapa, con 0% siendo el más fácil y 100% el más difícil. Mapas que requieren un final con Perfect Clear no son incluidos en la sala.
 
 ---
 
-## Singleplayer
+## Un Jugador
 
-### Sprint
+### Carrera
 
-The foundation, and with the most simple objective, **Sprint** is the most popular singleplayer mode on Jstris. Clear X amount of lines as fast as you can. Jstris offers 20, 40, 100, and 1000 line Sprint modes.
+La fundación, y con el objetivo más simple, **Carrera** es el modo de un solo jugador más popular en Jstris. Limpia X cantidad de lineas lo más rápido que puedas. Jstris ofrece modos de 20, 40, 100, y 1000 lineas.
 
-### Cheese Race
+### Queso
 
-Less brash and more analytical than Sprint, **Cheese Race** requires more thinking as you downstack through garbage lines in the most efficient way. Jstris offers 10, 18, 100, and infinity line Cheese Race modes.
-
+Menos agresivo y más analítico que Carrera, **Queso** requiere pensar más mientras haces downstack a través de lineas de basura de la manera más eficiente possible. Jstris ofrece modos de 10, 18, 100, e Infinitas lineas.
 ### Ultra
 
-Score-focused and rewarding advanced techniques such as t-spins and back-to-backs, **Ultra** is a great way to improve your attacking prowess for use in Multijugador.
+Centrado en el puntaje y recompensando técnicas avanzadas como los t-spins y los back-to-back, **Ultra** es una gran manera de mejorar tu poder de ataque para uso en Multijugador.
 
 ### Supervivencia
 
-Quite possibly the most challenging of the singleplayer modes, **Supervivencia** is much like Cheese Race only the garbage rises at a constant rate of one line per second. Survive against the rising lines for as long as you can.
+Posiblemente el modo de un jugador más complicado que hay, **Supervivencia** es similar a Queso pero la basura sigue subiendo a una velocidad constante de una linea por segundo. Sobrevive por el mayor tiempo posible las lineas que continuan subiendo.
 
 ### Mapas
 
-In late 2018, the **Mapas** mode was introduced to Jstris. Mapas brings an element of creativity while also preparing players to downstack effectively in difficult and unusual positions. Create your own map in the _Map Designer_. Once published, anyone in the world can play it and compete for the fastest time. There is a limit of 5 published Mapas per day and 10 unpublished Mapas in queue. Mapas also has a leaderboard. On every map, three medals are given, Gold for 1st place, Silver for 2nd place, and Bronze for 3rd place. Score in the top three of any map to win some medals and secure your place on the leaderboard!
+A finales del 2018 el modo **Mapas** fue introducido en Jstris. Mapas atrae un elemento de creatividad a la vez que prepara a los jugadores para hacer downstack eficientemente en situaciones dificiles e inusuales. Crea tu propio mapa en el _Diseñador de Mapas_. Una vez publicado, cualquiera en el mundo puede jugarlo y competir por el tiempo más rápido. Hay un limite por usuario de 5 mapas publicados al día y 10 mapas en espera de publicación. Mapas también tiene una tabla de clasificación. En cada mapa,tres medallas son otorgadas, Oro para el 1er lugar, Plata para el 2do y Bronze para el 3ro. Consigue un lugar en el top 3 de cualquier mapa para ganar medallas y conseguir tu lugar en la tabla de clasificación!
 
-_\*Note that the Mapas leaderboards updates only a few times each day, so new changes are not immediate._
+_\*Notése que la tabla de clasificación de Mapas solo es actualizada unas pocas veces al día, así que cambios no son visibles inmediatamente._
 
 ### 20TSD
 
-The goal in this mode is to try to get as many consecutive TSDs (T-spin Double) as you can. If you clear any line that isn't a TSD, the game ends. It is named 20TSD because the original concept was to do a 40 line sprint using nothing but 20 TSDs (20 x 2 = 40). However, some people have gone beyond that and now regularly exceed 20.
+La meta en este modo es conseguir la mayor cantidad de TSDs (T-spin Dobles) posible. Si limpeas cualquier linea que no sea un TSD, el juego termina. Es llamado 20TSD porque el concepto original era hacer una carrera de 40 lineas usando solamente 20 TSDs (20 x 2 = 40). Sin embargo, algunas personas han ido más allá de eso y ahora regularmente exceden 20.
 
 ---
 
 ## Configuración
 
-To see the Configuración of any room on Jstris, use the command `/config`. Now we will go over each of the settings.
+Para ver la configuración de cualquier sala de Jstris, usa el comando `/config`. Ahora veremos todas las configuraciones.
 
-### Attack and Combo table
+### Tablas de Combo y Ataque
 
-The default attack and combo table in Jstris (which can be customized in private rooms) is as follows:
+La tabla de Combo y Ataque predeterminada en Jstris (que puede ser modificada en salas personalizadas) es la siguiente:
 
-| Attack Type        | Lines Sent |     | Combo # | Lines Sent |
-| :----------------- | ---------: | --- | ------: | ---------: |
-| 0 lines            |      **0** |     |       0 |      **0** |
-| 1 lines (single)   |      **0** |     |       1 |      **0** |
-| 2 lines (double)   |      **1** |     |       2 |      **1** |
-| 3 lines (triple)   |      **2** |     |       3 |      **1** |
-| 4 lines            |      **4** |     |       4 |      **1** |
-| T-spin Double      |      **4** |     |       5 |      **2** |
-| T-spin Triple      |      **6** |     |       6 |      **2** |
-| T-spin Single      |      **2** |     |       7 |      **3** |
-| T-spin Mini Single |      **0** |     |       8 |      **3** |
-| Perfect Clear      |     **10** |     |       9 |      **4** |
-| Back-to-Back       |     **+1** |     |      10 |      **4** |
-|                    |            |     |      11 |      **4** |
-|                    |            |     |     12+ |      **5** |
+| Tipo de Ataque      | Lineas Enviadas |     | Combo # | Lineas Enviadas |
+| :------------------ | --------------: | --- | ------: | --------------: |
+| 0 lineas            |      **0**      |     |       0 |      **0**      |
+| 1 lineas (single)   |      **0**      |     |       1 |      **0**      |
+| 2 lineas (double)   |      **1**      |     |       2 |      **1**      |
+| 3 lineas (triple)   |      **2**      |     |       3 |      **1**      |
+| 4 lineas            |      **4**      |     |       4 |      **1**      |
+| T-spin Doble        |      **4**      |     |       5 |      **2**      |
+| T-spin Triple       |      **6**      |     |       6 |      **2**      |
+| T-spin Single       |      **2**      |     |       7 |      **3**      |
+| T-spin Mini Single  |      **0**      |     |       8 |      **3**      |
+| Perfect Clear       |     **10**      |     |       9 |      **4**      |
+| Back-to-Back        |     **+1**      |     |      10 |      **4**      |
+|                     |                 |     |      11 |      **4**      |
+|                     |                 |     |     12+ |      **5**      |
 
 ### Distribución de Basura
 
-There are 8 different systems in how garbage is sent around during Multijugador matches. They are as follows:
+Existen 8 maneras distintas en la que la basura es enviada en partidas multijugador. Son las siguientes:
 
 - Targets `/set garbage targets`
 - Divide `/set garbage divide`
@@ -185,49 +184,49 @@ There are 8 different systems in how garbage is sent around during Multijugador 
 - Random `/set garbage random`
 - Roulette `/set garbage roulette`
 
-**Targets** is always the default (except in the Team Room) and by far the most popular. In Targets, a target is rotated around every opponent in the room, in equal and fixed increments, and whoever the target was landed on at the moment you send garbage is the one who gets that garbage you sent.
+**Targets** siempre es el predeterminado (excepto en la Sala de Equipos) y el más popular. En Targets, Se rota un objetivo alrededor de cada oponente en la sala, en incrementos iguales y fijos, y quien sea que haya tenido el objetivo en el momento en que se envía basura es el que recibe esa basura enviada.
 
-In the **Divide** garbage distribution system (GDS), any garbage you send is equally divided among all players. For example, in a room with 2 other opponents, if you send a T-spin Double (4 lines), each of your opponents will get 2 lines.
+En el sistema de distribución **Divide**, cualquier basura enviada se divide por igual entre todos los jugadores. Por ejemplo, en una sala con otros 2 oponentes, si envías un T-spin doble (4 líneas), cada uno de tus oponentes recibirá 2 líneas.
 
-In the **To all** GDS, any garbage you send is sent to every player in the room. For example, in a room with 4 opponents, if you send a Perfect Clear (10 lines), all 4 opponents will recieve 10 lines each, or a total of 40 lines. As you can surmise from the example, rooms with To all garbage tend to be hectic, with fast rising garbage and characteristically short games.
+En el sistema **To all**, cualquier basura enviada se envía a todos los jugadores en la sala. Por ejemplo, en una sala con 4 oponentes, si se envía un Perfect Clear (10 líneas), los 4 oponentes recibirán 10 líneas cada uno, o un total de 40 líneas. Como se puede deducir del ejemplo, las salas con basura para todos tienden a ser agitadas, con basura que crece rápidamente y juegos característicamente cortos.
 
-In the **To least** GDS, garbage you send is sent to the player who had _recieved_ the least garbage so far. For example, in a room with 3 other opponents, you send 4 lines. Opponent A received 50 lines in the game already at the moment you sent the attack. Opponent B received 53. Opponent C received 58. Because Opponent A received the least lines so far, the 4 lines from your line clear will be sent to him.
+En el sistema **To least**, La basura que envíes se envía al jugador que haya _recibido_ la menor cantidad de basura hasta el momento. Por ejemplo, en una habitación con otros 3 oponentes, envías 4 líneas. El oponente A recibió 50 líneas en el juego en el momento en que enviaste el ataque. El oponente B recibió 53. El oponente C recibió 58. Debido a que el oponente A recibió la menor cantidad de líneas hasta el momento, se le enviarán las 4 líneas a él.
 
-In the **To most** GDS, garbage you send is sent to the player who had _sent_ the most garbage so far. In essence, you are attacking the strongest player in the room.
+En el sistem **To most**, la basura que envíes se envía al jugador que ha _enviado_ la mayor cantidad de basura hasta el momento. En esencia, estás atacando al jugador más fuerte de la sala.
 
-In the **To self** GDS, garbage you send is sent to yourself. Impractical in Multijugador, but one might find it helpful to practice with it alone.
+En el sistema **To self**, la basura que envías se te envía a ti mismo. No es práctico en Multijugador, pero uno puede encontrar útil practicar con él.
 
-In the **Random** GDS, garbage you send is sent to any random player. Arguably the most fair GDS.
+En el sistema **Random**,la basura que envías se envía a cualquier jugador aleatorio. Posiblemente el sistema más justo.
 
-In the **Roulette** GDS, garbage you send is sent to any random player, _including yourself_.
+En el sistema **Roulette**, la basura que envías se envía a cualquier jugador aleatorio, _incluido tu mismo_.
 
 ### Bloqueo de Basura
 
-There are 4 types of garbage blocking systems on Jstris. They are:
+Hay 4 tipos de sistemas de bloqueo de basura en Jstris. Son:
 
 - Full
 - Limited
 - None
 - Instant
 
-**Full** is the default blocking system on Jstris. Other clients that use Full are _TF_ (e+ rooms) and _TOP_. Under the Full garbage blocking system, incoming garbage appears as a red bar to your right. It doesn’t rise up on your playfield, however, until you place a piece down. The incoming garbage can be reduced with sent lines (such as a 4 lines) and, if you have already started a combo, will pause completely until you finish the combo.
+**Full** es el sistema de bloqueo predeterminado en Jstris. Otros clientes que usan Full son _TF_ (e + rooms) y _TOP_. Bajo el sistema de bloqueo de basura Full, la basura entrante aparece como una barra roja a su derecha. Sin embargo, no se añade a tu campo de juego hasta que colocas una pieza. La basura entrante se puede reducir con líneas enviadas (como 4 líneas) y, si ya ha comenzado un combo, se detendrá por completo hasta que termine el combo.
 
-**Limited** blocking system is very similar to Full but with one difference. Incoming garbage is inserted as soon as you drop a piece, regardless of whether a combo was started already or not. In other words, incoming garbage does not pause during combos the way Full does. Like in Full, incoming garbage can be reduced with sent lines. Clients that use Limited include _PPT_ and _TB_ and _TF_ (non e+ rooms).
+El sistema de bloqueo **Limited**  es muy similar a Full pero con una diferencia. La basura entrante se añade tan pronto como suelta una pieza, independientemente de si un combo ya se inició o no. En otras palabras, la basura entrante no se detiene durante los combos como lo hace Full. Al igual que en Full, la basura entrante se puede reducir con líneas enviadas. Los clientes que usan Limited incluyen _PPT_ y _TB_ y _TF_ (salas que no son e +).
 
-In the **None** blocking system, garbage can never be reduced or cancelled. Incoming garbage will first appear as a red bar (like in Full and Limited) and then be inserted into your playfield as soon as you drop a piece. If an opponent sends you 10 lines, even if you clear 4 lines as your next piece, the garbage will not reduce to 6. Instead, you will still recieve 10 lines while sending 4 to your opponent.
+En el sistema de bloqueo **None**, la basura nunca se puede reducir o cancelar. La basura entrante aparecerá primero como una barra roja (como en Full y Limited) y luego se insertará en su campo de juego tan pronto como suelte una pieza. Si un oponente te envía 10 líneas, incluso si eliminas 4 líneas con tu próxima pieza, la basura no se reducirá a 6. En cambio, recibirás 10 líneas mientras envías 4 a tu oponente.
 
-In the **Instant** blocking system, there is no red bar at all. The moment an opponent sends an attack, its garbage will rise up on your field. There is no blocking it.
+En el sistema de bloqueo **Instant**, no hay barra roja en absoluto. En el momento en que un oponente envía un ataque, su basura se añadira a su campo. No hay forma de bloquearlo.
 
-|         | Red bar (queue) | Blocking? |
-| ------- | :-------------: | :-------: |
-| Full    |       Yes       |    Yes    |
-| Limited |       Yes       |    Yes    |
-| None    |       Yes       |    No     |
-| Instant |       No        |    No     |
+|         | Barra Roja(queue) | Bloqueo?  |
+| ------- | :---------------: | :-------: |
+| Full    |       Sí          |    Sí     |
+| Limited |       Sí          |    Sí     |
+| None    |       Sí          |    No     |
+| Instant |       No          |    No     |
 
 ### Bloques
 
-There are 8 different types of blocks.
+Hay 8 tipos diferentes de bloques.
 
 - Standard
 - Big
@@ -238,25 +237,25 @@ There are 8 different types of blocks.
 - C2RS
 - O-spin
 
-**Standard** These are the most widely used and basic tetrominoes you are probably most familiar with. These are the default blocks.
+**Standard** Estos son los tetrominos más utilizados y básicos con los que probablemente estés más familiarizado. Estos son los bloques predeterminados.
 
-**Big** Four times bigger than your standard blocks, these blocks will deal out massive damage when played with.
+**Big** Cuatro veces más grande que tus bloques estándar, estos bloques causarán un daño masivo cuando juegues con ellos.
 
-**ARS** Standard blocks with ARS (Arika rotation system), including CC-check. Implementation by NueSB
+**ARS** Bloques estándar con ARS (sistema de rotación Arika), incluido CC-check. Implementación por NueSB.
 
-**Penta** These blocks are pentominoes. There are 18 unique pentominoes.
+**Penta** Estos bloques son pentominos. Hay 18 pentominos únicos.
 
-**M123** Minos of sizes 1,2,3. There are 4 unique M123 blocks.
+**M123** Minos de tamaño 1,2,3. Hay 4 bloques M123 únicos.
 
-**All-29** All minos of sizes 1,2,3,4,5, totaling 29 unique minos. A combination of 7 Standard, 4 M123, and 18 Penta blocks.
+**All-29** Todos los minos de tamaños 1,2,3,4,5, con un total de 29 minos únicos. Una combinación de 7 bloques Standard, 4 M123 y 18 Penta.
 
-**C2RS** Standard blocks with the Cultris 2 rotation system
+**C2RS** Bloques estándar con el sistema de rotación de Cultris 2
 
-**O-spin** A meme rotation system where O-spin triple (2xCW) and O-spin quadruple (1xCCW) are possible. Also, other unconventional spins are allowed (due to the kick table which has 15 kick levels as opposed to SRS which has 4).
+**O-spin** Un sistema de rotación de meme donde O-spin triple (2xCW) y O-spin quadruple (1xCCW) son posibles. Además, se permiten otros giros no convencionales (debido a la kick tbale que tiene 15 niveles de patada en lugar de SRS que tiene 4).
 
 ### Aleatorizador
 
-Randomizers are basically the formula for what and what order blocks you get. Jstris has 11 different randomizers. They are:
+Los aleatorizadores son básicamente la fórmula de qué bloques y en qué orden obtienes. Jstris tiene 11 aleatorizadores diferentes. Son:
 
 - 7-bag
 - 14-bag
@@ -270,68 +269,68 @@ Randomizers are basically the formula for what and what order blocks you get. Js
 - BSblock+7b
 - BigBlock+7b
 
-**7-bag** is the standard and default randomizer. Imagine a small bag with 1 each of the 7 different blocks. Now you draw out, one by one, a piece until the bag is empty. Then you get a new bag with again 1 each of the 7 different blocks. Now you draw out one by one once more. Repeat. This is how the 7-bag randomizer works.
+**7-bag** es el aleatorizador estándar y predeterminado. Imagine una bolsa pequeña con 1 de cada uno de los 7 bloques diferentes. Ahora extrae, una por una, una pieza hasta que la bolsa esté vacía. Luego obtienes una nueva bolsa con nuevamente 1 de cada uno de los 7 bloques diferentes. Ahora sacas uno por uno una vez más. Repites. Así es como funciona el aleatorizador de 7-bag.
 
-**14-bag** is much like 7-bag only the bag is doubled in size, with 2 of each of the 7 blocks. Once again, you draw out each piece from the bag, one by one, until the bag is empty. Rinse and repeat.
+**14-bag** es muy similar a 7-bag, solo que la bolsa tiene el doble de tamaño, con 2 de cada uno de los 7 bloques. Una vez más, extrae cada pieza de la bolsa, una por una, hasta que la bolsa esté vacía. Enjuague y repita.
 
-**Classic** randomizer gives you completely random pieces. This randomizer makes stacking very challenging.
+**Classic** te da piezas completamente al azar. Este aleatorizador hace que stackear sea muy desafiante.
 
-**C2Sim** A simulation of the Cultris 2 randomizer, described in this [post by Integration](http://harddrop.com/forums/index.php?showtopic=5080&st=0&p=71443&#entry71443)
+**C2Sim** Una simulación del aleatorizador Cultris 2, descrita en este [post](http://harddrop.com/forums/index.php?showtopic=5080&st=0&p=71443&#entry71443)
 
-**One block** This randomizer gives you a randomly selected block is chosen for you at the start and you will get only that specific block for the whole game.
+**One block** Este aleatorizador te da un bloque seleccionado al azar que se elige para ti al principio y obtendrás solo ese bloque específico por el resto de el juego.
 
-**Two block** This randomizer is like the One Block one, only it alternates between two specific blocks instead.
+**Two block** Este aleatorizador es como el One Block, solo que alterna entre dos bloques específicos.  
 
-**One 7-bag** The same bag of 7 pieces is repeated indefinitely. Using this randomizer, you will get the same sequence of 7 pieces over and over.
+**One 7-bag**La misma bolsa de 7 piezas se repite indefinidamente. Usando este aleatorizador, obtendrás la misma secuencia de 7 piezas una y otra vez.
 
-**One 14-bag** The same bag of 14 pieces is repeated indefinitely. Using this randomizer, you will get the same sequence of 14 pieces over and over.
+**One 14-bag** La misma bolsa de 14 piezas se repite indefinidamente. Usando este aleatorizador, obtendrás la misma secuencia de 14 piezas una y otra vez.
 
-**Repeat+7b** Works like 7-bag, only any piece in the bag has a chance of being repeated anywhere from 1-7 times.
+**Repeat+7b** Funciona como 7-bag, solo que cualquier pieza de la bolsa tiene la posibilidad de repetirse entre 1 y 7 veces.
 
-**BSblock+7b** Normal 7-bag, with the exception that pieces from different Block Sets (hence the BS in the name), like pentominoes or Big Blocks, may appear.
+**BSblock+7b** 7-bag normal, con la excepción de que pueden aparecer piezas de diferentes conjuntos de bloques (de ahí la BS block set en el nombre), como pentominos o bloques grandes.
 
-**BigBlock+7b** Normal 7-bag, with the exception that Big Blocks may appear.
+**BigBlock+7b** 7-bag normal, con la excepción de que pueden aparecer bloques grandes.
 
-### Previews
+### Vistas Previas
 
-Jstris has a default of 5 previews. In custom rooms, you can set anywhere from 0 to 5 previews.
+Jstris tiene un valor predeterminado de 5 vistas previas. En salas personalizadas, puede establecer entre 0 y 5 vistas previas.
 
-### Solid Garbage
+### Basura Solida
 
-Solid garbage are unclearable lines that rise up from the bottom to “hurry up” the game so it doesn’t extend indefinitely. They are slightly darker than normal garbage lines. In the Bot Room, solid garbage by default starts to come after 2 minutes. Solid garbage is also customizable in custom rooms.
+La basura sólida son líneas que no puedes limpear y que se elevan desde la parte inferior para "apurar" el juego, para que no se extienda indefinidamente. Son ligeramente más oscuros que las líneas de basura normales. En la sala de bot, la basura sólida por defecto comienza a llegar después de 2 minutos. La basura sólida también se puede personalizar en habitaciones personalizadas.
 
 ![Solid Garbage][image7]
 
-### Lock Delay
+### Demora de Bloqueo
 
-Lock delay refers to how much time a piece can wait on the ground before locking into place. In Jstris, there are three types of lock delays you can customize. The first one, L1, controls how many milliseconds after a piece is softdropped to the ground until it locks. The default L1 delay is 500 milliseconds. The second one, L2, controls how many milliseconds after a piece is softdropped to the ground and is kept in motion by moving left or right until it locks. The default L2 delay is 5000 milliseconds. Note that if a piece is rotated, the L2 is reset and the piece can stay on longer than 5000 milliseconds, which brings us to L3. The third one, L3, is the maximum amount of time a piece that enters the matrix can stay on before it autolocks, no matter what. The default L3 delay is 20000 milliseconds.
+La Demora de Bloqueo se refiere a cuánto tiempo puede esperar una pieza en el suelo antes de bloquearse en su lugar. En Jstris, hay tres tipos de demoras de bloqueo que puede personalizar. El primero, L1, controla los milisegundos que pueden pasar después de que una pieza se deja caer suavemente al suelo hasta que se bloquea. La demora predeterminada de L1 es de 500 milisegundos. El segundo, L2, controla cuántos milisegundos después de que una pieza se deja caer suavemente al suelo y se mantiene en movimiento moviéndose hacia la izquierda o hacia la derecha hasta que se bloquea. La demora predeterminada de L2 es de 5000 milisegundos. Tenga en cuenta que si una pieza se gira, la L2 se reinicia y la pieza puede permanecer más de 5000 milisegundos, lo que nos lleva a L3. El tercero, L3, es la cantidad máxima de tiempo que una pieza que ingresa a la matriz puede permanecer activa antes de que se bloquee automáticamente, pase lo que pase. La demora predeterminada de L3 es de 20000 milisegundos.
 
-### Clear Delay
+### Demora de Limpieza
 
-Clear delay is a fixed amount of time that passes after you clear any line(s). During this time, you can’t do anything. Many classic block games and PPT use clear delay, but Jstris by default has 0 delay, and for the most part it is never used here. However, it is customizable if you want to turn it on. Its range is 0 milliseconds to 6000 milliseconds.
+La Demora de Limpeza es una cantidad fija de tiempo que transcurre después de que limpia cualquier línea. Durante este tiempo, no puedes hacer nada. Muchos juegos de bloques clásicos y PPT usan un retraso, pero Jstris por defecto tiene un retraso de 0, y en su mayor parte nunca se usa aquí. Sin embargo, es personalizable si desea activarlo. Su rango es de 0 milisegundos a 6000 milisegundos.
 
-### Gravity lvl
+### Gravedad lvl
 
-Gravity level refers to the rate at which the pieces fall down the matrix automatically. The Gravity can be adjusted from levels 0-28. The default Gravity is 1. If gravity is 0, the piece will not fall down at all until it is autolocked after the 20 second L3 lock delay (see section Lock Delay). A Gravity level of 28 is equal to 20G, which means pieces will instantly fall from the top to bottom.
+El nivel de gravedad se refiere a la velocidad a la que las piezas caen por la matriz automáticamente. La gravedad se puede ajustar desde los niveles 0-28. La gravedad predeterminada es 1. Si la gravedad es 0, la pieza no se caerá hasta que se bloquee automáticamente después de la demora de bloqueo L3 de 20 segundos (consulte la sección Demora de bloqueo). Un nivel de gravedad de 28 es igual a 20G, lo que significa que las piezas caerán instantáneamente de arriba a abajo.
 
-### Garbage Delay
+### Demora de Basura
 
-Garbage delay is a fixed amount of time between the incoming garbage indicated by the red bar and the insertion of that garbage into the playfield. By default, it is set at 500 milliseconds. It is customizable from a range of 0 milliseconds to 60000 milliseconds. A higher garbage delay allows for more pieces to be played before garbage is inserted, while a lower garbage delay allows for less pieces to be played before garbage insertion. Or in other words, the higher the garbage delay, the more opportunity it gives to block more effectively. Another way to define garbage delay is “the minimumum amount of time an incoming attack has to be visible in the red bar before a placed block can trigger the insertion of that garbage to the playfield.”
+La demora de la basura es un tiempo fijo entre la basura entrante indicada por la barra roja y la inserción de esa basura en el campo de juego. Por defecto, se establece en 500 milisegundos. Es personalizable desde un rango de 0 milisegundos a 60000 milisegundos. Una demora de basura más alto permite que se jueguen más piezas antes de insertar la basura, mientras que una demora de basura más bajo permite que se jueguen menos piezas antes de la inserción de basura. O, en otras palabras, cuanto mayor sea la demora de la basura, más oportunidades da para bloquear de manera más efectiva. Otra forma de definir la demora de la basura es "la cantidad mínima de tiempo que un ataque entrante tiene que ser visible en la barra roja antes de que un bloque colocado pueda desencadenar la inserción de esa basura en el campo de juego".
 
-### Messiness
+### Desorden
 
-Garbage messiness refers to the difficulty level to clear certain types of garbage. To change the messiness of garbage in a room, use the command `/set messiness ?`, where the ? is replaced with any number from -100 to 100. -100 is the least messy garbage Configuración, and the garbage hole will only appear in one column throughout the entirety of the game (left picture). 100 is the most messy garbage Configuración and the garbage hole will appear in any of the 10 columns, making it much more difficult to downstack (right picture).
+El desorden de basura se refiere al nivel de dificultad para limpiar ciertos tipos de basura. Para cambiar el desorden de la basura en una habitación, use el comando `/ set messiness?`, Donde el ? se reemplaza con cualquier número de -100 a 100. -100 es la configuración de basura menos desordenada, y el agujero de basura solo aparecerá en una columna a lo largo de todo el juego (imagen izquierda). 100 es la configuración de basura más desordenada y el agujero de basura aparecerá en cualquiera de las 10 columnas, lo que hace que sea mucho más difícil de apilar (imagen derecha).
 
 ![Unmessy (-100)][image10]
 ![Messy (100)][image1]
 
-### Configuración presets
+### Configuración de Presets
 
-If there is a room settings Configuración you particularly like and want to easily refer back to, you can save the settings as a preset.
+Si hay una configuración de sala que le guste especialmente y deseas volver a consultar fácilmente, puede guardar la configuración como un preset.
 
-To do this, go to _Lobby_, then _Create Room_, then either the _Simple_ or _All_ tab. Once you have customized the settings to your liking, hit the _Save_ button at the bottom right corner to generate your preset data. Copy it, then paste it in the box next to Preset data on the [Submit a preset](/presets/submit) page.
+Para hacer esto, vaya a _Salas_, luego _Crear Sala_, luego a la pestaña _Simple_ o _Todo_. Una vez que haya personalizado la configuración a su gusto, presione el botón _Guardar_ en la esquina inferior derecha para generar sus datos preestablecidos. Cópielo, luego péguelo en el cuadro junto a Datos preestablecidos en la página [Subir una nueva plantilla](/presets/submit).
 
-Once you’ve submitted the preset, you can view it, along with all other user-submitted presets on the [List of presets](/presets). Now you can easily recreate the same room without customizing all the settings again. Just go to _Create Room_, then _Use Custom Preset_, and enter either the title or ID number of your preset.
+Una vez que haya enviado el ajuste preestablecido, puede verlo, junto con todos los demás ajustes preestablecidos enviados por otros usuarios en la [Lista de ajustes preestablecidos](/presets). Ahora puede recrear fácilmente la misma habitación sin tener que volver a personalizar todos los ajustes. Simplemente vaya a _Crear Sala_, luego _Usar Plantilla Personalizada_ e ingrese el título o el número de ID de su preset.
 
 ### Mode
 
