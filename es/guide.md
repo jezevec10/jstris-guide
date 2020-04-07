@@ -25,7 +25,7 @@ Bienvenido a Jstris, un sencillo juego de bloques en linea. Jstris es conocido p
   - [Tablas de Combo y Ataque](#tablas-de-combo-y-ataque)
   - [Distribución de Basura](#distribución-de-basura)
   - [Bloqueo de Basura](#bloqueo-de-basura)
-  - [Bloques](#Bloques)
+  - [Bloques](#bloques)
   - [Aleatorizador](#aleatorizador)
   - [Vistas Previas](#vistas-previas)
   - [Basura Solida](#basura-solida)
@@ -34,16 +34,16 @@ Bienvenido a Jstris, un sencillo juego de bloques en linea. Jstris es conocido p
   - [Gravedad lvl](#gravedad-lvl)
   - [Demora de Basura](#demora-de-basura)
   - [Desorden](#desorden)
-  - [Configuración de Preajustes](#Configuración-de-preajustes)
-  - [Modo](#modo)
+  - [Configuración de Preajustes](#configuración-de-preajustes)
+  - [Modos](#modos)
 - [Preguntas Frecuentes](#faq)
-  - [Q: Puedo agregar un bot a mi sala personalizada o privada?](#q-puedo-agregar-un-bot-a-mi-sala-personalizada-o-privada)
-  - [Q: Qué significan las abreviaciones en la tabla de resultados?](#q-qué-signigican-las-abreviaciones-en-la-tabla-de-resultados?)
-  - [Q:Qué es DAS?](#q-que-es-das)
-  - [Q:Qué es ARR?](#q-que-es-arr)
-  - [Q:Qué es finesse?](#q-que-es-finesse)
-  - [Q: Puedo crear una sala privada?](#q-puedo-crear-una-sala-privada)
-  - [Q: Puedo jugar jstris desconectado?](#q-puedo-jugar-jstris-desconectado)
+  - [Q: ¿Puedo agregar un bot a mi sala privada o personalizada?](#q-¿puedo-agregar-un-bot-a-mi-sala-privada-o-personalizada?)
+  - [Q: ¿Qué significan esas abreviaturas en la tabla de resultados?](#q-¿qué-significan-esas-abreviaturas-en-la-tabla-de-resultados?)
+  - [Q:¿Qué es el DAS?](#q-¿qué-es-el-das?)
+  - [Q:¿Qué es el ARR?](#q-¿qué-es-el-arr?)
+  - [Q:¿Qué es el Finesse?](#q-¿qué-es-el-finesse?)
+  - [Q: ¿Puedo crear una sala privada?](#q-¿puedo-crear-una-sala-privada?)
+  - [Q: ¿Puedo jugar jstris sin conexión?](#q-¿puedo-jugar-jstris-sin-conexión?)
 - [Información Adicional](#información-adicional)
 
 ---
@@ -127,6 +127,7 @@ La fundación, y con el objetivo más simple, **Carrera** es el modo de un solo 
 ### Queso
 
 Menos agresivo y más analítico que Carrera, **Queso** requiere pensar más mientras haces downstack a través de lineas de basura de la manera más eficiente possible. Jstris ofrece modos de 10, 18, 100, e Infinitas lineas.
+
 ### Ultra
 
 Centrado en el puntaje y recompensando técnicas avanzadas como los t-spins y los back-to-back, **Ultra** es una gran manera de mejorar tu poder de ataque para uso en Multijugador.
@@ -150,26 +151,27 @@ La meta en este modo es conseguir la mayor cantidad de TSDs (T-spin Dobles) posi
 ## Configuración
 
 Para ver la configuración de cualquier sala de Jstris, usa el comando `/config`. Ahora veremos todas las configuraciones.
+PresetsPresetsPresets
 
 ### Tablas de Combo y Ataque
 
 La tabla de Combo y Ataque predeterminada en Jstris (que puede ser modificada en salas personalizadas) es la siguiente:
 
-| Tipo de Ataque      | Lineas Enviadas |     | Combo # | Lineas Enviadas |
-| :------------------ | --------------: | --- | ------: | --------------: |
-| 0 lineas            |      **0**      |     |       0 |      **0**      |
-| 1 lineas (single)   |      **0**      |     |       1 |      **0**      |
-| 2 lineas (double)   |      **1**      |     |       2 |      **1**      |
-| 3 lineas (triple)   |      **2**      |     |       3 |      **1**      |
-| 4 lineas            |      **4**      |     |       4 |      **1**      |
-| T-spin Doble        |      **4**      |     |       5 |      **2**      |
-| T-spin Triple       |      **6**      |     |       6 |      **2**      |
-| T-spin Single       |      **2**      |     |       7 |      **3**      |
-| T-spin Mini Single  |      **0**      |     |       8 |      **3**      |
-| Perfect Clear       |     **10**      |     |       9 |      **4**      |
-| Back-to-Back        |     **+1**      |     |      10 |      **4**      |
-|                     |                 |     |      11 |      **4**      |
-|                     |                 |     |     12+ |      **5**      |
+| Tipo de Ataque     | Lineas Enviadas |     | Combo # | Lineas Enviadas |
+| :----------------- | --------------: | --- | ------: | --------------: |
+| 0 lineas           |           **0** |     |       0 |           **0** |
+| 1 lineas (single)  |           **0** |     |       1 |           **0** |
+| 2 lineas (double)  |           **1** |     |       2 |           **1** |
+| 3 lineas (triple)  |           **2** |     |       3 |           **1** |
+| 4 lineas           |           **4** |     |       4 |           **1** |
+| T-spin Doble       |           **4** |     |       5 |           **2** |
+| T-spin Triple      |           **6** |     |       6 |           **2** |
+| T-spin Single      |           **2** |     |       7 |           **3** |
+| T-spin Mini Single |           **0** |     |       8 |           **3** |
+| Perfect Clear      |          **10** |     |       9 |           **4** |
+| Back-to-Back       |          **+1** |     |      10 |           **4** |
+|                    |                 |     |      11 |           **4** |
+|                    |                 |     |     12+ |           **5** |
 
 ### Distribución de Basura
 
@@ -211,18 +213,18 @@ Hay 4 tipos de sistemas de bloqueo de basura en Jstris. Son:
 
 **Full** es el sistema de bloqueo predeterminado en Jstris. Otros clientes que usan Full son _TF_ (e + rooms) y _TOP_. Bajo el sistema de bloqueo de basura Full, la basura entrante aparece como una barra roja a su derecha. Sin embargo, no se añade a tu campo de juego hasta que colocas una pieza. La basura entrante se puede reducir con líneas enviadas (como 4 líneas) y, si ya ha comenzado un combo, se detendrá por completo hasta que termine el combo.
 
-El sistema de bloqueo **Limited**  es muy similar a Full pero con una diferencia. La basura entrante se añade tan pronto como suelta una pieza, independientemente de si un combo ya se inició o no. En otras palabras, la basura entrante no se detiene durante los combos como lo hace Full. Al igual que en Full, la basura entrante se puede reducir con líneas enviadas. Los clientes que usan Limited incluyen _PPT_ y _TB_ y _TF_ (salas que no son e +).
+El sistema de bloqueo **Limited** es muy similar a Full pero con una diferencia. La basura entrante se añade tan pronto como suelta una pieza, independientemente de si un combo ya se inició o no. En otras palabras, la basura entrante no se detiene durante los combos como lo hace Full. Al igual que en Full, la basura entrante se puede reducir con líneas enviadas. Los clientes que usan Limited incluyen _PPT_ y _TB_ y _TF_ (salas que no son e +).
 
 En el sistema de bloqueo **None**, la basura nunca se puede reducir o cancelar. La basura entrante aparecerá primero como una barra roja (como en Full y Limited) y luego se insertará en su campo de juego tan pronto como suelte una pieza. Si un oponente te envía 10 líneas, incluso si eliminas 4 líneas con tu próxima pieza, la basura no se reducirá a 6. En cambio, recibirás 10 líneas mientras envías 4 a tu oponente.
 
 En el sistema de bloqueo **Instant**, no hay barra roja en absoluto. En el momento en que un oponente envía un ataque, su basura se añadira a su campo. No hay forma de bloquearlo.
 
-|         | Barra Roja(queue) | Bloqueo?  |
-| ------- | :---------------: | :-------: |
-| Full    |       Sí          |    Sí     |
-| Limited |       Sí          |    Sí     |
-| None    |       Sí          |    No     |
-| Instant |       No          |    No     |
+|         | Barra Roja(queue) | Bloqueo? |
+| ------- | :---------------: | :------: |
+| Full    |        Sí         |    Sí    |
+| Limited |        Sí         |    Sí    |
+| None    |        Sí         |    No    |
+| Instant |        No         |    No    |
 
 ### Bloques
 
@@ -240,7 +242,7 @@ Hay 8 tipos diferentes de bloques.
 **Standard** Estos son los tetrominos más utilizados y básicos con los que probablemente estés más familiarizado. Estos son los bloques predeterminados.
 
 **Big** Cuatro veces más grande que tus bloques estándar, estos bloques causarán un daño masivo cuando juegues con ellos.
-
+Presets
 **ARS** Bloques estándar con ARS (sistema de rotación Arika), incluido CC-check. Implementación por NueSB.
 
 **Penta** Estos bloques son pentominos. Hay 18 pentominos únicos.
@@ -255,6 +257,7 @@ Hay 8 tipos diferentes de bloques.
 
 ### Aleatorizador
 
+Presets
 Los aleatorizadores son básicamente la fórmula de qué bloques y en qué orden obtienes. Jstris tiene 11 aleatorizadores diferentes. Son:
 
 - 7-bag
@@ -279,7 +282,7 @@ Los aleatorizadores son básicamente la fórmula de qué bloques y en qué orden
 
 **One block** Este aleatorizador te da un bloque seleccionado al azar que se elige para ti al principio y obtendrás solo ese bloque específico por el resto de el juego.
 
-**Two block** Este aleatorizador es como el One Block, solo que alterna entre dos bloques específicos.  
+**Two block** Este aleatorizador es como el One Block, solo que alterna entre dos bloques específicos.
 
 **One 7-bag**La misma bolsa de 7 piezas se repite indefinidamente. Usando este aleatorizador, obtendrás la misma secuencia de 7 piezas una y otra vez.
 
@@ -324,17 +327,17 @@ El desorden de basura se refiere al nivel de dificultad para limpiar ciertos tip
 ![Unmessy (-100)][image10]
 ![Messy (100)][image1]
 
-### Configuración de Presets
+### Configuración de Preajustes
 
-Si hay una configuración de sala que le guste especialmente y deseas volver a consultar fácilmente, puede guardar la configuración como un preset.
+Si hay una configuración de sala que le guste especialmente y deseas volver a consultar fácilmente, puede guardar la configuración como un preajuste.
 
 Para hacer esto, vaya a _Salas_, luego _Crear Sala_, luego a la pestaña _Simple_ o _Todo_. Una vez que haya personalizado la configuración a su gusto, presione el botón _Guardar_ en la esquina inferior derecha para generar sus datos preestablecidos. Cópielo, luego péguelo en el cuadro junto a Datos preestablecidos en la página [Subir una nueva plantilla](/presets/submit).
 
-Una vez que haya enviado el ajuste preestablecido, puede verlo, junto con todos los demás ajustes preestablecidos enviados por otros usuarios en la [Lista de ajustes preestablecidos](/presets). Ahora puede recrear fácilmente la misma habitación sin tener que volver a personalizar todos los ajustes. Simplemente vaya a _Crear Sala_, luego _Usar Plantilla Personalizada_ e ingrese el título o el número de ID de su preset.
+Una vez que haya enviado el ajuste preestablecido, puede verlo, junto con todos los demás ajustes preestablecidos enviados por otros usuarios en la [Lista de ajustes preestablecidos](/presets). Ahora puede recrear fácilmente la misma habitación sin tener que volver a personalizar todos los ajustes. Simplemente vaya a _Crear Sala_, luego _Usar Plantilla Personalizada_ e ingrese el título o el número de ID de su preajuste.
 
-### Mode
+### Modos
 
-There are currently 7 different modes to choose from when creating a new room. They are:
+Actualmente hay 7 modos diferentes a elegir al crear una nueva sala. Son:
 
 - Standard
 - Team
@@ -344,70 +347,70 @@ There are currently 7 different modes to choose from when creating a new room. T
 - Live Supervivencia
 - Live Mapas v0.1
 
-**Standard** mode is normal Multijugador free-for-all.
+**Standard** es multijugador normal todos contra todos.
 
-**Team** mode creates a custom Team Room. Pick a side, red or blue, and battle and bring glory for your team. To set your own team name, use the command `/set teamName ?` where the ? is replaced with your team name.
+**Team** Este modo crea una sala de equipo personalizada. Elige un equipo, rojo o azul, y lucha y trae gloria a tu equipo. Para configurar el nombre de tu propio equipo, usa el comando `/set teamName ?` Donde el ? se reemplaza con el nombre de tu equipo.
 
 ![team game in progress][image11]
 
-**Cheese** mode creates a Cheese Room. Cheese, also known as garbage, is the primary way to knock out opponents in Multijugador modes. It is an important skill to downstack through cheese. Practice how fast you can downstack in this mode that starts games with 10 lines of garbage. First to reach the bottom wins. 10 lines too easy for you? Adjust the amount of starting lines with the command `/set height ?` , with the question mark representing a number from 1 to 20.
+**Cheese** crea una sala de queso. El queso, también conocido como basura, es la forma principal de noquear a los oponentes en los modos Multijugador. Es una habilidad importante el abrirte paso a través de el queso. Practica qué tan rápido puedes limpiar lineas en este modo que inicia los juegos con 10 líneas de basura. Primero en llegar al fondo gana. ¿10 líneas es demasiado fácil para ti? Ajusta la cantidad de líneas con las que inicias con el comando `/set height ?`, Con el signo de interrogación representando un número del 1 al 20.
 
-**Live Sprint** mode allows you to play Sprint against an opponent(s). The fastest one to finish the Sprint wins. The room defaults to a 40L Sprint, but you can change to any other type of Sprint with these commands:
+**Live Sprint** Este modo te permite jugar Sprint contra un oponente(s). El más rápido en terminar el Sprint gana. La sala tiene predeterminado un Sprint de 40L, pero puedes cambiar a cualquier otro tipo de Sprint con estos comandos:
 
 - 20L: `/set gamemode sprint20`
 - 40L: `/set gamemode sprint40`
 - 100L: `/set gamemode sprint100`
 - 1000L: `/set gamemode sprint1000`
 
-If you break your Sprint record in Live Sprint, unfortunately you cannot add it to your account because the Sprint will be contained in a Live Replay, not a standard Replay. But you can still save the replay to your favorites if you want to preserve it.
+Si rompes tu record de Sprint en Live Sprint, desafortunadamente no podrás agregarlo a tu cuenta porque el Sprint estará contenido en una Reproducción en vivo, no en una Reproducción estándar. Pero aún puedes guardar la repetición en tus favoritos si deseas conservarla.
 
-**Live Cheese** mode allows you to play Cheese against an opponent(s). Live Cheese mode is virtually identical to Cheese mode except that you can't customize starting lines beyond the 10L, 18L, and 100L. The room defaults to a 10L Cheese, but you can change to any other type of Cheese with these commands:
+**Live Cheese** Este modo te permite jugar Queso contra un oponente(s). El modo Live Cheese es prácticamente idéntico al modo Cheese, excepto que no puedes personalizar las líneas de inicio más allá de 10L, 18L y 100L. La sala tiene un valor predeterminado de 10L Cheese, pero puedes cambiar a cualquier otro tipo de Cheese con estos comandos:
 
 - 10L: `/set gamemode cheese10`
 - 18L: `/set gamemode cheese18`
 - 100L: `/set gamemode cheese100`
 
-**Live Survial** mode allows you to play Supervivencia against an opponent(s). Whoever survives the longest wins.
+**Live Survial** te permite jugar Supervivencia contra un oponente(s). Quien sobreviva más tiempo gana.
 
-**Live Mapas v0.1** mode creates a custom Map Room. Everything in this room works the same as the Map Room.
+**Live Maps v0.1** crea una sala de mapas personalizada. Todo en esta sala funciona igual que la sala de mapas.
 
 ## FAQ
 
-### Q: Can I add a bot to my private or custom room?
+### Q: ¿Puedo agregar un bot a mi sala privada o personalizada?
 
-A: No. Currently, we only have one bot on Jstris, which permanently resides in the Bot Room. However, private bots may be a reality in the future.
+A: No. Actualmente, solo tenemos un bot en Jstris, que reside permanentemente en la sala de bot. Sin embargo, los bots privados pueden ser una realidad en el futuro.
 
-### Q: What do those abbreviations in the Game Results table mean?
+### Q: ¿Qué significan esas abreviaturas en la tabla de resultados?
 
-A: B2B = back-to-back. B2Bpm = back-to-back per minute. APM = attack per minute. SPM = sent per minute. PPS = pieces per second. Rep = replay.
+A: B2B = back-to-back. B2Bpm = back-to-back por minuto. APM = ataque por minuto. SPM = sent per minute (enviado por minuto). PPS = piezas por segundo. Rep = repetición.
 
 ![game results table][image9]
 
-### Q: What is DAS?
+### Q: ¿Qué es el DAS?
 
-A: DAS is a form of horizontal piece sensitivity. DAS stands for delayed auto shift. It controls for how long you have to hold down the left or right keys before the block moves to the direction you want. With a very low DAS, even the lightest touch on a key will immediately send the block moving. With a very high DAS, you will have to hold down the key for longer before the block starts moving. Professionals on average tend to use a lower DAS because the increased sensitivity allows them to play faster. The default DAS on Jstris is 133. If it still feels too sensitive, raise that number until you feel comfortable. If it feels too slow, lower the number. Adjust and find what suits you.
+A: DAS es una forma de sensibilidad horizontal de la pieza. DAS significa cambio automático retrasado (Delayed Auto Shift). Controla durante cuánto tiempo debe mantener presionadas las teclas izquierda o derecha antes de que el bloque se mueva en la dirección que desee. Con un DAS muy bajo, incluso el toque más ligero de una tecla hará que el bloque se mueva inmediatamente. Con un DAS muy alto, deberá mantener presionada la tecla durante más tiempo antes de que el bloque comience a moverse. Los profesionales en promedio tienden a usar un DAS más bajo porque la mayor sensibilidad les permite jugar más rápido. El DAS predeterminado en Jstris es 133. Si todavía se siente demasiado sensible, aumenta este número hasta que se sienta cómodo. Si se siente demasiado lento, baja el número. Ajústalo y encuentra lo que más te convenga.
 
-### Q: What is ARR?
+### Q: ¿Qué es el ARR?
 
-A: ARR is another form of horizontal piece sensitivity. ARR stands for auto repeat rate. It controls for how fast the block moves left or right. This is a little easier to understand than DAS. Quite simply, with a very low ARR, blocks will zoom almost immediately to the direction you want when holding down the left or right keys. With a very high ARR, blocks will move very slowly in the direction you want when holding down the left or right keys. The default ARR on Jstris is 10.
+A: ARR es otra forma de sensibilidad horizontal de la pieza. ARR significa tasa de repetición automática (Auto Repeat Rate). Controla qué tan rápido se mueve el bloque hacia la izquierda o hacia la derecha. Esto es un poco más fácil de entender que DAS. En pocas palabras, con un ARR muy bajo, los bloques se moverán casi de inmediato a la dirección que desee al mantener presionadas las teclas izquierda o derecha. Con un ARR muy alto, los bloques se moverán muy lentamente en la dirección que desee al mantener presionadas las teclas izquierda o derecha. El ARR predeterminado en Jstris es 10.
 
-### Q: What is finesse?
+### Q: ¿Qué es el Finesse?
 
-A: Finesse is defined as the most efficient way to move a block. Good finesse is important for playing smoother and faster. The number next to finesse denotes how many finesse errors were committed. So a 0 finesse score means you made no finesse errors. Ideally, the closer you get to 0, the better. Finesse is something that needs to be learned in order to know how to do. There are many resources online explaining it. This video is a good starting point: [Tutorial: How to Play Fast!](https://youtu.be/_QBs703nOnk?t=502).
+A: Finesse se define como la forma más eficiente de mover un bloque. Buen finesse es importante para jugar de manera más suave y rápida. El número al lado de finesse indica cuántos errores de finesse se cometieron. Entonces, un puntaje de finesse de 0 significa que no cometió errores de finesse. Idealmente, cuanto más se acerque a 0, mejor. El finesse es algo que debe aprenderse para saber cómo hacerlo. Hay muchos recursos en línea que lo explican. Este video es un buen punto de partida: [Tutorial: How to Play Fast!](https://youtu.be/_QBs703nOnk?t=502).
 
-### Q: Can I create a private room?
+### Q: ¿Puedo crear una sala privada?
 
-A: Yes. Click _Lobby_, then _Create Room_, then check the box that says _Private_. Copy and give the room link to anyone you want to join your private room. Here’s a tip: grab the link of any room, public or private, by using the command `/link`.
+A: Si. Haga clic en _Salas_, luego _Crear Sala_, luego marque la casilla que dice _Privado_. Copie y proporcione el enlace de la sala a cualquier persona que desee unirse a su sala privada. Aquí hay un consejo: toma el enlace de cualquier habitación, pública o privada, usando el comando `/ link`.
 
-### Q: Can I play Jstris offline?
+### Q: ¿Puedo jugar Jstris sin conexión?
 
-A: Yes. In order to play offline, you have to first download Jstris while you are online. To do this, right click on the home page, press "Save as", and download the html file. Note that only single player modes can be played offline, and the scores will not be saved.
+A: Si. Para jugar sin conexión, primero debes descargar Jstris mientras estás en línea. Para hacer esto, haga clic derecho en la página de inicio, presione "Guardar como" y descargue el archivo html. Tenga en cuenta que solo los modos para un jugador se pueden jugar sin conexión, y las puntuaciones no se guardarán.
 
 ---
 
-## Additional Information
+## Información Adicional
 
-Jstris runs entirely on donations. There are no advertisements whatsoever. Due to the considerable amount of stored replays and game data, a powerful server is required to run Jstris. All donations are much appreciated and will help keep Jstris running - see the [About](/about) section on the website to learn more.
+Jstris funciona completamente con donaciones. No hay anuncios de ningún tipo. Debido a la considerable cantidad de repeticiones almacenadas y datos del juego, se requiere un servidor potente para ejecutar Jstris. Todas las donaciones son muy apreciadas y ayudarán a mantener Jstris en funcionamiento. Consulte la sección [Acerca de](/about) en el sitio web para obtener más información.
 
 [image2]: ./images/guide-intro.png "introduction"
 [image4]: ./images/image4.png "MisaMino bot in opponents view"
