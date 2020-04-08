@@ -8,6 +8,10 @@ return [
         "version" => '1.5.0',
         "translators" => null
     ],
+    "es" => [
+        "version" => '1.5.0',
+        "translators" => 'erickmack'
+    ],
     "ko" => [
         "version" => '1.3.0',
         "translators" => 'Dinir'
