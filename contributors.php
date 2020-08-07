@@ -12,6 +12,10 @@ return [
         "version" => '1.5.0',
         "translators" => 'erickmack'
     ],
+    "de" => [
+        "version" => '1.5.0',
+        "translators" => 'IceDynamix'
+    ],
     "ko" => [
         "version" => '1.3.0',
         "translators" => 'Dinir'
