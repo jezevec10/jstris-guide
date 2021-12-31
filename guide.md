@@ -103,7 +103,7 @@ The speed of the bot can be changed. To do this, type in `/bot ?` only replace t
 
 ### 1v1 Room
 
-The **1v1 Room** room has a maximum of 2 playing users, although anyone is free to come and watch even if it’s full. Use this room to settle differences with your friends or to battle it out with a worthy player. If you’re keeping score, and you want to reset it, type in `/resetCounter` and all scores will be reset to 0.
+The **1v1 Room** has a maximum of 2 playing users, although anyone is free to come and watch even if it’s full. Use this room to settle differences with your friends or to battle it out with a worthy player. If you’re keeping score, and you want to reset it, type in `/resetCounter` and all scores will be reset to 0.
 
 ### Slow Room
 
