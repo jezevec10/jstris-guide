@@ -32,4 +32,8 @@ return [
         "version" => '1.4.1',
         "translators" => 'teatube'
     ],
+    "zh-TW" => [
+        "version" => '1.5.0',
+        "translators" => 'SiderealArt'
+    ],
 ];
