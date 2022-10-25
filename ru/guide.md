@@ -32,19 +32,19 @@
   - [Задержка перед фиксацией](#задержка-перед-фиксацией)
   - [Задержка очистки](#задержка-очистки)
   - [Гравитация](#гравитация)
-  - [Garbage Delay](#garbage-delay)
-  - [Messiness](#messiness)
-  - [Configuration presets](#configuration-presets)
-  - [Mode](#mode)
-- [Frequently Asked Questions](#faq)
-  - [Q: Can I add a bot to my private or custom room?](#q-can-i-add-a-bot-to-my-private-or-custom-room)
-  - [Q: What do those abbreviations in the Game Results table mean?](#q-what-do-those-abbreviations-in-the-game-results-table-mean)
-  - [Q: What is DAS?](#q-what-is-das)
-  - [Q: What is ARR?](#q-what-is-arr)
-  - [Q: What is finesse?](#q-what-is-finesse)
-  - [Q: Can I create a private room?](#q-can-i-create-a-private-room)
-  - [Q: Can I play Jstris offline?](#q-can-i-play-jstris-offline)
-- [Additional Information](#additional-information)
+  - [Задержка мусора](#задержка-мусора)
+  - [Замешивание мусора](#замешивание-мусора)
+  - [Шаблоны правил](#шаблоны-правил)
+  - [Режим](#режим)
+- [Часто задаваемые вопросы](#часто-задаваемые-вопросы)
+  - [В: Могу ли я добавить бота в мою комнату?](#в-могу-ли-я-добавить-бота-в-мою-комнату)
+  - [В: Что означают сокращения в таблице результатов игры?](#в-что-означают-сокращения-в-таблице-результатов-игры)
+  - [В: Что такое DAS?](#в-что-такое-das)
+  - [В: Что такое ARR?](#в-что-такое-arr)
+  - [В: Что такое техника?](#в-что-такое-техника)
+  - [В: Могу ли я создать приватную комнату?](#в-могу-ли-я-создать-приватную-комнату)
+  - [В: Могу ли я играть в Jstris офлайн?](#в-могу-ли-я-играть-в-jstris-офлайн)
+- [Дополнительная информация](#дополнительная-информация)
 
 - - -
 
@@ -312,101 +312,101 @@ Jstris по умолчанию показывает 5 превью очеред�
 
 Гравитация представляет собой скорость, с которой фигуры автоматически падают вниз. Гравитация может быть изменена в пределах 0-28 уровня. Гравитация по умолчанию = 1. Если гравитация =0, то фигура не упадёт вниз до тех пор, пока не истечёт задержка L3 (по умолчанию, 20 секунд). 28 уровень гравитации эквивалентен 20G, при этом фигура мгновенно падает до самого низа.
 
-### Garbage Delay
+### Задержка мусора
 
-Garbage delay is a fixed amount of time between the incoming garbage indicated by the red bar and the insertion of that garbage into the playfield. By default, it is set at 500 milliseconds. It is customizable from a range of 0 milliseconds to 60000 milliseconds. A higher garbage delay allows for more pieces to be played before garbage is inserted, while a lower garbage delay allows for less pieces to be played before garbage insertion. Or in other words, the higher the garbage delay, the more opportunity it gives to block more effectively. Another way to define garbage delay is “the minimumum amount of time an incoming attack has to be visible in the red bar before a placed block can trigger the insertion of that garbage to the playfield.”
+Задержка мусора это фиксированное количество времени между тем, как входящий мусор появляется на красной полосе и его появлением на игровом поле. По умолчанию она равна 500 мс. Данный парамерт настраивается в пределах от 0 до 60000 мс. Более высокая задержка позволяет отыграть большее количество блоков, прежде чем мусор будет помещён на поле; более низкая задержка способствует меньшему количеству. Другими словами, чем больше задержка, тем больше возможностей для блокирования мусора. Другой способ определить задержку мусора - "минимальное количество времени после входящей атаки, когда мусор будет отображен красной полосой, и прежде чем он попадёт на игровое поле".
 
-### Messiness
+### Замешивание мусора
 
-Garbage messiness refers to the difficulty level to clear certain types of garbage. To change the messiness of garbage in a room, use the command `/set messiness ?`, where the ? is replaced with any number from -100 to 100. -100 is the least messy garbage configuration, and the garbage hole will only appear in one column throughout the entirety of the game (left picture). 100 is the most messy garbage configuration and the garbage hole will appear in any of the 10 columns, making it much more difficult to downstack (right picture).
+Замешивание мусора отображает его сложность для очистки вами. Чтобы изменить замешивание, используйте команду `/set messiness ?`, где ? заменён на любое число от -100 до 100. -100 - наилегчайшая опция, отверстия на протяжении всего слоя мусора будут находиться друг над другом (левая картинка). 100 - наисложнейшая опция, отверстия будут находиться в случайных позициях в любой из 10 колонок, делая его максимально сложным для очистки (правая картинка).
 
 ![Unmessy (-100)][image10] 
 ![Messy (100)][image1]
 
-### Configuration presets
+### Шаблоны правил
 
-If there is a room settings configuration you particularly like and want to easily refer back to, you can save the settings as a preset.
+Если существует какой то набор правил, который вам особенно нравится и вы хотите легко выбирать его, вы можете сохранить его как шаблон.
 
-To do this, go to *Lobby*, then *Create Room*, then either the *Simple* or *All* tab. Once you have customized the settings to your liking, hit the *Save* button at the bottom right corner to generate your preset data. Copy it, then paste it in the box next to Preset data on the [Submit a preset](/presets/submit) page.
+Чтобы выполнить это, зайдите в *Лобби*, затем выберите *Создать комнату*, затем в строке *Больше правил* выберите *Простые* либо *Все*. После того, как вы настроили все параметры, нажмите кнопку *Сохранить* внизу, игра сгенерирует вам шаблон. Скопируйте данные и воспользуйтесь формой отправки шаблона для пересылки на сервер.
+[Submit a preset](/presets/submit) 
 
-Once you’ve submitted the preset, you can view it, along with all other user-submitted presets on the [List of presets](/presets). Now you can easily recreate the same room without customizing all the settings again. Just go to *Create Room*, then *Use Custom Preset*, and enter either the title or ID number of your preset. 
+Как только вы отправили шаблон, вы можете просматривать его, наряду с другими пользовательскими шаблонами [List of presets](/presets). Теперь можно легко воссоздать те же самые правила без настройки всех опций. Просто выберите *Создать комнату*, *Использовать правила* и выберите ваш шаблон.
 
-### Mode
+### Режим
 
-There are currently 7 different modes to choose from when creating a new room. They are:
+В Jstris сейчас присутствует 7 режимов, среди которых вы можете выбирать при создании своей комнаты:
 
-- Standard
-- Team
-- Cheese
+- Стандартный
+- Командный
+- Очистка
 - Live Sprint
 - Live Cheese
 - Live Survival
 - Live Maps v0.1
 
-**Standard** mode is normal multiplayer free-for-all. 
+**Стандартный** режим это нормальный мультиплеер со свободным доступом. 
 
-**Team** mode creates a custom Team Room. Pick a side, red or blue, and battle and bring glory for your team. To set your own team name, use the command `/set teamName ?` where the ? is replaced with your team name. 
+**Командный** режим создаёт командную комнату. Выбирайте сторону, красную или синюю, и принесите победу своей команде. Для выбора имени команды, используйте `/set teamName ?`, где вместо знака вопроса введите желаемое имя.
 
 ![team game in progress][image11]
 
-**Cheese** mode creates a Cheese Room. Cheese, also known as garbage, is the primary way to knock out opponents in multiplayer modes. It is an important skill to downstack through cheese. Practice how fast you can downstack in this mode that starts games with 10 lines of garbage. First to reach the bottom wins. 10 lines too easy for you? Adjust the amount of starting lines with the command `/set height ?` , with the question mark representing a number from 1 to 20.
+**Очистка** создаёт комнату для очистки. Посылаемый вами мусор - это основной путь выиграть оппонента в режиме против игроков. Важным скиллом является очистка мусора. Практикуйтесь в очистке на скорость в режиме против игроков. Первый, добравшийся до дна в мусоре высотой 10 линий, побеждает. 10 линий слишком легко для вас? Измените высоту мусора командой `/set height ?`, где знак вопроса заменён на число от 1 до 20.
 
-**Live Sprint** mode allows you to play Sprint against an opponent(s). The fastest one to finish the Sprint wins. The room defaults to a 40L Sprint, but you can change to any other type of Sprint with these commands:
+Режим **Live Sprint** позволяет вам играть спринт против оппонентов. Тот, кто завершил спринт быстрее всех, выигрывает. По умолчанию играется спринт длиной в 40 линий, но вы можете изменить это с помощью следующих команд:
 
 - 20L:     `/set gamemode sprint20`
 - 40L:     `/set gamemode sprint40`
 - 100L:    `/set gamemode sprint100`
 - 1000L:   `/set gamemode sprint1000`
 
-If you break your Sprint record in Live Sprint, unfortunately you cannot add it to your account because the Sprint will be contained in a Live Replay, not a standard Replay. But you can still save the replay to your favorites if you want to preserve it.
+Если вы устанавливаете личный рекорд в Live Sprint, то, к сожалению, это не будет отражено в вашем аккаунте, потому что пишется реплей против игроков, а не обычный реплей. Но вы можете добавить его в избранное, если хотите сохранить.
 
-**Live Cheese** mode allows you to play Cheese against an opponent(s). Live Cheese mode is virtually identical to Cheese mode except that you can't customize starting lines beyond the 10L, 18L, and 100L. The room defaults to a 10L Cheese, but you can change to any other type of Cheese with these commands:
+Режим **Live Cheese** позволяет играть в очистку против оппонентов. Этот режим точно такой же, как и режим очистки, за исключением того, что вы не можете выбирать никаких других значений для высоты мусора, кроме 10, 18 и 100 линий. По умолчанию высота равняется десяти линиям, но вы можете изменить это следующими командами:
 
 - 10L:     `/set gamemode cheese10`
 - 18L:     `/set gamemode cheese18`
 - 100L:    `/set gamemode cheese100`
 
-**Live Survial** mode allows you to play Survival against an opponent(s). Whoever survives the longest wins.
+Режим **Live Survial** позволяет вам играть в режим Выживания против оппонентов. Кто выживет дольше всех, выигрывает.
 
-**Live Maps v0.1** mode creates a custom Map Room. Everything in this room works the same as the Map Room. 
+**Live Maps v0.1** позволяет вам играть в режим Map Room против оппонентов.
 
-## FAQ
+## Часто задаваемые вопросы
 
-### Q: Can I add a bot to my private or custom room?
+### В: Могу ли я добавить бота в мою комнату?
+О: Нет. В данный момент у нас только один бот в Jstris, который постоянно находится в Bot Room. Однако, данный функционал может быть добавлен в будующем.
 
-A: No. Currently, we only have one bot on Jstris, which permanently resides in the Bot Room. However, private bots may be a reality in the future.
+### В: Что означают сокращения в таблице результатов игры?
 
-### Q: What do those abbreviations in the Game Results table mean?
-
-A: B2B = back-to-back. B2Bpm = back-to-back per minute. APM = attack per minute. SPM = sent per minute. PPS = pieces per second. Rep = replay.
+О: B2B = back-to-back (Спина-к-Спине). B2Bpm = back-to-back per minute (СкС в минуту). APM = attack per minute (атак в минуту). SPM = sent per minute (послано в минуту). PPS = pieces per second (фигур в секунду). Rep = replay (реплей).
 
 ![game results table][image9]
 
-### Q: What is DAS?
+### В: Что такое DAS?
 
-A: DAS is a form of horizontal piece sensitivity. DAS stands for delayed auto shift. It controls for how long you have to hold down the left or right keys before the block moves to the direction you want. With a very low DAS, even the lightest touch on a key will immediately send the block moving. With a very high DAS, you will have to hold down the key for longer before the block starts moving. Professionals on average tend to use a lower DAS because the increased sensitivity allows them to play faster. The default DAS on Jstris is 133. If it still feels too sensitive, raise that number until you feel comfortable. If it feels too slow, lower the number. Adjust and find what suits you.
+О: DAS это мера горизонтальной чувствительности фигуры. DAS означает delayed auto shift, задержка автоповтора. Это контроллироет, как долго вы должны держать клавишу влево или вправо прежде чем фигура начнёт двигаться в желаемую сторону. С низким DAS даже легчайшее касание клавиши мгновенно подвинет фигуру. С высоким DAS вы будете вынуждены держать кнопку направления дольше, прежде чем фигура начнёт движение. DAS по умолчанию в Jstris равен 133 мс. Если это кажется вам слишком чувствительным, повысьте значение. Если кажется слишком медленным, понизьте. Отрегулируйте DAS так, как вам нравится.
 
-### Q: What is ARR?
+### В: Что такое ARR?
 
-A: ARR is another form of horizontal piece sensitivity. ARR stands for auto repeat rate. It controls for how fast the block moves left or right. This is a little easier to understand than DAS. Quite simply, with a very low ARR, blocks will zoom almost immediately to the direction you want when holding down the left or right keys. With a very high ARR, blocks will move very slowly in the direction you want when holding down the left or right keys. The default ARR on Jstris is 10. 
+О: ARR это другая форма горизонтальной чувствительности фигуры. ARR означает auto repeat rate, скорость автоповтора. Это контроллирует как быстро фигура двигается влево или вправо. Данный термин понять немного проще, чем DAS. С низким ARR, фигура почти мгновенно достигнет стены в той стороне, куда вы её направляете. С высоким ARR, фигура будет двигаться к стене медленно, пока вы держите кнопку направления. ARR по умолчанию равен 10 в Jstris.
 
-### Q: What is finesse?
+### В: Что такое техника?
 
-A: Finesse is defined as the most efficient way to move a block. Good finesse is important for playing smoother and faster. The number next to finesse denotes how many finesse errors were committed. So a 0 finesse score means you made no finesse errors.  Ideally, the closer you get to 0, the better. Finesse is something that needs to be learned in order to know how to do. There are many resources online explaining it. This video is a good starting point: [Tutorial: How to Play Fast!](https://youtu.be/_QBs703nOnk?t=502).
+О: техника - это наиболее эффективный путь передвижения фигуры. Хорошая техника важна для того, чтобы играть ровнее и быстрее. Число рядом с этим термином означает как много ошибок техники вы совершили. Таким образом, техника 0 означает что вы не совершили ни одной технической ошибки. В идеале, чем ближе это число к нулю, тем лучше. Техника - это то, что вы должны учить чтобы выполнять правильно. Существует много ресурсов, объясняющих правильную технику. Это видео может стать хорошей стартовой точкой в изучении: [Tutorial: How to Play Fast!](https://youtu.be/_QBs703nOnk?t=502).
 
-### Q: Can I create a private room?
+### В: Могу ли я создать приватную комнату?
 
-A: Yes. Click *Lobby*, then *Create Room*, then check the box that says *Private*. Copy and give the room link to anyone you want to join your private room. Here’s a tip: grab the link of any room, public or private, by using the command `/link`.
+О: Да. Выберите *Лобби*, затем *Создать комнату*, затем кликните по чекбоксу *Приватная*. Скопируйте ссылку и дайте тому, кого хотите пригласить в свою комнату. Подсказка: вы можете узнать ссылку на любую комнату, публичную или приватную с помощью команды `/link`.
 
-### Q: Can I play Jstris offline?
+### В: Могу ли я играть в Jstris офлайн?
 
-A: Yes. In order to play offline, you have to first download Jstris while you are online. To do this, right click on the home page, press "Save as", and download the html file. Note that only single player modes can be played offline, and the scores will not be saved.
+О: Да. Для этого скачайте Jstris пока вы онлайн. Для этого, нажмите правой кнопкой мыши по странице, выберите в меню пункт "Сохранить страницу как" и сохраните html файл. Следует заметить, что только режимы одиночной игры доступны офлайн, и ваш счёт не будет сохранён.
 
 - - -
 
-## Additional Information
+## Дополнительная информация
 
-Jstris runs entirely on donations. There are no advertisements whatsoever. Due to the considerable amount of stored replays and game data, a powerful server is required to run Jstris. All donations are much appreciated and will help keep Jstris running - see the [About](/about) section on the website to learn more.
+Существование Jstris полностью зависит от донатов. В игре нет рекламы. Из-за того, что игра хранит реплеи и данные, Jstris нужен мощный сервер. Я благодарен всем донатам, и они будут поддерживать Jstris в рабочем состоянии. Читайте раздел [About](/about) вебсайта, чтобы узнать больше.
 
 [image2]: ./images/guide-intro.png "introduction"
 [image4]: ./images/image4.png "MisaMino bot in opponents view"
