@@ -1,37 +1,37 @@
-# Jstris Guide
+# Руководство Jstris 
 
-Welcome to Jstris, a simple online multiplayer block game. Jstris is known for its fast gameplay and is attracting talented players from all around the world. This guide will introduce you to the basic features of the game.
+Добро пожаловать в Jstris, простую головоломку с онлайн мультиплеером. Jstris известен своей скоростью и привлекает к себе талантливых игроков со всего света. Данное руководство расскажет вам в общих чертах об этой игре.
 
 - - -
 
-**Table of Contents**
+**Содержание**
 
-- [Overview](#overview)
-- [Controls](#controls)
-- [Multiplayer](#multiplayer)
+- [Обзор](#обзор)
+- [Управление](#управление)
+- [Против игроков](#против-игроков)
   - [Default Room](#default-room)
   - [Bot Room](#bot-room)
   - [1v1 Room](#1v1-room)
   - [Slow Room](#slow-room)
   - [Map Room](#map-room)
-- [Singleplayer](#singleplayer)
-  - [Sprint](#sprint)
-  - [Cheese Race](#cheese-race)
-  - [Ultra](#ultra)
-  - [Survival](#survival)
-  - [Maps](#maps)
+- [Одиночная игра](#одиночная-игра)
+  - [Спринт](#спринт)
+  - [Очистка](#очистка)
+  - [Ультра](#ультра)
+  - [Выживание](#выживание)
+  - [Карты](#карты)
   - [20TSD](#20tsd)
-- [Configuration](#configuration)
-  - [Attack and Combo table](#attack-and-combo-table)
-  - [Garbage Distribution](#garbage-distribution)
-  - [Garbage Blocking](#garbage-blocking)
-  - [Blocks](#blocks)
-  - [Randomizer](#randomizer)
-  - [Previews](#previews)
-  - [Solid Garbage](#solid-garbage)
-  - [Lock Delay](#lock-delay)
-  - [Clear Delay](#clear-delay)
-  - [Gravity lvl](#gravity-lvl)
+- [Настройка](#настройка)
+  - [Атака и Комбо](#атака-и-комбо)
+  - [Распределение мусора](#распределение-мусора)
+  - [Блокировка мусора](#блокировка-мусора)
+  - [Блоки](#блоки)
+  - [Рандомайзер](#рандомайзер)
+  - [Длина очереди](#длина-очереди)
+  - [Заполнения постоянным мусором](#заполнение-постоянным-мусором)
+  - [Задержка перед фиксацией](#задержка-перед-фиксацией)
+  - [Задержка очистки](#задержка-очистки)
+  - [Гравитация](#гравитация)
   - [Garbage Delay](#garbage-delay)
   - [Messiness](#messiness)
   - [Configuration presets](#configuration-presets)
@@ -48,185 +48,184 @@ Welcome to Jstris, a simple online multiplayer block game. Jstris is known for i
 
 - - -
 
-## Overview
+## Обзор 
 
-Jstris uses the same basic mechanics as most other block games. It follows guideline rules. One notable feature is its extensive use of replays. In every single game mode you play in and complete, a replay will be generated for you. Watching and analyzing yourself is an integral part to self-improvement, and Jstris’s replays makes doing that all too easy.
+Jstris использует те же самые базовые механики, как и большинство похожих игр. Он использует правила оригинальной игры. Одной из основных особенностей является обширное использование реплеев. Для каждой законченной вами игры будет сгенерирован реплей. Просмотр и анализ своих игр является неотъемлемой частью самосовершенствования, и реплеи Jstris предоставляют вам такую возможность.
 
-Unlike other sites, you can be sure Jstris’s Leaderboards are completely clean and cheater-free. Moderators will remove suspicious records to ensure a trustworthy list of global achievements. 
+В отличии от других игр, вы можете быть уверены, что лидеры Jstris абсолютно чисты и не используют читы. Модераторы удаляют подозрительные записи, чтобы гарантировать заслуживающий доверия список глобальных достижений.
 
-It is possible to play without registering, but in order to use all features of the website, it is recommended to create an account. To do so, click on *Register* at the top right corner. Only an email, username, and password is required. With an account, you can see a multitude of statistics including your Best Times in singleplayer modes, multiplayer stats, improvement stats, replays, and much more. You can now also see yourself on the Leaderboard (unregistered users’ scores are excluded). 
+Возможно играть без регистрации, но для того, чтобы получить доступ ко всем возможностям сайта, рекомендуется создать аккаунт. Для этого, выберите пункт *Зарегистрироваться* в верхнем правом углу. Необходимы только email, имя пользователя и пароль. С аккаунтом, вы можете видеть множество статистики, вкючая вашие лучшие рекорды в одиночных режимах, статистику мультиплеера, статистику улучшения, реплеи и многое другое. Вы также можете видеть себя в списке глобальных достижений (анонимные достижения не показаны).
 
-![introduction][image2]
+![Обзор][image2]
 - - -
 
-## Controls
+## Управление
 
-Jstris allows for players to customize their controls at any time in the **Settings** menu that is located underneath the main play area. Default controls are as follows:
+Jstris позволяет игрокам настроить своё управление в любое время в меню **Настройки**, которое расположени под игровым полем. Управление по умолчанию представлено ниже:
 
-|   Command    | Default Key |
-| ------------ | ----------- |
-| Move Left    | left        |
-| Move Right   | right       |
-| Soft Drop    | down        |
-| Hard Drop    | space       |
-| Rotate Left  | z           |
-| Rotate right | up          |
-| Rotate 180   | a           |
-| Hold         | c           |
+|      Команда      | Клавиша по умолчанию |
+| ----------------- | -------------------- |
+| Налево            | left                 |
+| Направо           | right                |
+| Медленное падение | down                 |
+| Быстрое падение   | space                |
+| Поворот налево    | z                    |
+| Поворот направо   | up                   |
+| Переворот         | a                    |
+| Замена            | c                    |
 
-## Multiplayer
+## Против игроков
 
 ### Default Room
 
-Upon entering the site, all players are immediately thrown into the **Default Room**, a free-for-all where you'll find players of all skill levels.   
+При входе на сайт, все игроки изначально попадают в **Default room** - комнату со свободным доступом, где можно встретить игроков любого уровня.
 
-Playing in the Default Room can be tough! What’s unique about Jstris is that it throws humble beginners and world-class opponents together into the mix, along with everyone else between. If you get tired from playing and simply want to watch, then use the command `/spectate` or `/spec`. To play again, use the command `/play`. 
+Игра в комнате по умолчанию может быть тяжелой. Уникальной особенностью Jstris является то, что он смешивает скромных новичков с мировыми топ игроками, и всеми остальными. Если вы устали играть и хотите просто наблюдать, используйте команду  `/spectate` или `/spec`. Чтобы вернуться к игре, используйте `/play`.
 
 ### Bot Room
 
-The Default Room isn’t the only room there is. To view the full room list, click on *Lobby* in the bottom left of your playfield. The 2nd most popular room on Jstris is usually the **Bot Room**, so named because of the one Bot that is always present. It is always located in the top left corner of all your opponents, easily distinguishable by its uniform red color.
+Default Room не единственная доступная комната. Чтобы увидеть весь список, нажмите кнопку *Лобби* под игровым полем. Следующей по популярности комнатой является комната с ботами **Bot Room**, названная так, потому что в ней всегда присутствует бот. Вы можете узнать его по красному цвету, он находится среди других оппонентов в левом верхнем углу.
 
-![MisaMino bot in opponents view][image4]
+![Бот MisaMino среди оппонентов][image4]
 
-There are 4 different bots in Jstris. Here they are listed by strength, and the commands to change to that specific one, entered into the textbox.
+В Jstris 4 вида ботов. В списке ниже они отсортированы по силе, также представлены команды для смены бота.
 
 - MisaMino: `/changeBot misamino`
 - Real_Block: `/changeBot real`
-- ~~jez_Block: `/changeBot jez`~~ (removed on 2018.09.21)
-- ~~Fool bot: `/changeBot fool`~~ (removed on 2018.09.21)
+- ~~jez_Block: `/changeBot jez`~~ (удалён 2018.09.21)
+- ~~Fool bot: `/changeBot fool`~~ (удалён 2018.09.21)
 
-*\*Note that all commands must be entered in between games. Any command entered during a game will be nullified.*
+*\*Любые команды должны быть введены между играми. Всякая команда, введённая во время игры, игнорируется.*
 
-Misamino is by far the strongest bot, perhaps the strongest block placing bot ever created yet. When paired with the maximum 5 PPS (pieces per second), it becomes a formidable opponent that can easily dismantle the strongest human players in a 1v1. However, bot performance suffers when there are >5 humans in the Bot Room, and it is likely to top out immediately. This brings us to our next command:  /botPPS.
+Misamino - самый сильный бот, возможно, сильнейший среди когда-либо созданных ботов. На его максимальной скорости 5 PPS (фигур в секунду), он становится грозным оппонентом, который может легко победить самых сильных живых игроков в режиме 1 на 1. Однако, производительности бота не хватает когда в комнате больше 5 живых игроков, и обычно он сразу же проигрывает. Для настройки бота можно использовать команду /botPPS.
 
-The speed of the bot can be changed. To do this, type in `/bot ?` only replace the ? with any number between .3 and 5. For example, if I wanted the bot to play at 2 PPS, I would type in `/bot 2`. If I wanted the bot to play at 1.73 PPS, I would type in `/bot 1.73`. 
+Скорость бота может быть изменена. Для этого, введите `/bot ?` , где замените знак вопроса на любое число между .3 и 5. Для примера, если я хочу чтобы бот играл на 2 PPS, я напечатаю `/bot 2`. Если я хочу, чтобы бот играл на 1.73 PPS, я напечатаю `/bot 1.73`.
 
 ### 1v1 Room
 
-The **1v1 Room** has a maximum of 2 playing users, although anyone is free to come and watch even if it’s full. Use this room to settle differences with your friends or to battle it out with a worthy player. If you’re keeping score, and you want to reset it, type in `/resetCounter` and all scores will be reset to 0.
+Комната **1v1 Room** позволяет играть только двоим игрокам, хотя кто угодно может войти и смотреть матч, даже если комната заполнена. Используйте эту комнату для игры с друзьями или с достойным оппонентом. Для того, чтобы сбросить счёт побед, используйте команду `/resetCounter` и все победы будут обнулены.
 
 ### Slow Room
 
-Want to play with a friend but the skill level between yourselves is too great? Or you’re just getting started and tired of losing instantly in the pro-dominated Bot Room? Or you want to improve efficiency in your game by taking speed out of the equation? There’s a Slow Room in place for all those occasions. The default Slow Room's speed limit is set at 2.0 PPS, which means a player cannot go over 2.0 PPS. Any attempts to go faster will result in the player’s screen being temporarily locked. In addition to the speed limit, the Slow Room has a line clear delay of 500 milliseconds. That means for each line(s) you clear, you will have to wait 500 ms before you can play again. All Slow Rooms are indicated by the little speedometer icon - [SPEEDOMETER_ICON]. Custom Slow rooms can have any speed limit from 0 PPS to 20 PPS. 
+Хотите сыграть с другом, но один из вас играет значительно лучше другого? Или вы просто новичок и устали мгновенно проигрывать в комнатах с про-игроками? Или вы хотите улучшить эффективность своей игры, убрав скорость из общего зачёта? В Jstris есть Slow Toom (медленная комната) для всех этих случаев. По умолчанию скорость медленной комнаты ограничена 2.0 PPS, что означает игроки не могут превысить этот порог. Если человек играет быстрее, его экран будет временно заблокирован. В дополнение к ограничению скороcти, медленная комната имеет задержку 500 мс при очистке линий. Это означает что при каждой очистке вы будеде ждать 500 мс, прежде чем можно будет делать что-либо ещё. Все медленные комнаты обозначаются значком спидометра - [SPEEDOMETER_ICON]. Медленные комнаты могут иметь ограничение от 0 до 20 PPS.
 
-![the lobby, where you can join and create rooms][image5]
+![Лобби, в котором вы можете создавать комнаты и присоединяться к ним][image5]
 
 ### Map Room
 
-The **Map Room** is a place to downstack the fastest through randomly-chosen, user-created maps. The (D=?%) displayed next to each map is the difficulty percentile of the map, with 0% being the easiest and 100% being the hardest. Maps with Perfect Clear Finish requirement are not included among the Maps. 
+**Map Room** - это место, где можно соревноваться в очистке на случайной пользовательской карте. Число (D=?%), показываемое рядом с именем карты, означает сложность карты, где 0% - легчайшая карта, и 100% - сложнейшая. Карты, требующие завершения с Perfect Clear, не выпадают в этой комнате.
 
 - - -
 
-## Singleplayer
+## Одиночная игра
 
-### Sprint
+### Спринт
 
-The foundation, and with the most simple objective, **Sprint** is the most popular singleplayer mode on Jstris. Clear X amount of lines as fast as you can. Jstris offers 20, 40, 100, and 1000 line Sprint modes. 
+Базовый режим с простейшей целью, **Спринт** - самый популярный режим одиночной игры в Jstris. Очистите Х линий так быстро, как можете. В Jstris есть спринт режимы для 20, 40, 100 и 1000 линий.
 
-### Cheese Race
+### Очистка
 
-Less brash and more analytical than Sprint, **Cheese Race** requires more thinking as you downstack through garbage lines in the most efficient way. Jstris offers 10, 18, 100, and infinity line Cheese Race modes.
+Не такой быстрый, и более аналитический, чем Спринт, режим **Очистки** предполагает больше размышлений в процессе очищения мусора наиболее эффективным способом. В Jstris есть режимы очистки для 10, 18, 100 и бесконечного числа линий.
 
-### Ultra
+### Ультра
 
-Score-focused and rewarding advanced techniques such as t-spins and back-to-backs, **Ultra** is a great way to improve your attacking prowess for use in multiplayer. 
+Режим, рассчитанный на набор максимального количество очков, и награждающий за продвинутые техники, такие, как T-спины и back-to-back. **Ультра** - замечательный способ тренировать атаку для последующего применения в режимах против игроков.
 
-### Survival
+### Выживание
 
-Quite possibly the most challenging of the singleplayer modes, **Survival** is much like Cheese Race only the garbage rises at a constant rate of one line per second. Survive against the rising lines for as long as you can. 
+Возможно, самый сложный режим среди всех режимов одиночной игры. **Выживание** похож на очистку, но мусор добавляется с постояннной скоростью: 1 линия в секунду. Выживайте против растущих линий так долго, как можете.
 
-### Maps
+### Карты
 
-In late 2018, the **Maps** mode was introduced to Jstris. Maps brings an element of creativity while also preparing players to downstack effectively in difficult and unusual positions. Create your own map in the *Map Designer*. Once published, anyone in the world can play it and compete for the fastest time. There is a limit of 5 published maps per day and 10 unpublished maps in queue. Maps also has a leaderboard. On every map, three medals are given, Gold for 1st place, Silver for 2nd place, and Bronze for 3rd place. Score in the top three of any map to win some medals and secure your place on the leaderboard! 
+Режим **Карты** был добавлен в Jstris в конце 2018 года. Карты вносят элемент креативности, при этом улучшая навыки очистки в сложных и необычных позициях. Создайте свою карту в **Дизайнере Карт**. Как только карта опубликована, игроки из любой точки мира могут играть и соревноваться в скорости на вашей карте. В Jstris ограничивает создание карт пятью публикациями в день и десятью неопубликованными картами в очереди. Карты включены в таблицу рекордов. На каждой карте можно завоевать три медали, золотую за первое, серебряную за второе, бронзовую за третье место. Пробуйте войти в топ-3 на любой карте чтобы завоевать медали и своё место в таблице лидеров!
 
-*\*Note that the Maps leaderboards updates only a few times each day, so new changes are not immediate.*
+*\*Таблица лидеров карт обновляется несколько раз в день, поэтому изменения в ней не мгновенно отражают текущую ситуацию.*
 
 ### 20TSD
 
-The goal in this mode is to try to get as many consecutive TSDs (T-spin Double) as you can. If you clear any line that isn't a TSD, the game ends. It is named 20TSD because the original concept was to do a 40 line sprint using nothing but 20 TSDs (20 x 2 = 40). However, some people have gone beyond that and now regularly exceed 20.
+Цель этого режима - выполнить как можно больше TSD (T-spin Double) друг за другом. Если вы очищаете линию, не используя TSD, игра завершается. Режим назван 20TSD, потому что изначально люди выполняли спринт длиной 40 линий, используя только TSD (20 х 2 = 40). Однако, многие игроки выходят за эти рамки и регулярно превышают число 20.
 
 - - -
 
-## Configuration
+## Настройка
 
-To see the configuration of any room on Jstris, use the command `/config`. Now we will go over each of the settings. 
+Чтобы увидеть настройки любой комнаты, используйте команду `/config`. Ниже мы пробежимся по всем возможным опциям.
 
-### Attack and Combo table
+### Атака и Комбо
 
-The default attack and combo table in Jstris (which can be customized in private rooms) is as follows:
+По умолчанию, атака и комбо в Jstris выглядят так (можно перенастроить в приватных комнатах):
 
-| Attack Type        | Lines Sent |   | Combo # | Lines Sent |
-| :----------------- | ---------: | - | ------: | ---------: |
-| 0 lines            |      **0** |   |       0 |      **0** |
-| 1 lines (single)   |      **0** |   |       1 |      **0** |
-| 2 lines (double)   |      **1** |   |       2 |      **1** |
-| 3 lines (triple)   |      **2** |   |       3 |      **1** |
-| 4 lines            |      **4** |   |       4 |      **1** |
-| T-spin Double      |      **4** |   |       5 |      **2** |
-| T-spin Triple      |      **6** |   |       6 |      **2** |
-| T-spin Single      |      **2** |   |       7 |      **3** |
-| T-spin Mini Single |      **0** |   |       8 |      **3** |
-| Perfect Clear      |     **10** |   |       9 |      **4** |
-| Back-to-Back       |     **+1** |   |      10 |      **4** |
-|                    |            |   |      11 |      **4** |
-|                    |            |   |     12+ |      **5** |
+| Тип атаки          | Количество посланных линий |   | Комбо # | Количество посланных линий |
+| :----------------- | -------------------------: | - | ------: | -------------------------: |
+| 1 линия (single)   |                      **0** |   |       1 |                      **0** |
+| 2 линии (double)   |                      **1** |   |       2 |                      **1** |
+| 3 линии (triple)   |                      **2** |   |       3 |                      **1** |
+| 4 линии            |                      **4** |   |       4 |                      **1** |
+| T-spin Double      |                      **4** |   |       5 |                      **2** |
+| T-spin Triple      |                      **6** |   |       6 |                      **2** |
+| T-spin Single      |                      **2** |   |       7 |                      **3** |
+| T-spin Mini Single |                      **0** |   |       8 |                      **3** |
+| Perfect Clear      |                     **10** |   |       9 |                      **4** |
+| Back-to-Back       |                     **+1** |   |      10 |                      **4** |
+|                    |                            |   |      11 |                      **4** |
+|                    |                            |   |     12+ |                      **5** |
 
-### Garbage Distribution
+### Распределение мусора
 
-There are 8 different systems in how garbage is sent around during multiplayer matches. They are as follows:
+В Jstris существует 8 опций для распределения мусора от вашей атаки в матчах против игроков:
 
-- Targets `/set garbage targets`
-- Divide `/set garbage divide`
-- To all `/set garbage toAll`
-- To least `/set garbage toLeast`
-- To most `/set garbage toMost`
-- To self `/set garbage toSelf`
-- Random `/set garbage random`
-- Roulette `/set garbage roulette`
+- Targets (Цели) `/set garbage targets`
+- Divide (Разделение) `/set garbage divide`
+- To all (Всем) `/set garbage toAll`
+- To least (Наименьшему) `/set garbage toLeast`
+- To most (Наибольшему) `/set garbage toMost`
+- To self (Себе) `/set garbage toSelf`
+- Random (Случайно) `/set garbage random`
+- Roulette (Рулетка) `/set garbage roulette`
 
-**Targets** is always the default (except in the Team Room) and by far the most popular. In Targets, a target is rotated around every opponent in the room, in equal and fixed increments, and whoever the target was landed on at the moment you send garbage is the one who gets that garbage you sent. 
+**Targets** (Цели) - обычно является опцией по умолчанию и самым популярным выбором. В этом режиме, цель равновероятно выбирается по очереди из всех оппонентов в комнате. Игрок, являющийся целью в момент атаки и получает посланный вами мусор.
 
-In the **Divide** garbage distribution system (GDS), any garbage you send is equally divided among all players. For example, in a room with 2 other opponents, if you send a T-spin Double (4 lines), each of your opponents will get 2 lines. 
+**Divide** (Разделение) - мусор делится поровну между игроками комнаты. Например, если вы выполняете TSD в комнате с двумя другими оппонентами, каждый из них получит по 2 линии мусора.
 
-In the **To all** GDS, any garbage you send is sent to every player in the room. For example, in a room with 4 opponents, if you send a Perfect Clear (10 lines), all 4 opponents will recieve 10 lines each, or a total of 40 lines. As you can surmise from the example, rooms with To all garbage tend to be hectic, with fast rising garbage and characteristically short games. 
+**To all** (Всем) - все производимые вами атаки отсылаются каждому из ваших оппонентов в комнате. К примеру, если вы выполняете Perfect Clear в комнате с 4-мя оппонентами, то каждый из них получает 10 линий мусора, то есть, вы посылаете 40 линий мусора в целом. Из приведённого примера вы уже наверное поняли, что игры в этом режиме с беспорядочно возрастающим мусором характерно короткие.
 
-In the **To least** GDS, garbage you send is sent to the player who had *recieved* the least garbage so far. For example, in a room with 3 other opponents, you send 4 lines. Opponent A received 50 lines in the game already at the moment you sent the attack. Opponent B received 53. Opponent C received 58. Because Opponent A received the least lines so far, the 4 lines from your line clear will be sent to him.
+**To least** (Наименьшему) - мусор получает игрок, который *пострадал* меньше всех от предыдущих атак. Предположим, в комнате с тремя оппонентами, вы посылаете 4 линии. Игрок А уже получил 50 линий урона к этому моменту. Игрок Б получил 53. Игрок В получил 58. Так, как игрок А получил меньше всего линий, вся ваша атака - 4 линии, отправляется к нему.
 
-In the **To most** GDS, garbage you send is sent to the player who had *sent* the most garbage so far. In essence, you are attacking the strongest player in the room.  
+**To most** (Наибольшему) - мусор получает игрок, которые *послал* больше всего атак. По сути, вы атакуете самого сильного игрока комнаты.
 
-In the **To self** GDS, garbage you send is sent to yourself. Impractical in multiplayer, but one might find it helpful to practice with it alone. 
+**To self** (Себе) - ваша атака отсылается вам самому. Непрактично в игре против других игроков, но кому-то этот режим может быть полезен для тренировок в одиночку.
 
-In the **Random** GDS, garbage you send is sent to any random player. Arguably the most fair GDS.
+**Random** (Случайно) - атака отсылается случайному оппоненту. Возможно, самый честный режим.
 
-In the **Roulette** GDS, garbage you send is sent to any random player, *including yourself*.
+**Roulette** (Рулетка) - тоже самое, что предыдущее, но атака может быть послана и вам в том числе.
 
-### Garbage Blocking
+### Блокировка мусора 
 
-There are 4 types of garbage blocking systems on Jstris. They are:
+В Jstris 4 типа блокировки мусора:
 
-- Full
-- Limited
-- None
-- Instant
+- Full (Полная)
+- Limited (Ограниченная)
+- None (Отсутствует)
+- Instant (Мгновенная)
 
-**Full** is the default blocking system on Jstris. Other clients that use Full are *TF* (e+ rooms) and *TOP*. Under the Full garbage blocking system, incoming garbage appears as a red bar to your right. It doesn’t rise up on your playfield, however, until you place a piece down. The incoming garbage can be reduced with sent lines (such as a 4 lines) and, if you have already started a combo, will pause completely until you finish the combo.
+**Full** (Полная) - блокировка по умолчанию. Другие клиенты, которые используют Full, это *TF* (комнаты e+) и *TOP*.  В этом режиме, появляется индикатор мусора в виде красной полосы справа от вашего игрового поля. Мусор не попадает на ваше поле до тех пор, пока вы не поставите блок. Мусор может быть уменьшен с помощью вашей атаки (например, снятием 4-х линий). Если вы начали комбо, то мусор будет заморожен от появления на поле до тех пор, пока вы не закончите своё комбо.
 
-**Limited** blocking system is very similar to Full but with one difference. Incoming garbage is inserted as soon as you drop a piece, regardless of whether a combo was started already or not. In other words, incoming garbage does not pause during combos the way Full does. Like in Full, incoming garbage can be reduced with sent lines. Clients that use Limited include *PPT* and *TB* and *TF* (non e+ rooms).
+**Limited** (Ограниченная) - данный тип блокировки очень похож на Full, но с одним отличием. Входящий мусор попадает на ваше поле вне зависимости от того, выполняете ли вы комбо или нет. Другими словами, мусор не приостанавливается во время комб, как в режиме Full. Входящий мусор также может быть уменьшен с помощью атак. Клиенты, использующие Limited включают *PPT*, *TB* и *TF* (не e+ комнаты).
 
-In the **None** blocking system, garbage can never be reduced or cancelled. Incoming garbage will first appear as a red bar (like in Full and Limited) and then be inserted into your playfield as soon as you drop a piece. If an opponent sends you 10 lines, even if you clear 4 lines as your next piece, the garbage will not reduce to 6. Instead, you will still recieve 10 lines while sending 4 to your opponent. 
+**None** (Отсутствует) - в этом режиме, мусор не может быть уменьшен или отменён. Изначально он появляется в виде красной полосы (как в режимах Full и Limited), и попадает на ваше игровое поле как только вы поставите блок. К примеру, если оппонент послал вам 10 линий, даже если вы сняли 4 линии следующим блоком, то входящий мусор не будет уменьшен до 6 линий. Вместо этого, вы получите все 10 линий мусора, и пошлёте оппоненту 4 линии.
 
-In the **Instant** blocking system, there is no red bar at all. The moment an opponent sends an attack, its garbage will rise up on your field. There is no blocking it. 
+**Instant** (Мгновенная) - в этом режиме вообще нет красной полосы. Мусор попадает на ваше поле в момент, когда оппонент посылвает его. Отмера части мусора невозможна.
 
-|         | Red bar (queue) | Blocking? |
-| ------- | :-------------: | :-------: |
-| Full    |       Yes       |    Yes    |
-| Limited |       Yes       |    Yes    |
-| None    |       Yes       |    No     |
-| Instant |       No        |    No     |
+|         | Красная полоса | Отмена |
+| ------- | :------------: | :----: |
+| Full    |       Да       |  Да    |
+| Limited |       Да       |  Да    |
+| None    |       Да       |  Нет   |
+| Instant |       Нет      |  Нет   |
 
-### Blocks
+### Блоки
 
-There are 8 different types of blocks. 
+В игре 8 типов наборов блоков.
 
 - Standard
 - Big
@@ -237,25 +236,25 @@ There are 8 different types of blocks.
 - C2RS
 - O-spin
 
-**Standard** These are the most widely used and basic tetrominoes you are probably most familiar with. These are the default blocks.
+**Standard** Самые распространённые и простые тетромино, с которыми вы уже вероятно знакомы. Являются блоками по умолчанию.
 
-**Big** Four times bigger than your standard blocks, these blocks will deal out massive damage when played with.
+**Big** Увеличенные в 4 раза по сравнению со стандартными блоками, такие блоки наносят массивный урон.
 
-**ARS** Standard blocks with ARS (Arika rotation system), including CC-check. Implementation by NueSB
+**ARS** Стандартные блоки, но управляемые ARS (Arika rotation system), включая CC-проверку. Запрограммированы NueSB
 
-**Penta** These blocks are pentominoes. There are 18 unique pentominoes. 
+**Penta** Пентомино блоки, 18 разных фигур.
 
-**M123** Minos of sizes 1,2,3. There are 4 unique M123 blocks.
+**M123** Блоки размером 1,2 и 3. Всего существует 4 разных блока такого типа.
 
-**All-29** All minos of sizes 1,2,3,4,5, totaling 29 unique minos. A combination of 7 Standard,  4 M123, and 18 Penta blocks. 
+**All-29** Блоки размером 1,2,3,4,5, всего 29 разных блоков. Включает в себя 7 стандартных, 4 M123 и 18 пентаблоков.
 
-**C2RS** Standard blocks with the Cultris 2 rotation system
+**C2RS** стандартные блоки, но управляемые Cultris 2 rotation system.
 
-**O-spin** A meme rotation system where O-spin triple (2xCW) and O-spin quadruple (1xCCW) are possible. Also, other unconventional spins are allowed (due to the kick table which has 15 kick levels as opposed to SRS which has 4).
+**O-spin** система поворотов, возникшая из мемов, где возможны тройной (2 х по часовой стрелке) и четверной (1 х против часовой стрелки) повороты фигуры О. Также, возможны другие нетрадиционные повороты (из за того, что таблица толчков содержит 15 уровней, тогда как стандартная система поворотов SRS содержит только 4 уровня).
 
-### Randomizer
+### Рандомайзер
 
-Randomizers are basically the formula for what and what order blocks you get. Jstris has 11 different randomizers. They are:
+Рандомайзер - это формула, по которой формируется порядок выпадающих блоков. Jstris имеет 11 разных рандомайзеров:
 
 - 7-bag
 - 14-bag
@@ -269,49 +268,49 @@ Randomizers are basically the formula for what and what order blocks you get. Js
 - BSblock+7b
 - BigBlock+7b
 
-**7-bag** is the standard and default randomizer. Imagine a small bag with 1 each of the 7 different blocks. Now you draw out, one by one, a piece until the bag is empty. Then you get a new bag with again 1 each of the 7 different blocks. Now you draw out one by one once more. Repeat. This is how the 7-bag randomizer works. 
+**7-bag** - стандартный рандомайзер по умолчанию. Представьте себе мешок с 7-ю фигурами, по одной из всех возможных. Вы вытаскиваете из мешка фигуры одну за одной, до тех пор, пока он не опустеет. Тогда вы получаете точно такой же новый мешок, опять с 7-ю фигурами. Опять вытаскиваете одну за одной до тех пор, пока он не опустеет. Повторяете. Так и работает 7-bag рандомайзер.
 
-**14-bag** is much like 7-bag only the bag is doubled in size, with 2 of each of the 7 blocks. Once again, you draw out each piece from the bag, one by one, until the bag is empty. Rinse and repeat. 
+**14-bag** - похож на 7-bag, но двойного размера, с двумя фигурами каждого типа из 7-ми возможных блоков. Также вытаскиваете по одной фигуре до тех пор, пока мешок не опустеет. Повторяете.
 
-**Classic** randomizer gives you completely random pieces. This randomizer makes stacking very challenging.
+**Classic** - полностью случайные фигуры. Этот рандомайзер делает постройку очень трудным делом.
 
-**C2Sim** A simulation of the Cultris 2 randomizer, described in this [post by Integration](http://harddrop.com/forums/index.php?showtopic=5080&st=0&p=71443&#entry71443)
+**C2Sim** - рандомайзер Cultris 2, описанный здесь [post by Integration](http://harddrop.com/forums/index.php?showtopic=5080&st=0&p=71443&#entry71443)
 
-**One block** This randomizer gives you a randomly selected block is chosen for you at the start and you will get only that specific block for the whole game. 
+**One block** - этот рандомайзер даёт вам только одну фигуру, выбранную случайно в начале игры. Вам будет выпадать только этот блок.
 
-**Two block** This randomizer is like the One Block one, only it alternates between two specific blocks instead. 
+**Two block** - рандомайзер, похожий на предыдущий, но дающий два разных блока вместо одного.
 
-**One 7-bag** The same bag of 7 pieces is repeated indefinitely. Using this randomizer, you will get the same sequence of 7 pieces over and over. 
+**One 7-bag** - первый мешок в игре будет повторяться бесконечно. Используя этот рандомайезр, одна и та же очередь из 7 фигур будет выпадать снова и снова.
 
-**One 14-bag** The same bag of 14 pieces is repeated indefinitely. Using this randomizer, you will get the same sequence of 14 pieces over and over. 
+**One 14-bag** - похоже на предыдущий режим, но очередь ограничена 14-ю фигурами, которые будут повторяться снова и снова.
 
-**Repeat+7b** Works like 7-bag, only any piece in the bag has a chance of being repeated anywhere from 1-7 times.
+**Repeat+7b** - работает, как 7-bag, только каждая фигура в мешке имеет шанс быть повторённой 1-7 раз.
 
-**BSblock+7b** Normal 7-bag, with the exception that pieces from different Block Sets (hence the BS in the name), like pentominoes or Big Blocks, may appear.
+**BSblock+7b** - работает, как 7-bag, только может включать фигуры из других наборов блоков, например, пентомино или больших блоков.
 
-**BigBlock+7b** Normal 7-bag, with the exception that Big Blocks may appear. 
+**BigBlock+7b** - работает, как 7-bag, только может включать большие блоки.
 
-### Previews
+### Длина очереди 
 
-Jstris has a default of 5 previews. In custom rooms, you can set anywhere from 0 to 5 previews. 
+Jstris по умолчанию показывает 5 превью очереди. В созданных вами комнатах, вы можете настроить от нуля до пяти превью.
 
-### Solid Garbage
+### Заполнение постоянным мусором
 
-Solid garbage are unclearable lines that rise up from the bottom to “hurry up” the game so it doesn’t extend indefinitely. They are slightly darker than normal garbage lines. In the Bot Room, solid garbage by default starts to come after 2 minutes. Solid garbage is also customizable in custom rooms.
+Постоянный мусор это неочищаемые линии, которые прибавляются снизу для того, чтобы подогнать игру и она не продолжалась бесконечно. Такие линии немного темнее, чем обычный мусор. В комнате с ботом постоянный мусор по умолчанию начинает появляться через 2 минуты. Этот параметр может настраиваться в созданных вами комнатах.
 
 ![Solid Garbage][image7]
 
-### Lock Delay
+### Задержка перед фиксацией
 
-Lock delay refers to how much time a piece can wait on the ground before locking into place. In Jstris, there are three types of lock delays you can customize. The first one, L1, controls how many milliseconds after a piece is softdropped to the ground until it locks. The default L1 delay is 500 milliseconds. The second one, L2, controls how many milliseconds after a piece is softdropped to the ground and is kept in motion by moving left or right until it locks. The default L2 delay is 5000 milliseconds. Note that if a piece is rotated, the L2 is reset and the piece can stay on longer than 5000 milliseconds, which brings us to L3. The third one, L3, is the maximum amount of time a piece that enters the matrix can stay on before it autolocks, no matter what. The default L3 delay is 20000 milliseconds. 
+Задержка перед фиксацией означает сколько времени установленная фигура будет ожидать прежде чем зафиксируется. В Jstris есть три типа задержек, которые можно настроить. Первая, L1, означает задержку перед фиксацией фигуры после софт дропа. По умолчанию, задержка L1 = 500 мс. Вторая, L2, означает как долго можно перемещать уроненную софт дропом фигуру налево или направо (по умолчанию 5000 мс). Следует заметить, что если фигуру повернули, то L2 сбрасывается и фигура может быть перемещена дольше, чем в течении обычных 5000 мс, что приводит нас к задержке L3. L3 означает максимальное количество времени после появления фигуры на поле, перед её финальной фиксацией, вне зависмости от совершаемых вами действий. По умолчанию, L3 = 20000 мс.
 
-### Clear Delay
+### Задержка очистки
 
-Clear delay is a fixed amount of time that passes after you clear any line(s). During this time, you can’t do anything. Many classic block games and PPT use clear delay, but Jstris by default has 0 delay, and for the most part it is never used here. However, it is customizable if you want to turn it on. Its range is 0 milliseconds to 6000 milliseconds.
+Задержка очистки это фиксированное количество времени, которое проходит после очистки одной или более линий. Во время этой задержии вы не можете ничего делать. Много классических пазловых игр и PPT используют задержку очистки, но в Jstris по умолчанию задержка очистки = 0, и для большинства режимов она никогда не используется. Однако, это настраивается, если вы хотите включить её. Допустимые значения - от нуля и до 6000 мс.
 
-### Gravity lvl
+### Гравитация
 
-Gravity level refers to the rate at which the pieces fall down the matrix automatically. The Gravity can be adjusted from levels 0-28. The default Gravity is 1. If gravity is 0, the piece will not fall down at all until it is autolocked after the 20 second L3 lock delay (see section Lock Delay). A Gravity level of 28 is equal to 20G, which means pieces will instantly fall from the top to bottom. 
+Гравитация представляет собой скорость, с которой фигуры автоматически падают вниз. Гравитация может быть изменена в пределах 0-28 уровня. Гравитация по умолчанию = 1. Если гравитация =0, то фигура не упадёт вниз до тех пор, пока не истечёт задержка L3 (по умолчанию, 20 секунд). 28 уровень гравитации эквивалентен 20G, при этом фигура мгновенно падает до самого низа.
 
 ### Garbage Delay
 
