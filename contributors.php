@@ -28,6 +28,10 @@ return [
         "version" => '1.5.0',
         "translators" => '1allan'
     ],
+    "ru" => [
+        "version" => '1.5.0',
+        "translators" => 'EDETNAOZERO'
+    ],
     "zh" => [
         "version" => '1.4.1',
         "translators" => 'teatube'
