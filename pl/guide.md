@@ -10,41 +10,41 @@ Witaj w Jstris! Jstris to prosta gra sieciowa polegająca na układaniu spadają
 - [Sterowanie](#sterowanie)
 - [Tryb wieloosobowy](#tryb-wieloosobowy)
   - [Pokój Domyślny](#pokój-domyślny)
-  - [Pokój z botami](#bot-room)
-  - [Pokój 1 na 1](#1v1-room)
-  - [Powolny pokój](#slow-room)
-  - [Pokój z mapami](#map-room)
-- [Singleplayer](#singleplayer)
+  - [Pokój z botami](#pokój-z-botami)
+  - [Pokój 1 na 1](#pokój-1-na-1)
+  - [Powolny pokój](#powolny-pokój)
+  - [Pokój z mapami](#pokój-z-mapami)
+- [Tryb jednoosobowy](#tryb-jednoosobowy)
   - [Sprint](#sprint)
   - [Cheese Race](#cheese-race)
   - [Ultra](#ultra)
-  - [Przetrwanie](#survival)
-  - [Mapy](#maps)
+  - [Przetrwanie](#przetrwanie)
+  - [Mapy](#mapy)
   - [20TSD](#20tsd)
-- [Konfiguracja](#configuration)
-  - [Tablica ataków i kombo](#attack-and-combo-table)
-  - [Rozłożenie śmieci](#garbage-distribution)
-  - [Blokowanie śmieci](#garbage-blocking)
-  - [Kombo](#blocks)
+- [Konfiguracja](#konfiguracja)
+  - [Tablica ataków i kombo](#tablica-ataków-i-kombo)
+  - [Rozłożenie śmieci](#rozłożenie-śmieci)
+  - [Blokowanie śmieci](#blokowanie-śmieci)
+  - [Bloki](#bloki)
   - [Randomizer](#randomizer)
-  - [Podgląd](#previews)
-  - [Solidne śmieci](#solid-garbage)
-  - [Opóźnienie blokady](#lock-delay)
-  - [Opóźnienie czyszczenia](#clear-delay)
-  - [Poziom grawitacji](#gravity-lvl)
-  - [Opóźnienie śmieci](#garbage-delay)
-  - [Nieuporządkowanie](#messiness)
-  - [Konfiguracje wstępne](#configuration-presets)
-  - [Tryby gry](#mode)
-- [Często zadawane pytania](#faq)
-  - [P: Czy mogę dodać bota do mojego prywatnego lub własnego pokoju?](#q-can-i-add-a-bot-to-my-private-or-custom-room)
-  - [P: Co znaczą te wszystkie skróty w tabeli Rezultatów Gry?](#q-what-do-those-abbreviations-in-the-game-results-table-mean)
-  - [P: Co to jest DAS?](#q-what-is-das)
-  - [P: Co to jest ARR?](#q-what-is-arr)
-  - [P: Co to jest finezja?](#q-what-is-finesse)
-  - [P: Czy mogę utworzyć prywatny pokój?](#q-can-i-create-a-private-room)
-  - [P: Czy mogę grać w Jstris bez dostępu do sieci?](#q-can-i-play-jstris-offline)
-- [Dodatkowe informacje](#additional-information)
+  - [Podgląd](#podgląd)
+  - [Solidne śmieci](#solidne-śmieci)
+  - [Opóźnienie blokady](#opóźnienie-blokady)
+  - [Opóźnienie czyszczenia](#opóźnienie-czyszczenia)
+  - [Poziom grawitacji](#poziom-grawitacji)
+  - [Opóźnienie śmieci](#opóźnienie-śmieci)
+  - [Nieuporządkowanie](#nieuporządkowanie)
+  - [Konfiguracje wstępne](#konfiguracje-wstępne)
+  - [Tryby gry](#tryby-gry)
+- [Często zadawane pytania](#często-zadawane-pytania)
+  - [P: Czy mogę dodać bota do mojego prywatnego lub własnego pokoju?](#p-czy-mogę-dodać-bota-do-mojego-prywatnego-lub-własnego-pokoju)
+  - [P: Co znaczą te wszystkie skróty w tabeli Rezultatów Gry?](#p-co-znaczą-te-wszystkie-skróty-w-tabeli-rezultatów-gry)
+  - [P: Co to jest DAS?](#p-co-to-jest-das)
+  - [P: Co to jest ARR?](#p-co-to-jest-arr)
+  - [P: Co to jest finezja?](#p-co-to-jest-finezja)
+  - [P: Czy mogę utworzyć prywatny pokój?](#p-czy-mogę-utworzyć-prywatny-pokój)
+  - [P: Czy mogę grać w Jstris bez dostępu do sieci?](#p-czy-mogę-grać-w-jstris-bez-dostępu-do-sieci)
+- [Dodatkowe informacje](#dodatkowe-informacje)
 
 - - -
 
@@ -61,7 +61,7 @@ Możesz grać bez rejestrowania się, lecz by używać wszystkich funkcji tej st
 
 ## Sterowanie
 
-Jstris allows for players to customize their controls at any time in the **Settings** menu that is located underneath the main play area. Default controls are as follows:
+Jstris pozwala graczom na dostosowanie swojego sterowania w dowolnym czasie w menu **Ustawienia** zlokalizowanym pod planszą. Domyślnie sterowanie wygląda następująco:
 
 |   Polecenie      | Domyślny klawisz |
 | ---------------- | ---------------- |
@@ -256,7 +256,7 @@ W Jstris występuje 8 rodzajów bloków.
 
 **C2RS** 7 tetromino posiadających system obrotów z gry Cultris 2.
 
-**O-spin** 7 tetromino posiadających żartobliwy system obrotów. W tym systemie możliwy jest potrójny O-spin (2x obrót w lewo) i poczwórny O-spin (1x obrót w prawo) są możliwe. Możliwe są też inne niekonwencjonalne spiny, ponieważ tablica przesunięć posiada 15 przesunięć. Dla porównania, SRS posiada ich tylko 5.
+**O-spin** 7 tetromino posiadających żartobliwy system obrotów. W tym systemie możliwy jest potrójny O-spin (2x obrót w lewo) i poczwórny O-spin (1x obrót w prawo). Możliwe są też inne niekonwencjonalne spiny, ponieważ tablica przesunięć posiada 15 przesunięć. Dla porównania, SRS posiada ich tylko 5.
 
 ### Randomizer
 
@@ -311,36 +311,36 @@ Solidne śmieci to niewyczyszczalne śmieci które nadchodzą z dołu planszy by
 Opóźnienie blokady określa, ile czasu klocek może zostać na ziemi, zanim ten klocek zostanie zablokowany. W Jstris występują trzy typy opóźnienia blokady które mogą być dostosowane. Pierwszy (L1) określa przez jaki czas klocek może pozostać na ziemi nieruchomo, zanim ten klocek zostanie zablokowany. Domyślne opóźnienie L1 to 500 ms. Drugi (L2) określa przez jaki czas klocek może pozostać na ziemi, jeśli jest on poruszany w lewo/prawo, zanim ten klocek zostanie zablokowany. Domyślne opóźnienie L2 to 5000 ms (5 s). Zwróć uwagę na to, że jeśli klocek jest obrócony, opóźnienie L2 zostaje zresetowane i klocek może pozostać aktywny przez czas dłuższy niż 5000 ms.
 Trzeci, L3, określa przez jaki czas klocek może być aktywny, zanim zostanie automatycznie upuszczony bez Twojej zgody. Domyślne opóźnienie L3 to 20000 ms (20 s).
 
-### Clear Delay
+### Opóźnienie czyszczenia
 
-Clear delay is a fixed amount of time that passes after you clear any line(s). During this time, you can’t do anything. Many classic block games and PPT use clear delay, but Jstris by default has 0 delay, and for the most part it is never used here. However, it is customizable if you want to turn it on. Its range is 0 milliseconds to 6000 milliseconds.
+Opóźnienie czyszczenia to stała ilość czasu która przemija po wyczyszczeniu linii. Podczas tego czasu nic nie możesz zrobić. Wiele klasycznych układanek ze spadającymi klockami takich jak PPT używają opóźnienia czyszczenia. Jstris domyślnie posiada 0 opóźnienia, i w większości to opóźnienie nie jest używane tutaj. Jednak można owe opóźnienie włączyć we własnych pokojach. Zakres opóźnienia czyszczenia można dostosować od 0 ms do 6000 ms.
 
-### Gravity lvl
+### Poziom grawitacji
 
-Gravity level refers to the rate at which the pieces fall down the matrix automatically. The Gravity can be adjusted from levels 0-28. The default Gravity is 1. If gravity is 0, the piece will not fall down at all until it is autolocked after the 20 second L3 lock delay (see section Lock Delay). A Gravity level of 28 is equal to 20G, which means pieces will instantly fall from the top to bottom. 
+Poziom grawitacji określa co jaki czas klocki spadają na dół planszy automatycznie. Grawitacja może być dostosowana za pomocą poziomów od 0 do 28. Domyślny poziom grawitacji to 1. Jeśli grawitacja jest ustawiona na 0, klocki nie będą spadać dopóki nie zostaną automatycznie zablokowane po 20-sekundowym okresie opóźnienia blokady L3. Poziom grawitacji 28 jest równy 20G, co znaczy że klocki będą spadać natychmiast z góry na dół.
 
-### Garbage Delay
+### Opóźnienie śmieci
 
-Garbage delay is a fixed amount of time between the incoming garbage indicated by the red bar and the insertion of that garbage into the playfield. By default, it is set at 500 milliseconds. It is customizable from a range of 0 milliseconds to 60000 milliseconds. A higher garbage delay allows for more pieces to be played before garbage is inserted, while a lower garbage delay allows for less pieces to be played before garbage insertion. Or in other words, the higher the garbage delay, the more opportunity it gives to block more effectively. Another way to define garbage delay is “the minimumum amount of time an incoming attack has to be visible in the red bar before a placed block can trigger the insertion of that garbage to the playfield.”
+Opóźnienie śmieci to stały okres czasu pomiędzy dostaniem śmieci do czerwonego paska a wstawieniem tych śmieci na planszę. Domyślnie, to opóźnienie jest ustawione na 500 ms. Można je dostosować we własnych pokojach w zakresie of 0 ms do 60000 ms. Dłuższe opóźnienie śmieci pozwala na postawienie większej ilości klocków zanim śmieci zostaną wstawione na planszę, podczas gdy krótsze opóźnienie śmieci pozwala na postawienie mniejszej ilości klocków zanim śmieci zostaną wstawione na planszę. Innymi słowy - im dłuższe opóźnienie śmieci, tym więcej szans na zablokowanie ich efektywnie.
 
-### Messiness
+### Nieuporządkowanie
 
-Garbage messiness refers to the difficulty level to clear certain types of garbage. To change the messiness of garbage in a room, use the command `/set messiness ?`, where the ? is replaced with any number from -100 to 100. -100 is the least messy garbage configuration, and the garbage hole will only appear in one column throughout the entirety of the game (left picture). 100 is the most messy garbage configuration and the garbage hole will appear in any of the 10 columns, making it much more difficult to downstack (right picture).
+Nieuporządkowanie określa jak ciężko jest przekopać się przez różne typy śmieci. By zmienić nieuporządkowanie śmieci w pokoju, użyj komendy `/set messiness ?` - w miejsce `?` wpisz jakąkolwiek liczbę pomiędzy -100 a 100. -100 to najmniejsza wartość nieuporządkowania - dziury w śmieciach będą się pojawiać tylko w jednej kolumnie przez całą grę (lewy obrazek). 100 to największa wartość nieuporządkowania - dziury w śmieciach będą się pojawiać na wszystkich 10 kolumnach, sprawiając że jest dużo ciężej przez nie przekopać (prawy obrazek).
 
 ![Unmessy (-100)][image10] 
 ![Messy (100)][image1]
 
-### Configuration presets
+### Konfiguracje wstępne
 
-If there is a room settings configuration you particularly like and want to easily refer back to, you can save the settings as a preset.
+Jeżeli polubiłeś/aś jakąś konfigurację pokoju i chałbyś/chciałabyć do niej szybko powrócić, możesz zapisać ustawienia pokoju jako konfigurację wstępną.
 
-To do this, go to *Lobby*, then *Create Room*, then either the *Simple* or *All* tab. Once you have customized the settings to your liking, hit the *Save* button at the bottom right corner to generate your preset data. Copy it, then paste it in the box next to Preset data on the [Submit a preset](/presets/submit) page.
+Aby to zrobić, wciśnij *Lobby*, następnie *Utwórz pokój*, a następnie wciśnij kartę *Prosty* lub *Wszystkie*. Gdy już ustawisz wszystkie ustawienia według uznania, wciśnij przycisk *Zapisz* by wygenerować dane konfiguracji wstępnej. Skopiuj je, a później wklej je w pole tekstowe obok "Preset data" na stronie [Prześlij nową konfigurację wstępną](/presets/submit).
 
-Once you’ve submitted the preset, you can view it, along with all other user-submitted presets on the [List of presets](/presets). Now you can easily recreate the same room without customizing all the settings again. Just go to *Create Room*, then *Use Custom Preset*, and enter either the title or ID number of your preset. 
+Po wysłaniu konfiguracji wstępnej możesz ją obejrzeć wraz z wszystkimi innymi konfiguracjami wstępnymi wysłanymi przez użytkowników na [liście niestandardowych zestawów ustawień](/presets). Możesz później łatwo stworzyć ponownie ten pokój bez konieczności ustawiania wszystkich ustawień ponownie. Po prostu kliknij *Utwórz pokój*, następnie *Użyj niestandardowego zestawu ustawień*, a później wpisz tytuł lub numer ID (identyfikator) tego zestawu ustawień.
 
-### Mode
+### Tryby gry
 
-There are currently 7 different modes to choose from when creating a new room. They are:
+Jstris posiada 7 różnych trybów gry możliwych do wyboru podczas tworzenia nowego pokoju:
 
 - Standard
 - Team
@@ -350,70 +350,72 @@ There are currently 7 different modes to choose from when creating a new room. T
 - Live Survival
 - Live Maps v0.1
 
-**Standard** mode is normal multiplayer free-for-all. 
+**Standard** to standardowy tryb wieloosobowy.
 
-**Team** mode creates a custom Team Room. Pick a side, red or blue, and battle and bring glory for your team. To set your own team name, use the command `/set teamName ?` where the ? is replaced with your team name. 
+**Team** tworzy własny Pokój drużynowy. Wybierz swoją drużynę, czerwoną albo niebieską, i walcz o honor dla swojej drużyny. By ustawić swoją własną nazwę drużyny, użyj komendy `/set teamName ?` - w miejsce `?` wstaw swoją nazwę drużyny. 
 
 ![team game in progress][image11]
 
-**Cheese** mode creates a Cheese Room. Cheese, also known as garbage, is the primary way to knock out opponents in multiplayer modes. It is an important skill to downstack through cheese. Practice how fast you can downstack in this mode that starts games with 10 lines of garbage. First to reach the bottom wins. 10 lines too easy for you? Adjust the amount of starting lines with the command `/set height ?` , with the question mark representing a number from 1 to 20.
+**Cheese** tworzy nowy "Cheese Room". Gry w tym pokoju zaczynają się z 10 liniami śmieci z dziurami niczym w serze szwajcarskim (stąd nazwa trybu - Cheese - ser). Pierwsza osoba, która się przekopie do dołu planszy wygrywa. 10 linii jest zbyt proste dla ciebie? Dostosuj ilość linii śmieci za pomocą komendy `/set height ?` - w miejsce `?` wstaw dowolną liczbę pomiędzy 1 a 20.
 
-**Live Sprint** mode allows you to play Sprint against an opponent(s). The fastest one to finish the Sprint wins. The room defaults to a 40L Sprint, but you can change to any other type of Sprint with these commands:
+**Live Sprint** pozwala Ci grać w Sprint przeciwko przeciwnikowi (lub przeciwnikom). Pierwsza osoba która ukończy Sprint wygrywa. Domyślnie ustawienie tego trybu to Sprint na 40 linii, ale możesz zmienić cel Sprintu używając tych komend:
 
-- 20L:     `/set gamemode sprint20`
-- 40L:     `/set gamemode sprint40`
-- 100L:    `/set gamemode sprint100`
-- 1000L:   `/set gamemode sprint1000`
+- 20 linii:     `/set gamemode sprint20`
+- 40 linii:     `/set gamemode sprint40`
+- 100 linii:    `/set gamemode sprint100`
+- 1000 linii:   `/set gamemode sprint1000`
 
-If you break your Sprint record in Live Sprint, unfortunately you cannot add it to your account because the Sprint will be contained in a Live Replay, not a standard Replay. But you can still save the replay to your favorites if you want to preserve it.
+Jeśli uda ci się osiągnąć nowy rekord personalny Sprintu w Live Sprint, niestety nie możesz go dodać do swojego konta ponieważ ten Sprint będzie zawarty w powtórce trybu Live, a nie w standardowej powtórce. Możesz wciąż zapisać tą powtórkę do swoich ulubionych jeśli chcesz ją zatrzymać dla siebie.
 
-**Live Cheese** mode allows you to play Cheese against an opponent(s). Live Cheese mode is virtually identical to Cheese mode except that you can't customize starting lines beyond the 10L, 18L, and 100L. The room defaults to a 10L Cheese, but you can change to any other type of Cheese with these commands:
+**Live Cheese** pozwala Ci grać w Cheese Race przeciwko przeciwnikowi (lub przeciwnikom). Live Cheese jest bardzo podobny do Cheese z tą różnicą że nie możesz dostosować linii śmieci poza domyślnym wyborem Cheese Race na 10, 18 i 100 linii. Domyślnie ustawienie tego trybu to Cheese Race na 10 linii, ale możesz zmienić cel tego trybu używając tych komend:
 
-- 10L:     `/set gamemode cheese10`
-- 18L:     `/set gamemode cheese18`
-- 100L:    `/set gamemode cheese100`
+- 10 linii:     `/set gamemode cheese10`
+- 18 linii:     `/set gamemode cheese18`
+- 100 linii:    `/set gamemode cheese100`
 
-**Live Survial** mode allows you to play Survival against an opponent(s). Whoever survives the longest wins.
+**Live Survival** pozwala Ci grać w Przetrwanie przeciwko przeciwnikowi (lub przeciwnikom). Wygrywa osoba która przetrwa najdłużej.
 
-**Live Maps v0.1** mode creates a custom Map Room. Everything in this room works the same as the Map Room. 
+**Live Maps v0.1** pozwala Ci stworzyć własny Pokój z mapami. Wszystko w tym pokoju działa tak samo jak w Pokoju z mapami.
 
-## FAQ
+## Często zadawane pytania
 
-### Q: Can I add a bot to my private or custom room?
+### P: Czy mogę dodać bota do mojego prywatnego lub własnego pokoju??
 
-A: No. Currently, we only have one bot on Jstris, which permanently resides in the Bot Room. However, private bots may be a reality in the future.
+# *&lt;This section is very outdated, nowadays bot rooms are private rooms created by using the menu.&gt;*
 
-### Q: What do those abbreviations in the Game Results table mean?
+Odp: Nie, obecnie posiadamy jedynie jednego bota na Jstris, który stacjonuje w Pokoju z botami. Jednak jest możliwość, że możliwość dodania botów do własnego pokoju będzie możliwe.
 
-A: B2B = back-to-back. B2Bpm = back-to-back per minute. APM = attack per minute. SPM = sent per minute. PPS = pieces per second. Rep = replay.
+### P: Co znaczą te wszystkie skróty w tabeli Rezultatów Gry?
+
+Odp: B2B = back-to-back. B2Bpm = ilość back-to-back na minutę. APM = atak na minutę. SPM = ilość wysłanych linii na minutę. PPS = klocki na sekundę. Rep = Powtórka.
 
 ![game results table][image9]
 
-### Q: What is DAS?
+### P: Co to jest DAS?
 
-A: DAS is a form of horizontal piece sensitivity. DAS stands for delayed auto shift. It controls for how long you have to hold down the left or right keys before the block moves to the direction you want. With a very low DAS, even the lightest touch on a key will immediately send the block moving. With a very high DAS, you will have to hold down the key for longer before the block starts moving. Professionals on average tend to use a lower DAS because the increased sensitivity allows them to play faster. The default DAS on Jstris is 133. If it still feels too sensitive, raise that number until you feel comfortable. If it feels too slow, lower the number. Adjust and find what suits you.
+Odp: DAS to czułość ruchu klocka na boki. DAS oznacza Delayed Auto Shift - opóźnione automatyczne przesunięcie. DAS kontroluje, jak długo musisz trzymać przycisk do ruchu w lewo/prawo zanim klocek zacznie się poruszać w twoją pożądaną stronę. Z krótkim DAS nawet najbardziej lekkie naciśnięcie klawisza spowoduje że klocek zacznie się ruszać. Z długim DAS, musisz trzymać klawisz przez dłuższy czas zanim klocek zacznie się poruszać. Profesjonalni gracze zazwyczaj używają niskich wartości DAS ponieważ zwiększona czułość pozwala im grać szybciej. Domyślny DAS w Jstris to 133 (ms). Jeśli kontrola wciąż się wydaje być zbyt czuła, zwiększ DAS dopóki nie zaczniesz czuć się komfortowo. Jeśli kontrola zaczyna wydawać się być zbyt powolna, zmniejsz DAS. Dostosuj DAS do swoich upodobań.
 
-### Q: What is ARR?
+### P: Co to jest ARR?
 
-A: ARR is another form of horizontal piece sensitivity. ARR stands for auto repeat rate. It controls for how fast the block moves left or right. This is a little easier to understand than DAS. Quite simply, with a very low ARR, blocks will zoom almost immediately to the direction you want when holding down the left or right keys. With a very high ARR, blocks will move very slowly in the direction you want when holding down the left or right keys. The default ARR on Jstris is 10. 
+Odp: ARR to inna forma czułości ruchu klocka na boki. ARR oznacza Auto Repeat Rate - okres automatycznego powtarzania. ARR kontroluje, jak szybko klocek będzie się przesuwać w lewo/prawo. ARR jest trochę prostszy do zrozumienia niż DAS. Z krótkim ARR, klocki przesuwają się gwałtownie w pożądanym kierunku podczas trzymania przycisku do ruchu w lewo/prawo. Z długim ARR, klocki będą poruszać się powoli w pożądanym kierunku podczas trzymania przycisku do ruchu w lewo/prawo. Domyślny ARR w Jstris to 10 (ms).
 
-### Q: What is finesse?
+### P: Co to jest finezja?
 
-A: Finesse is defined as the most efficient way to move a block. Good finesse is important for playing smoother and faster. The number next to finesse denotes how many finesse errors were committed. So a 0 finesse score means you made no finesse errors.  Ideally, the closer you get to 0, the better. Finesse is something that needs to be learned in order to know how to do. There are many resources online explaining it. This video is a good starting point: [Tutorial: How to Play Fast!](https://youtu.be/_QBs703nOnk?t=502).
+Odp: Finezja to najbardziej efektywny sposób na przesunięcie klocka. Dobra finezja jest ważna dla szybszej i płynniejszej gry. Licznik finezji określa ile błędów finezji zostało popełnionych. Finezja równa 0 określa że nie popełniłeś/aś żadnych błędów finezji. Im licznik finezji jest bliższy 0, tym lepiej. Finezja jest czymś co musi być wyuczone by wiedzieć co robić. Istnienie wiele zasobów w Internecie wyjaśniających finezję. To wideo jest niezłym wstępem: [Tutorial: How to Play Fast!](https://youtu.be/_QBs703nOnk?t=502).
 
-### Q: Can I create a private room?
+### P: Czy mogę utworzyć prywatny pokój?
 
-A: Yes. Click *Lobby*, then *Create Room*, then check the box that says *Private*. Copy and give the room link to anyone you want to join your private room. Here’s a tip: grab the link of any room, public or private, by using the command `/link`.
+Odp: Tak. Wciśnij *Lobby*, następnie *Utwórz pokój*, następnie zaznacz pole obok *Prywatny*. Skopiuj link to pokoju i podaj go osobie którą chcesz zaprosić do swojego pokoju. Podpowiedź: Uzyskaj link do jakiegokolwiek pokoju, publicznego lub prywatnego, używając komendy `/link`.
 
-### Q: Can I play Jstris offline?
+### P: Czy mogę grać w Jstris bez dostępu do sieci?
 
-A: Yes. In order to play offline, you have to first download Jstris while you are online. To do this, right click on the home page, press "Save as", and download the html file. Note that only single player modes can be played offline, and the scores will not be saved.
+Odp: Tak. By grać w Jstris bez dostępu do sieci, musisz najpierw pobrać Jstris kiedy jesteś połączony/połączona do sieci. Aby to zrobić, kliknij prawym przyciskiem myszy na stronę główną, wciśnij "Zapisz stronę jako...", a następnie pobierz plik HTML. Zwróć uwagę na to, że tylko tryby jednoosobowe są grywalne bez dostępu do sieci, a wyniki nie będą zapisywane.
 
 - - -
 
-## Additional Information
+## Dodatkowe informacje
 
-Jstris runs entirely on donations. There are no advertisements whatsoever. Due to the considerable amount of stored replays and game data, a powerful server is required to run Jstris. All donations are much appreciated and will help keep Jstris running - see the [About](/about) section on the website to learn more.
+Jstris działa w 100% na darowiznach. Jstris nie posiada żadnych reklam. Z powodu znacznej ilości przechowywanych powtórek i danych gry, Jstris wymaga mocnego serwera. Wszystkie darowizny są bardzo mile widziane i pozwalają Jstris działać dalej - zobacz sekcję [O nas](/about) by dowiedzieć się więcej.
 
 [image2]: ./images/guide-intro.png "introduction"
 [image4]: ./images/image4.png "MisaMino bot in opponents view"
