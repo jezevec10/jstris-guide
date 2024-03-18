@@ -218,7 +218,7 @@ W Jstris występują 4 systemy blokowania śmieci:
 
 **Limited (Ograniczony)** system blokowania śmieci jest bardzo podobny do Full (Pełnego) z jedną różnicą. Nadchodzące śmieci są wstawiane po upuszczeniu klocka, nie ważne czy ten klocek wyczyścił linię czy też nie. Innymi słowami, nadchodzące śmieci mogą być wstawione podczas wykonywania kombo, w przeciwieństwie do systemu Full. Tak jak w Full, możesz redukować ilość śmieci poprzez wysyłanie linii. Klienty które używają systemu Limited to na przykład *PPT2*, *PPT*, *TB* i *TF* (oprócz pokoi e+).
 
-W systemie **None (Żadnym)**, śmieci nigdy nie mogą być zredukowane lub zniwelowane. Nadchodzące śmieci najpierw się pojawią jako czerwony pasek (tak jak w Full i Limited) a potem będą wstawione na twoją planszę jak tylko upuścisz klocek. Jeśli przeciwnik wyśle ci 10 linii, nawet jeśli wyczyścisz 10 linii twoim następnym klockiem, ilość śmieci nie będzie ograniczona do 6. Zamiast tego, ty wciąż otrzymasz 10 linii śmieci podczas gdy 4 linie zostaną wysłane do przeciwnika.
+W systemie **None (Żadnym)**, śmieci nigdy nie mogą być zredukowane lub zniwelowane. Nadchodzące śmieci najpierw się pojawią jako czerwony pasek (tak jak w Full i Limited) a potem będą wstawione na twoją planszę jak tylko upuścisz klocek. Jeśli przeciwnik wyśle ci 10 linii, nawet jeśli wyczyścisz 4 linie twoim następnym klockiem, ilość śmieci nie będzie ograniczona do 6. Zamiast tego, ty wciąż otrzymasz 10 linii śmieci podczas gdy 4 linie zostaną wysłane do przeciwnika.
 
 W systemie **Instant (Natychmiastowym)** nie ma czeronego paska. Gdy przeciwnik atakuje, śmieci pojawią się natychmiast na twojej planszy. Nie da się ich zablokować.
 
