@@ -1,4 +1,4 @@
-# Jstris Guide
+# Przewodnik Jstris
 
 Witaj w Jstris! Jstris to prosta gra sieciowa polegająca na układaniu spadających bloków. Jstris jest znany ze swojej szybkiej rozgrywki i przyciąga utalentowanych graczy z całego świata. Ten przewodnik wprowadzi Cię do prostych funkcji tej gry.
 
@@ -34,7 +34,7 @@ Witaj w Jstris! Jstris to prosta gra sieciowa polegająca na układaniu spadają
   - [Poziom grawitacji](#poziom-grawitacji)
   - [Opóźnienie śmieci](#opóźnienie-śmieci)
   - [Nieuporządkowanie](#nieuporządkowanie)
-  - [Konfiguracje wstępne](#konfiguracje-wstępne)
+  - [Zestawy ustawień](#zestawy-ustawień)
   - [Tryby gry](#tryby-gry)
 - [Często zadawane pytania](#często-zadawane-pytania)
   - [P: Czy mogę dodać bota do mojego prywatnego lub własnego pokoju?](#p-czy-mogę-dodać-bota-do-mojego-prywatnego-lub-własnego-pokoju)
@@ -50,7 +50,7 @@ Witaj w Jstris! Jstris to prosta gra sieciowa polegająca na układaniu spadają
 
 ## Przegląd
 
-Jstris używa tych samych podstawowych mechanik co inne układanki ze spadającymi klockami tego typu. Zasady tej gry są w większości zgodne z wytycznymi na których podstawie tworzone są oficjalne gry. Godna uwagi cecha tej gry jest jej rozległe użycie powtórek. W każdym trybie gry w którym grasz i który ukończyłeś/aś, powtórka będzie automatycznie wygenerowana dla Ciebie. Oglądanie i analizowanie swoich własnych gier jest integralną częścią doskonalenia swojej rozgrywki. Powtórki Jstrisa bardzo ułatwiają owe analizy.
+Jstris używa tych samych podstawowych mechanik co inne układanki ze spadającymi klockami tego typu. Zasady tej gry są w większości zgodne z wytycznymi na których podstawie tworzone są oficjalne gry. Godną uwagi cechą tej gry jest jej rozległe użycie powtórek. W każdym trybie gry w którym grasz i który ukończyłeś/aś, powtórka będzie automatycznie wygenerowana dla Ciebie. Oglądanie i analizowanie swoich własnych gier jest integralną częścią doskonalenia swojej rozgrywki. Powtórki Jstrisa bardzo ułatwiają owe analizy.
 
 W przeciwieństwie do innych stron, bądź pewny że rankingi Jstrisa są kompletnie czyste i pozbawione oszustów. Moderatorzy skrupulatnie usuwają podejrzane rekordy by mieć pewność że lista globalnych osiągnięć jest warta zaufania.
 
@@ -84,8 +84,6 @@ Gra w domyślnym pokoju może być ciężka! Unikalną cechą Jstrisa jest to, �
 
 ### Pokój z botami
 
-# *&lt;This section is very outdated, nowadays bot rooms are private rooms created by using the menu.&gt;*
-
 Pokój domyślny nie jest jedynym dostępnym pokojem. By zobaczyć pełną listę pokoi, wciśnij przycisk *lobby* blisko lewego dolnego rogu twojej planszy. Drugim najpopularniejszym pokojem na Jstris jest zazwyczaj **Pokój z botami**, nazwany tak ponieważ w nim występuje co najmniej jeden Bot. Bot jest zawsze umiejscowiony w prawym górnym rogu przeciwników. Łatwo da się go zauważyć przez swój unikalny czerwony kolor.
 
 ![MisaMino bot in opponents view][image4]
@@ -112,7 +110,7 @@ W **Pokoju 1 na 1** może grać maksimum 2 użytkowników, jednakże każdy moż
 
 ### Powolny pokój
 
-Chcesz pograć ze znajomym ale różnica poziomów uzdolnienia pomiędzy wami jest zbyt wysoka? Albo może po prostu zaczynasz i jesteś zmęczony przegrywaniem niemalże natychmiastowo w Pokoju z botami zdominowanego przez profesjonalnych graczy? A może po prostu chciałbyć/chciałabyś poćwiczyć efektywność w swojej grze poprzez eliminację prędkości z równania? Dla tychże okazji znajduje się Powolny pokój. Domyślne ograniczenie prędkości Powolnego pokoju to 1.5 PPS, co oznacza że gracz nie może przekroczyć 1.5 PPS przez zbyt długi czas. Jakiekolwiek próby przekroczenia tej prędkości spowodują, że gracz nie może upuszczać bloków przez chwilę. Dodatkowo, Powolny Pokój posiada opóźnienie przy czyszczeniu linii o długości 500 ms. To oznacza, że po każdym wyczyszczeniu linii, musisz poczekać 500 ms zanim możesz kontrolować następne klocki. Wszystkie Powolne pokoje są oznaczone małym prędkościomierzem - [SPEEDOMETER_ICON]. Własne Powolne pokoje mogą mieć dowolne ograniczenie prędkości pomiędzy 0 PPS a 20 PPS.
+Chcesz pograć ze znajomym ale różnica poziomów uzdolnienia pomiędzy wami jest zbyt wysoka? Albo może po prostu zaczynasz i jesteś zmęczony przegrywaniem niemalże natychmiastowo w Pokoju z botami zdominowanym przez profesjonalnych graczy? A może po prostu chciałbyś/chciałabyś poćwiczyć efektywność w swojej grze poprzez eliminację prędkości z równania? Dla tychże okazji znajduje się Powolny pokój. Domyślne ograniczenie prędkości Powolnego pokoju to 1.5 PPS, co oznacza że gracz nie może przekroczyć 1.5 PPS przez zbyt długi czas. Jakiekolwiek próby przekroczenia tej prędkości spowodują, że gracz nie może upuszczać bloków przez chwilę. Dodatkowo, Powolny Pokój posiada opóźnienie przy czyszczeniu linii o długości 500 ms. To oznacza, że po każdym wyczyszczeniu linii, musisz poczekać 500 ms zanim możesz kontrolować następne klocki. Wszystkie Powolne pokoje są oznaczone małym prędkościomierzem - [SPEEDOMETER_ICON]. Własne Powolne pokoje mogą mieć dowolne ograniczenie prędkości pomiędzy 0 PPS a 20 PPS.
 
 ![the lobby, where you can join and create rooms][image5]
 
@@ -130,7 +128,7 @@ Będący podstawowym trybem z prostym celem, **Sprint** jest najpopularniejszym 
 
 ### Cheese Race
 
-Będącym mniej bezczelnym i bardziej analiczyczym trybem niż Sprint, **Cheese Race** wymaga więcej myślenia - musisz przekopać się przez linie śmieci jak naszybciej i/lub jak najefektywniej. Jstris oferuje Cheese Race na 10, 18 i 100 lini, oraz nieskończony Cheese Race.
+Będącym mniej bezczelnym i bardziej analitycznym trybem niż Sprint, **Cheese Race** wymaga więcej myślenia - musisz przekopać się przez linie śmieci jak naszybciej i/lub jak najefektywniej. Jstris oferuje Cheese Race na 10, 18 i 100 linii, oraz nieskończony Cheese Race.
 
 ### Ultra
 
@@ -256,7 +254,7 @@ W Jstris występuje 8 rodzajów bloków.
 
 **C2RS** 7 tetromino posiadających system obrotów z gry Cultris 2.
 
-**O-spin** 7 tetromino posiadających żartobliwy system obrotów. W tym systemie możliwy jest potrójny O-spin (2x obrót w lewo) i poczwórny O-spin (1x obrót w prawo). Możliwe są też inne niekonwencjonalne spiny, ponieważ tablica przesunięć posiada 15 przesunięć. Dla porównania, SRS posiada ich tylko 5.
+**O-spin** 7 tetromino posiadających żartobliwy system obrotów. W tym systemie możliwy jest potrójny O-spin (2x obrót w lewo) i poczwórny O-spin (1x obrót w prawo). Możliwe są też inne niekonwencjonalne spiny, ponieważ tablica przesunięć posiada 15 przesunięć. Dla porównania, SRS posiada ich tylko 4.
 
 ### Randomizer
 
@@ -278,13 +276,13 @@ Randomizery to systemy losujące w jakiej kolejności i jakie dostaniesz kolejne
 
 **14-bag** jest podobny do 7-bag, jednak worek jest 2 razy większy. Worek tym razem posiada po 2 z każdego z 7 różnych bloków. Jeszcze raz, wyjmujesz klocki z worka, jeden po jednym, dopóki worek nie zostanie opróżniony. I tak w kółko.
 
-**Classic** daje ci losowe klocki. Układanie klocków przy tym randomizerze jest wyzywające.
+**Classic** daje ci losowe klocki. Układanie klocków z tym randomizerem jest wyzywające.
 
-**C2Sim** Symulacja randomizera z gry Cultris 2, objaśnionym w tym [poście napisanym przez Integration](http://harddrop.com/forums/index.php?showtopic=5080&st=0&p=71443&#entry71443).
+**C2Sim** Symulacja randomizera z gry Cultris 2, objaśnionego w tym [poście napisanym przez Integration](http://harddrop.com/forums/index.php?showtopic=5080&st=0&p=71443&#entry71443).
 
 **One block** Ten randomizer na początku losuje blok. Przez całą grę będziesz otrzymywać jedynie ten jeden blok.
 
-**Two block** Ten randomizer jest podobny to One Block, jednakże on losuje 2 bloki, które będziesz otrzymywać naprzemiennie przez całą grę.
+**Two block** Ten randomizer jest podobny to One Block, jednak on losuje 2 bloki, które będziesz otrzymywać naprzemiennie przez całą grę.
 
 **One 7-bag** Na początku gry jest losowany losowy ciąg 7 różnych bloków. Ten ciąg będzie zapętlony przez całą grę. Używany przez *TE:C* w trybach Relax jeśli *Tetromino Order* zostanie ustawiony na *Fixed*.
 
@@ -313,7 +311,7 @@ Trzeci, L3, określa przez jaki czas klocek może być aktywny, zanim zostanie a
 
 ### Opóźnienie czyszczenia
 
-Opóźnienie czyszczenia to stała ilość czasu która przemija po wyczyszczeniu linii. Podczas tego czasu nic nie możesz zrobić. Wiele klasycznych układanek ze spadającymi klockami takich jak PPT używają opóźnienia czyszczenia. Jstris domyślnie posiada 0 opóźnienia, i w większości to opóźnienie nie jest używane tutaj. Jednak można owe opóźnienie włączyć we własnych pokojach. Zakres opóźnienia czyszczenia można dostosować od 0 ms do 6000 ms.
+Opóźnienie czyszczenia to stała ilość czasu która przemija po wyczyszczeniu linii. Podczas tego czasu nic nie możesz zrobić. Wiele klasycznych układanek ze spadającymi klockami takich jak PPT używają opóźnienia czyszczenia. Jstris domyślnie nie posiada opóźnienia czyszczenia, i w większości nie jest ono używane w tej grze. Jednak można owe opóźnienie włączyć we własnych pokojach. Zakres opóźnienia czyszczenia można dostosować od 0 ms do 6000 ms.
 
 ### Poziom grawitacji
 
@@ -330,20 +328,20 @@ Nieuporządkowanie określa jak ciężko jest przekopać się przez różne typy
 ![Unmessy (-100)][image10] 
 ![Messy (100)][image1]
 
-### Konfiguracje wstępne
+### Zestawy ustawień
 
-Jeżeli polubiłeś/aś jakąś konfigurację pokoju i chałbyś/chciałabyć do niej szybko powrócić, możesz zapisać ustawienia pokoju jako konfigurację wstępną.
+Jeżeli polubiłeś/aś jakąś konfigurację pokoju i chałbyś/chciałabyć do niej szybko powrócić, możesz zapisać ustawienia pokoju jako zestaw ustawień.
 
-Aby to zrobić, wciśnij *Lobby*, następnie *Utwórz pokój*, a następnie wciśnij kartę *Prosty* lub *Wszystkie*. Gdy już ustawisz wszystkie ustawienia według uznania, wciśnij przycisk *Zapisz* by wygenerować dane konfiguracji wstępnej. Skopiuj je, a później wklej je w pole tekstowe obok "Preset data" na stronie [Prześlij nową konfigurację wstępną](/presets/submit).
+Aby to zrobić, wciśnij *Lobby*, następnie *Utwórz pokój*, a następnie wciśnij kartę *Prosty* lub *Wszystkie*. Gdy już ustawisz wszystkie ustawienia według uznania, wciśnij przycisk *Zapisz* by wygenerować dane zestawu ustawień. Skopiuj je, a później wklej je w pole tekstowe obok "Preset data" na stronie [Prześlij nowy zestaw ustawień](/presets/submit).
 
-Po wysłaniu konfiguracji wstępnej możesz ją obejrzeć wraz z wszystkimi innymi konfiguracjami wstępnymi wysłanymi przez użytkowników na [liście niestandardowych zestawów ustawień](/presets). Możesz później łatwo stworzyć ponownie ten pokój bez konieczności ustawiania wszystkich ustawień ponownie. Po prostu kliknij *Utwórz pokój*, następnie *Użyj niestandardowego zestawu ustawień*, a później wpisz tytuł lub numer ID (identyfikator) tego zestawu ustawień.
+Po wysłaniu zestawu ustawień możesz go zobaczyć wraz z wszystkimi innymi zestawami ustawień wysłanymi przez użytkowników na [liście niestandardowych zestawów ustawień](/presets). Możesz później łatwo stworzyć ponownie ten pokój bez konieczności ustawiania wszystkich ustawień ponownie. Po prostu kliknij *Utwórz pokój*, następnie *Użyj niestandardowego zestawu ustawień*, a później wpisz tytuł lub numer ID (identyfikator) tego zestawu ustawień.
 
 ### Tryby gry
 
 Jstris posiada 7 różnych trybów gry możliwych do wyboru podczas tworzenia nowego pokoju:
 
 - Standard
-- Team
+- Zespół
 - Cheese
 - Live Sprint
 - Live Cheese
@@ -352,7 +350,7 @@ Jstris posiada 7 różnych trybów gry możliwych do wyboru podczas tworzenia no
 
 **Standard** to standardowy tryb wieloosobowy.
 
-**Team** tworzy własny Pokój drużynowy. Wybierz swoją drużynę, czerwoną albo niebieską, i walcz o honor dla swojej drużyny. By ustawić swoją własną nazwę drużyny, użyj komendy `/set teamName ?` - w miejsce `?` wstaw swoją nazwę drużyny. 
+**Zespół** tworzy własny Pokój drużynowy. Wybierz swoją drużynę, czerwoną albo niebieską, i walcz o honor dla swojej drużyny. By ustawić swoją własną nazwę drużyny, użyj komendy `/set teamName ?` - w miejsce `?` wstaw swoją nazwę drużyny. 
 
 ![team game in progress][image11]
 
@@ -381,8 +379,6 @@ Jeśli uda ci się osiągnąć nowy rekord personalny Sprintu w Live Sprint, nie
 
 ### P: Czy mogę dodać bota do mojego prywatnego lub własnego pokoju??
 
-# *&lt;This section is very outdated, nowadays bot rooms are private rooms created by using the menu.&gt;*
-
 Odp: Nie, obecnie posiadamy jedynie jednego bota na Jstris, który stacjonuje w Pokoju z botami. Jednak jest możliwość, że możliwość dodania botów do własnego pokoju będzie możliwe.
 
 ### P: Co znaczą te wszystkie skróty w tabeli Rezultatów Gry?
@@ -401,7 +397,7 @@ Odp: ARR to inna forma czułości ruchu klocka na boki. ARR oznacza Auto Repeat 
 
 ### P: Co to jest finezja?
 
-Odp: Finezja to najbardziej efektywny sposób na przesunięcie klocka. Dobra finezja jest ważna dla szybszej i płynniejszej gry. Licznik finezji określa ile błędów finezji zostało popełnionych. Finezja równa 0 określa że nie popełniłeś/aś żadnych błędów finezji. Im licznik finezji jest bliższy 0, tym lepiej. Finezja jest czymś co musi być wyuczone by wiedzieć co robić. Istnienie wiele zasobów w Internecie wyjaśniających finezję. To wideo jest niezłym wstępem: [Tutorial: How to Play Fast!](https://youtu.be/_QBs703nOnk?t=502).
+Odp: Finezja to najbardziej efektywny sposób na przesunięcie klocka. Dobra finezja jest ważna dla szybszej i płynniejszej gry. Licznik finezji określa ile błędów finezji zostało popełnionych. Finezja równa 0 określa że nie popełniłeś/aś żadnych błędów finezji. Im licznik finezji jest bliższy 0, tym lepiej. Odpowiedniej finezji trzeba się nauczyć by wiedzieć co robić. Istnieje wiele zasobów w Internecie wyjaśniających finezję. To wideo jest niezłym wstępem: [Tutorial: How to Play Fast!](https://youtu.be/_QBs703nOnk?t=502).
 
 ### P: Czy mogę utworzyć prywatny pokój?
 
@@ -409,7 +405,7 @@ Odp: Tak. Wciśnij *Lobby*, następnie *Utwórz pokój*, następnie zaznacz pole
 
 ### P: Czy mogę grać w Jstris bez dostępu do sieci?
 
-Odp: Tak. By grać w Jstris bez dostępu do sieci, musisz najpierw pobrać Jstris kiedy jesteś połączony/połączona do sieci. Aby to zrobić, kliknij prawym przyciskiem myszy na stronę główną, wciśnij "Zapisz stronę jako...", a następnie pobierz plik HTML. Zwróć uwagę na to, że tylko tryby jednoosobowe są grywalne bez dostępu do sieci, a wyniki nie będą zapisywane.
+Odp: Tak. By grać w Jstris bez dostępu do sieci, musisz najpierw pobrać Jstris kiedy jesteś połączony/połączona do sieci. Aby to zrobić, kliknij prawym przyciskiem myszy na stronę główną, wciśnij "Zapisz stronę jako...", a następnie pobierz plik HTML. Miej to na uwadze, że tylko tryby jednoosobowe są grywalne bez dostępu do sieci, a wyniki nie będą zapisywane.
 
 - - -
 
