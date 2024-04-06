@@ -120,9 +120,7 @@ So for example, `[3:0]` will produce an I piece with Arika Rotation System.
 | Piece ID   |     0      |     1      |     2      |     3      |     4      |     5      |     6      |
 | ---------- | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: |
 | Image      | ![][big_I] | ![][big_O] | ![][big_T] | ![][big_L] | ![][big_J] | ![][big_S] | ![][big_Z] |
-| Piece name |     I*     |     O*     |     T*     |     L*     |     J*     |     S*     |     Z/     |
-
-\* Applicable only when `"blocksSel":1` in the [Ruleset](#ruleset).
+| Piece name |     -      |     -      |     -      |     -      |     -      |     -      |     -      |
 
 **Set 2: Big, moves 1 space left/right at a time**
 
@@ -136,9 +134,8 @@ So for example, `[3:0]` will produce an I piece with Arika Rotation System.
 | Piece ID   |     0      |     1      |     2      |     3      |     4      |     5      |     6      |
 | ---------- | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: |
 | Image      | ![][ars_I] | ![][ars_O] | ![][ars_T] | ![][ars_L] | ![][ars_J] | ![][ars_S] | ![][ars_Z] |
-| Piece name |     I*     |     O*     |     T*     |     L*     |     J*     |     S*     |     Z*     |
+| Piece name |     -      |     -      |     -      |     -      |     -      |     -      |     -      |
 
-\* Applicable only when `"blocksSel":3` in the [Ruleset](#ruleset).
 
 **Set 4: Pentominoes**
 | Piece ID      |    0    |    1    |    2    |   3    |   4    |   5    |
@@ -173,7 +170,7 @@ So for example, `[3:0]` will produce an I piece with Arika Rotation System.
 | Piece ID   |   0    |   1    |   2    |   3    |   4    |   5    |   6    |
 | ---------- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | Image      | ![][I] | ![][O] | ![][T] | ![][L] | ![][J] | ![][S] | ![][Z] |
-| Piece name |   I*   |   O*   |   T*   |   L*   |   J*   |   S*   |   Z*   |
+| Piece name |   -    |   -    |   -    |   -    |   -    |   -    |   -    |
 
 \* Applicable only when `"blocksSel":7` in the [Ruleset](#ruleset).
 
@@ -182,9 +179,7 @@ So for example, `[3:0]` will produce an I piece with Arika Rotation System.
 | Piece ID   |   0    |   1    |   2    |   3    |   4    |   5    |   6    |
 | ---------- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | Image      | ![][I] | ![][O] | ![][T] | ![][L] | ![][J] | ![][S] | ![][Z] |
-| Piece name |   I*   |   O+   |   T*   |   L*   |   J*   |   S*   |   Z*   |
-
-\* Applicable only when `"blocksSel":8` in the [Ruleset](#ruleset).
+| Piece name |   -    |   O+   |   -    |   -    |   -    |   -    |   -    |
 
 [access_usermodes]: ./images/access_usermodes.png "How to access usermodes"
 [usermodes_tab]: ./images/usermodes_tab.png "The usermode tab"
