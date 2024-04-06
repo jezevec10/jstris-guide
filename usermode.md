@@ -160,8 +160,8 @@ So for example, `[3:0]` will produce an I piece with Arika Rotation System.
 | Piece ID      |    0    |    1    |    2    |    3    |
 | ------------- | :-----: | :-----: | :-----: | :-----: |
 | Image         | ![][O1] | ![][I2] | ![][I3] | ![][V3] |
-| Piece name    |   I1    |   I2    |   I3    |   V3    |
-| Also known as |   O1    |    -    |    -    |    -    |
+| Piece name    |   I1    |   I2    |   I3    |   L3    |
+| Also known as |   O1    |    -    |    -    |   V3    |
 
 **Set 6: All-29** does not contain any pieces.
 
@@ -171,8 +171,6 @@ So for example, `[3:0]` will produce an I piece with Arika Rotation System.
 | ---------- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | Image      | ![][I] | ![][O] | ![][T] | ![][L] | ![][J] | ![][S] | ![][Z] |
 | Piece name |   -    |   -    |   -    |   -    |   -    |   -    |   -    |
-
-\* Applicable only when `"blocksSel":7` in the [Ruleset](#ruleset).
 
 **Set 8: O-spin Rotation System**
 
@@ -244,5 +242,5 @@ So for example, `[3:0]` will produce an I piece with Arika Rotation System.
 [S5]: ./images/pieces/S5.png "S pentomino"
 [O1]: ./images/pieces/O1.png "Monomino"
 [I2]: ./images/pieces/I2.png "Domino"
-[I3]: ./images/pieces/I3.png "I Tromino"
-[V3]: ./images/pieces/V3.png "V Tromino"
+[I3]: ./images/pieces/I3.png "I tromino"
+[V3]: ./images/pieces/V3.png "V tromino"
