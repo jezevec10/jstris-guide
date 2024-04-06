@@ -7,6 +7,7 @@
   - [Components](#components)
     - [Trigger](#trigger)
     - [Queue](#queue)
+  - [Block name reference list](#block-name-reference-list)
 
 - - - 
 ## Getting started
@@ -97,6 +98,94 @@ You can also enable the advanced queue input by clicking on "+ Switch to advance
 
 **Queue+** allows you to set a queue with pieces that aren't limited to just tetrominoes. In fact, it lets you set up a queue with any piece in the game.
 
+Check the [Block name reference list](#block-name-reference-list) for more info about usable block names.
+
+To set the queue to any piece available in the aforementioned list, use the format:
+```
+[<set_ID>:<piece_ID>]
+```
+So for example, `[3:0]` will produce an I piece with Arika Rotation System.
+
+## Block name reference list
+
+**Set 0: Standard**
+
+| Piece ID   |   0    |   1    |   2    |   3    |   4    |   5    |   6    |
+| ---------- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| Image      | ![][I] | ![][O] | ![][T] | ![][L] | ![][J] | ![][S] | ![][Z] |
+| Piece name |   I    |   O    |   T    |   L    |   J    |   S    |   Z    |
+
+**Set 1: Big, moves 2 spaces left/right at a time**
+
+| Piece ID   |     0      |     1      |     2      |     3      |     4      |     5      |     6      |
+| ---------- | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: |
+| Image      | ![][big_I] | ![][big_O] | ![][big_T] | ![][big_L] | ![][big_J] | ![][big_S] | ![][big_Z] |
+| Piece name |     I*     |     O*     |     T*     |     L*     |     J*     |     S*     |     Z/     |
+
+\* Applicable only when `"blocksSel":1` in the [Ruleset](#ruleset).
+
+**Set 2: Big, moves 1 space left/right at a time**
+
+| Piece ID   |     0      |     1      |     2      |     3      |     4      |     5      |     6      |
+| ---------- | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: |
+| Image      | ![][big_I] | ![][big_O] | ![][big_T] | ![][big_L] | ![][big_J] | ![][big_S] | ![][big_Z] |
+| Piece name |     BI     |     BO     |     BT     |     BL     |     BJ     |     BS     |     BZ     |
+
+**Set 3: Arika Rotation System**
+
+| Piece ID   |     0      |     1      |     2      |     3      |     4      |     5      |     6      |
+| ---------- | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: |
+| Image      | ![][ars_I] | ![][ars_O] | ![][ars_T] | ![][ars_L] | ![][ars_J] | ![][ars_S] | ![][ars_Z] |
+| Piece name |     I*     |     O*     |     T*     |     L*     |     J*     |     S*     |     Z*     |
+
+\* Applicable only when `"blocksSel":3` in the [Ruleset](#ruleset).
+
+**Set 4: Pentominoes**
+| Piece ID      |    0    |    1    |    2    |   3    |   4    |   5    |
+| ------------- | :-----: | :-----: | :-----: | :----: | :----: | :----: |
+| Image         | ![][I5] | ![][V5] | ![][T5] | ![][U] | ![][W] | ![][X] |
+| Piece name    |   I5    |   V5    |   T5    |   U5   |   W5   |   X5   |
+| Also known as |    -    |    -    |    -    |   U    |   W    |   X    |
+
+| Piece ID      |    6    |    7    |       8       |   9    |   10   |      11       |
+| ------------- | :-----: | :-----: | :-----------: | :----: | :----: | :-----------: |
+| Image         | ![][J5] | ![][L5] | ![][N_mirror] | ![][N] | ![][Y] | ![][Y_mirror] |
+| Piece name    |   J5    |   L5    |      S5       |   Z5   |   TL   |      TJ       |
+| Also known as |    -    |    -    |      N'       |   N    |   Y    |      Y'       |
+
+| Piece ID      |   12   |   13   |   14   |      15       |   16    |   17    |
+| ------------- | :----: | :----: | :----: | :-----------: | :-----: | :-----: |
+| Image         | ![][P] | ![][Q] | ![][F] | ![][F_mirror] | ![][Z5] | ![][S5] |
+| Piece name    |   OZ   |   OS   |   TS   |      TZ       |   LL    |   JJ    |
+| Also known as |   P    |   Q    |   F    |      F'       |   Z5    |   S5    |
+
+**Set 5: M123**
+| Piece ID      |    0    |    1    |    2    |    3    |
+| ------------- | :-----: | :-----: | :-----: | :-----: |
+| Image         | ![][O1] | ![][I2] | ![][I3] | ![][V3] |
+| Piece name    |   I1    |   I2    |   I3    |   V3    |
+| Also known as |   O1    |    -    |    -    |    -    |
+
+**Set 6: All-29** does not contain any pieces.
+
+**Set 7: Cultris II Rotation System**
+
+| Piece ID   |   0    |   1    |   2    |   3    |   4    |   5    |   6    |
+| ---------- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| Image      | ![][I] | ![][O] | ![][T] | ![][L] | ![][J] | ![][S] | ![][Z] |
+| Piece name |   I*   |   O*   |   T*   |   L*   |   J*   |   S*   |   Z*   |
+
+\* Applicable only when `"blocksSel":7` in the [Ruleset](#ruleset).
+
+**Set 8: O-spin Rotation System**
+
+| Piece ID   |   0    |   1    |   2    |   3    |   4    |   5    |   6    |
+| ---------- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| Image      | ![][I] | ![][O] | ![][T] | ![][L] | ![][J] | ![][S] | ![][Z] |
+| Piece name |   I*   |   O+   |   T*   |   L*   |   J*   |   S*   |   Z*   |
+
+\* Applicable only when `"blocksSel":8` in the [Ruleset](#ruleset).
+
 [access_usermodes]: ./images/access_usermodes.png "How to access usermodes"
 [usermodes_tab]: ./images/usermodes_tab.png "The usermode tab"
 [editor]: ./images/editor.png "The usermode editor"
@@ -134,6 +223,7 @@ You can also enable the advanced queue input by clicking on "+ Switch to advance
 [big_S]: ./images/pieces/big_S.png "Big S tetromino"
 [big_Z]: ./images/pieces/big_Z.png "Big Z tetromino"
 [ars_I]: ./images/pieces/ars_I.png "I tetromino with Arika Rotation System"
+[ars_O]: ./images/pieces/O.png "O tetromino with Arika Rotation System"
 [ars_T]: ./images/pieces/ars_T.png "T tetromino with Arika Rotation System"
 [ars_L]: ./images/pieces/ars_L.png "L tetromino with Arika Rotation System"
 [ars_J]: ./images/pieces/ars_J.png "J tetromino with Arika Rotation System"
@@ -157,3 +247,7 @@ You can also enable the advanced queue input by clicking on "+ Switch to advance
 [F_mirror]: ./images/pieces/F_mirror.png "Mirror of the F pentomino"
 [Z5]: ./images/pieces/Z5.png "Z pentomino"
 [S5]: ./images/pieces/S5.png "S pentomino"
+[O1]: ./images/pieces/O1.png "Monomino"
+[I2]: ./images/pieces/I2.png "Domino"
+[I3]: ./images/pieces/I3.png "I Tromino"
+[V3]: ./images/pieces/V3.png "V Tromino"
