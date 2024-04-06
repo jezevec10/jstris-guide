@@ -49,7 +49,33 @@ Each component gets an ID assigned to it when added (unless it's duplicated) - t
 
 ### Trigger
 
-**Triggers** are the starting point
+![][comp_trigger]
+
+**Triggers** are the starting point of your usermode. When a certain game action is performed, all components under that Trigger will be executed.
+
+There must be at least one Trigger in the usermode.
+
+Trigger options are as follows:
+- **Before the game** - triggers before the "Ready-Go" sequence.<br>
+- **Before the game - only the first game** - triggers before the "Ready-Go" sequence, but only on the first game, after a restart this won't be triggered.<br>
+  *Before the game* only supports [Queue](#queue), [Variable](#variable), [Map](#map), [Stats](#stats), [Text](#text), [Pause](#pause), [Audio](#audio), [Ruleset](#ruleset) and [Block Skin](#block-skin) components underneath itself.
+- **On game start** - triggers after the "Ready-Go" sequence.
+- **After the game** - triggers after completing the usermode successfully.
+- **At specific time** - triggers when a certain amount of time passes from the start of the game.
+- **On each block** - triggers after placing a block, when next block appears, after line clears were processed.
+- **On each lineclear** - triggers after any line clear.
+- **On specific block #** - triggers once after a certain amount of blocks was placed.
+- **On specific # line cleared** - triggers once after you cleared more than # lines.
+- **Key down** - triggers when a key is pressed.
+- **Key up** - triggers when a key is released.<br>
+  Key up and Key down triggers react to a specified key code. You can use [this keycode utility](https://www.toptal.com/developers/keycode) to determine the key code of your desired key.<br>
+  Key up and Key down triggers also accept an option to prevent the default action when a player has that key bound.
+- **Variable changes** - triggers when a [variable](#variable) changes. Does not support [built-in variables](#built-in-variables).
+- **Never** - does not trigger.
+- **External/Conditional** - you can set your own external trigger name for [Condition](#condition), [Run](#run), [Relative Trigger](#relative-trigger), [On/Off](#on-off) or a [Random](#random) component to trigger.<br>
+Custom trigger names must be **at most 20 characters long** and are case-sensitive.
+
+
 
 [access_usermodes]: ./images/access_usermodes.png "How to access usermodes"
 [usermodes_tab]: ./images/usermodes_tab.png "The usermode tab"
