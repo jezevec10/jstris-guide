@@ -6,6 +6,7 @@
   - [Editor](#editor)
   - [Components](#components)
     - [Trigger](#trigger)
+    - [Queue](#queue)
 
 - - - 
 ## Getting started
@@ -75,7 +76,26 @@ Trigger options are as follows:
 - **External/Conditional** - you can set your own external trigger name for [Condition](#condition), [Run](#run), [Relative Trigger](#relative-trigger), [On/Off](#on-off) or a [Random](#random) component to trigger.<br>
 Custom trigger names must be **at most 20 characters long** and are case-sensitive.
 
+### Queue
+![][comp_queue]
 
+**Queue** components allow you to replace a queue with your own fixed queue.
+
+Be aware that if the finite queue runs out of pieces, the game is over, no matter whether there's a piece in Hold or not.
+
+Type the tetromino block names in the "Queue" field to set up the queue.
+
+There are four options available:
+  - **Allow refill if queue is used** - After all the pieces from the queue are used up, the game keeps dealing new pieces according to the [Ruleset](#ruleset) - 7-bag by default.
+  - **Repeat this queue** - The specified queue is looped forever.
+  - **Replace active block** - The active piece (the piece you are currently controlling) will be also replaced.
+  - **Non-terminal last block** - Adds a NONE piece to the end of the queue, so that the game doesn't immediately end after placing all the pieces. Make sure to handle this option appropriately and refill the player's queue.
+
+You can also enable the advanced queue input by clicking on "+ Switch to advanced queue input."
+
+![][comp_queue_plus]
+
+**Queue+** allows you to set a queue with pieces that aren't limited to just tetrominoes. In fact, it lets you set up a queue with any piece in the game.
 
 [access_usermodes]: ./images/access_usermodes.png "How to access usermodes"
 [usermodes_tab]: ./images/usermodes_tab.png "The usermode tab"
@@ -83,7 +103,7 @@ Custom trigger names must be **at most 20 characters long** and are case-sensiti
 [mode_example]: ./images/mode_example.png "An example of a usermode"
 [comp_trigger]: ./images/comp_trigger.png "The Trigger component"
 [comp_queue]: ./images/comp_queue.png "The Queue component"
-[comp_queue_plus]: ./images/comp_queue_plus.png "The Queue component with extended input capabilities"
+[comp_queue_plus]: ./images/comp_queue_plus.png "The Queue component with advanced queue input capabilities"
 [comp_cond]: ./images/comp_cond.png "The Condtion component"
 [comp_variable]: ./images/comp_variable.png "The Variable component"
 [comp_map]: ./images/comp_map.png "The Map component"
@@ -98,3 +118,42 @@ Custom trigger names must be **at most 20 characters long** and are case-sensiti
 [comp_relative]: ./images/comp_replative.png "The Relative Trigger component"
 [comp_switch]: ./images/comp_switch.png "The On/Off (Component Switch) component"
 [comp_random]: ./images/comp_random.png "The Random component"
+
+[I]: ./images/pieces/I.png "I tetromino"
+[O]: ./images/pieces/O.png "O tetromino"
+[T]: ./images/pieces/T.png "T tetromino"
+[L]: ./images/pieces/L.png "L tetromino"
+[J]: ./images/pieces/J.png "J tetromino"
+[S]: ./images/pieces/S.png "S tetromino"
+[Z]: ./images/pieces/Z.png "Z tetromino"
+[big_I]: ./images/pieces/big_I.png "Big I tetromino"
+[big_O]: ./images/pieces/big_O.png "Big O tetromino"
+[big_T]: ./images/pieces/big_T.png "Big T tetromino"
+[big_L]: ./images/pieces/big_L.png "Big L tetromino"
+[big_J]: ./images/pieces/big_J.png "Big J tetromino"
+[big_S]: ./images/pieces/big_S.png "Big S tetromino"
+[big_Z]: ./images/pieces/big_Z.png "Big Z tetromino"
+[ars_I]: ./images/pieces/ars_I.png "I tetromino with Arika Rotation System"
+[ars_T]: ./images/pieces/ars_T.png "T tetromino with Arika Rotation System"
+[ars_L]: ./images/pieces/ars_L.png "L tetromino with Arika Rotation System"
+[ars_J]: ./images/pieces/ars_J.png "J tetromino with Arika Rotation System"
+[ars_S]: ./images/pieces/ars_S.png "S tetromino with Arika Rotation System"
+[ars_Z]: ./images/pieces/ars_Z.png "Z tetromino with Arika Rotation System"
+[I5]: ./images/pieces/I5.png "I pentomino"
+[V5]: ./images/pieces/V5.png "V pentomino"
+[T5]: ./images/pieces/T5.png "T pentomino"
+[U]: ./images/pieces/U.png "U pentomino"
+[W]: ./images/pieces/W.png "W pentomino"
+[X]: ./images/pieces/X.png "X pentomino"
+[J5]: ./images/pieces/J5.png "J pentomino"
+[L5]: ./images/pieces/L5.png "L pentomino"
+[N_mirror]: ./images/pieces/N_mirror.png "Mirror of the N pentomino"
+[N]: ./images/pieces/N.png "N pentomino"
+[Y]: ./images/pieces/Y.png "Y pentomino"
+[Y_mirror]: ./images/pieces/Y_mirror.png "Mirror of the Y pentomino"
+[P]: ./images/pieces/P.png "P pentomino"
+[Q]: ./images/pieces/Q.png "Q pentomino"
+[F]: ./images/pieces/F.png "F pentomino"
+[F_mirror]: ./images/pieces/F_mirror.png "Mirror of the F pentomino"
+[Z5]: ./images/pieces/Z5.png "Z pentomino"
+[S5]: ./images/pieces/S5.png "S pentomino"
