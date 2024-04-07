@@ -22,6 +22,7 @@
     - [Relative Trigger](#relative-trigger)
     - [On/Off](#onoff)
     - [Random](#random)
+- [Publishing usermodes](#publishing-usermodes)
 - [Usermode peculiarities](#usermode-peculiarities)
   - [System variables](#system-variables)
   - [Local counters](#local-counters)
@@ -258,7 +259,7 @@ Maps can manipulate the board in various ways:
 - **Add to current board (under)** The map will be underlain under the board (like a layer in an image editing program).
 - **Intersect with current board (keep stack color)** - All blocks on the map are removed, except in positions where there were blocks in the map. Block colors on the board are retained.
 - **Intersect with current board (force map color)** - Same as above, but block colors are replaced with those from the map.
-- **Replace & end if collision found**
+- **Replace & end if collision found** - TODO
 
 ### Stats
 
@@ -482,6 +483,32 @@ Operated similarly to the [On/Off](#onoff) component.
 **This component must have at least 2 options to choose from.**
 
 You can specify the weights for each option by inputting a number after a comma.
+
+# Publishing usermodes
+
+If you are satisfied with your usermode, you can publish it for others to play.
+
+You will be presented with this screen:
+![publish]
+
+Enter the mode title, description, and tags. Add tags, separating each tag with a comma.
+Please note that line breaks in the description are stripped and won't show up in the mode preview.
+
+The first map from the top of your usermode will be used as a thumbnail. If you wish to have a custom thumbnail that won't appear in the usermode, put the [Map](#map) component under the [Trigger](#trigger) that is set to Never trigger.
+
+You can also customize the leaderboard of your mode.
+
+You can set the leaderboard to:
+- Not save anything to the leaderboard (leaderboard disabled),
+- Save only the first completed game (further games won't be saved),
+- Save every completed game (recommended for competitive modes).
+
+You can change metrics for placing players in the leaderboard, and whether higher or lower scores are better.
+Secondary metric will be used if two or more players tie on the primary metric.
+
+You can also set other stats that will be shown in the leaderboard, but won't be used for placing players on the leaderboard.
+
+There's also an option to save scores on a game over too - useful for survival or endurance-style modes.
 
 # Usermode peculiarities
 
@@ -1043,4 +1070,5 @@ These pieces are invisible in queue and in hold.
 [description]: ./images/text/description.png "Description text of the value next to the board"
 [over]: ./images/text/over.png "Over the board (lower part)"
 [getBoard]: ./images/getBoard.png "The matrix obtained after using the getBoard function"
-[board]:./images/board.png "Jstris board with X and Y values written outside of the board"
+[board]: ./images/board.png "Jstris board with X and Y values written outside of the board"
+[publish]: ./images/publish.png "The publish screen"
