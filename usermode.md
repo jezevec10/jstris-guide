@@ -1,7 +1,8 @@
-# Jstris Usermode Guide
+<h1>Jstris Usermode Guide</h1>
 
-**Table of Contents**
-- [Jstris Usermode Guide](#jstris-usermode-guide)
+<h2>Table of Contents</h2>
+
+- [Usermode basics](#usermode-basics)
   - [Getting started](#getting-started)
   - [Editor](#editor)
   - [Components](#components)
@@ -16,6 +17,19 @@
     - [Audio](#audio)
     - [Attack](#attack)
     - [Ruleset](#ruleset)
+    - [Block skin](#block-skin)
+    - [Run](#run)
+    - [Relative Trigger](#relative-trigger)
+    - [On/Off](#onoff)
+    - [Random](#random)
+- [Usermode peculiarities](#usermode-peculiarities)
+  - [System variables](#system-variables)
+  - [Local counters](#local-counters)
+  - [Special functions](#special-functions)
+    - [`getBoard`](#getboard)
+    - [`setBoard`](#setboard)
+    - [`queueReplace`](#queuereplace)
+    - [`queueAppend`](#queueappend)
   - [Ruleset specification](#ruleset-specification)
     - [`attackTable`](#attacktable)
     - [`comboTable`](#combotable)
@@ -38,10 +52,23 @@
     - [`clearLines`](#clearlines)
     - [`DAS`](#das)
     - [`ARR`](#arr)
+    - [`ghost`](#ghost)
     - [`scoreMult`](#scoremult)
   - [Block name reference list](#block-name-reference-list)
+    - [Set 0: Standard](#set-0-standard)
+    - [Set 1: Big, moves 2 spaces left/right at a time](#set-1-big-moves-2-spaces-leftright-at-a-time)
+    - [Set 2: Big, moves 1 space left/right at a time](#set-2-big-moves-1-space-leftright-at-a-time)
+    - [Set 3: Arika Rotation System](#set-3-arika-rotation-system)
+    - [Set 4: Pentominoes](#set-4-pentominoes)
+    - [Set 5: M123](#set-5-m123)
+    - [Set 6: All-29](#set-6-all-29)
+    - [Set 7: Cultris II Rotation System](#set-7-cultris-ii-rotation-system)
+    - [Set 8: O-spin Rotation System](#set-8-o-spin-rotation-system)
+    - [Set 9: NONE](#set-9-none)
 
 - - - 
+# Usermode basics
+
 ## Getting started
 
 Usermodes allow players to create their own custom gamemodes and share them with other players.
@@ -65,6 +92,8 @@ After choosing "Create", you will be presented with the Usermode Editor.
 ![editor]
 
 Drag and drop components from the sidebar to the component area, or click on components to put them on the bottom of your usermode.
+
+Be aware that there's a 2000-component limit for usermodes - though hitting it is very unlikely. If you do, please suggest changes/additions to usermodes in [Jstris Discord](https://discord.gg/RcNFCZC).
 
 ## Components
 
@@ -104,7 +133,7 @@ Trigger options are as follows:
 - **Key up** - triggers when a key is released.<br>
   Key up and Key down triggers react to a specified key code. You can use [this keycode utility](https://www.toptal.com/developers/keycode) to determine the key code of your desired key.<br>
   Key up and Key down triggers also accept an option to prevent the default action when a player has that key bound.
-- **Variable changes** - triggers when a [variable](#variable) changes. Does not support [built-in variables](#built-in-variables).
+- **Variable changes** - triggers when a [variable](#variable) changes. Does not support [system variables](#system-variables).
 - **Never** - does not trigger.
 - **External/Conditional** - you can set your own external trigger name for [Condition](#condition), [Run](#run), [Relative Trigger](#relative-trigger), [On/Off](#on-off) or a [Random](#random) component to trigger.<br>
 Custom trigger names must be **at most 20 characters long** and are case-sensitive.
@@ -177,7 +206,7 @@ You can check for various stats:
 Then you can compare it with a number - available operators are `>`, `>=`, `=`, `<=`, `<`.
 
 You can also check for a **Custom expression**. Custom expressions require a variable on the left hand side of the expression.
-Custom expressions accept [built-in variables](#built-in-variables), [local counters](#local-counters) and [custom](#variable) variables.
+Custom expressions accept [system variables](#system-variables), [local counters](#local-counters) and [custom](#variable) variables.
 
 For example: To check if a level (custom variable) is higher or equal to 20, a custom expression would look like this:
 ```
@@ -188,25 +217,32 @@ Fulfilling a condition (or not) can trigger one of the actions:
 - Game over - the player loses with an explanation, what condition was not fulfilled.<br>
   **Works only for "If false" conditions - setting this with "If true" condition will cause an error!**
 - Successful game end - the player wins, and the usermode is considered completed.
-- Run trigger actions - An [External/Conditional Trigger](#trigger) is triggered.
+- Run trigger actions - An External/Conditional [Trigger](#trigger) is triggered.
 
 ### Variable
 ![comp_variable]
 
 **Variable** components are very powerful. Variable components allow you to specify a custom variable, and assign an expression to it.
 
-The custom variable name must not be a name of a [built-in variable](#built-in-variables) and must be **at most 20 characters long**.
+The custom variable name must not be a name of a [system variable](#system-variables) and must be **at most 20 characters long**.
 Variable names are case-sensitive.
 
 Variables can be used in custom expressions for the [Condition](#condition) components and as placeholders for [Text](#text) components.
 
 The right hand side of the component accepts [MathJS](https://mathjs.org/) expressions - try out its expression parser to play around.
 
-Expressions can operate on [built-in variables](#built-in-variables).
+Expressions can operate on [system variables](#system-variables).
 
 Besides [MathJS](https://mathjs.org/) functions, expressions can also contain [special functions](#special-functions) that affect the board and the queue.
 
 Expressions must fit within a **100-character limit**.
+
+If your usermode goes haywire, you can debug your usermode by doing the following:
+- Right-click on the Jstris page in-game and select "Inspect Element..." or hit F12,
+- Go to the "Console" tab,
+- In the console, if the variable changes, the change should be printed out on the console by `replayer.js`.
+
+This only works for unpublished usermodes.
 
 ### Map
 ![comp_map]
@@ -263,7 +299,7 @@ The number is interpreted in binary, so 129 from the example image shows Time (+
 **Text** components allow you to insert text into your usermode.
 Text components can accept text and **placeholders**.
 
-Placeholders are specified in curly brackets, and can hold [built-in variables](#built-in-variables), [local counters](#local-counters) and [custom variables](#variable), 
+Placeholders are specified in curly brackets, and can hold [system variables](#system-variables), [local counters](#local-counters) and [custom variables](#variable), 
 
 For example: `{PC}` will insert a number of Perfect Clears performed.
 
@@ -332,7 +368,7 @@ and https://s.jezevec10.com (in-game sounds).
 | https://audio.jezevec10.com/dal/looking.ogg                   | What are you looking at?                                                            | Nyeh heh heh! (Undertale) |
 | https://audio.jezevec10.com/dal/love.ogg                      | Well, I'm sure you'll love the next puzzle then.                                    | Snowy (Undertale)         |
 | https://audio.jezevec10.com/dal/meme/180.ogg                  | One eighty.                                                                         | -                         |
-| https://audio.jezevec10.com/dal/meme/aydosmio.ogg             | Aydosmio!                                                                           | -                         |
+| https://audio.jezevec10.com/dal/meme/aydosmio.ogg             | Aydosmio! *(sic)*                                                                   | -                         |
 | https://audio.jezevec10.com/dal/meme/aysobum.ogg              | Ay, so - Boom!                                                                      | -                         |
 | https://audio.jezevec10.com/dal/meme/clockwise.ogg            | Clockwise.                                                                          | -                         |
 | https://audio.jezevec10.com/dal/meme/combostorm.ogg           | Combooooostooooorm!                                                                 | -                         |
@@ -347,7 +383,7 @@ and https://s.jezevec10.com (in-game sounds).
 | https://audio.jezevec10.com/dal/meme/h.ogg                    | H.                                                                                  | -                         |
 | https://audio.jezevec10.com/dal/meme/hyperion.ogg             | Hyperion.                                                                           | -                         |
 | https://audio.jezevec10.com/dal/meme/impissed.ogg             | Now I'm pissed!                                                                     | -                         |
-| https://audio.jezevec10.com/dal/meme/izkierda.ogg             | Izkierda.                                                                           | -                         |
+| https://audio.jezevec10.com/dal/meme/izkierda.ogg             | Izkierda. *(sic)*                                                                   | -                         |
 | https://audio.jezevec10.com/dal/meme/left.ogg                 | Left.                                                                               | -                         |
 | https://audio.jezevec10.com/dal/meme/lockdown.ogg             | Lockdown.                                                                           | -                         |
 | https://audio.jezevec10.com/dal/meme/notlikethis.ogg          | Not like this!                                                                      | -                         |
@@ -358,7 +394,7 @@ and https://s.jezevec10.com (in-game sounds).
 | https://audio.jezevec10.com/dal/meme/right.ogg                | Right.                                                                              | -                         |
 | https://audio.jezevec10.com/dal/meme/softdrop.ogg             | Soft drop.                                                                          | -                         |
 | https://audio.jezevec10.com/dal/meme/stop.ogg                 | Stop!                                                                               | -                         |
-| https://audio.jezevec10.com/dal/meme/teretcha.ogg             | Teretcha.                                                                           | -                         |
+| https://audio.jezevec10.com/dal/meme/teretcha.ogg             | Teretcha. *(sic)*                                                                   | -                         |
 | https://audio.jezevec10.com/dal/meme/tetrio.ogg               | [TETR.IO](https://tetr.io).                                                         | -                         |
 | https://audio.jezevec10.com/dal/meme/welldone.ogg             | Well done.                                                                          | -                         |
 | https://audio.jezevec10.com/dal/meme/yoholdthat.ogg           | Yo, hold that.                                                                      | -                         |
@@ -392,38 +428,159 @@ There are two options available:
 - **Ensure column switch** - Garbage segment won't spawn on the same column as the previous one.
 
 ### Ruleset
+![comp_ruleset]
 
 **Ruleset** components change the rules of the game when executed. Rulesets can be even changed mid-game to achieve dynamic difficulty for your usermode.
 
 Check out the [Ruleset specification](#ruleset-specification) for more details.
 
+There's also an option to add the specified ruleset without resetting all options - only rules specified in the ruleset will change.
+
+### Block skin
+![comp_skin]
+
+**Block skin** components change the block skin when executed. Block skin components only accept skins from https://i.imgur.com (You can make your custom skin that way)
+and https://s.jezevec10.com (built-in skins). Block skins must be in 9:1 proportions.
+
+[Jstris Customization Database](https://docs.google.com/spreadsheets/d/1xO8DTORacMmSJAQicpJscob7WUkOVuaNH0wzkR_X194/htmlview#) contains a list of block skins from various games, official or not, and some user-made skins too.
+
+Use this component only when necessary (for example to give a retro climate to a mode, or when repurposing garbage as targets, or for other creative ways to use blocks).
+
+### Run
+![comp_run]
+
+A very simple component, that just triggers an External/Conditional [Trigger](#trigger).
+
+### Relative Trigger
+![comp_relative]
+
+**Relative Trigger** components can trigger an External/Conditional [Trigger](#trigger) after:
+- A certain amount of time (in seconds) passes...
+- Certain amount of pieces were placed...
+- Certain amount of lines were cleared...
+
+... since the [Trigger](#trigger) under which this component is present was triggered.
+
+For example: When a certain [Trigger](#trigger) triggers on 5th line, and there's a Relative Trigger that runs a certain trigger after 4 Lines, that trigger will run after clearing the 9th line.
+
+### On/Off
+![comp_switch]
+
+**On/Off** components can switch components on and off.
+
+Disabled components or [Triggers](#trigger) won't be executed.
+
+You can toggle multiple components on or off with this component by clicking the (+) button - this will add a new textbox in which an additional component can be turned on or off.
+
+### Random
+![comp_random]
+
+**Random** components can execute components or External/Conditional [Triggers](#trigger) at random.
+
+Operated similarly to the [On/Off](#onoff) component.
+
+**This component must have at least 2 options to choose from.**
+
+You can specify the weights for each option by inputting a number after a comma.
+
+# Usermode peculiarities
+
+## System variables
+
+**System variables** are game-reserved variables that hold certain game-related statistics.
+
+They can be used as a placeholder in [Text](#text) components or be a part of an expression for the [Variable](#variable) or [Condition](#condition) components.
+
+| Variable name | Explanation                                        |
+| :------------ | :------------------------------------------------- |
+| blocks        | Number of pieces placed                            |
+| finesse       | Number of finesse faults                           |
+| kpp           | Keypresses per piece                               |
+| sent          | Number of lines sent                               |
+| tspins        | Number of T-spins performed                        |
+| combo         | Current combo                                      |
+| PC            | Number of Perfect Clears                           |
+| TSD           | Number of T-spin **Doubles** performed             |
+| time          | Time elapsed                                       |
+| APM           | Attack per minute                                  |
+| PPS           | Pieces per second                                  |
+| VS            | VS Score (Attack + Downstack per 100 seconds)      |
+| garbage       | Number of lines containing garbage cleared         |
+| hold          | Number of times the player held a piece            |
+| B2B           | Number of Back-to-backs performed                  |
+| wasted        | Ratio of T pieces used in a T-spin to all T pieces |
+| lines         | Number of lines cleared                            |
+| maxCombo      | Maximum combo                                      |
+| single        | Number of Singles                                  |
+| double        | Number of Doubles                                  |
+| triple        | Number of Triples                                  |
+| jstris        | Number of Jstrises (quadruples)                    |
+| redbar        | Number of lines awaiting in queue                  |
+| inputs        | Number of inputs (not counting soft drops)         |
+
+## Local counters
+
+**Local counters** are a specific type of [system variables](#system-variables) that hold game statistics, but **only** counting after an External/Conditional [Trigger](#trigger) was triggered.<br>
+Local counters are invoked by using the following syntax:
+```
+<triggerName>.<systemVariable>
+```
+Local counters can then be used in custom expressions for the [Condition](#condition) components or as a placeholder for [Text](#text) components.
+
+For example: `mission2.jstris` will only count Jstrises performed after the `mission2` trigger was triggered.
+
+## Special functions
+
+Besides MathJS functions, the [Variable](#variable) component's expression can also hold certain functions that affect the board and the next queue.
+
+### `getBoard`
+
+The function can be performed with two syntax variations:
+
+- `getBoard()`<br>
+  Returns: A 20x10 MathJS matrix containing the board state.
+  ![getBoard]
+
+  
+- `getBoard(x, y)`<br>
+  Parameters:
+  - x: Column, integer between 0 and 9
+  - y: Row, integer between 0 and 19
+
+  Returns: A integer between 0 and 9 which represents the color of the block on specified coordinates.
+
+  ![board]
+
+### `setBoard`
+- `setBoard(x, y, color)`<br>
+  Parameters:
+  - x: Column, integer between 0 and 9
+  - y: Row, integer between 0 and 19
+  - color: Block color, integer between 0 and 9
+
+  Returns: 1 on success, 0 on failure.
+
+> ⚠️ This function does not update the board visually! Use a blank [Map](#map) with "Add to current board" to update the board.
+
+### `queueReplace`
+- `queueReplace(index, piece)`<br>
+  Parameters:
+  - index - Integer, starting from -1.<br>
+    Index -1 replaces the active piece, 0 and higher replace the Next queue.
+  - piece - A string representing a piece. Check the [Block name reference list](#block-name-reference-list) for the list of usable pieces.
+  `"[setID:pieceID]"` can be used to pick any piece from the game.
+
+  Returns: TODO
+
+### `queueAppend`
+- `queueAppend(piece)`<br>
+  Parameters:
+  - piece - A string representing a piece. Check the [Block name reference list](#block-name-reference-list) for the list of usable pieces.
+  `"[setID:pieceID]"` can be used to pick any piece from the game.
+
+  Returns: TODO
+
 ## Ruleset specification
-```
-{"attackTable":[0,0,1,2,4,4,6,2,0,10,1],
-"comboTable":[0,0,1,1,1,2,2,3,3,4,4,4,5],
-"hasHold":true,
-"hasSolid":true,
-"solid":120,
-"sgProfile":[0,3],
-"lockDelay":[500,5000,20000],
-"clearDelay":0,
-"speedLimit":0,
-"gravityLvl":1,
-"garbageDelay":500,
-"mess":0,
-"gapW":1,
-"rDAS":"-1",
-"rARR":"-1",
-"asEx":"",
-"gInv":false,
-"solidAtk":false,
-"noFW":false,
-"gdmSel":3,
-"gblockSel":0,
-"blocksSel":0,
-"rndSel":0,
-"prSel":5}
-```
 ### `attackTable`
 **Type**: Array of integers with 11 elements
 
@@ -532,11 +689,11 @@ Default: `500`
 
 Specifies different levels of lock delay.
 
-| Index         |                             0                              |                                     1                                      |                  2                   |
-| ------------- | :--------------------------------------------------------: | :------------------------------------------------------------------------: | :----------------------------------: |
-| Lock delay    |                             L1                             |                                     L2                                     |                  L3                  |
-| Info          | For how long the piece can stay on ground without locking. | For how long the piece can stay on ground while moving left/right locking. | For how long the piece can be active |
-| Default value |                           500 ms                           |                                  5000 ms                                   |               20000 ms               |
+| Index         |                             0                              |                                         1                                          |                   2                   |
+| ------------- | :--------------------------------------------------------: | :--------------------------------------------------------------------------------: | :-----------------------------------: |
+| Lock delay    |                             L1                             |                                         L2                                         |                  L3                   |
+| Info          | For how long the piece can stay on ground without locking. | For how long the piece can stay on ground while moving left/right without locking. | For how long the piece can be active. |
+| Default value |                           500 ms                           |                                      5000 ms                                       |               20000 ms                |
 
 Default: `[500,5000,20000]`
 
@@ -606,20 +763,20 @@ Default: `false`
 
 Specifies the block set used in the game.
 
-If changed mid-game, new pieces will appear at the end of the queue,
+If changed mid-game, pieces from the new set will appear at the end of the queue,
 since Jstris always keeps 5 pieces in queue, regardless of the amount of previews shown to the player. 
 
 Available block sets:
 
-0. Standard
-1. Big (moves 2 spaces left/right at a time)
-2. Big (moves 1 space left/right at a time)
-3. ARS
-4. Penta
-5. M123
-6. All-29
-7. C2RS
-8. O-spin
+1. Standard
+2. Big (moves 2 spaces left/right at a time)
+3. Big (moves 1 space left/right at a time)
+4. ARS
+5. Penta
+6. M123
+7. All-29
+8. C2RS
+9. O-spin
 
 Default: `0`
 
@@ -698,6 +855,24 @@ Enforces specified ARR value. If ARR is `-1`, the user setting is used.
 
 Default: `-1`
 
+### `ghost`
+
+**Usermode exclusive!**
+
+**Type**: Integer between -1 and 1
+
+Enforces the presence (or lack) of the ghost piece.
+
+Available settings:
+
+<ol start="-1">
+  <li>User setting is used.</li>
+  <li>Ghost is disabled.</li>
+  <li>Ghost is enabled.</li>
+</ol>
+
+Default: `-1`
+
 ### `scoreMult`
 
 **Usermode exclusive!**
@@ -712,28 +887,28 @@ Default: `1`
 
 ## Block name reference list
 
-**Set 0: Standard**
+### Set 0: Standard
 
 | Piece ID   |   0   |   1   |   2   |   3   |   4   |   5   |   6   |
 | ---------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Image      | ![I]  | ![O]  | ![T]  | ![L]  | ![J]  | ![S]  | ![Z]  |
 | Piece name |   I   |   O   |   T   |   L   |   J   |   S   |   Z   |
 
-**Set 1: Big, moves 2 spaces left/right at a time**
+### Set 1: Big, moves 2 spaces left/right at a time
 
 | Piece ID   |    0     |    1     |    2     |    3     |    4     |    5     |    6     |
 | ---------- | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
 | Image      | ![big_I] | ![big_O] | ![big_T] | ![big_L] | ![big_J] | ![big_S] | ![big_Z] |
 | Piece name |    -     |    -     |    -     |    -     |    -     |    -     |    -     |
 
-**Set 2: Big, moves 1 space left/right at a time**
+### Set 2: Big, moves 1 space left/right at a time
 
 | Piece ID   |    0     |    1     |    2     |    3     |    4     |    5     |    6     |
 | ---------- | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
 | Image      | ![big_I] | ![big_O] | ![big_T] | ![big_L] | ![big_J] | ![big_S] | ![big_Z] |
 | Piece name |    BI    |    BO    |    BT    |    BL    |    BJ    |    BS    |    BZ    |
 
-**Set 3: Arika Rotation System**
+### Set 3: Arika Rotation System
 
 | Piece ID   |    0     |    1     |    2     |    3     |    4     |    5     |    6     |
 | ---------- | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
@@ -741,7 +916,8 @@ Default: `1`
 | Piece name |    -     |    -     |    -     |    -     |    -     |    -     |    -     |
 
 
-**Set 4: Pentominoes**
+### Set 4: Pentominoes
+
 | Piece ID      |   0   |   1   |   2   |   3   |   4   |   5   |
 | ------------- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Image         | ![I5] | ![V5] | ![T5] | ![U]  | ![W]  | ![X]  |
@@ -760,28 +936,40 @@ Default: `1`
 | Piece name    |  OZ   |  OS   |  TS   |     TZ      |  LL   |  JJ   |
 | Also known as |   P   |   Q   |   F   |     F'      |  Z5   |  S5   |
 
-**Set 5: M123**
+### Set 5: M123
+
 | Piece ID      |   0   |   1   |   2   |   3   |
 | ------------- | :---: | :---: | :---: | :---: |
 | Image         | ![O1] | ![I2] | ![I3] | ![V3] |
 | Piece name    |  I1   |  I2   |  I3   |  L3   |
 | Also known as |  O1   |   -   |   -   |  V3   |
 
-**Set 6: All-29** does not contain any pieces.
+### Set 6: All-29
+All-29 does not contain any pieces.
 
-**Set 7: Cultris II Rotation System**
+### Set 7: Cultris II Rotation System
 
 | Piece ID   |   0   |   1   |   2   |   3   |   4   |   5   |   6   |
 | ---------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Image      | ![I]  | ![O]  | ![T]  | ![L]  | ![J]  | ![S]  | ![Z]  |
 | Piece name |   -   |   -   |   -   |   -   |   -   |   -   |   -   |
 
-**Set 8: O-spin Rotation System**
+### Set 8: O-spin Rotation System
 
 | Piece ID   |   0   |   1   |   2   |   3   |   4   |   5   |   6   |
 | ---------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Image      | ![I]  | ![O]  | ![T]  | ![L]  | ![J]  | ![S]  | ![Z]  |
 | Piece name |   -   |  O+   |   -   |   -   |   -   |   -   |   -   |
+
+### Set 9: NONE
+
+Handle this set with care, as those pieces are made out of hurry-up garbage.<br>
+These pieces are invisible in queue and in hold.
+
+| Piece ID   |    0    |    1    |
+| ---------- | :-----: | :-----: |
+| Image      | ![NONE] | ![NONE] |
+| Piece name |   INV   |  NONE   |
 
 [access_usermodes]: ./images/access_usermodes.png "How to access usermodes"
 [usermodes_tab]: ./images/usermodes_tab.png "The usermode tab"
@@ -801,7 +989,7 @@ Default: `1`
 [comp_ruleset]: ./images/comp_ruleset.png "The Ruleset component"
 [comp_skin]: ./images/comp_skin.png "The Block Skin component"
 [comp_run]: ./images/comp_run.png "The Run component"
-[comp_relative]: ./images/comp_replative.png "The Relative Trigger component"
+[comp_relative]: ./images/comp_relative.png "The Relative Trigger component"
 [comp_switch]: ./images/comp_switch.png "The On/Off (Component Switch) component"
 [comp_random]: ./images/comp_random.png "The Random component"
 
@@ -848,8 +1036,11 @@ Default: `1`
 [I2]: ./images/pieces/I2.png "Domino"
 [I3]: ./images/pieces/I3.png "I tromino"
 [V3]: ./images/pieces/V3.png "V tromino"
+[NONE]: ./images/pieces/NONE.png "Blank piece"
 [stats]: ./images/stats.png "Stats settings with an arrow pointing at a number 129"
 [task]: ./images/text/task.png "During Ready-Go (Task spec.)"
 [value]: ./images/text/value.png "Value next to the board (lines remaining postion)"
 [description]: ./images/text/description.png "Description text of the value next to the board"
 [over]: ./images/text/over.png "Over the board (lower part)"
+[getBoard]: ./images/getBoard.png "The matrix obtained after using the getBoard function"
+[board]:./images/board.png "Jstris board with X and Y values written outside of the board"
