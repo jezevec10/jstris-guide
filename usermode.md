@@ -795,15 +795,15 @@ since Jstris always keeps 5 pieces in queue, regardless of the amount of preview
 
 Available block sets:
 
-1. Standard
-2. Big (moves 2 spaces left/right at a time)
-3. Big (moves 1 space left/right at a time)
-4. ARS
-5. Penta
-6. M123
-7. All-29
-8. C2RS
-9. O-spin
+0. Standard
+1. Big (moves 2 spaces left/right at a time)
+2. Big (moves 1 space left/right at a time)
+3. ARS
+4. Penta
+5. M123
+6. All-29
+7. C2RS
+8. O-spin
 
 Default: `0`
 
