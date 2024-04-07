@@ -11,9 +11,34 @@
     - [Variable](#variable)
     - [Map](#map)
     - [Stats](#stats)
-  - [Text](#text)
-  - [Pause](#pause)
-  - [Audio](#audio)
+    - [Text](#text)
+    - [Pause](#pause)
+    - [Audio](#audio)
+    - [Attack](#attack)
+    - [Ruleset](#ruleset)
+  - [Ruleset specification](#ruleset-specification)
+    - [`attackTable`](#attacktable)
+    - [`comboTable`](#combotable)
+    - [`hasHold`](#hashold)
+    - [`sgProfile`](#sgprofile)
+    - [`clearDelay`](#cleardelay)
+    - [`gravityLvl`](#gravitylvl)
+    - [`garbageDelay`](#garbagedelay)
+    - [`lockDelay`](#lockdelay)
+    - [`mess`](#mess)
+    - [`gapW`](#gapw)
+    - [`allSpin`](#allspin)
+    - [`asEx`](#asex)
+    - [`gInv`](#ginv)
+    - [`solidAtk`](#solidatk)
+    - [`blocksSel`](#blockssel)
+    - [`rndSel`](#rndsel)
+    - [`gblockSel`](#gblocksel)
+    - [`prSel`](#prsel)
+    - [`clearLines`](#clearlines)
+    - [`DAS`](#das)
+    - [`ARR`](#arr)
+    - [`scoreMult`](#scoremult)
   - [Block name reference list](#block-name-reference-list)
 
 - - - 
@@ -231,7 +256,9 @@ The number is interpreted in binary, so 129 from the example image shows Time (+
 
 ![stats]
 
-## Text
+### Text
+
+![comp_text]
 
 **Text** components allow you to insert text into your usermode.
 Text components can accept text and **placeholders**.
@@ -247,7 +274,9 @@ There are four different ways of showing Text (and fifth one which is not yet im
 | Example |                       ![task]                        |                      ![value]                      |                                 ![description]                                 |                                        ![over]                                        |
 | Notes   | Always shows "TASK".<br>Does not accept line breaks. |                Accepts line breaks                 | Does not accept line breaks.<br>Defaults to "lines remaining" if not provided. | Actually, the text box is in the center of the board.<br>Does not accept line breaks. |
 
-## Pause
+### Pause
+
+![comp_pause]
 
 **Pause** components pause the game for a specified period of time in seconds. Useful for quizzes.
 
@@ -255,13 +284,15 @@ There are two options available:
 - **Allow skip by pressing any key** - The game unpauses immediately when the player presses any key.
 - **Allow some controls** - The player can buffer holds and rotations during the pause.
 
-## Audio
+### Audio
+
+![comp_audio]
 
 **Audio** components play a specified audio clip when executed. Audio components only accept audio clips from https://audio.jezevec10.com (Dallicious voice lines)
 and https://s.jezevec10.com (in-game sounds).
 
 <details>
-<summary>Available sounds from audio.jezevec10.com</summary>
+<summary>Available sounds from audio.jezevec10.com - click here</summary>
 
 | Link                                                          | Transcription                                                                       | BGM                       |
 | :------------------------------------------------------------ | :---------------------------------------------------------------------------------- | :------------------------ |
@@ -341,6 +372,343 @@ and https://s.jezevec10.com (in-game sounds).
 
 </details>
 <br>
+<details>
+<summary>Available sounds from s.jezevec10.com - click here</summary>
+
+TODO: Insert sound list there
+</details>
+
+### Attack
+![comp_attack]
+
+**Attack** components send garbage to the player when executed.
+
+If separated by commas, the component will send multiple garbage segments at once.
+
+For example: The Attack component in the image above will send a segment of 4 garbage lines and a segment of 2 garbage lines at once.
+
+There are two options available:
+- **Specify garbage columns** - You can control in which column each segment spawns. Make sure to include the same amount of values as in the "Lines" textbox!
+- **Ensure column switch** - Garbage segment won't spawn on the same column as the previous one.
+
+### Ruleset
+
+**Ruleset** components change the rules of the game when executed. Rulesets can be even changed mid-game to achieve dynamic difficulty for your usermode.
+
+Check out the [Ruleset specification](#ruleset-specification) for more details.
+
+## Ruleset specification
+```
+{"attackTable":[0,0,1,2,4,4,6,2,0,10,1],
+"comboTable":[0,0,1,1,1,2,2,3,3,4,4,4,5],
+"hasHold":true,
+"hasSolid":true,
+"solid":120,
+"sgProfile":[0,3],
+"lockDelay":[500,5000,20000],
+"clearDelay":0,
+"speedLimit":0,
+"gravityLvl":1,
+"garbageDelay":500,
+"mess":0,
+"gapW":1,
+"rDAS":"-1",
+"rARR":"-1",
+"asEx":"",
+"gInv":false,
+"solidAtk":false,
+"noFW":false,
+"gdmSel":3,
+"gblockSel":0,
+"blocksSel":0,
+"rndSel":0,
+"prSel":5}
+```
+### `attackTable`
+**Type**: Array of integers with 11 elements
+
+Specifies the number of lines sent for a specified line clear.
+
+| Index         |          0          |   1    |   2    |   3    |   4    |        5         |        6         |        7         |           8           |        9         |    10     |
+| ------------- | :-----------------: | :----: | :----: | :----: | :----: | :--------------: | :--------------: | :--------------: | :-------------------: | :--------------: | :-------: |
+| Line clear    | 0 lines<br>(unused) | Single | Double | Triple | Jstris | T-spin<br>Double | T-spin<br>Triple | T-spin<br>Single | Mini T-spin<br>Single | Perfect<br>Clear | B2B bonus |
+| Default value |          0          |   0    |   1    |   2    |   4    |        4         |        6         |        2         |           0           |        10        |     1     |
+
+Default: `[0,0,1,2,4,4,6,2,0,10,1]`
+
+### `comboTable`
+**Type**: Array of integers with 13 elements
+
+Specifies the number of additional lines sent for a specified combo.
+The last index applies for 12-combo and greater.
+
+| Index (combo) |   0   |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |   9   |  10   |  11   |  12   |
+| ------------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Default value |   0   |   0   |   1   |   1   |   1   |   2   |   2   |   3   |   3   |   4   |   4   |   4   |   5   |
+
+Default: `[0,0,1,1,1,2,2,3,3,4,4,4,5]`
+
+### `hasHold`
+**Type**: Boolean
+
+Controls, whether the player can use Hold.
+
+Default: `true`
+
+### `sgProfile`
+**Type**: Array of Doubles
+
+Specifies delays between solid garbage additions.
+After all of the previous delays inserted their garbage, the last value in the array is repeated.
+
+Default: `[0,3]`
+
+### `clearDelay`
+**Type**: Integer
+
+Specifies the amount of time (in ms) after a line clear in which the game is paused. The player can buffer rotations and holds during that pause.
+
+Default: `0`
+
+### `gravityLvl`
+**Type**: Integer between 0 and 28
+
+Specifies, how fast pieces fall on their own.
+
+<details>
+<summary>Gravity table - click here</summary>
+
+| Level | Period<a href="#fn:1"><sup id="fnref:1">[1]</sup></a> | Rows<a href="#fn:2"><sup id="fnref:2">[2]</sup></a> | G<a href="#fn:3"><sup id="fnref:3">[3]</sup></a> |
+| ----- | ----------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------ |
+| 0     | ∞ ms                                                  | 1                                                   | 0                                                |
+| 1     | 900 ms                                                | 1                                                   | 0.018                                            |
+| 2     | 850 ms                                                | 1                                                   | 0.02                                             |
+| 3     | 800 ms                                                | 1                                                   | 0.021                                            |
+| 4     | 750 ms                                                | 1                                                   | 0.022                                            |
+| 5     | 700 ms                                                | 1                                                   | 0.024                                            |
+| 6     | 650 ms                                                | 1                                                   | 0.026                                            |
+| 7     | 600 ms                                                | 1                                                   | 0.028                                            |
+| 8     | 550 ms                                                | 1                                                   | 0.03                                             |
+| 9     | 500 ms                                                | 1                                                   | 0.033                                            |
+| 10    | 450 ms                                                | 1                                                   | 0.037                                            |
+| 11    | 400 ms                                                | 1                                                   | 0.042                                            |
+| 12    | 350 ms                                                | 1                                                   | 0.048                                            |
+| 13    | 300 ms                                                | 1                                                   | 0.056                                            |
+| 14    | 250 ms                                                | 1                                                   | 0.067                                            |
+| 15    | 200 ms                                                | 1                                                   | 0.083                                            |
+| 16    | 150 ms                                                | 1                                                   | 0.111                                            |
+| 17    | 100 ms                                                | 1                                                   | 0.167                                            |
+| 18    | 50 ms                                                 | 1                                                   | 0.333                                            |
+| 19    | 45 ms                                                 | 1                                                   | 0.37                                             |
+| 20    | 40 ms                                                 | 1                                                   | 0.417                                            |
+| 21    | 35 ms                                                 | 1                                                   | 0.476                                            |
+| 22    | 30 ms                                                 | 1                                                   | 0.556                                            |
+| 23    | 25 ms                                                 | 1                                                   | 0.667                                            |
+| 24    | 20 ms                                                 | 1                                                   | 0.833                                            |
+| 25    | 30 ms                                                 | 2                                                   | 1.111                                            |
+| 26    | 20 ms                                                 | 2                                                   | 1.667                                            |
+| 27    | 33 ms                                                 | 3                                                   | 1.515                                            |
+| 28    | 0 ms                                                  | 21                                                  | 20                                               |
+
+<p id="fn:1">[1]: The period after which the piece falls the specified amount of rows. <a href="#fnref:1">↑</a></p>
+<p id="fn:2">[2]: The amount of rows the piece falls per period. <a href="#fnref:2">↑</a></p>
+<p id="fn:3">[3]: The approximate amount of rows a piece falls every 1/60 s. <a href="#fnref:3">↑</a></p>
+
+</details>
+
+Default: `1`
+
+### `garbageDelay`
+
+**Type**: Integer between 0 and 60000
+
+Specifies, after how long (in ms) since receiving a garbage segment that segment can be added to the board.
+
+Default: `500`
+
+### `lockDelay`
+
+**Type**: Array of integers between 0 and 20,000,000 with 3 elements
+
+Specifies different levels of lock delay.
+
+| Index         |                             0                              |                                     1                                      |                  2                   |
+| ------------- | :--------------------------------------------------------: | :------------------------------------------------------------------------: | :----------------------------------: |
+| Lock delay    |                             L1                             |                                     L2                                     |                  L3                  |
+| Info          | For how long the piece can stay on ground without locking. | For how long the piece can stay on ground while moving left/right locking. | For how long the piece can be active |
+| Default value |                           500 ms                           |                                  5000 ms                                   |               20000 ms               |
+
+Default: `[500,5000,20000]`
+
+### `mess`
+
+**Type**: Integer between -100 and 100
+
+Specifies the chance for garbage to change columns both between segments and in segment.
+
+- `-100` is 0% messiness between segments and 0% messiness in segment,
+- Negative values are `100+mess`% messiness between segments and 0% messiness in segment,
+- `0` is 100% messiness between segments and 0% messiness in segment,
+- Positive values are 100% messiness between segments and `mess`% messiness in segment,
+- `100` is 100% messiness between segments and 100% messiness in segment.
+
+Default: `0`
+
+### `gapW`
+
+**Type**: Integer between 1 and 8
+
+Specifies the width of the garbage hole.
+
+Default: `1`
+
+### `allSpin`
+
+**Type**: Integer between 0 and 2
+
+Specifies allowed spins:
+
+- `0`: T-spins,
+- `1`: Immobile all-spin,
+- `2`: 4-point all-spin.
+
+Default: `0`
+
+### `asEx`
+
+**Type**: String specifying up to 6 tetrominoes separated by commas
+
+All-spin exclusion list - applicable only when `allSpin` is not 0. Specifies which pieces can't perform spins when all-spin is enabled.
+
+For example, `"T,J"` will prevent T and J pieces from performing spins.
+
+Default: `""`
+
+### `gInv`
+
+**Type**: Boolean
+
+If true, garbage lines will be inverted - where would be blocks, there would be empty spaces, and vice versa.
+
+Default: `false`
+
+### `solidAtk`
+
+**Type**: Boolean
+
+If true, garbage lines will consist of solid hurry-up garbage lines.
+
+Default: `false`
+
+### `blocksSel`
+
+**Type**: Integer between 0 and 8
+
+Specifies the block set used in the game.
+
+If changed mid-game, new pieces will appear at the end of the queue,
+since Jstris always keeps 5 pieces in queue, regardless of the amount of previews shown to the player. 
+
+Available block sets:
+
+0. Standard
+1. Big (moves 2 spaces left/right at a time)
+2. Big (moves 1 space left/right at a time)
+3. ARS
+4. Penta
+5. M123
+6. All-29
+7. C2RS
+8. O-spin
+
+Default: `0`
+
+### `rndSel`
+
+**Type**: Integer between 0 and 10
+
+Specifies the randomizer.
+
+Available randomizers:
+
+0. 7-bag
+1. 14-bag
+2. Classic
+3. One Block
+4. Two Block
+5. One 7-bag
+6. One 14-bag
+7. C2Sim
+8. Repeat+7b
+9. BSblock+7b
+10. BigBlock+7b
+
+Default: `0`
+
+### `gblockSel`
+
+**Type**: Integer between 0 and 3
+
+Specifies the garbage blocking method.
+
+Available garbage blocking methods:
+
+0. Full (can offset garbage, garbage isn't inserted while in combo)
+1. Limited (can offset garbage, garbage can be inserted while in combo)
+2. None (can't offset garbage, garbage can be inserted while in combo)
+3. Instant (garbage is inserted the moment it's received)
+
+Default: `0`
+
+### `prSel`
+
+**Type**: Integer between 0 and 5
+
+Specifies the amount of previews available to the player.
+
+Default: `5`
+
+### `clearLines`
+
+**Usermode exclusive!**
+
+**Type**: Boolean
+
+Specifies whether full lines are cleared or not.
+
+Default: `true`
+
+### `DAS`
+
+**Usermode exclusive!**
+
+**Type**: Integer between -1 and 5000
+
+Enforces specified DAS value. If DAS is `-1`, the user setting is used.
+
+Default: `-1`
+
+### `ARR`
+
+**Usermode exclusive!**
+
+**Type**: Integer between -1 and 5000
+
+Enforces specified ARR value. If ARR is `-1`, the user setting is used.
+
+Default: `-1`
+
+### `scoreMult`
+
+**Usermode exclusive!**
+
+**Type**: Double between 0 and 1000
+
+Specifies the score multiplier.
+
+If the score change would end up being decimal, the score change gets rounded to the nearest integer.
+
+Default: `1`
 
 ## Block name reference list
 
