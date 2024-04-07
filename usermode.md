@@ -12,6 +12,8 @@
     - [Map](#map)
     - [Stats](#stats)
   - [Text](#text)
+  - [Pause](#pause)
+  - [Audio](#audio)
   - [Block name reference list](#block-name-reference-list)
 
 - - - 
@@ -191,8 +193,8 @@ Click the *Edit map* button to enter the map editor. It functions identically to
 Maps can manipulate the board in various ways:
 - **Replace board** - the whole board is replaced by a map,
 - **Subtract from current board** - If blocks are present on the board in the same position as in the map, the blocks will be removed.
-- **Add to current board (on top)**
-- **Add to current board (under)**
+- **Add to current board (on top)** - The map will be overlaid on top of the board (like a layer in an image editing program).
+- **Add to current board (under)** The map will be underlain under the board (like a layer in an image editing program).
 - **Intersect with current board (keep stack color)** - All blocks on the map are removed, except in positions where there were blocks in the map. Block colors on the board are retained.
 - **Intersect with current board (force map color)** - Same as above, but block colors are replaced with those from the map.
 - **Replace & end if collision found**
@@ -240,10 +242,105 @@ For example: `{PC}` will insert a number of Perfect Clears performed.
 
 There are four different ways of showing Text (and fifth one which is not yet implemented):
 
-| Option  |             During Ready-Go (Task spec.)             | Value next to the board (lines remaining position) | Description text of the value next to the board |                              Over the board (lower part)                              |
-| ------- | :--------------------------------------------------: | :------------------------------------------------: | :---------------------------------------------: | :-----------------------------------------------------------------------------------: |
-| Example |                       ![task]                        |                      ![value]                      |                 ![description]                  |                                        ![over]                                        |
-| Notes   | Always shows "TASK".<br>Does not accept line breaks. |                Accepts line breaks                 |           Does not accept line breaks           | Actually, the text box is in the center of the board.<br>Does not accept line breaks. |
+| Option  |             During Ready-Go (Task spec.)             | Value next to the board (lines remaining position) |                Description text of the value next to the board                 |                              Over the board (lower part)                              |
+| ------- | :--------------------------------------------------: | :------------------------------------------------: | :----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
+| Example |                       ![task]                        |                      ![value]                      |                                 ![description]                                 |                                        ![over]                                        |
+| Notes   | Always shows "TASK".<br>Does not accept line breaks. |                Accepts line breaks                 | Does not accept line breaks.<br>Defaults to "lines remaining" if not provided. | Actually, the text box is in the center of the board.<br>Does not accept line breaks. |
+
+## Pause
+
+**Pause** components pause the game for a specified period of time in seconds. Useful for quizzes.
+
+There are two options available:
+- **Allow skip by pressing any key** - The game unpauses immediately when the player presses any key.
+- **Allow some controls** - The player can buffer holds and rotations during the pause.
+
+## Audio
+
+**Audio** components play a specified audio clip when executed. Audio components only accept audio clips from https://audio.jezevec10.com (Dallicious voice lines)
+and https://s.jezevec10.com (in-game sounds).
+
+<details>
+<summary>Available sounds from audio.jezevec10.com</summary>
+
+| Link                                                          | Transcription                                                                       | BGM                       |
+| :------------------------------------------------------------ | :---------------------------------------------------------------------------------- | :------------------------ |
+| https://audio.jezevec10.com/dal/2/computerintrash.ogg         | Time to throw your whole computer in the trash.                                     | -                         |
+| https://audio.jezevec10.com/dal/2/creativewithpolymers.ogg    | You gotta be creative with polymers to clear this one.                              | -                         |
+| https://audio.jezevec10.com/dal/2/dontplaythis.ogg            | Don't play this, please.                                                            | -                         |
+| https://audio.jezevec10.com/dal/2/everyclearisatspin.ogg      | Every clear is a T-spin.                                                            | -                         |
+| https://audio.jezevec10.com/dal/2/hahaha.ogg                  | Ha ha ha ha haaaa!                                                                  | -                         |
+| https://audio.jezevec10.com/dal/2/isthisgood.ogg              | Is this good?                                                                       | -                         |
+| https://audio.jezevec10.com/dal/2/iwasgoingtosaysomething.ogg | I was going to say something. But I forgot.                                         | -                         |
+| https://audio.jezevec10.com/dal/2/levelup1.ogg                | Level up!                                                                           | -                         |
+| https://audio.jezevec10.com/dal/2/levelup2.ogg                | Level up!                                                                           | -                         |
+| https://audio.jezevec10.com/dal/2/levelup3.ogg                | Level up!                                                                           | -                         |
+| https://audio.jezevec10.com/dal/2/peped.ogg                   | Pepe-D emote.                                                                       | -                         |
+| https://audio.jezevec10.com/dal/2/takeforever.ogg             | This is gonna take forever.                                                         | -                         |
+| https://audio.jezevec10.com/dal/2/terror.ogg                  | Deadly terror. Oh shit.                                                             | Nyeh heh heh! (Undertale) |
+| https://audio.jezevec10.com/dal/2/trytosurvive.ogg            | Try to survive.                                                                     | -                         |
+| https://audio.jezevec10.com/dal/2/tspinfactory.ogg            | T-spin factory.                                                                     | -                         |
+| https://audio.jezevec10.com/dal/2/wellknowsetupwithatwist.ogg | Well-known setup with a twist.                                                      | -                         |
+| https://audio.jezevec10.com/dal/aboutto.ogg                   | Because... I... am... about... to do it!                                            | Nyeh heh heh! (Undertale) |
+| https://audio.jezevec10.com/dal/alphys.ogg                    | You gonna love this puzzle! It was made by the great Doctor Alphys!                 | Nyeh heh heh! (Undertale) |
+| https://audio.jezevec10.com/dal/care.ogg                      | You must care about puzzles like I do!                                              | Snowy (Undertale)         |
+| https://audio.jezevec10.com/dal/chanceofvictory.ogg           | Only the tiniest chance of victory will remain.                                     | Nyeh heh heh! (Undertale) |
+| https://audio.jezevec10.com/dal/congratulations.ogg           | Congratulations! Good job!                                                          | -                         |
+| https://audio.jezevec10.com/dal/cookie.ogg                    | You're such a smart cookie!                                                         | (no idea)                 |
+| https://audio.jezevec10.com/dal/corresp1.ogg                  | Hi! I'm Dal! I'm your resident Jstris correspondent!                                | -                         |
+| https://audio.jezevec10.com/dal/diao.ogg                      | Who's Diao?                                                                         | -                         |
+| https://audio.jezevec10.com/dal/easy.ogg                      | It might be even too easy for you!                                                  | Snowy (Undertale)         |
+| https://audio.jezevec10.com/dal/enough.ogg                    | Anyway. That's enough talking.                                                      | Nyeh heh heh! (Undertale) |
+| https://audio.jezevec10.com/dal/fair.ogg                      | My puzzles are very fair! And my traps are expertly cooked!                         | Nyeh heh heh! (Undertale) |
+| https://audio.jezevec10.com/dal/feelfree.ogg                  | Feel free to try the puzzle yourself!                                               | (no idea)                 |
+| https://audio.jezevec10.com/dal/finalChallenge.ogg            | Human! This is your final and most dangerous challenge!                             | Nyeh heh heh! (Undertale) |
+| https://audio.jezevec10.com/dal/gauntlet.ogg                  | Behold! The gauntlet of deadly terror!                                              | Nyeh heh heh! (Undertale) |
+| https://audio.jezevec10.com/dal/haha.ogg                      | Nyeh heh heh heh heh!                                                               | Snowy (Undertale)         |
+| https://audio.jezevec10.com/dal/incredible.ogg                | Incredible. I'm impressed.                                                          | Snowy (Undertale)         |
+| https://audio.jezevec10.com/dal/internet.ogg                  | The Internet. I'm quite popular there.                                              | (only Bonetrousle's SFX)  |
+| https://audio.jezevec10.com/dal/looking.ogg                   | What are you looking at?                                                            | Nyeh heh heh! (Undertale) |
+| https://audio.jezevec10.com/dal/love.ogg                      | Well, I'm sure you'll love the next puzzle then.                                    | Snowy (Undertale)         |
+| https://audio.jezevec10.com/dal/meme/180.ogg                  | One eighty.                                                                         | -                         |
+| https://audio.jezevec10.com/dal/meme/aydosmio.ogg             | Aydosmio!                                                                           | -                         |
+| https://audio.jezevec10.com/dal/meme/aysobum.ogg              | Ay, so - Boom!                                                                      | -                         |
+| https://audio.jezevec10.com/dal/meme/clockwise.ogg            | Clockwise.                                                                          | -                         |
+| https://audio.jezevec10.com/dal/meme/combostorm.ogg           | Combooooostooooorm!                                                                 | -                         |
+| https://audio.jezevec10.com/dal/meme/congratulations2.ogg     | ♪ Congratulations! ♪                                                                | -                         |
+| https://audio.jezevec10.com/dal/meme/congratulations.ogg      | Congratulations!                                                                    | -                         |
+| https://audio.jezevec10.com/dal/meme/correspondent.ogg        | I'm Jstris correspondent.                                                           | -                         |
+| https://audio.jezevec10.com/dal/meme/counterclockwise.ogg     | Counter-clockwise.                                                                  | -                         |
+| https://audio.jezevec10.com/dal/meme/fluteman.ogg             | Fluteman.                                                                           | -                         |
+| https://audio.jezevec10.com/dal/meme/frick.ogg                | Frick.                                                                              | -                         |
+| https://audio.jezevec10.com/dal/meme/goodjob.ogg              | Good job!                                                                           | -                         |
+| https://audio.jezevec10.com/dal/meme/harddrop.ogg             | Hard drop.                                                                          | -                         |
+| https://audio.jezevec10.com/dal/meme/h.ogg                    | H.                                                                                  | -                         |
+| https://audio.jezevec10.com/dal/meme/hyperion.ogg             | Hyperion.                                                                           | -                         |
+| https://audio.jezevec10.com/dal/meme/impissed.ogg             | Now I'm pissed!                                                                     | -                         |
+| https://audio.jezevec10.com/dal/meme/izkierda.ogg             | Izkierda.                                                                           | -                         |
+| https://audio.jezevec10.com/dal/meme/left.ogg                 | Left.                                                                               | -                         |
+| https://audio.jezevec10.com/dal/meme/lockdown.ogg             | Lockdown.                                                                           | -                         |
+| https://audio.jezevec10.com/dal/meme/notlikethis.ogg          | Not like this!                                                                      | -                         |
+| https://audio.jezevec10.com/dal/meme/ohmygod2.ogg             | Oh my god...                                                                        | -                         |
+| https://audio.jezevec10.com/dal/meme/ohmygod.ogg              | Oh my god...                                                                        | -                         |
+| https://audio.jezevec10.com/dal/meme/pentris.ogg              | Pentris!                                                                            | -                         |
+| https://audio.jezevec10.com/dal/meme/quad.ogg                 | Quad.                                                                               | -                         |
+| https://audio.jezevec10.com/dal/meme/right.ogg                | Right.                                                                              | -                         |
+| https://audio.jezevec10.com/dal/meme/softdrop.ogg             | Soft drop.                                                                          | -                         |
+| https://audio.jezevec10.com/dal/meme/stop.ogg                 | Stop!                                                                               | -                         |
+| https://audio.jezevec10.com/dal/meme/teretcha.ogg             | Teretcha.                                                                           | -                         |
+| https://audio.jezevec10.com/dal/meme/tetrio.ogg               | [TETR.IO](https://tetr.io).                                                         | -                         |
+| https://audio.jezevec10.com/dal/meme/welldone.ogg             | Well done.                                                                          | -                         |
+| https://audio.jezevec10.com/dal/meme/yoholdthat.ogg           | Yo, hold that.                                                                      | -                         |
+| https://audio.jezevec10.com/dal/mode1-task.ogg                | [Send 23 lines with the next 15 blocks.](https://jstris.jezevec10.com/usermodes/1)  | -                         |
+| https://audio.jezevec10.com/dal/mode93-task.ogg               | [Send 23 lines with the next 23 blocks.](https://jstris.jezevec10.com/usermodes/93) | -                         |
+| https://audio.jezevec10.com/dal/noway.ogg                     | There's no way they can get past this one.                                          | Nyeh heh heh! (Undertale) |
+| https://audio.jezevec10.com/dal/ready.ogg                     | Are you ready?                                                                      | Nyeh heh heh! (Undertale) |
+| https://audio.jezevec10.com/dal/shocking.ogg                  | I think you'll find this one... quite shocking!                                     | Nyeh heh heh! (Undertale) |
+| https://audio.jezevec10.com/dal/something.ogg                 | By the way - I was going to say something. But I forgot.                            | sans. (Undertale)         |
+| https://audio.jezevec10.com/dal/tooeasy.ogg                   | This challenge... it seems... maybe... too easy to defeat the human with!           | Nyeh heh heh! (Undertale) |
+
+</details>
+<br>
 
 ## Block name reference list
 
