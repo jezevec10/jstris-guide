@@ -46,7 +46,7 @@ return [
     "usermode" => [
         "en" => [
             "version" => '1.0.0',
-            "author": 'KonSola5',
+            "author" => 'KonSola5',
             "translators" => null
         ],
     ],
