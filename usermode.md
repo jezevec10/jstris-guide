@@ -204,6 +204,7 @@ You can check for various stats:
 <li> Time (in seconds)
 </ul>
 </details>
+
 Then you can compare it with a number - available operators are `>`, `>=`, `=`, `<=`, `<`.
 
 You can also check for a **Custom expression**. Custom expressions require a variable on the left hand side of the expression.
@@ -566,6 +567,7 @@ The function can be performed with two syntax variations:
 
 - `getBoard()`<br>
   Returns: A 20x10 MathJS matrix containing the board state.
+
   ![getBoard]
 
   
@@ -585,7 +587,7 @@ The function can be performed with two syntax variations:
   - y: Row, integer between 0 and 19
   - color: Block color, integer between 0 and 9
 
-  Returns: 1 on success, 0 on failure.
+  Returns: 1 on success, 0 on failure (index out of bounds, color does not exist).
 
 > ⚠️ This function does not update the board visually! Use a blank [Map](#map) with "Add to current board" to update the board.
 
@@ -597,7 +599,7 @@ The function can be performed with two syntax variations:
   - piece - A string representing a piece. Check the [Block name reference list](#block-name-reference-list) for the list of usable pieces.
   `"[setID:pieceID]"` can be used to pick any piece from the game.
 
-  Returns: TODO
+  Returns: 1 on success, 0 on failure (queue index out of bounds, piece does not exist).
 
 ### `queueAppend`
 - `queueAppend(piece)`<br>
@@ -605,7 +607,7 @@ The function can be performed with two syntax variations:
   - piece - A string representing a piece. Check the [Block name reference list](#block-name-reference-list) for the list of usable pieces.
   `"[setID:pieceID]"` can be used to pick any piece from the game.
 
-  Returns: TODO
+  Returns: 1 on success, 0 on failure (piece does not exist).
 
 ## Ruleset specification
 ### `attackTable`
