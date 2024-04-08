@@ -1,6 +1,7 @@
 # Jstris guide
 
-The guide is available in the Markdown format in the file called `guide.md`
+The guide is available in the Markdown format in the file called `guide.md` and can be localized.
+The usermode guide is in file `usermode.md`. Usermodes are not finalized and therefore no translations are needed for this file.
 
 ## Contribution
 
