@@ -490,6 +490,7 @@ You can specify the weights for each option by inputting a number after a comma.
 If you are satisfied with your usermode, you can publish it for others to play.
 
 You will be presented with this screen:
+
 ![publish]
 
 Enter the mode title, description, and tags. Add tags, separating each tag with a comma.
