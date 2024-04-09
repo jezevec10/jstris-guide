@@ -599,6 +599,8 @@ The function can be performed with two syntax variations:
     Index -1 replaces the active piece, 0 and higher replace the Next queue.
   - piece - A string representing a piece. Check the [Block name reference list](#block-name-reference-list) for the list of usable pieces.
   `"[setID:pieceID]"` can be used to pick any piece from the game.
+- `queueReplace(index, setID, pieceID)`<br>
+  Alternative syntax with 3 numeric parameters.
 
   Returns: 1 on success, 0 on failure (queue index out of bounds, piece does not exist).
 
@@ -607,6 +609,8 @@ The function can be performed with two syntax variations:
   Parameters:
   - piece - A string representing a piece. Check the [Block name reference list](#block-name-reference-list) for the list of usable pieces.
   `"[setID:pieceID]"` can be used to pick any piece from the game.
+- `queueAppend(setID, pieceID)`<br>
+   Alternative syntax with 2 numeric parameters.
 
   Returns: 1 on success, 0 on failure (piece does not exist).
 
