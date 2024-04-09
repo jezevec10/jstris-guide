@@ -260,7 +260,8 @@ Maps can manipulate the board in various ways:
 - **Add to current board (under)** The map will be underlain under the board (like a layer in an image editing program).
 - **Intersect with current board (keep stack color)** - All blocks on the map are removed, except in positions where there were blocks in the map. Block colors on the board are retained.
 - **Intersect with current board (force map color)** - Same as above, but block colors are replaced with those from the map.
-- **Replace & end if collision found** - TODO
+- **End if map collides with current piece position** - Will end the game as failure if the map shape collides with the currently manipulated piece. Does not modify the board.
+- **End if map collides with current stack** - Will end the game as failure if the map shape collides with the current stack. Does not modify the board.
 
 ### Stats
 
