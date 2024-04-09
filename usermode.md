@@ -866,8 +866,6 @@ Default: `true`
 
 ### `DAS`
 
-**Usermode exclusive!**
-
 **Type**: Integer between -1 and 5000
 
 Enforces specified DAS value. If DAS is `-1`, the user setting is used.
@@ -876,8 +874,6 @@ Default: `-1`
 
 ### `ARR`
 
-**Usermode exclusive!**
-
 **Type**: Integer between -1 and 5000
 
 Enforces specified ARR value. If ARR is `-1`, the user setting is used.
@@ -885,8 +881,6 @@ Enforces specified ARR value. If ARR is `-1`, the user setting is used.
 Default: `-1`
 
 ### `ghost`
-
-**Usermode exclusive!**
 
 **Type**: Integer between -1 and 1
 
