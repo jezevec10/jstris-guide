@@ -109,7 +109,7 @@ While hovering over a component with a mouse cursor, extra options are available
 - Green (+) - duplicates a component and puts it below the current component when pressed,
 - Red (-) - removes the component.
 
-Each component gets an ID assigned to it when added (unless it's duplicated) - these IDs are used for the [On/Off](#on-off) component and the [Random](#random) component.
+Each component gets an ID assigned to it when added (unless it's duplicated) - these IDs are used for the [On/Off](#onoff) component and the [Random](#random) component.
 
 ### Trigger
 
@@ -367,7 +367,7 @@ and https://s.jezevec10.com (in-game sounds).
 | https://audio.jezevec10.com/dal/gauntlet.ogg                  | Behold! The gauntlet of deadly terror!                                              | Nyeh heh heh! (Undertale) |
 | https://audio.jezevec10.com/dal/haha.ogg                      | Nyeh heh heh heh heh!                                                               | Snowy (Undertale)         |
 | https://audio.jezevec10.com/dal/incredible.ogg                | Incredible. I'm impressed.                                                          | Snowy (Undertale)         |
-| https://audio.jezevec10.com/dal/internet.ogg                  | The Internet. I'm quite popular there.                                              | (only Bonetrousle's SFX)  |
+| https://audio.jezevec10.com/dal/internet.ogg                  | The Internet. I'm quite popular there.                                              | (only Papyrus' SFX)       |
 | https://audio.jezevec10.com/dal/looking.ogg                   | What are you looking at?                                                            | Nyeh heh heh! (Undertale) |
 | https://audio.jezevec10.com/dal/love.ogg                      | Well, I'm sure you'll love the next puzzle then.                                    | Snowy (Undertale)         |
 | https://audio.jezevec10.com/dal/meme/180.ogg                  | One eighty.                                                                         | -                         |
@@ -444,6 +444,171 @@ There's also an option to add the specified ruleset without resetting all option
 
 **Block skin** components change the block skin when executed. Block skin components only accept skins from https://i.imgur.com (You can make your custom skin that way)
 and https://s.jezevec10.com (built-in skins). Block skins must be in 9:1 proportions.
+
+<details>
+<summary>Available skins from s.jezevec10.com - click here</summary>
+
+<h3>Free skins</h3>
+
+| Link                                | Image                                    |
+| ----------------------------------- | ---------------------------------------- |
+| https://s.jezevec10.com/res/b1.png  | ![](https://s.jezevec10.com/res/b1.png)  |
+| https://s.jezevec10.com/res/b2.png  | ![](https://s.jezevec10.com/res/b2.png)  |
+| https://s.jezevec10.com/res/b3.png  | ![](https://s.jezevec10.com/res/b3.png)  |
+| https://s.jezevec10.com/res/b4.png  | ![](https://s.jezevec10.com/res/b4.png)  |
+| https://s.jezevec10.com/res/b8.png  | ![](https://s.jezevec10.com/res/b8.png)  |
+| https://s.jezevec10.com/res/b9.png  | ![](https://s.jezevec10.com/res/b9.png)  |
+| https://s.jezevec10.com/res/b10.png | ![](https://s.jezevec10.com/res/b10.png) |
+| https://s.jezevec10.com/res/b11.png | ![](https://s.jezevec10.com/res/b11.png) |
+| https://s.jezevec10.com/res/b12.png | ![](https://s.jezevec10.com/res/b12.png) |
+| https://s.jezevec10.com/res/b13.png | ![](https://s.jezevec10.com/res/b13.png) |
+
+<h3>Supporter-only skins</h3>
+
+| Link                                     | Image                                         | Author              |
+| ---------------------------------------- | --------------------------------------------- | ------------------- |
+| https://s.jezevec10.com/res/b/19/1.png   | ![](https://s.jezevec10.com/res/b/19/1.png)   | Tetrian22           |
+| https://s.jezevec10.com/res/b/19/2.png   | ![](https://s.jezevec10.com/res/b/19/2.png)   | ElliottB1           |
+| https://s.jezevec10.com/res/b/19/3.png   | ![](https://s.jezevec10.com/res/b/19/3.png)   | nathanle1406        |
+| https://s.jezevec10.com/res/b/19/4.png   | ![](https://s.jezevec10.com/res/b/19/4.png)   | Hanna               |
+| https://s.jezevec10.com/res/b/19/5.png   | ![](https://s.jezevec10.com/res/b/19/5.png)   | Plaaosert           |
+| https://s.jezevec10.com/res/b/19/6.png   | ![](https://s.jezevec10.com/res/b/19/6.png)   | minecraft tryhard   |
+| https://s.jezevec10.com/res/b/19/7.png   | ![](https://s.jezevec10.com/res/b/19/7.png)   | Preschool Dropout   |
+| https://s.jezevec10.com/res/b/19/8.png   | ![](https://s.jezevec10.com/res/b/19/8.png)   | slimenergy          |
+| https://s.jezevec10.com/res/b/19/9.png   | ![](https://s.jezevec10.com/res/b/19/9.png)   | slimenergy          |
+| https://s.jezevec10.com/res/b/19/10.png  | ![](https://s.jezevec10.com/res/b/19/10.png)  | Imagine Gamer       |
+| https://s.jezevec10.com/res/b/19/11.png  | ![](https://s.jezevec10.com/res/b/19/11.png)  | Katakana Letter Tsu |
+| https://s.jezevec10.com/res/b/19/12.png  | ![](https://s.jezevec10.com/res/b/19/12.png)  | slimenergy          |
+| https://s.jezevec10.com/res/b/19/13.png  | ![](https://s.jezevec10.com/res/b/19/13.png)  | Axarious            |
+| https://s.jezevec10.com/res/b/19/14.png  | ![](https://s.jezevec10.com/res/b/19/14.png)  | Dinir               |
+| https://s.jezevec10.com/res/b/19/15.png  | ![](https://s.jezevec10.com/res/b/19/15.png)  | DerpyBanana         |
+| https://s.jezevec10.com/res/b/19/16.png  | ![](https://s.jezevec10.com/res/b/19/16.png)  | Starwort            |
+| https://s.jezevec10.com/res/b/19/17.png  | ![](https://s.jezevec10.com/res/b/19/17.png)  | Starwort            |
+| https://s.jezevec10.com/res/b/19/18.png  | ![](https://s.jezevec10.com/res/b/19/18.png)  | misdroppi           |
+| https://s.jezevec10.com/res/b/19/19.png  | ![](https://s.jezevec10.com/res/b/19/19.png)  | egguu               |
+| https://s.jezevec10.com/res/b/19/20.png  | ![](https://s.jezevec10.com/res/b/19/20.png)  | egguu               |
+| https://s.jezevec10.com/res/b/19/21.png  | ![](https://s.jezevec10.com/res/b/19/21.png)  | Q                   |
+| https://s.jezevec10.com/res/b/19/22.png  | ![](https://s.jezevec10.com/res/b/19/22.png)  | imAddicted234       |
+| https://s.jezevec10.com/res/b/19/25.png  | ![](https://s.jezevec10.com/res/b/19/25.png)  | Lil crump           |
+| https://s.jezevec10.com/res/b/19/26.png  | ![](https://s.jezevec10.com/res/b/19/26.png)  | MagnumAlpasan       |
+| https://s.jezevec10.com/res/b/19/27.png  | ![](https://s.jezevec10.com/res/b/19/27.png)  | MrTurnip            |
+| https://s.jezevec10.com/res/b/19/28.png  | ![](https://s.jezevec10.com/res/b/19/28.png)  | Takane              |
+| https://s.jezevec10.com/res/b/19/30.png  | ![](https://s.jezevec10.com/res/b/19/30.png)  | Whole Wheat Orange  |
+| https://s.jezevec10.com/res/b/19/31.png  | ![](https://s.jezevec10.com/res/b/19/31.png)  | PixelPelican        |
+| https://s.jezevec10.com/res/b/19/32.png  | ![](https://s.jezevec10.com/res/b/19/32.png)  | FerSave             |
+| https://s.jezevec10.com/res/b/19/33.png  | ![](https://s.jezevec10.com/res/b/19/33.png)  | OSK                 |
+| https://s.jezevec10.com/res/b/19/34.png  | ![](https://s.jezevec10.com/res/b/19/34.png)  | lillod              |
+| https://s.jezevec10.com/res/b/19/35.png  | ![](https://s.jezevec10.com/res/b/19/35.png)  | Takane              |
+| https://s.jezevec10.com/res/b/19/37.png  | ![](https://s.jezevec10.com/res/b/19/37.png)  | Han \| Dopamine      |
+| https://s.jezevec10.com/res/b/19/38.png  | ![](https://s.jezevec10.com/res/b/19/38.png)  | Prismly             |
+| https://s.jezevec10.com/res/b/19/39.png  | ![](https://s.jezevec10.com/res/b/19/39.png)  | StayNoided          |
+| https://s.jezevec10.com/res/b/19/41.png  | ![](https://s.jezevec10.com/res/b/19/41.png)  | NekoNoTe            |
+| https://s.jezevec10.com/res/b/19/42.png  | ![](https://s.jezevec10.com/res/b/19/42.png)  | NekoNoTe            |
+| https://s.jezevec10.com/res/b/19/43.png  | ![](https://s.jezevec10.com/res/b/19/43.png)  | GlodRoger           |
+| https://s.jezevec10.com/res/b/19/45.png  | ![](https://s.jezevec10.com/res/b/19/45.png)  | Magma_reeen         |
+| https://s.jezevec10.com/res/b/19/46.png  | ![](https://s.jezevec10.com/res/b/19/46.png)  | Ok                  |
+| https://s.jezevec10.com/res/b/19/47.png  | ![](https://s.jezevec10.com/res/b/19/47.png)  | Ok                  |
+| https://s.jezevec10.com/res/b/19/48.png  | ![](https://s.jezevec10.com/res/b/19/48.png)  | Crep                |
+| https://s.jezevec10.com/res/b/20/1.png   | ![](https://s.jezevec10.com/res/b/20/1.png)   | Justin1L8           |
+| https://s.jezevec10.com/res/b/20/2.png   | ![](https://s.jezevec10.com/res/b/20/2.png)   | DerpyBanana         |
+| https://s.jezevec10.com/res/b/20/3.png   | ![](https://s.jezevec10.com/res/b/20/3.png)   | Man.                |
+| https://s.jezevec10.com/res/b/20/4.png   | ![](https://s.jezevec10.com/res/b/20/4.png)   | leonid              |
+| https://s.jezevec10.com/res/b/20/5.png   | ![](https://s.jezevec10.com/res/b/20/5.png)   | u/KibiByte          |
+| https://s.jezevec10.com/res/b/20/6.png   | ![](https://s.jezevec10.com/res/b/20/6.png)   | ColdSpade           |
+| https://s.jezevec10.com/res/b/20/7.png   | ![](https://s.jezevec10.com/res/b/20/7.png)   | SmolBepis           |
+| https://s.jezevec10.com/res/b/20/8.png   | ![](https://s.jezevec10.com/res/b/20/8.png)   | DrThunderous        |
+| https://s.jezevec10.com/res/b/20/9.png   | ![](https://s.jezevec10.com/res/b/20/9.png)   | Tetrian22           |
+| https://s.jezevec10.com/res/b/20/10.png  | ![](https://s.jezevec10.com/res/b/20/10.png)  | Kirby703            |
+| https://s.jezevec10.com/res/b/20/11.png  | ![](https://s.jezevec10.com/res/b/20/11.png)  | FluxDGTL01          |
+| https://s.jezevec10.com/res/b/20/12.png  | ![](https://s.jezevec10.com/res/b/20/12.png)  | ColdSpade           |
+| https://s.jezevec10.com/res/b/20/13.png  | ![](https://s.jezevec10.com/res/b/20/13.png)  | darian              |
+| https://s.jezevec10.com/res/b/20/14.png  | ![](https://s.jezevec10.com/res/b/20/14.png)  | Kiede               |
+| https://s.jezevec10.com/res/b/20/15.png  | ![](https://s.jezevec10.com/res/b/20/15.png)  | izzy1794            |
+| https://s.jezevec10.com/res/b/20/16.png  | ![](https://s.jezevec10.com/res/b/20/16.png)  | Tetrian22           |
+| https://s.jezevec10.com/res/b/20/18.png  | ![](https://s.jezevec10.com/res/b/20/18.png)  | sock                |
+| https://s.jezevec10.com/res/b/20/19.png  | ![](https://s.jezevec10.com/res/b/20/19.png)  | Roxie               |
+| https://s.jezevec10.com/res/b/20/20.png  | ![](https://s.jezevec10.com/res/b/20/20.png)  | GeometryMations     |
+| https://s.jezevec10.com/res/b/20/21.png  | ![](https://s.jezevec10.com/res/b/20/21.png)  | MrDoubleK           |
+| https://s.jezevec10.com/res/b/20/23.png  | ![](https://s.jezevec10.com/res/b/20/23.png)  | GuyWithASword       |
+| https://s.jezevec10.com/res/b/20/24.png  | ![](https://s.jezevec10.com/res/b/20/24.png)  | egguu               |
+| https://s.jezevec10.com/res/b/20/25.png  | ![](https://s.jezevec10.com/res/b/20/25.png)  | Kiede               |
+| https://s.jezevec10.com/res/b/20/26.png  | ![](https://s.jezevec10.com/res/b/20/26.png)  | darian              |
+| https://s.jezevec10.com/res/b/20/27.png  | ![](https://s.jezevec10.com/res/b/20/27.png)  | Frodo               |
+| https://s.jezevec10.com/res/b/20/28.png  | ![](https://s.jezevec10.com/res/b/20/28.png)  | Frodo               |
+| https://s.jezevec10.com/res/b/20/29.png  | ![](https://s.jezevec10.com/res/b/20/29.png)  | Bo Tie              |
+| https://s.jezevec10.com/res/b/20/30.png  | ![](https://s.jezevec10.com/res/b/20/30.png)  | Kirby703            |
+| https://s.jezevec10.com/res/b/20/31.png  | ![](https://s.jezevec10.com/res/b/20/31.png)  | Bang                |
+| https://s.jezevec10.com/res/b/20/32.png  | ![](https://s.jezevec10.com/res/b/20/32.png)  | Tebo_Moi            |
+| https://s.jezevec10.com/res/b/20/33.png  | ![](https://s.jezevec10.com/res/b/20/33.png)  | DerpyBanana         |
+| https://s.jezevec10.com/res/b/20/34.png  | ![](https://s.jezevec10.com/res/b/20/34.png)  | GeometryMations     |
+| https://s.jezevec10.com/res/b/20/35.png  | ![](https://s.jezevec10.com/res/b/20/35.png)  | egguu               |
+| https://s.jezevec10.com/res/b/20/36.png  | ![](https://s.jezevec10.com/res/b/20/36.png)  | Kusane              |
+| https://s.jezevec10.com/res/b/20/37.png  | ![](https://s.jezevec10.com/res/b/20/37.png)  | ianh                |
+| https://s.jezevec10.com/res/b/20/38.png  | ![](https://s.jezevec10.com/res/b/20/38.png)  | Kusane              |
+| https://s.jezevec10.com/res/b/20/39.png  | ![](https://s.jezevec10.com/res/b/20/39.png)  | NotLegend           |
+| https://s.jezevec10.com/res/b/20/40.png  | ![](https://s.jezevec10.com/res/b/20/40.png)  | NotLegend           |
+| https://s.jezevec10.com/res/b/20/41.png  | ![](https://s.jezevec10.com/res/b/20/41.png)  | NotLegend           |
+| https://s.jezevec10.com/res/b/20/42.png  | ![](https://s.jezevec10.com/res/b/20/42.png)  | NotLegend           |
+| https://s.jezevec10.com/res/b/20/43.png  | ![](https://s.jezevec10.com/res/b/20/43.png)  | NotLegend           |
+| https://s.jezevec10.com/res/b/20/44.png  | ![](https://s.jezevec10.com/res/b/20/44.png)  | LanceV              |
+| https://s.jezevec10.com/res/b/20/45.png  | ![](https://s.jezevec10.com/res/b/20/45.png)  | DerpyBanana         |
+| https://s.jezevec10.com/res/b/20/46.png  | ![](https://s.jezevec10.com/res/b/20/46.png)  | Kusane              |
+| https://s.jezevec10.com/res/b/20/47.png  | ![](https://s.jezevec10.com/res/b/20/47.png)  | Oxy                 |
+| https://s.jezevec10.com/res/b/20/48.png  | ![](https://s.jezevec10.com/res/b/20/48.png)  | astroskag           |
+| https://s.jezevec10.com/res/b/20/49.png  | ![](https://s.jezevec10.com/res/b/20/49.png)  | ColdSpade           |
+| https://s.jezevec10.com/res/b/20/50.png  | ![](https://s.jezevec10.com/res/b/20/50.png)  | DerpyBanana         |
+| https://s.jezevec10.com/res/b/20/51.png  | ![](https://s.jezevec10.com/res/b/20/51.png)  | Nongo_              |
+| https://s.jezevec10.com/res/b/20/53.png  | ![](https://s.jezevec10.com/res/b/20/53.png)  | sm999               |
+| https://s.jezevec10.com/res/b/20/54.png  | ![](https://s.jezevec10.com/res/b/20/54.png)  | eight               |
+| https://s.jezevec10.com/res/b/20/55.png  | ![](https://s.jezevec10.com/res/b/20/55.png)  | SmolBepis           |
+| https://s.jezevec10.com/res/b/20/56.png  | ![](https://s.jezevec10.com/res/b/20/56.png)  | NotLegend           |
+| https://s.jezevec10.com/res/b/20/57.png  | ![](https://s.jezevec10.com/res/b/20/57.png)  | mehbark             |
+| https://s.jezevec10.com/res/b/20/58.png  | ![](https://s.jezevec10.com/res/b/20/58.png)  | eight               |
+| https://s.jezevec10.com/res/b/20/59.png  | ![](https://s.jezevec10.com/res/b/20/59.png)  | Blai8               |
+| https://s.jezevec10.com/res/b/20/62.png  | ![](https://s.jezevec10.com/res/b/20/62.png)  | Skyear              |
+| https://s.jezevec10.com/res/b/20/63.png  | ![](https://s.jezevec10.com/res/b/20/63.png)  | SatTyler            |
+| https://s.jezevec10.com/res/b/20/64.png  | ![](https://s.jezevec10.com/res/b/20/64.png)  | Freeze              |
+| https://s.jezevec10.com/res/b/20/65.png  | ![](https://s.jezevec10.com/res/b/20/65.png)  | qbd                 |
+| https://s.jezevec10.com/res/b/20/66.png  | ![](https://s.jezevec10.com/res/b/20/66.png)  | ColdSpade           |
+| https://s.jezevec10.com/res/b/20/67.png  | ![](https://s.jezevec10.com/res/b/20/67.png)  | Mortee              |
+| https://s.jezevec10.com/res/b/20/68.png  | ![](https://s.jezevec10.com/res/b/20/68.png)  | DrThunderous        |
+| https://s.jezevec10.com/res/b/20/70.png  | ![](https://s.jezevec10.com/res/b/20/70.png)  | Skyear              |
+| https://s.jezevec10.com/res/b/20/71.png  | ![](https://s.jezevec10.com/res/b/20/71.png)  | MitoNabarazaki      |
+| https://s.jezevec10.com/res/b/20/72.png  | ![](https://s.jezevec10.com/res/b/20/72.png)  | ImAddicted234       |
+| https://s.jezevec10.com/res/b/20/73.png  | ![](https://s.jezevec10.com/res/b/20/73.png)  | menofcrest          |
+| https://s.jezevec10.com/res/b/20/74.png  | ![](https://s.jezevec10.com/res/b/20/74.png)  | rytone              |
+| https://s.jezevec10.com/res/b/20/75.png  | ![](https://s.jezevec10.com/res/b/20/75.png)  | ColdSpade           |
+| https://s.jezevec10.com/res/b/20/76.png  | ![](https://s.jezevec10.com/res/b/20/76.png)  | ColdSpade           |
+| https://s.jezevec10.com/res/b/20/77.png  | ![](https://s.jezevec10.com/res/b/20/77.png)  | MitoNabarazaki      |
+| https://s.jezevec10.com/res/b/20/78.png  | ![](https://s.jezevec10.com/res/b/20/78.png)  | SmolBepis           |
+| https://s.jezevec10.com/res/b/20/79.png  | ![](https://s.jezevec10.com/res/b/20/79.png)  | miopasid            |
+| https://s.jezevec10.com/res/b/20/80.png  | ![](https://s.jezevec10.com/res/b/20/80.png)  | DrThunderous        |
+| https://s.jezevec10.com/res/b/20/81.png  | ![](https://s.jezevec10.com/res/b/20/81.png)  | imAddicted234       |
+| https://s.jezevec10.com/res/b/20/82.png  | ![](https://s.jezevec10.com/res/b/20/82.png)  | artrad001           |
+| https://s.jezevec10.com/res/b/20/83.png  | ![](https://s.jezevec10.com/res/b/20/83.png)  | Ukkri6              |
+| https://s.jezevec10.com/res/b/20/84.png  | ![](https://s.jezevec10.com/res/b/20/84.png)  | Kirbyrocket         |
+| https://s.jezevec10.com/res/b/20/85.png  | ![](https://s.jezevec10.com/res/b/20/85.png)  | egg                 |
+| https://s.jezevec10.com/res/b/20/86.png  | ![](https://s.jezevec10.com/res/b/20/86.png)  | SmolBepis           |
+| https://s.jezevec10.com/res/b/20/87.png  | ![](https://s.jezevec10.com/res/b/20/87.png)  | SmolBepis           |
+| https://s.jezevec10.com/res/b/20/88.png  | ![](https://s.jezevec10.com/res/b/20/88.png)  | wavy_bread          |
+| https://s.jezevec10.com/res/b/20/89.png  | ![](https://s.jezevec10.com/res/b/20/89.png)  | wavy_bread          |
+| https://s.jezevec10.com/res/b/20/90.png  | ![](https://s.jezevec10.com/res/b/20/90.png)  | GeometryMations     |
+| https://s.jezevec10.com/res/b/20/91.png  | ![](https://s.jezevec10.com/res/b/20/91.png)  | FazzBearBoiz        |
+| https://s.jezevec10.com/res/b/20/92.png  | ![](https://s.jezevec10.com/res/b/20/92.png)  | asteriskblue        |
+| https://s.jezevec10.com/res/b/20/93.png  | ![](https://s.jezevec10.com/res/b/20/93.png)  | mr krabs            |
+| https://s.jezevec10.com/res/b/20/95.png  | ![](https://s.jezevec10.com/res/b/20/95.png)  | SmolBepis           |
+| https://s.jezevec10.com/res/b/20/96.png  | ![](https://s.jezevec10.com/res/b/20/96.png)  | gattara             |
+| https://s.jezevec10.com/res/b/20/97.png  | ![](https://s.jezevec10.com/res/b/20/97.png)  | Tetris Dragon       |
+| https://s.jezevec10.com/res/b/20/98.png  | ![](https://s.jezevec10.com/res/b/20/98.png)  | Jonah F.            |
+| https://s.jezevec10.com/res/b/20/99.png  | ![](https://s.jezevec10.com/res/b/20/99.png)  | Kirby703            |
+| https://s.jezevec10.com/res/b/20/100.png | ![](https://s.jezevec10.com/res/b/20/100.png) | TechnoSpyform1      |
+| https://s.jezevec10.com/res/b/20/101.png | ![](https://s.jezevec10.com/res/b/20/101.png) | HARPO               |
+| https://s.jezevec10.com/res/b/20/102.png | ![](https://s.jezevec10.com/res/b/20/102.png) | noogai223           |
+| https://s.jezevec10.com/res/b/20/103.png | ![](https://s.jezevec10.com/res/b/20/103.png) | andie               |
+| https://s.jezevec10.com/res/b/20/104.png | ![](https://s.jezevec10.com/res/b/20/104.png) | DrThunderous        |
+| https://s.jezevec10.com/res/b/20/105.png | ![](https://s.jezevec10.com/res/b/20/105.png) | GeolyteGM           |
+| https://s.jezevec10.com/res/b/20/112.png | ![](https://s.jezevec10.com/res/b/20/112.png) | Vitey               |
+</details>
 
 [Jstris Customization Database](https://docs.google.com/spreadsheets/d/1xO8DTORacMmSJAQicpJscob7WUkOVuaNH0wzkR_X194/htmlview#) contains a list of block skins from various games, official or not, and some user-made skins too.
 
@@ -823,17 +988,19 @@ Specifies the randomizer.
 
 Available randomizers:
 
-0. 7-bag
-1. 14-bag
-2. Classic
-3. One Block
-4. Two Block
-5. One 7-bag
-6. One 14-bag
-7. C2Sim
-8. Repeat+7b
-9. BSblock+7b
-10. BigBlock+7b
+| Index | Randomizer  | Explanation                                                              |
+| :---- | :---------- | :----------------------------------------------------------------------- |
+| 0     | 7-bag       | One of each tetromino in a bag                                           |
+| 1     | 14-bag      | Two of each tetromino in a bag                                           |
+| 2     | Classic     | Actually a memoryless randomizer.                                        |
+| 3     | One Block   | One piece is randomized and given throughout the entire game             |
+| 4     | Two Block   | Two different pieces are randomized and given throughout the entire game |
+| 5     | One 7-bag   | The same 7-bag looped forever                                            |
+| 6     | One 14-bag  | The same 14-bag looped forever                                           |
+| 7     | C2Sim       | Simulation of the Cultris II randomizer                                  |
+| 8     | Repeat+7b   | 7-bag but repeats one piece at random                                    |
+| 9     | BSblock+7b  | 7-bag but inserts a non-tetromino or a big block into the bag at random  |
+| 10    | BigBlock+7b | 7-bag but inserts a big block into the bag at random                     |
 
 Default: `0`
 
