@@ -499,7 +499,7 @@ and https://s.jezevec10.com (built-in skins). Block skins must be in 9:1 proport
 | https://s.jezevec10.com/res/b/19/33.png  | ![](https://s.jezevec10.com/res/b/19/33.png)  | OSK                 |
 | https://s.jezevec10.com/res/b/19/34.png  | ![](https://s.jezevec10.com/res/b/19/34.png)  | lillod              |
 | https://s.jezevec10.com/res/b/19/35.png  | ![](https://s.jezevec10.com/res/b/19/35.png)  | Takane              |
-| https://s.jezevec10.com/res/b/19/37.png  | ![](https://s.jezevec10.com/res/b/19/37.png)  | Han \| Dopamine      |
+| https://s.jezevec10.com/res/b/19/37.png  | ![](https://s.jezevec10.com/res/b/19/37.png)  | Han \| Dopamine     |
 | https://s.jezevec10.com/res/b/19/38.png  | ![](https://s.jezevec10.com/res/b/19/38.png)  | Prismly             |
 | https://s.jezevec10.com/res/b/19/39.png  | ![](https://s.jezevec10.com/res/b/19/39.png)  | StayNoided          |
 | https://s.jezevec10.com/res/b/19/41.png  | ![](https://s.jezevec10.com/res/b/19/41.png)  | NekoNoTe            |
@@ -608,6 +608,14 @@ and https://s.jezevec10.com (built-in skins). Block skins must be in 9:1 proport
 | https://s.jezevec10.com/res/b/20/104.png | ![](https://s.jezevec10.com/res/b/20/104.png) | DrThunderous        |
 | https://s.jezevec10.com/res/b/20/105.png | ![](https://s.jezevec10.com/res/b/20/105.png) | GeolyteGM           |
 | https://s.jezevec10.com/res/b/20/112.png | ![](https://s.jezevec10.com/res/b/20/112.png) | Vitey               |
+
+<h3>Hidden skins</h3>
+
+| Link                               | Image                                   |
+| ---------------------------------- | --------------------------------------- |
+| https://s.jezevec10.com/res/b5.png | ![](https://s.jezevec10.com/res/b5.png) |
+
+
 </details>
 
 [Jstris Customization Database](https://docs.google.com/spreadsheets/d/1xO8DTORacMmSJAQicpJscob7WUkOVuaNH0wzkR_X194/htmlview#) contains a list of block skins from various games, official or not, and some user-made skins too.
