@@ -448,7 +448,7 @@ and https://s.jezevec10.com (built-in skins). Block skins must be in 9:1 proport
 <details>
 <summary>Available skins from s.jezevec10.com - click here</summary>
 
-<h3>Free skins</h3>
+<b>Free skins</b>
 
 | Link                                | Image                                    |
 | ----------------------------------- | ---------------------------------------- |
@@ -463,7 +463,7 @@ and https://s.jezevec10.com (built-in skins). Block skins must be in 9:1 proport
 | https://s.jezevec10.com/res/b12.png | ![](https://s.jezevec10.com/res/b12.png) |
 | https://s.jezevec10.com/res/b13.png | ![](https://s.jezevec10.com/res/b13.png) |
 
-<h3>Supporter-only skins</h3>
+<b>Supporter-only skins</b>
 
 | Link                                     | Image                                         | Author              |
 | ---------------------------------------- | --------------------------------------------- | ------------------- |
@@ -609,12 +609,11 @@ and https://s.jezevec10.com (built-in skins). Block skins must be in 9:1 proport
 | https://s.jezevec10.com/res/b/20/105.png | ![](https://s.jezevec10.com/res/b/20/105.png) | GeolyteGM           |
 | https://s.jezevec10.com/res/b/20/112.png | ![](https://s.jezevec10.com/res/b/20/112.png) | Vitey               |
 
-<h3>Hidden skins</h3>
+<b>Hidden skins</b>
 
 | Link                               | Image                                   |
 | ---------------------------------- | --------------------------------------- |
 | https://s.jezevec10.com/res/b5.png | ![](https://s.jezevec10.com/res/b5.png) |
-
 
 </details>
 
