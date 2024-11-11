@@ -1,0 +1,1 @@
+0 Years A Slave. https://www.biblegateway.com/passage/?search=Exodus%2034%3A14&version=NIV. Click the link. Careful though. It's living. And active. And it'll pierce your soul to shreds.
