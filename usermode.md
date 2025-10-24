@@ -31,6 +31,17 @@
     - [`setBoard`](#setboard)
     - [`queueReplace`](#queuereplace)
     - [`queueAppend`](#queueappend)
+    - [`getX`](#getx)
+    - [`getY`](#gety)
+    - [`getRot`](#getrot)
+    - [`getBlockName`](#getblockname)
+    - [`isCollision`](#iscollision)
+    - [`setX`](#setx)
+    - [`setY`](#sety)
+    - [`setRot`](#setrot)
+    - [`setPos`](#setpos)
+    - [`setBlock`](#setblock)
+    - [`setToSpawnPos`](#settospawnpos)
   - [Ruleset specification](#ruleset-specification)
     - [`attackTable`](#attacktable)
     - [`comboTable`](#combotable)
@@ -253,15 +264,28 @@ This only works for unpublished usermodes.
 
 Click the *Edit map* button to enter the map editor. It functions identically to the Map Designer.
 
-Maps can manipulate the board in various ways:
-- **Replace board** - the whole board is replaced by a map,
-- **Subtract from current board** - If blocks are present on the board in the same position as in the map, the blocks will be removed.
-- **Add to current board (on top)** - The map will be overlaid on top of the board (like a layer in an image editing program).
-- **Add to current board (under)** The map will be underlain under the board (like a layer in an image editing program).
-- **Intersect with current board (keep stack color)** - All blocks on the map are removed, except in positions where there were blocks in the map. Block colors on the board are retained.
+The Map component has two dropdown options that control its behavior:
+
+#### Board manipulation modes:
+- **Replace board** - The whole board is replaced by the map.
+- **Subtract from current board** - If blocks are present on the board in the same position as in the map, those blocks will be removed from the board.
+- **Add to current board (on top)** - The map will be overlaid on top of the board (like a layer in an image editing program). Map blocks take priority over existing board blocks.
+- **Add to current board (under)** - The map will be underlain under the board (like a layer in an image editing program). Existing board blocks take priority over map blocks.
+- **Intersect with current board (keep stack color)** - All blocks on the board are removed, except in positions where blocks existed in both the board and the map. Block colors from the board are retained.
 - **Intersect with current board (force map color)** - Same as above, but block colors are replaced with those from the map.
-- **End if map collides with current piece position** - Will end the game as failure if the map shape collides with the currently manipulated piece. Does not modify the board.
-- **End if map collides with current stack** - Will end the game as failure if the map shape collides with the current stack. Does not modify the board.
+- **End if map collides with current piece position** - Will end the game as failure if the map shape collides with the currently active piece. Does not modify the board or piece position.
+- **End if map collides with current stack** - Will end the game as failure if the map shape collides with the current stack (placed blocks). Does not modify the board.
+
+#### Active Block position handling:
+After the board is modified by the map (except for the two "End if" modes), you can control what happens to the active piece:
+
+- **Reset to spawn** - The active piece is reset to its default spawn position for that piece type.
+- **Move up until no collision** - If the piece is colliding with the modified board, it will be moved upward until it no longer collides. The piece will not move below its spawn height.
+- **Closest valid (any direction w/o collision)** - Searches for the closest valid position in all directions (up, down, left, right, and diagonals). The search expands outward from the current position until a collision-free position is found. Piece rotation remains unchanged.
+- **Closest valid (any direction except down)** - Same as above, but the piece cannot be moved downward. Only upward, left, right, and upper diagonal movements are allowed.
+- **Keep unchanged** - The piece position and rotation remain exactly as they were before the map was applied. Note: This may result in the piece colliding with the modified board.
+
+> **Note:** After any Active Block position adjustment, the lock delay is reset to prevent accidental hard drops.
 
 ### Stats
 
@@ -306,12 +330,14 @@ Placeholders are specified in curly brackets, and can hold [system variables](#s
 
 For example: `{PC}` will insert a number of Perfect Clears performed.
 
+Line breaks can be inserted using `\n` (backslash followed by n) in the text field.
+
 There are four different ways of showing Text (and fifth one which is not yet implemented):
 
 | Option  |             During Ready-Go (Task spec.)             | Value next to the board (lines remaining position) |                Description text of the value next to the board                 |                              Over the board (lower part)                              |
 | ------- | :--------------------------------------------------: | :------------------------------------------------: | :----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
 | Example |                       ![task]                        |                      ![value]                      |                                 ![description]                                 |                                        ![over]                                        |
-| Notes   | Always shows "TASK".<br>Does not accept line breaks. |                Accepts line breaks                 | Does not accept line breaks.<br>Defaults to "lines remaining" if not provided. | Actually, the text box is in the center of the board.<br>Does not accept line breaks. |
+| Notes   | Always shows "TASK".<br>Accepts line breaks (use `\n`). |                Accepts line breaks (use `\n`)                 | Accepts line breaks (use `\n`).<br>Defaults to "lines remaining" if not provided. | Actually, the text box is in the center of the board.<br>Accepts line breaks (use `\n`). |
 
 ### Pause
 
@@ -626,6 +652,10 @@ Use this component only when necessary (for example to give a retro climate to a
 
 A very simple component, that just triggers an External/Conditional [Trigger](#trigger).
 
+The trigger name field supports **placeholders** with curly brackets, just like the [Text](#text) component. This allows you to dynamically select which trigger to run based on [system variables](#system-variables), [local counters](#local-counters), or [custom variables](#variable).
+
+For example: `trigger{level}` will run a trigger named `trigger1` if the `level` variable equals 1, or `trigger2` if it equals 2.
+
 ### Relative Trigger
 ![comp_relative]
 
@@ -786,6 +816,87 @@ The function can be performed with two syntax variations:
    Alternative syntax with 2 numeric parameters.
 
   Returns: 1 on success, 0 on failure (piece does not exist).
+
+### `getX`
+- `getX()`<br>
+  Returns: The current X position of the active piece (integer between 0 and 9).
+
+### `getY`
+- `getY()`<br>
+  Returns: The current Y position of the active piece (integer between spawn height and 19).
+
+### `getRot`
+- `getRot()`<br>
+  Returns: The current rotation of the active piece (integer between 0 and 3).
+
+### `getBlockName`
+- `getBlockName()`<br>
+  Returns: A string representing the current active piece in `"[setID:pieceID]"` format (e.g., `"[0:2]"` for T piece).
+
+### `isCollision`
+- `isCollision(x, y, rot)`<br>
+  Parameters:
+  - x: Column, integer between 0 and 9
+  - y: Row, integer between spawn height and 19
+  - rot: Rotation, integer between 0 and 3
+
+  Returns: 1 if the active piece would collide at the specified position and rotation, 0 if the position is valid.
+
+  This function temporarily tests the collision without modifying the actual piece state.
+
+### `setX`
+- `setX(x)`<br>
+  Parameters:
+  - x: Column, integer between 0 and 9
+
+  Returns: 1 on success, 0 on failure (out of bounds).
+
+  Sets the X position of the active piece and updates the ghost piece.
+
+### `setY`
+- `setY(y)`<br>
+  Parameters:
+  - y: Row, integer between spawn height and 19
+
+  Returns: 1 on success, 0 on failure (out of bounds).
+
+  Sets the Y position of the active piece and updates the ghost piece.
+
+### `setRot`
+- `setRot(rot)`<br>
+  Parameters:
+  - rot: Rotation, integer between 0 and 3
+
+  Returns: 1 on success, 0 on failure (invalid rotation).
+
+  Sets the rotation of the active piece and updates the ghost piece.
+
+### `setPos`
+- `setPos(x, y, rot)`<br>
+  Parameters:
+  - x: Column, integer between 0 and 9
+  - y: Row, integer between spawn height and 19
+  - rot: Rotation, integer between 0 and 3
+
+  Returns: 1 on success, 0 on failure (any parameter out of bounds).
+
+  Sets the position and rotation of the active piece and updates the ghost piece.
+
+### `setBlock`
+- `setBlock(blockName)`<br>
+  Parameters:
+  - blockName: A string representing a piece. Check the [Block name reference list](#block-name-reference-list) for the list of usable pieces.
+  `"[setID:pieceID]"` can be used to pick any piece from the game.
+
+  Returns: 1 on success, 0 on failure (piece does not exist).
+
+  Replaces the active piece with the specified piece and updates the ghost piece.
+
+### `setToSpawnPos`
+- `setToSpawnPos()`<br>
+  Returns: 1 (always succeeds).
+
+  Resets the active piece to its default spawn position and updates the ghost piece.
 
 ## Ruleset specification
 ### `attackTable`
