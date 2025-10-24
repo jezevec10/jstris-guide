@@ -26,6 +26,10 @@ return [
             "version" => '1.0.0',
             "translators" => 'noelnadal'
         ],
+        "pl" => [
+            "version" => '1.5.0',
+            "translators" => 'KonSola5'
+        ],
         "pt" => [
             "version" => '1.5.0',
             "translators" => '1allan'
