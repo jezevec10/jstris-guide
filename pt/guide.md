@@ -48,11 +48,11 @@ Bem-vindo ao Jstris, um jogo de blocos multijogador simples. Jstris é conhecido
 
 ## Resumo
 
-Jstris usa os mesmos conceitos básicos da maioria dos jogos de bloco. Ele segue algumas regras. Uma importante característica é o seu extensivo uso de replays. Em todo modo de jogo que você completa, um replay é gerado. Asstir e analizar suas jogadas é importante para melhorar suas habilidades, e os replays que o Jstri's cria fazem com que isso seja muito mais fácil.
+Jstris usa os mesmos conceitos básicos da maioria dos jogos de bloco. Ele segue algumas regras. Uma importante característica é o seu extensivo uso de replays. Em todo modo de jogo que você completa, um replay é gerado. Assistir e analisar suas jogadas é importante para melhorar suas habilidades, e os replays que o Jstris cria fazem com que isso seja muito mais fácil.
 
 Diferente de outros sites, você pode ter certeza que as classificações do Jstris são livres de trapaças. Moderadores vão remover as jogadas suspeitas para garantir uma lista de conquistas globais justa. 
 
-Não é necessário se registrar para jogar mas, para desfrutar de todas as funcionalidades do site, é recomendado criar uma conta. Para isto, clique em *Registrar* no canto superior direito. Só um email, nome de usuário e senha são necessários. Com uma conta, você têm acesso à diversas estatísticas das suas melhores jogadas no modo singleplayer e multiplayer, estatísticas de melhoria, replays, e muito mais. Você pode também se ver na nas tabelas de classificações (usuários não registrados são excluidos das tabelas).
+Não é necessário se registrar para jogar mas, para desfrutar de todas as funcionalidades do site, é recomendado criar uma conta. Para isto, clique em *Registrar* no canto superior direito. Só um email, nome de usuário e senha são necessários. Com uma conta, você tem acesso à diversas estatísticas das suas melhores jogadas no modo singleplayer e multiplayer, estatísticas de melhoria, replays, e muito mais. Você pode também se ver na nas tabelas de classificações (usuários não registrados são excluidos das tabelas).
 
 ![introduction][image2]
 - - -
@@ -102,7 +102,7 @@ um bot para jogar à 1.73 PPS, eu digito `/bot 1.73`.
 
 ### 1v1 Room
 
-A **1v1 Room** tem no máximo 2 jogadores, porém, todos podem entrar para assistir. Use esta sala para batalhar contra seus amigos ou contra um oponente à altura. Se você está mantendo a pontuação, e quer apaga-la, digite `/resetCounter` e os pontos voltarão a ser 0.
+A **1v1 Room** tem no máximo 2 jogadores, porém, todos podem entrar para assistir. Use esta sala para batalhar contra seus amigos ou contra um oponente à altura. Se você está mantendo a pontuação, e quer apagá-la, digite `/resetCounter` e os pontos voltarão a ser 0.
 
 ### Slow Room
 
@@ -112,11 +112,11 @@ Quer jogar com um amigo, mas o nível de habilidade entre vocês é muito grande
 
 ### Map Room
 
-A **Map Room** é o lugar disputar a melhor classificação em mapas aleatórios escolhidos criados pelos usuários. O (D=?%) mostrado próximo a cada mapa é a porcentagem dificuldade do mapa, sendo 0% o mais fácil e 100% o mais difícil. Mapas que exigem Perfect Clear Finish não são incluidos.
+A **Map Room** é o lugar disputar a melhor classificação em mapas aleatórios escolhidos criados pelos usuários. O (D=?%) mostrado próximo a cada mapa é a porcentagem de dificuldade do mapa, sendo 0% o mais fácil e 100% o mais difícil. Mapas que exigem Perfect Clear Finish não são incluídos.
 
 ### Salas de Time
 
-O último tipo de sala padrão é o **Salas de Time**. Escolha um lado, vermelho ou azul, e a batalha irá trazer a glória para o seu time.
+O último tipo de sala padrão é a **Salas de Time**. Escolha um lado, vermelho ou azul, e a batalha irá trazer a glória para o seu time.
 
 ![team game in progress][image11]
 
@@ -126,7 +126,7 @@ O último tipo de sala padrão é o **Salas de Time**. Escolha um lado, vermelho
 
 ### Maratona
 
-Com o objetivo mais simples, **Maratona** é o modo um-jogador mais popular no Jstris. Limpe X quantidade de linhas o mais rápido que conseguir. Jstris oferece  modos **Maratona** de 20, 40, 100, e 1000 linhas.
+Com o objetivo mais simples, **Maratona** é o modo um-jogador mais popular no Jstris. Limpe X quantidade de linhas o mais rápido que conseguir. Jstris oferece  modos **Maratona** de 20, 40, 100 e 1000 linhas.
 
 ### Queijo
 
@@ -144,7 +144,7 @@ Possivelmente o modo singleplayer mais desafiador, **Sobrevivência** é parecid
 
 ### Mapas
 
-No final de 2018, o modo **Mapas** foi introduzido ao Jstris. Os mapas trazem um elemento de criatividade e também prepara os jogadores para limpar linhas mais efetivamente em posições difíceis e incomuns. Crie seu próprio mapa em **Criador de Mapas**. Uma vez publicado, qualquer um no mundo pode jogar e competir pelo melhor tempo. Há um limite de 5 mapas publicados por dia e 10 não públicados na fila. Mapas também possuem uma classificação. Em todo mapa, três medalhas são dadas: Ouro para o 1º colocado, Prata para o 2º e Bronze para o 3º. Pontue entre os três melhores em qualquer mapa para ganhar algumas medalhas e assegurar sua colocação.
+No final de 2018, o modo **Mapas** foi introduzido ao Jstris. Os mapas trazem um elemento de criatividade e também preparam os jogadores para limpar linhas mais efetivamente em posições difíceis e incomuns. Crie seu próprio mapa em **Criador de Mapas**. Uma vez publicado, qualquer um no mundo pode jogar e competir pelo melhor tempo. Há um limite de 5 mapas publicados por dia e 10 não publicados na fila. Mapas também possuem uma classificação. Em todo mapa, três medalhas são dadas: Ouro para o 1º colocado, Prata para o 2º e Bronze para o 3º. Pontue entre os três melhores em qualquer mapa para ganhar algumas medalhas e assegurar sua colocação.
 
 *\*Note que a classificação de Mapas atualiza somente algumas vezes por dia, logo, novas mudanças podem não ser instantâneas.*
 
@@ -152,7 +152,7 @@ No final de 2018, o modo **Mapas** foi introduzido ao Jstris. Os mapas trazem um
 
 ## Configurações
 
-Para ver as configurações de qualquer sala no Jstris, use o comando `/config`. Agora nos vamos passar por cada uma dos ajustes.
+Para ver as configurações de qualquer sala no Jstris, use o comando `/config`. Agora nós vamos passar por cada um dos ajustes.
 
 ### Tabela de Ataque e Combo
 
@@ -187,13 +187,13 @@ Há 8 formas diferentes de como o garbage é enviado durante as partidas multijo
 - Random `/set garbage random`
 - Roulette `/set garbage roulette`
 
-**Targets** é sempre o padrão (exceto em Salas de Times) e é, de longem o mais popular. Em Targets, um alvo é passado por todos os oponentes da sala, em incrementos iguais e fixos, e em quem o alvo parar no momento em que você enviou o garbage é o que irá receber. 
+**Targets** é sempre o padrão (exceto em Salas de Times) e é, de longe o mais popular. Em Targets, um alvo é passado por todos os oponentes da sala, em incrementos iguais e fixos, e em quem o alvo parar no momento em que você enviou o garbage é o que irá receber. 
 
-No sistema distribuição de garbage **Divide** (GDS), todo o garbage que você envia é igualmente dividido entre todos os jogadores. Por exemplo, em uma sala com 2 oponentes, se você envia um T-spin Double (4 lines), cada um dos seus oponentes receberá 2 linhas.
+No sistema de distribuição de garbage **Divide** (GDS), todo o garbage que você envia é igualmente dividido entre todos os jogadores. Por exemplo, em uma sala com 2 oponentes, se você envia um T-spin Double (4 lines), cada um dos seus oponentes receberá 2 linhas.
 
-No GDS **To all**, todo garbage que você enviar vai para todos os jogadores da sala. Por exemplo, em uma sala com 4 oponentes, se você enviar um Perfect Clear (10 linhas), todos os 4 oponentes irão recebeer 10 linhas cada, ou um total de 40 linhas. Como você pode supor pelo exemplo, salas com To all garbage tendem a ser agitadas, com rápida subida de garbage e jogos característicamente curtos.
+No GDS **To all**, todo garbage que você enviar vai para todos os jogadores da sala. Por exemplo, em uma sala com 4 oponentes, se você enviar um Perfect Clear (10 linhas), todos os 4 oponentes irão receber 10 linhas cada, ou um total de 40 linhas. Como você pode supor pelo exemplo, salas com To all garbage tendem a ser agitadas, com rápida subida de garbage e jogos característicamente curtos.
 
-No GDS **To least**, o garbage que você envia vai para o jogador que *recebeu* menor garbage até então. Por exemplo, em uma sala com 3 oponentees, você envia 4 linhas. Oponete A recebe 50 linhas já no momento em que você enviou o ataque. Oponente B recebeu 53. Oponentee C recebeu 58. Já que o oponente A reecebeu a menor quantidade de linhas, as 4 linhas da sua line clear serão enviadas a ele.
+No GDS **To least**, o garbage que você envia vai para o jogador que *recebeu* menor garbage até então. Por exemplo, em uma sala com 3 oponentes, você envia 4 linhas. Oponete A recebe 50 linhas já no momento em que você enviou o ataque. Oponente B recebeu 53. Oponentee C recebeu 58. Já que o oponente A recebeu a menor quantidade de linhas, as 4 linhas da sua line clear serão enviadas a ele.
 
 No GDS **To most**, o garbage que você envia é mandado para o jogador que *enviou* o maior garbage. Em suma, você está atraindo o jogador mais forte da sala.
 
@@ -214,11 +214,11 @@ Existem 4 tipos de sistema de Bloqueio de Garbage no Jstris. Eles são:
 
 **Full** é o sistema de bloqueio padrão no Jstris. Outros usuários que usam Full são *TF* (salas e+) e *TOP*. No sistema de bloqueio de garbage Full, o garbage que chega aparece como uma barra vermelha à sua direita. Ele não sobe no seu campo de jogo até que você posicione uma peça. O garbage que chega pode ser reduzido com as linhas enviadas e, se você já iniciou um combo, ele ficará completamente parado até que você finalize o combo.
 
-Sistema de bloqueio **Limited** é muito similar ao Full, mas com uma diferença. O garbage que chega é inserido assim que você posiciona uma peça, independente se um combo foi ou não iniciado. Em outras palavras, o garbage que chega não pausa durante os combos da maneira que o Full faz. Como o Full, o garbage que chega pode ser reduzido com as linhas enviadas. Usuários que usam Limiteed incluem *PPT*, e *TB*, e *TF* (salas não e+).
+Sistema de bloqueio **Limited** é muito similar ao Full, mas com uma diferença. O garbage que chega é inserido assim que você posiciona uma peça, independente se um combo foi ou não iniciado. Em outras palavras, o garbage que chega não pausa durante os combos da maneira que o Full faz. Como o Full, o garbage que chega pode ser reduzido com as linhas enviadas. Usuários que usam Limited incluem *PPT*, e *TB*, e *TF* (salas não e+).
 
 No sistema de bloqueio **None**, um garbage não pode ser reduzido ou cancelado. O garbage que chega a você irá primeiro aparecer com uma barra vermelha (assim como no Full e no Limited) e então ser inserido no campo de jogo assim que você posicionar uma peça. Se um oponente envia 10 linhas para você, mesmo se você limpar 4 linhas com sua próxima peça, o garbage não irá reduzir à 6. Ao invés disso, você ainda receberá 10 linhas enquanto envia 4 ao oponente.
 
-No sistema de bloqueio **Instant**, a barra vermelha não é mostrada. No momento que o oponente envia um ataque, o garbega irá subir em seu campo. Não há nenhum bloqueio.
+No sistema de bloqueio **Instant**, a barra vermelha não é mostrada. No momento que o oponente envia um ataque, o garbage irá subir em seu campo. Não há nenhum bloqueio.
 
 |         | Barra vermelha (queue) | Bloqueio? |
 | ------- | :--------------------: | :-------: |
@@ -242,7 +242,7 @@ Há 8 tipos diferentes de blocos
 
 **Standard** Estes são os mais usados e básicos tetrominos que você provavelmente conhece. Estes são os blocos padrões
 
-**Big** Quatro vezes maior que os blocos padrões, estes causarão um dano massivo utilizados.
+**Big** Quatro vezes maior que os blocos padrões, estes causarão um dano massivo quando utilizados.
 
 **ARS** Blocos padrões com ARS (Arika rotation system), incluindo CC-check. Implementado por NueSB.
 
@@ -258,7 +258,7 @@ Há 8 tipos diferentes de blocos
 
 ### Aleatorizador
 
-Aleatorizadores são basicamente a formula para a ordem de blocos você recebe. Jstris possui 11 aleatorizadores diferentes. Eles são:
+Aleatorizadores são basicamente a formula para a ordem de blocos que você recebe. Jstris possui 11 aleatorizadores diferentes. Eles são:
 
 - 7-bag
 - 14-bag
@@ -272,7 +272,7 @@ Aleatorizadores são basicamente a formula para a ordem de blocos você recebe. 
 - BSblock+7b
 - BigBlock+7b
 
-**7-bag** É o aleatorizaodor padrão. Imagine uma pequena bolsa com 1 bloco de cada um dos 7. Agora você desenha a peça, um por um, até que a bolsa esteja vazia. Agora você desnha on por um mais uma vez. Repita. E é assim que o aleatorizador 7-bag funciona.
+**7-bag** É o aleatorizador padrão. Imagine uma pequena bolsa com 1 bloco de cada um dos 7. Agora você desenha a peça, um por um, até que a bolsa esteja vazia. Agora você desenha um por um mais uma vez. Repita. E é assim que o aleatorizador 7-bag funciona.
 
 **14-bag** É parecido com o 7-bag, mas com o dobro de tamanho, com 2 de cada um dos 7 blocos. Mais uma vez, você desenha cada peça da bolsa, um por um, até que a bolsa esteja vazia. Repita.
 
@@ -300,13 +300,13 @@ Jstris possui um padrão de 5 pré-visualizações. Em salas customizadas, você
 
 ### Garbage Sólido
 
-Garbage sólido são linhas não limpáveis que sobem para apressar o jogo para que ele não se estenda infinitamente. Eles são ligeiramente mais escuro que as linhas de garbage normais. Na Bot Room, o garbage sólido, por padrão, começam a surgir depois de 2 minutos. O garbage sólido é customizável nas Custom Rooms.
+Garbage sólido são linhas não limpáveis que sobem para apressar o jogo para que ele não se estenda infinitamente. Eles são ligeiramente mais escuro que as linhas de garbage normal. Na Bot Room, o garbage sólido, por padrão, começa a surgir depois de 2 minutos. O garbage sólido é customizável nas Custom Rooms.
 
 ![Solid Garbage][image7]
 
 ### Atraso de Limpeza
 
-O atraso de limpeza é um valor fixo de tempo que passa depois que você limpa qualquer linha. Durante este tempo, você não pode fazer nada. Muitos jogos clásicos de bloqueio e PPT usam o Atraso de Limpeza, mas o Jstris, por padrão, não possuí atraso, e na maioria das vezes nunca é usado aqui. De qualquer forma, o Atraso de Limpeza é customizável se você quiser liga-lo. Seu tempo vai de 0 à 6000 milisegundos.
+O atraso de limpeza é um valor fixo de tempo que passa depois que você limpa qualquer linha. Durante este tempo, você não pode fazer nada. Muitos jogos clássicos de bloqueio e PPT usam o Atraso de Limpeza, mas o Jstris, por padrão, não possui atraso, e na maioria das vezes nunca é usado aqui. De qualquer forma, o Atraso de Limpeza é customizável se você quiser ligá-lo. Seu tempo vai de 0 à 6000 milisegundos.
 
 ### Atraso de Garbage
 
@@ -314,7 +314,7 @@ Atraso de Garbage é um valor fixo de tempo entre o garbage que está para vir, 
 
 ### Bagunça
 
-Bagunça de garbage é referente ao nível de bagunça de um garbage. Quanto maior o nível, mais bagunçado é o garbage e, consequentemente, mais difícil será para limpar. Para alterar a Bagunça de garbage em uma sala, use o comando `/set messiness ?`, onde  ? deve ser substituido por qualquer número de -100 a 100. -100 é a configuração de garbage menos bagunçada, e o buraco do garbage aparecerá somente em uma coluna ao longo de todo jogo (imagem à esquerda). 100 é o garbage mais bagunçado, e o buraco do garbage aparecerá em qualquer uma das 10 colunas, tornando o downstack mais difícil (imagem à direita).
+Bagunça de garbage é referente ao nível de bagunça de um garbage. Quanto maior o nível, mais bagunçado é o garbage e, consequentemente, mais difícil será para limpar. Para alterar a Bagunça de garbage em uma sala, use o comando `/set messiness ?`, onde  ? deve ser substituído por qualquer número de -100 a 100. -100 é a configuração de garbage menos bagunçada, e o buraco do garbage aparecerá somente em uma coluna ao longo de todo jogo (imagem à esquerda). 100 é o garbage mais bagunçado, e o buraco do garbage aparecerá em qualquer uma das 10 colunas, tornando o downstack mais difícil (imagem à direita).
 
 |*\*Por "downstack" entende-se o ato de descer as linhas do campo de jogo*
 
@@ -323,7 +323,7 @@ Bagunça de garbage é referente ao nível de bagunça de um garbage. Quanto mai
 
 ### Configurações predefinidas
 
-Se há configurações que você particularmente gosta e quer usa-las várias vezes, você pode guarda-las como predefinidas.
+Se há configurações que você particularmente gosta e quer usá-las várias vezes, você pode guardá-las como predefinidas.
 
 Para isto, vá até *Lobby*, então *Criar Sala*, então selecione *Simples* ou *Todos*. Uma vez que você tenha customizado as configurações ao seu gosto, clique no botão *Salvar* no canto inferior direito para gerar os seus dados predefinidos. Copie isto e então cole na caixa de texto próxima ao Preset data na página [Submit a preset](/presets/submit).
 
@@ -343,7 +343,7 @@ Existem 7 diferentes maneiras de criar uma nova sala:
 
 **Padrão** é um multijogador todos-contra-todos normal. 
 
-**Time** cria uma Sala de Time customizada. Para configurar o nomde o seu time, use o comando `/set teamName ?`, onde o ? é substituido pelo nome do seu time.
+**Time** cria uma Sala de Time customizada. Para configurar o nome o seu time, use o comando `/set teamName ?`, onde o ? é substituído pelo nome do seu time.
 
 **Queijo** cria uma Cheese Room. Cheese (queijo), também conhecido por garbage, é o jeito mais simples de nocautear os inimigos no modo multijogador. É uma habilidade importante para fazer o downstack no queijo. Pratique o quão rápido você consegue fazer o downstack neste modo que inicia o jogo com 10 linhas de garbage. O primeiro a chegar embaixo ganha. 10 linhas é fácil demais para você? Ajuste a quantidade de linhas iniciais com o comando `/set height ?`, com o ponto de interrogação representando um número de 1 a 20.
 
@@ -354,7 +354,7 @@ Existem 7 diferentes maneiras de criar uma nova sala:
 - 100L:    `/set gamemode sprint100`
 - 1000L:   `/set gamemode sprint1000`
 
-Se você bater seu recorde de Maratona em uma Live Sprint, infelizmente, você não pode adicionar à sua conta, porque a Maratona será contida em pré-visualização live, não em uma pré-visualização normal. Mas você ainda pode salvar o replay ao seus favoritos se você quiser guarda-lo.
+Se você bater seu recorde de Maratona em uma Live Sprint, infelizmente, você não pode adicionar à sua conta, porque a Maratona será contida em pré-visualização live, não em uma pré-visualização normal. Mas você ainda pode salvar o replay ao seus favoritos se você quiser guardá-lo.
 
 **Live Cheese** permite você jogar Queijo contra um oponente. O modo Live Cheese é virtualmente idêntico ao Queijo, porém, você não pode customizar as linhas iniciais além de 10L, 18L e 100L. A sala, por padrão, é 10L, mas você pode mudar para qualquer um desses outros tipos com estes comandos:
 
@@ -381,11 +381,11 @@ R: B2B = back-to-back. B2Bpm = back-to-back per minute. APM = attack per minute.
 
 ### P: O que é DAS?
 
-R: DAS é uma forma de sensibilidade horizontal de peça. DAS significa Delayeed Auto Shift. Ele controla o tempo que você tem que segurar as teclas da esquerda ou direita antes do bloco mover para adireção que você quer. Com um DAS muito baixo, mesmo o toque mais leve em uma tecla irá colocar o bloco em movimento. Com um DAS muito alto, você terá de pressionar a tecla durante mais tempo para que o bloco se mova. Profissionais, em geral, tendem a usar um DAS lento, porque o aumento de sensibilidade os permite jogar mais rápido. O DAS padrão no Jstris é 133. Se você sente que está muito sensível, aumente o número até que fique confortável. Se sentir que está muito lento, diminua o número. Ajuste e descubra o que se encaixa melhor em você.
+R: DAS é uma forma de sensibilidade horizontal de peça. DAS significa Delayeed Auto Shift. Ele controla o tempo que você tem que segurar as teclas da esquerda ou direita antes do bloco mover para a direção que você quer. Com um DAS muito baixo, mesmo o toque mais leve em uma tecla irá colocar o bloco em movimento. Com um DAS muito alto, você terá de pressionar a tecla durante mais tempo para que o bloco se mova. Profissionais, em geral, tendem a usar um DAS lento, porque o aumento de sensibilidade os permite jogar mais rápido. O DAS padrão no Jstris é 133. Se você sente que está muito sensível, aumente o número até que fique confortável. Se sentir que está muito lento, diminua o número. Ajuste e descubra o que se encaixa melhor em você.
 
 ### P: O que é ARR?
 
-R: ARR é outra forma de sensibilidade horizontal de peça. ARR significa Auto Repeat Rate. Ela controla o quão rápido um bloco move para esqueda ou direita. Isto é um pouco mais facil de entender do que o DAS. Ligeiramente simples: com uma ARR baixa, os blocos se moverão quase que imediatamente para a direção que você quer quando pressionar uma tecla; com uma ARR alta, os blocos se moverão mais devagar na direção que você quer quando pressionar uma tecla. A ARR padrão no Jstris é 10.
+R: ARR é outra forma de sensibilidade horizontal de peça. ARR significa Auto Repeat Rate. Ela controla o quão rápido um bloco move para esquerda ou direita. Isto é um pouco mais fácil de entender do que o DAS. Ligeiramente simples: com uma ARR baixa, os blocos se moverão quase que imediatamente para a direção que você quer quando pressionar uma tecla; com uma ARR alta, os blocos se moverão mais devagar na direção que você quer quando pressionar uma tecla. A ARR padrão no Jstris é 10.
 
 ### P: O que é finesse?
 
@@ -393,11 +393,11 @@ R: Finesse é definida como a maneira mais eficiente de mover um bloco. Boa fine
 
 ### P: Posso criar uma sala privada?
 
-R: Sim. Clique em *Lobby*, então *Criar sala*, então na caixa de seleção que diz *Privado*. Copie e dê o link da sala à qualquer um que vocẽ quer que entre. Aqui vai uma dica: arraste o link de qualquer sala, publica ou privada, usando o  comando `/link`.
+R: Sim. Clique em *Lobby*, então *Criar sala*, então na caixa de seleção que diz *Privado*. Copie e dê o link da sala à qualquer um que você quer que entre. Aqui vai uma dica: arraste o link de qualquer sala, publica ou privada, usando o  comando `/link`.
 
 ### P: Posso jogar Jstris offline?
 
-R: Sim. Para jogar offline, você tem que baixar o Jstris enquanto estiver online. Para isto, clique com o botão direito na página inicial, clique em "Salvar como", e baixe o arquivo html. Note que somente modos singleplayer podem ser jogados offiline, e as pontuações não serão salvas.
+R: Sim. Para jogar offline, você tem que baixar o Jstris enquanto estiver online. Para isto, clique com o botão direito na página inicial, clique em "Salvar como", e baixe o arquivo html. Note que somente modos singleplayer podem ser jogados offline, e as pontuações não serão salvas.
 
 - - -
 
