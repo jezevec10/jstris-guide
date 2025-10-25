@@ -85,7 +85,7 @@
 
 Usermodes allow players to create their own custom gamemodes and share them with other players.
 
-To get started, go to your Account Settings, then in the "Other tab" check the Experiments toggle.
+To get started, go to your Account Settings, then in the "Other" tab check the Experiments toggle.
 
 Please note that you need to have at least 10 hours of playtime on your account or be a Supporter to be able to access Usermodes.
 
@@ -103,19 +103,19 @@ After choosing "Create", you will be presented with the Usermode Editor.
 
 ![editor]
 
-Drag and drop components from the sidebar to the component area, or click on components to put them on the bottom of your usermode.
+Drag and drop components from the sidebar to the component area, or click on components to put them at the bottom of your usermode.
 
 Be aware that there's a 2000-component limit for usermodes - though hitting it is very unlikely. If you do, please suggest changes/additions to usermodes in [Jstris Discord](https://discord.gg/RcNFCZC).
 
 ## Components
 
-Usermodes are constructed by putting components together, starting with a "Trigger" component, that triggers the components put below it, from top to bottom.
+Usermodes are constructed by putting components together, starting with a "Trigger" component that triggers the components below it, from top to bottom.
 
-If you put your component in wrong place, you can always drag it somewhere else by dragging the component's title bar.
+If you put your component in the wrong place, you can always drag it somewhere else by dragging the component's title bar.
 
 ![mode_example]
 
-While hovering over a component with a mouse cursor, extra options are available:
+While hovering over a component with the mouse cursor, extra options are available:
 - An ON/OFF switch,
 - Green (+) - duplicates a component and puts it below the current component when pressed,
 - Red (-) - removes the component.
@@ -136,18 +136,18 @@ Trigger options are as follows:
   *Before the game* only supports [Queue](#queue), [Variable](#variable), [Map](#map), [Stats](#stats), [Text](#text), [Pause](#pause), [Audio](#audio), [Ruleset](#ruleset) and [Block Skin](#block-skin) components underneath itself.
 - **On game start** - triggers after the "Ready-Go" sequence.
 - **After the game** - triggers after completing the usermode successfully.
-- **At specific time** - triggers when a certain amount of time passes from the start of the game.
-- **On each block** - triggers after placing a block, when next block appears, after line clears were processed.
-- **On each lineclear** - triggers after any line clear.
-- **On specific block #** - triggers once after a certain amount of blocks was placed.
-- **On specific # line cleared** - triggers once after you cleared more than # lines.
+- **At a specific time** - triggers when a certain amount of time passes from the start of the game.
+- **On each block** - triggers after placing a block, when the next block appears, after line clears were processed.
+- **On each line clear** - triggers after any line clear.
+- **On specific block #** - triggers once after a certain amount of blocks were placed.
+- **On specific # lines cleared** - triggers once after you cleared more than # lines.
 - **Key down** - triggers when a key is pressed.
 - **Key up** - triggers when a key is released.<br>
   Key up and Key down triggers react to a specified key code. You can use [this keycode utility](https://www.toptal.com/developers/keycode) to determine the key code of your desired key.<br>
   Key up and Key down triggers also accept an option to prevent the default action when a player has that key bound.
 - **Variable changes** - triggers when a [variable](#variable) changes. Does not support [system variables](#system-variables).
 - **Never** - does not trigger.
-- **External/Conditional** - you can set your own external trigger name for [Condition](#condition), [Run](#run), [Relative Trigger](#relative-trigger), [On/Off](#on-off) or a [Random](#random) component to trigger.<br>
+- **External/Conditional** - you can set your own external trigger name for [Condition](#condition), [Run](#run), [Relative Trigger](#relative-trigger), [On/Off](#onoff) or a [Random](#random) component to trigger.<br>
 Custom trigger names must be **at most 20 characters long** and are case-sensitive.
 
 ### Queue
@@ -218,7 +218,7 @@ You can check for various stats:
 
 Then you can compare it with a number - available operators are `>`, `>=`, `=`, `<=`, `<`.
 
-You can also check for a **Custom expression**. Custom expressions require a variable on the left hand side of the expression.
+You can also check for a **Custom expression**. Custom expressions require a variable on the left-hand side of the expression.
 Custom expressions accept [system variables](#system-variables), [local counters](#local-counters) and [custom](#variable) variables.
 
 For example: To check if a level (custom variable) is higher or equal to 20, a custom expression would look like this:
@@ -227,7 +227,7 @@ level>=20
 ```
 
 Fulfilling a condition (or not) can trigger one of the actions:
-- Game over - the player loses with an explanation, what condition was not fulfilled.<br>
+- Game over - the player loses with an explanation of what condition was not fulfilled.<br>
   **Works only for "If false" conditions - setting this with "If true" condition will cause an error!**
 - Successful game end - the player wins, and the usermode is considered completed.
 - Run trigger actions - An External/Conditional [Trigger](#trigger) is triggered.
@@ -270,11 +270,11 @@ The Map component has two dropdown options that control its behavior:
 - **Replace board** - The whole board is replaced by the map.
 - **Subtract from current board** - If blocks are present on the board in the same position as in the map, those blocks will be removed from the board.
 - **Add to current board (on top)** - The map will be overlaid on top of the board (like a layer in an image editing program). Map blocks take priority over existing board blocks.
-- **Add to current board (under)** - The map will be underlain under the board (like a layer in an image editing program). Existing board blocks take priority over map blocks.
+- **Add to current board (under)** - The map will be underlaid beneath the board (like a layer in an image editing program). Existing board blocks take priority over map blocks.
 - **Intersect with current board (keep stack color)** - All blocks on the board are removed, except in positions where blocks existed in both the board and the map. Block colors from the board are retained.
 - **Intersect with current board (force map color)** - Same as above, but block colors are replaced with those from the map.
-- **End if map collides with current piece position** - Will end the game as failure if the map shape collides with the currently active piece. Does not modify the board or piece position.
-- **End if map collides with current stack** - Will end the game as failure if the map shape collides with the current stack (placed blocks). Does not modify the board.
+- **End if map collides with current piece position** - Will end the game as a failure if the map shape collides with the currently active piece. Does not modify the board or piece position.
+- **End if map collides with current stack** - Will end the game as a failure if the map shape collides with the current stack (placed blocks). Does not modify the board.
 
 #### Active Block position handling:
 After the board is modified by the map (except for the two "End if" modes), you can control what happens to the active piece:
@@ -293,7 +293,7 @@ After the board is modified by the map (except for the two "End if" modes), you 
 
 **Stats** component allows you to change the statistics displayed below the board.
 
-In order to find out, what number to insert into the textbox, open Settings, then navigate to Stats, then check your desired stats.
+In order to find out what number to insert into the textbox, open Settings, then navigate to Stats, then check your desired stats.
 In the bottom right corner, there's a small number. This number determines what stats to show.
 The number is interpreted in binary, so 129 from the example image shows Time (+1) and KPP (+128).
 
@@ -332,7 +332,7 @@ For example: `{PC}` will insert a number of Perfect Clears performed.
 
 Line breaks can be inserted using `\n` (backslash followed by n) in the text field.
 
-There are four different ways of showing Text (and fifth one which is not yet implemented):
+There are four different ways of showing Text (and a fifth one which is not yet implemented):
 
 | Option  |             During Ready-Go (Task spec.)             | Value next to the board (lines remaining position) |                Description text of the value next to the board                 |                              Over the board (lower part)                              |
 | ------- | :--------------------------------------------------: | :------------------------------------------------: | :----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
@@ -459,7 +459,7 @@ There are two options available:
 ### Ruleset
 ![comp_ruleset]
 
-**Ruleset** components change the rules of the game when executed. Rulesets can be even changed mid-game to achieve dynamic difficulty for your usermode.
+**Ruleset** components change the rules of the game when executed. Rulesets can even be changed mid-game to achieve dynamic difficulty for your usermode.
 
 Check out the [Ruleset specification](#ruleset-specification) for more details.
 
@@ -650,7 +650,7 @@ Use this component only when necessary (for example to give a retro climate to a
 ### Run
 ![comp_run]
 
-A very simple component, that just triggers an External/Conditional [Trigger](#trigger).
+A very simple component that just triggers an External/Conditional [Trigger](#trigger).
 
 The trigger name field supports **placeholders** with curly brackets, just like the [Text](#text) component. This allows you to dynamically select which trigger to run based on [system variables](#system-variables), [local counters](#local-counters), or [custom variables](#variable).
 
@@ -661,12 +661,12 @@ For example: `trigger{level}` will run a trigger named `trigger1` if the `level`
 
 **Relative Trigger** components can trigger an External/Conditional [Trigger](#trigger) after:
 - A certain amount of time (in seconds) passes...
-- Certain amount of pieces were placed...
-- Certain amount of lines were cleared...
+- A certain amount of pieces were placed...
+- A certain amount of lines were cleared...
 
 ... since the [Trigger](#trigger) under which this component is present was triggered.
 
-For example: When a certain [Trigger](#trigger) triggers on 5th line, and there's a Relative Trigger that runs a certain trigger after 4 Lines, that trigger will run after clearing the 9th line.
+For example: When a certain [Trigger](#trigger) triggers on the 5th line, and there's a Relative Trigger that runs a certain trigger after 4 lines, that trigger will run after clearing the 9th line.
 
 ### On/Off
 ![comp_switch]
@@ -682,7 +682,7 @@ You can toggle multiple components on or off with this component by clicking the
 
 **Random** components can execute components or External/Conditional [Triggers](#trigger) at random.
 
-Operated similarly to the [On/Off](#onoff) component.
+Operates similarly to the [On/Off](#onoff) component.
 
 **This component must have at least 2 options to choose from.**
 
@@ -713,7 +713,7 @@ Secondary metric will be used if two or more players tie on the primary metric.
 
 You can also set other stats that will be shown in the leaderboard, but won't be used for placing players on the leaderboard.
 
-There's also an option to save scores on a game over too - useful for survival or endurance-style modes.
+There's also an option to save scores on game over - useful for survival or endurance-style modes.
 
 # Usermode peculiarities
 
@@ -780,7 +780,7 @@ The function can be performed with two syntax variations:
   - x: Column, integer between 0 and 9
   - y: Row, integer between 0 and 19
 
-  Returns: A integer between 0 and 9 which represents the color of the block on specified coordinates.
+  Returns: An integer between 0 and 9 which represents the color of the block at the specified coordinates.
 
   ![board]
 
@@ -948,7 +948,7 @@ Default: `0`
 ### `gravityLvl`
 **Type**: Integer between 0 and 28
 
-Specifies, how fast pieces fall on their own.
+Specifies how fast pieces fall on their own.
 
 <details>
 <summary>Gravity table - click here</summary>
@@ -997,7 +997,7 @@ Default: `1`
 
 **Type**: Integer between 0 and 60000
 
-Specifies, after how long (in ms) since receiving a garbage segment that segment can be added to the board.
+Specifies after how long (in ms) since receiving a garbage segment that segment can be added to the board.
 
 Default: `500`
 
@@ -1010,7 +1010,7 @@ Specifies different levels of lock delay.
 | Index         |                             0                              |                                         1                                          |                   2                   |
 | ------------- | :--------------------------------------------------------: | :--------------------------------------------------------------------------------: | :-----------------------------------: |
 | Lock delay    |                             L1                             |                                         L2                                         |                  L3                   |
-| Info          | For how long the piece can stay on ground without locking. | For how long the piece can stay on ground while moving left/right without locking. | For how long the piece can be active. |
+| Info          | For how long the piece can stay on the ground without locking. | For how long the piece can stay on the ground while moving left/right without locking. | For how long the piece can be active. |
 | Default value |                           500 ms                           |                                      5000 ms                                       |               20000 ms                |
 
 Default: `[500,5000,20000]`
@@ -1063,7 +1063,7 @@ Default: `""`
 
 **Type**: Boolean
 
-If true, garbage lines will be inverted - where would be blocks, there would be empty spaces, and vice versa.
+If true, garbage lines will be inverted - where there would be blocks, there will be empty spaces, and vice versa.
 
 Default: `false`
 
@@ -1082,7 +1082,7 @@ Default: `false`
 Specifies the block set used in the game.
 
 If changed mid-game, pieces from the new set will appear at the end of the queue,
-since Jstris always keeps 5 pieces in queue, regardless of the amount of previews shown to the player. 
+since Jstris always keeps 5 pieces in queue, regardless of the number of previews shown to the player. 
 
 Available block sets:
 
@@ -1141,7 +1141,7 @@ Default: `0`
 
 **Type**: Integer between 0 and 5
 
-Specifies the amount of previews available to the player.
+Specifies the number of previews available to the player.
 
 Default: `5`
 
@@ -1292,7 +1292,7 @@ These pieces are invisible in queue and in hold.
 [comp_trigger]: ./images/comp_trigger.png "The Trigger component"
 [comp_queue]: ./images/comp_queue.png "The Queue component"
 [comp_queue_plus]: ./images/comp_queue_plus.png "The Queue component with advanced queue input capabilities"
-[comp_cond]: ./images/comp_cond.png "The Condtion component"
+[comp_cond]: ./images/comp_cond.png "The Condition component"
 [comp_variable]: ./images/comp_variable.png "The Variable component"
 [comp_map]: ./images/comp_map.png "The Map component"
 [comp_stats]: ./images/comp_stats.png "The Stats component"
@@ -1353,7 +1353,7 @@ These pieces are invisible in queue and in hold.
 [NONE]: ./images/pieces/NONE.png "Blank piece"
 [stats]: ./images/stats.png "Stats settings with an arrow pointing at a number 129"
 [task]: ./images/text/task.png "During Ready-Go (Task spec.)"
-[value]: ./images/text/value.png "Value next to the board (lines remaining postion)"
+[value]: ./images/text/value.png "Value next to the board (lines remaining position)"
 [description]: ./images/text/description.png "Description text of the value next to the board"
 [over]: ./images/text/over.png "Over the board (lower part)"
 [getBoard]: ./images/getBoard.png "The matrix obtained after using the getBoard function"
