@@ -35,6 +35,7 @@
     - [`getY`](#gety)
     - [`getRot`](#getrot)
     - [`getBlockName`](#getblockname)
+    - [`getBlock`](#getblock)
     - [`isCollision`](#iscollision)
     - [`setX`](#setx)
     - [`setY`](#sety)
@@ -833,6 +834,19 @@ The function can be performed with two syntax variations:
 - `getBlockName()`<br>
   Returns: A string representing the current active piece in `"[setID:pieceID]"` format (e.g., `"[0:2]"` for T piece).
 
+### `getBlock`
+- `getBlock()`<br>
+  Returns: A MathJS matrix `[setID, pieceID]` representing the current active piece (e.g., `[0, 2]` for T piece).
+  
+  This function is useful for mathematical operations in MathJS expressions since matrices are easier to work with than strings.
+  
+  Example usage:
+  ```
+  block = getBlock()
+  setID = block[1]    # Get first element (setID)
+  pieceID = block[2]  # Get second element (pieceID)
+  ```
+
 ### `isCollision`
 - `isCollision(x, y, rot)`<br>
   Parameters:
@@ -887,6 +901,8 @@ The function can be performed with two syntax variations:
   Parameters:
   - blockName: A string representing a piece. Check the [Block name reference list](#block-name-reference-list) for the list of usable pieces.
   `"[setID:pieceID]"` can be used to pick any piece from the game.
+- `setBlock(setID, pieceID)`<br>
+  Alternative syntax with 2 numeric parameters.
 
   Returns: 1 on success, 0 on failure (piece does not exist).
 
