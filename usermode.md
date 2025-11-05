@@ -43,6 +43,11 @@
     - [`setPos`](#setpos)
     - [`setBlock`](#setblock)
     - [`setToSpawnPos`](#settospawnpos)
+    - [`moveToWall`](#movetowall)
+    - [`hardDrop`](#harddrop)
+    - [`rotate`](#rotate)
+    - [`holdBlock`](#holdblock)
+    - [`moveX`](#movex)
   - [Ruleset specification](#ruleset-specification)
     - [`attackTable`](#attacktable)
     - [`comboTable`](#combotable)
@@ -913,6 +918,45 @@ The function can be performed with two syntax variations:
   Returns: 1 (always succeeds).
 
   Resets the active piece to its default spawn position and updates the ghost piece.
+
+### `moveToWall`
+- `moveToWall(dir)`<br>
+  Parameters:
+  - dir: Direction, integer -1 (left) or 1 (right)
+
+  Returns: 1 on success, 0 on failure (invalid direction).
+
+  Moves the active piece horizontally until it hits a wall or obstacle stack (effectively a DAS activation).
+
+### `hardDrop`
+- `hardDrop()`<br>
+  Returns: 1 (always succeeds).
+
+  Immediately drops the active piece to the bottom of the playfield, locking it in place. Next piece in the queue becomes active.
+
+### `rotate`
+- `rotate(dir)`<br>
+  Parameters:
+  - dir: Rotation direction, integer -1 (counter-clockwise), 1 (clockwise), or 2 (180 degrees)
+
+  Returns: 1 on success, 0 on failure (invalid direction).
+
+  Rotates the active piece in the specified direction.
+
+### `holdBlock`
+- `holdBlock()`<br>
+  Returns: 1 (always succeeds).
+
+  Swaps the active piece with the piece in hold. If hold is empty, the active piece is moved to hold and the next piece becomes active. Can be used only once until hard drop is used (otherwise the function does nothing).
+
+### `moveX`
+- `moveX(dir)`<br>
+  Parameters:
+  - dir: Horizontal movement distance, integer between -10 and 10 (negative moves left, positive moves right)
+
+  Returns: The actual number of steps the piece moved (integer between 0 and the absolute value of dir).
+
+  Moves the active piece horizontally by the specified number of steps. The piece will stop moving if it hits a wall or obstacle before completing all steps. Returns the number of steps actually moved.
 
 ## Ruleset specification
 ### `attackTable`
