@@ -149,8 +149,8 @@ Trigger options are as follows:
 - **On specific # lines cleared** - triggers once after you cleared more than # lines.
 - **Key down** - triggers when a key is pressed.
 - **Key up** - triggers when a key is released.<br>
-  Key up and Key down triggers react to a specified key code. You can use [this keycode utility](https://www.toptal.com/developers/keycode) to determine the key code of your desired key.<br>
-  Key up and Key down triggers also accept an option to prevent the default action when a player has that key bound.
+  Key up and Key down triggers react to a specified key code. You can use [this keycode utility](https://www.toptal.com/developers/keycode) to determine the key code of your desired key. Accepts both string (e.code) or integer (e.keyCode). Using string code is recommended.<br>
+  Key up and Key down triggers also accept an option to prevent the default action when a player has that key bound. If you want to disable all user's controls, instead use global [Ruleset](#ruleset) with setting `disableAllUserControls` to `true`.
 - **Variable changes** - triggers when a [variable](#variable) changes. Does not support [system variables](#system-variables).
 - **Never** - does not trigger.
 - **External/Conditional** - you can set your own external trigger name for [Condition](#condition), [Run](#run), [Relative Trigger](#relative-trigger), [On/Off](#onoff) or a [Random](#random) component to trigger.<br>
@@ -1258,6 +1258,17 @@ Specifies the score multiplier.
 If the score change would end up being decimal, the score change gets rounded to the nearest integer.
 
 Default: `1`
+
+### `disableAllUserControls`
+
+**Usermode exclusive!**
+
+**Type**: Boolean
+
+Specifies whether all user controls are disabled so that the player can only use the usermode's controls (key-triggers).
+This includes all movement controls and user-defined reset key. The user must reset the game using default reset key F4 (we do not prevent the function keys F2 to F12).
+
+Default: `false`
 
 ## Block name reference list
 
