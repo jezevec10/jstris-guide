@@ -377,6 +377,12 @@ There are two options available:
 **Audio** components play a specified audio clip when executed. Audio components only accept audio clips from https://audio.jezevec10.com (Dallicious voice lines)
 and https://s.jezevec10.com (in-game sounds).
 
+There are two options available:
+- **Start loop** - When checked, the audio clip will loop infinitely until stopped by another Audio component with "Stop loop" checked.
+- **Stop loop** - When checked, stops any currently looping audio clip that matches the specified URL.
+
+By default, when neither checkbox is checked, the audio clip plays once (single play).
+
 <details>
 <summary>Available sounds from audio.jezevec10.com - click here</summary>
 
