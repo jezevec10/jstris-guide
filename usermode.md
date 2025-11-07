@@ -150,6 +150,16 @@ Trigger options are as follows:
 - **Key down** - triggers when a key is pressed.
 - **Key up** - triggers when a key is released.<br>
   Key up and Key down triggers react to a specified key code. You can use [this keycode utility](https://www.toptal.com/developers/keycode) to determine the key code of your desired key. Accepts both string (e.code) or integer (e.keyCode). Using string code is recommended.<br>
+  Additionally, you can use special user-defined keycode aliases that automatically map to the player's current control bindings:
+  - `U_LEFT` - move left key
+  - `U_RIGHT` - move right key
+  - `U_SD` - soft drop key
+  - `U_HD` - hard drop key
+  - `U_CCW` - counter-clockwise key
+  - `U_CW` - clockwise key
+  - `U_180` - 180° key
+  - `U_RST` - reset key<br>
+  These aliases are case-sensitive and will resolve to the actual keycode based on each player's individual control settings.<br>
   Key up and Key down triggers also accept an option to prevent the default action when a player has that key bound. If you want to disable all user's controls, instead use global [Ruleset](#ruleset) with setting `disableAllUserControls` to `true`.
 - **Variable changes** - triggers when a [variable](#variable) changes. Does not support [system variables](#system-variables).
 - **Never** - does not trigger.
