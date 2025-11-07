@@ -823,6 +823,15 @@ The function can be performed with two syntax variations:
 
   Returns: 1 on success, 0 on failure (piece does not exist).
 
+### `queueGet`
+- `queueGet()`<br>
+  Returns: A MathJS matrix where each row represents one piece from the current queue in `[setID, pieceID]` format. The first row corresponds to the piece that will spawn next.
+- `queueGet(index)`<br>
+  Parameters:
+  - index - Integer between 0 and queue length - 1.
+
+  Returns: A MathJS matrix `[setID, pieceID]` for the piece at the provided queue index. Returns 0 if the index is out of range or invalid.
+
 ### `getX`
 - `getX()`<br>
   Returns: The current X position of the active piece (integer between 0 and 9).
@@ -948,6 +957,19 @@ The function can be performed with two syntax variations:
   Returns: 1 (always succeeds).
 
   Swaps the active piece with the piece in hold. If hold is empty, the active piece is moved to hold and the next piece becomes active. Can be used only once until hard drop is used (otherwise the function does nothing).
+
+### `getHold`
+- `getHold()`<br>
+  Returns: A MathJS matrix `[setID, pieceID]` representing the current hold piece. Returns 0 if hold is empty.
+
+### `setHold`
+- `setHold(blockName)`<br>
+  Parameters:
+  - blockName: A string representing the desired hold piece. Check the [Block name reference list](#block-name-reference-list) for usable pieces. The special value `"[9:0]"` (INV) clears hold.
+- `setHold(setID, pieceID)`<br>
+  Alternative syntax with 2 numeric parameters.
+
+  Returns: 1 on success, 0 on failure (invalid syntax or the piece does not exist). Updates the hold preview immediately.
 
 ### `moveX`
 - `moveX(dir)`<br>
