@@ -45,6 +45,8 @@
     - [`setToSpawnPos`](#settospawnpos)
     - [`moveToWall`](#movetowall)
     - [`hardDrop`](#harddrop)
+    - [`resetLD`](#resetld)
+    - [`placeBlock`](#placeblock)
     - [`rotate`](#rotate)
     - [`holdBlock`](#holdblock)
     - [`moveX`](#movex)
@@ -72,6 +74,7 @@
     - [`ARR`](#arr)
     - [`ghost`](#ghost)
     - [`scoreMult`](#scoremult)
+    - [`preventLock`](#preventlock)
   - [Block name reference list](#block-name-reference-list)
     - [Set 0: Standard](#set-0-standard)
     - [Set 1: Big, moves 2 spaces left/right at a time](#set-1-big-moves-2-spaces-leftright-at-a-time)
@@ -144,6 +147,8 @@ Trigger options are as follows:
 - **After the game** - triggers after completing the usermode successfully.
 - **At a specific time** - triggers when a certain amount of time passes from the start of the game.
 - **On each block** - triggers after placing a block, when the next block appears, after line clears were processed.
+- **Before block locked** - triggers immediately before a block is locked/placed on the board. Either by user requesting hard drop or by lock delay expiration. The current piece position is on the final position, but not yet locked.
+- **After hold retrieved** - triggers when a block is retrieved from hold (swapped with the active piece). Does not trigger when hold is empty and the active piece is moved to hold.
 - **On each line clear** - triggers after any line clear.
 - **On specific block #** - triggers once after a certain amount of blocks were placed.
 - **On specific # lines cleared** - triggers once after you cleared more than # lines.
@@ -953,6 +958,22 @@ The function can be performed with two syntax variations:
 
   Immediately drops the active piece to the bottom of the playfield, locking it in place. Next piece in the queue becomes active.
 
+### `resetLD`
+- `resetLD()`<br>
+  Returns: 1 (always succeeds).
+
+  Resets the lock delay timer for the active piece. This deactivates the current lock delay and resets the generation timestamp, effectively giving the piece a fresh lock delay period.
+
+### `placeBlock`
+- `placeBlock(x, y)`<br>
+  Parameters:
+  - x: Column, integer between 0 and 9
+  - y: Row, integer between spawn height and 19
+
+  Returns: 1 on success, 0 on failure (any parameter out of bounds, game not playing, or game starting).
+
+  Sets the active piece position to the specified coordinates and immediately places (locks) the piece at that position. The next piece in the queue becomes active. This function is similar to `setPos` followed by a hard drop, but places the piece directly at the specified position without dropping.
+
 ### `rotate`
 - `rotate(dir)`<br>
   Parameters:
@@ -1299,6 +1320,16 @@ Default: `1`
 
 Specifies whether all user controls are disabled so that the player can only use the usermode's controls (key-triggers).
 This includes all movement controls and user-defined reset key. The user must reset the game using default reset key F4 (we do not prevent the function keys F2 to F12).
+
+Default: `false`
+
+### `preventLock`
+
+**Usermode exclusive!**
+
+**Type**: Boolean
+
+Specifies whether blocks are prevented from locking/placing on the board. When set to `true`, hard drops and automatic locks (from lock delay expiration) will move the piece to the final position without actually placing it. The piece remains active and can still be moved, rotated, or held. Lock delay timer is reset.
 
 Default: `false`
 
