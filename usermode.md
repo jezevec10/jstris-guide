@@ -812,6 +812,14 @@ The function can be performed with two syntax variations:
   ![board]
 
 ### `setBoard`
+The function can be performed with two syntax variations:
+
+- `setBoard(matrix)`<br>
+  Parameters:
+  - matrix: A 20x10 MathJS matrix or array of arrays containing the board state (same format as returned by `getBoard()`).
+
+  Returns: 1 on success, 0 on failure (invalid dimensions or cell values).
+
 - `setBoard(x, y, color)`<br>
   Parameters:
   - x: Column, integer between 0 and 9
@@ -964,6 +972,12 @@ The function can be performed with two syntax variations:
 
   Immediately drops the active piece to the bottom of the playfield, locking it in place. Next piece in the queue becomes active.
 
+### `softDrop`
+- `softDrop()`<br>
+  Returns: 1 on success, 0 on failure (game not playing).
+
+  Moves the active piece to the ghost piece position (lowest valid Y) without locking it.
+
 ### `resetLD`
 - `resetLD()`<br>
   Returns: 1 (always succeeds).
@@ -999,6 +1013,15 @@ The function can be performed with two syntax variations:
 - `getHold()`<br>
   Returns: A MathJS matrix `[setID, pieceID]` representing the current hold piece. Returns 0 if hold is empty.
 
+### `getVar`
+- `getVar(varName)`<br>
+  Parameters:
+  - varName: A string representing the variable name (e.g. `"level"`, `"mission1.lines"`).
+
+  Returns: The value of the variable, or 0 if not found.
+
+  You can normally reference variables directly in the expression, but since the server-validator won't allow the dot syntax, this method will allow to read also namespaced variables (trigger-based counters like `"mission1.lines"`).
+
 ### `setHold`
 - `setHold(blockName)`<br>
   Parameters:
@@ -1016,6 +1039,12 @@ The function can be performed with two syntax variations:
   Returns: The actual number of steps the piece moved (integer between 0 and the absolute value of dir).
 
   Moves the active piece horizontally by the specified number of steps. The piece will stop moving if it hits a wall or obstacle before completing all steps. Returns the number of steps actually moved.
+
+### `clearLines`
+- `clearLines()`<br>
+  Returns: 1 (always succeeds).
+
+  Manually triggers the line clear check and processing for the current board state.
 
 ## Ruleset specification
 ### `attackTable`
@@ -1336,6 +1365,16 @@ Default: `false`
 **Type**: Boolean
 
 Specifies whether blocks are prevented from locking/placing on the board. When set to `true`, hard drops and automatic locks (from lock delay expiration) will move the piece to the final position without actually placing it. The piece remains active and can still be moved, rotated, or held. Lock delay timer is reset.
+
+Default: `false`
+
+### `preventTopout`
+
+**Usermode exclusive!**
+
+**Type**: Boolean
+
+When set to `true`, spawn collision game-over condition is prevented. Game can still end due to other reasons.
 
 Default: `false`
 
