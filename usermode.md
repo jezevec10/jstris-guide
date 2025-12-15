@@ -83,6 +83,8 @@
     - [`disableAllUserControls`](#disableallusercontrols)
     - [`preventLock`](#preventlock)
     - [`preventTopout`](#preventtopout)
+    - [`forceSFXset`](#forcesfxset)
+    - [`forceVSFXset`](#forcevsfxset)
   - [Block name reference list](#block-name-reference-list)
     - [Set 0: Standard](#set-0-standard)
     - [Set 1: Big, moves 2 spaces left/right at a time](#set-1-big-moves-2-spaces-leftright-at-a-time)
@@ -1385,6 +1387,49 @@ Default: `false`
 When set to `true`, spawn collision game-over condition is prevented. Game can still end due to other reasons.
 
 Default: `false`
+
+### `forceSFXset`
+
+**Usermode exclusive!**
+
+**Type**: Integer between 0 and 4 or false
+
+Forces a specific SFX (sound effects) pack to be used for the duration of the usermode, overriding the player's SFX settings.
+
+Available SFX sets:
+
+| ID | Name       |
+|:--:|:-----------|
+| 0  | Nullpomino |
+| 1  | Yotipo     |
+| 2  | Rainforest |
+| 3  | Tetra-X    |
+| 4  | None       |
+
+When set to `false`, the SFX pack is set to None (ID 4), effectively disabling all sound effects.
+
+Default: Not set (player's SFX settings are used)
+
+### `forceVSFXset`
+
+**Usermode exclusive!**
+
+**Type**: Integer between 0 and 3 or false
+
+Forces a specific voice SFX pack to be used for the duration of the usermode, overriding the player's voice SFX settings.
+
+Available voice SFX sets:
+
+| ID | Name                    |
+|:--:|:------------------------|
+| 0  | TTS-VoiceSFXset        |
+| 1  | TTS-SpawnSFXset        |
+| 2  | Commentary - Dal       |
+| 3  | Block spawns - Dal     |
+
+When set to `false`, voice SFX is disabled for the duration of the mode.
+
+Default: Not set (player's voice SFX settings are used)
 
 ## Block name reference list
 
