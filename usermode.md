@@ -56,6 +56,10 @@
     - [`setHold`](#sethold)
     - [`moveX`](#movex)
     - [`clearLines`](#clearlines)
+    - [`playOsc`](#playosc)
+    - [`stopOsc`](#stoposc)
+    - [`stopAllOsc`](#stopallosc)
+    - [`setOscMasterVol`](#setoscmastervol)
   - [Ruleset specification](#ruleset-specification)
     - [`attackTable`](#attacktable)
     - [`comboTable`](#combotable)
@@ -1055,6 +1059,66 @@ The function can be performed with two syntax variations:
   Returns: 1 (always succeeds).
 
   Manually triggers the line clear check and processing for the current board state.
+
+### `playOsc`
+Plays a simple oscillator tone using the browser WebAudio API.
+
+The function can be performed with multiple syntax variations:
+
+- `playOsc(freq)`<br>
+  Parameters:
+  - freq: Frequency in Hz (number, >0 and <=24000)
+  - Uses default volume, duration and waveform.
+
+- `playOsc(freq, volume)`<br>
+  Parameters:
+  - volume: Number between 0 and 1
+
+- `playOsc(freq, volume, duration)`<br>
+  Parameters:
+  - duration: Duration in seconds (number between 0 and 3600). If `0`, the tone will play until stopped with `stopOsc`.
+
+- `playOsc(freq, volume, duration, wave)`<br>
+  Parameters:
+  - wave: Waveform index (integer):
+    - `0`: sine
+    - `1`: square
+    - `2`: sawtooth
+    - `3`: triangle
+
+Returns: A numeric oscillator id on success, 0 on failure.
+
+> **Volume note:** Effective output volume is `master * volume` and is clamped by an internal safety cap to reduce the risk of too loud sounds.
+
+### `stopOsc`
+Stops one oscillator or multiple oscillators.
+
+The function can be performed with two syntax variations:
+
+- `stopOsc(id)`<br>
+  Parameters:
+  - id: Numeric oscillator id previously returned by `playOsc`.
+
+- `stopOsc(ids)`<br>
+  Parameters:
+  - ids: Array or MathJS matrix of oscillator ids.
+
+Returns: Number of oscillators stopped.
+
+### `stopAllOsc`
+- `stopAllOsc()`<br>
+  Stops all currently playing oscillators.
+
+Returns: Number of oscillators stopped.
+
+### `setOscMasterVol`
+Sets oscillator master volume (affects all currently playing and future oscillators).
+
+- `setOscMasterVol(volume)`<br>
+  Parameters:
+  - volume: Number between 0 and 1
+
+Returns: 1 on success, 0 on failure.
 
 ## Ruleset specification
 ### `attackTable`
