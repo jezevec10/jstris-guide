@@ -693,7 +693,7 @@ Use this component only when necessary (for example to give a retro climate to a
 
 A very simple component that just triggers an External/Conditional [Trigger](#trigger).
 
-The trigger name field supports **placeholders** with curly brackets, just like the [Text](#text) component. This allows you to dynamically select which trigger to run based on [system variables](#system-variables), [local counters](#local-counters), or [custom variables](#variable).
+The trigger name field supports **variable placeholders** with curly brackets, just like the [Text](#text) component. This allows you to dynamically select which trigger to run based on [custom variables](#variable).
 
 For example: `trigger{level}` will run a trigger named `trigger1` if the `level` variable equals 1, or `trigger2` if it equals 2.
 
@@ -708,6 +708,12 @@ For example: `trigger{level}` will run a trigger named `trigger1` if the `level`
 ... since the [Trigger](#trigger) under which this component is present was triggered.
 
 For example: When a certain [Trigger](#trigger) triggers on the 5th line, and there's a Relative Trigger that runs a certain trigger after 4 lines, that trigger will run after clearing the 9th line.
+
+Both the trigger name and the parameter value fields support **variable placeholders** with curly brackets. The trigger name field accepts variable references just like the [Run](#run) component, allowing dynamic trigger selection based on [custom variables](#variable).
+
+The parameter value (`when`) can be either:
+- A numeric value, or
+- A single variable reference in `{varName}` format (e.g., `{delay}` or `{blocksToWait}`)
 
 ### On/Off
 ![comp_switch]
@@ -1070,15 +1076,15 @@ The function can be performed with multiple syntax variations:
   - freq: Frequency in Hz (number, >0 and <=24000)
   - Uses default volume, duration and waveform.
 
-- `playOsc(freq, volume)`<br>
-  Parameters:
-  - volume: Number between 0 and 1
-
-- `playOsc(freq, volume, duration)`<br>
+- `playOsc(freq, duration)`<br>
   Parameters:
   - duration: Duration in seconds (number between 0 and 3600). If `0`, the tone will play until stopped with `stopOsc`.
 
-- `playOsc(freq, volume, duration, wave)`<br>
+- `playOsc(freq, duration, volume)`<br>
+  Parameters:
+  - volume: Number between 0 and 1
+
+- `playOsc(freq, duration, volume, wave)`<br>
   Parameters:
   - wave: Waveform index (integer):
     - `0`: sine
