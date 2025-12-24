@@ -1087,10 +1087,11 @@ The function can be performed with multiple syntax variations:
 - `playOsc(freq, duration, volume, wave)`<br>
   Parameters:
   - wave: Waveform index (integer):
-    - `0`: sine
-    - `1`: square
-    - `2`: sawtooth
-    - `3`: triangle
+    - `0`: Pure sine wave
+    - `1`: Square wave
+    - `2`: Sawtooth wave
+    - `3`: Triangle wave
+    - `4-13`: Periodic wave presets (custom) via setPeriodicWave().
 
 Returns: A numeric oscillator id on success, 0 on failure.
 
