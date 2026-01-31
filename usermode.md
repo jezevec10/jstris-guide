@@ -52,10 +52,14 @@
     - [`rotate`](#rotate)
     - [`holdBlock`](#holdblock)
     - [`getHold`](#gethold)
+    - [`isHoldUsed`](#isholdused)
     - [`getVar`](#getvar)
     - [`setHold`](#sethold)
     - [`moveX`](#movex)
     - [`clearLines`](#clearlines)
+    - [`nextBlock`](#nextblock)
+    - [`resetDAS`](#resetdas)
+    - [`setRedBar`](#setredbar)
     - [`playOsc`](#playosc)
     - [`stopOsc`](#stoposc)
     - [`stopAllOsc`](#stopallosc)
@@ -161,6 +165,7 @@ Trigger options are as follows:
 - **After the game** - triggers after completing the usermode successfully.
 - **At a specific time** - triggers when a certain amount of time passes from the start of the game.
 - **On each block** - triggers after placing a block, when the next block appears, after line clears were processed.
+- **After block set to spawn position** - triggers when the active piece is set to its spawn position (e.g. when a new block appears from the queue or after a hold). Fires earlier in the piece lifecycle than "On each block"; use this when you need to run logic as soon as the new piece is in play.
 - **Before block locked** - triggers immediately before a block is locked/placed on the board. Either by user requesting hard drop or by lock delay expiration. The current piece position is on the final position, but not yet locked.
 - **After hold retrieved** - triggers when a block is retrieved from hold (swapped with the active piece). Does not trigger when hold is empty and the active piece is moved to hold.
 - **On each line clear** - triggers after any line clear.
@@ -827,7 +832,7 @@ The function can be performed with two syntax variations:
   - x: Column, integer between 0 and 9
   - y: Row, integer between 0 and 19
 
-  Returns: An integer between 0 and 9 which represents the color of the block at the specified coordinates.
+  Returns: An integer between 0 and 9 which represents the color of the block at the specified coordinates. Because 0 signifies an empty cell, invalid or out-of-bounds calls (wrong argument count, non-integer, or coordinates outside the board) report failure by returning **-1**.
 
   ![board]
 
@@ -1033,6 +1038,15 @@ The function can be performed with two syntax variations:
 - `getHold()`<br>
   Returns: A MathJS matrix `[setID, pieceID]` representing the current hold piece. Returns 0 if hold is empty.
 
+### `isHoldUsed`
+- `isHoldUsed()`<br>
+  Returns: 1 if the hold function was already used for the current piece (player has held this turn), 0 otherwise.
+- `isHoldUsed(value)`<br>
+  Parameters:
+  - value: Integer 0 or 1. 0 resets the hold-used state (hold not used this piece), 1 sets it (hold used this piece).
+  Returns: 1 on success, 0 on failure (wrong argument count or non-integer value).
+  Allows to set or reset the per-piece hold-used flag, e.g. to grant an extra hold.
+
 ### `getVar`
 - `getVar(varName)`<br>
   Parameters:
@@ -1065,6 +1079,25 @@ The function can be performed with two syntax variations:
   Returns: 1 (always succeeds).
 
   Manually triggers the line clear check and processing for the current board state.
+
+### `nextBlock`
+- `nextBlock()`<br>
+  Returns: 1 (always succeeds).
+
+  Spawns the next piece from the queue as the active piece (same as after a lock). Resets lock delay, updates ghost, and resets gravity timer. Procedure call (no meaningful return); use in expressions for side effect only.
+
+### `resetDAS`
+- `resetDAS()`<br>
+  Returns: 1 (always succeeds).
+
+  Resets all DAS/ARR state, horizontal movement indicators, and gravity counter to default.
+
+### `setRedBar`
+- `setRedBar(val)`<br>
+  Parameters:
+  - val: Incoming attack height (red bar), integer between 0 and 20
+
+  Returns: 1 on success, 0 on failure (wrong argument count, non-integer, or value outside 0–20).
 
 ### `playOsc`
 Plays a simple oscillator tone using the browser WebAudio API.
